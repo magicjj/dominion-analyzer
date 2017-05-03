@@ -1,13 +1,15 @@
-var controller = require('../controller/dominionAnalyzer').instance;
+const DominionAnalyzer = require('../controller/dominionAnalyzer');
 
-function route(server) {
-	server.post('/analyze',
-		function(req, res, next) {
-			var output = controller.parse(req.body.input);
-			res.send(200, output);	// TODO - without stringify we are losing the maps, why?
-			return next();
-		}
-	);
+class Routes {
+	init(server) {
+		server.post('/analyze',
+			function(req, res, next) {
+				var output = DominionAnalyzer.parse(req.body.input);
+				res.send(200, output);	// TODO - without stringify we are losing the maps, why?
+				return next();
+			}
+		);
+	}
 }
 
-exports.route = route;
+module.exports = new Routes();

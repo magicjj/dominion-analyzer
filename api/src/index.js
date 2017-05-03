@@ -1,7 +1,7 @@
-var restify = require('restify');
-var routing = require('./routing/analyzerapi');
+const restify = require('restify');
+const Routes = require('./routing/analyzerapi');
 
-var server = restify.createServer({
+let server = restify.createServer({
   name: 'analyzerapi',
   handleUpgrades: true
 });
@@ -16,6 +16,6 @@ server.pre(function(req, res, next) {
 
 server.use(restify.bodyParser({ mapParams: false }));
 
-routing.route(server);
+Routes.init(server);
 
 server.listen(8088);

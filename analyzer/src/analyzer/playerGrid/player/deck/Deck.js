@@ -19,8 +19,8 @@ class Deck extends Component {
 
   render() {
     let cardList = [];
-    for (let typeKey in this.props.deck) {
-      let cards = this.props.deck[typeKey];
+    for (let typeKey in this.props.deck.cards) {
+      let cards = this.props.deck.cards[typeKey];
       for (let cardKey in cards) {
         let count = cards[cardKey];
         while (count > 0) {
