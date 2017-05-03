@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 
-import Grid from './grid/Grid';
+import PlayerGrid from './playerGrid/PlayerGrid';
 import TestData from '../assets/testdata';
+
+import Grid from 'react-uikit-grid';
+import Block from 'react-uikit-block';
+import Button from 'react-uikit-button';
+import Form from 'react-uikit-form';
+import Panel from 'react-uikit-panel';
 
 class Analyzer extends Component {
   constructor(props) {
@@ -37,29 +43,29 @@ class Analyzer extends Component {
     .then(resp => {
       resp.json()
       .then(data => {
-        this.setState({ gdo: JSON.parse(data) });
+        this.setState({ gdo: data });
       });
     });
   }
 
   render() {
     return (
-      <div>
-        <div className="formDiv">
+      <Grid col="1-1">
+        <Panel col="1-1">
           <form>
             <textarea value={this.state.formInput} onChange={this.handleChange}></textarea>
-            <input type="submit" onClick={this.handleSubmit} />
+            <Button type="submit" body="Go" context="success" onClick={this.handleSubmit} />
           </form>
-        </div>
+        </Panel>
         { (this.state.gdo) ? 
-          <div className="Analyzer">
+          <Panel col="1-1" className="Analyzer">
             <div className="Analyzer-header">
               <h2>Output</h2>
             </div>
-            <Grid gdo={this.state.gdo} />
-          </div> : ''
+            <PlayerGrid gdo={this.state.gdo} />
+          </Panel> : ''
         }
-      </div>
+      </Grid>
     );
   }
 }

@@ -65,18 +65,21 @@ function DominionAnalyzer() {
 			var match; 
 
 			// if line starts with "Turn " set active player and turn
-			if (line.startsWith(startsWith)) {	// todo just match regex?
-				regex = /Turn ([0-9]+) - (.+)/g;
+			regex = /Turn ([0-9]+) - (.+)/g;
+			if (line.match(regex)) {	// todo just match regex?
 				match = regex.exec(line);
 				turn = parseInt(match[1]);
 				// todo possession
-				activePlayer = findPlayerByName(gdo, match[2].trim());	//gdo.players[gdo.playerNameToIndex.get(match[2])];
+				var playerName = match[2].trim();
+				var possessionIndexOf = playerName.indexOf(" [Possession]");
+				if (possessionIndexOf >= 0) {
+					playerName = playerName.substring(0, possessionIndexOf-1).trim();
+				}
+				activePlayer = findPlayerByName(gdo, playerName);	//gdo.players[gdo.playerNameToIndex.get(match[2])];
 				if (! activePlayer.turns[turn]) {
 					activePlayer.turns[turn] = copyDeck(activePlayer.turns[turn-1]);
 				}
 			}
-
-activePlayer.turns[turn].totalPoints++;
 
 			regex = /(.) .* gains (.+)/g;
 			if (line.match(regex)) {
