@@ -1,0 +1,227 @@
+Game #3318160, unrated.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 2 Coppers and 3 Estates.
+L starts with 7 Coppers and 3 Estates.
+L shuffles their deck.
+L draws 3 Coppers and 2 Estates.
+
+Turn 1 - magicjj
+m plays 2 Coppers.
+m buys and gains a Chapel.
+m draws 5 Coppers.
+
+Turn 1 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Chapel.
+L draws 4 Coppers and an Estate.
+
+Turn 2 - magicjj
+m plays 5 Coppers.
+m buys and gains a Tactician.
+m shuffles their deck.
+m draws 3 Coppers, an Estate and a Chapel.
+
+Turn 2 - Lord Rattington
+L plays 4 Coppers.
+L buys and gains a Smithy.
+L shuffles their deck.
+L draws 2 Coppers, 2 Estates and a Smithy.
+
+Turn 3 - magicjj
+m plays a Chapel.
+m trashes an Estate.
+m plays 3 Coppers.
+m buys and gains a Silver.
+m draws 3 Coppers, an Estate and a Tactician.
+
+Turn 3 - Lord Rattington
+L plays a Smithy.
+L draws 2 Coppers and an Estate.
+L plays 4 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 3 Coppers, an Estate and a Chapel.
+
+Turn 4 - magicjj
+m plays a Tactician.
+m discards 3 Coppers and an Estate.
+m shuffles their deck.
+m draws 3 Coppers, an Estate and a Chapel.
+
+Turn 4 - Lord Rattington
+L plays a Chapel.
+L trashes 3 Coppers and an Estate.
+L draws 3 Coppers, a Silver and an Estate.
+
+Turn 5 - magicjj
+m starts their turn.
+m gets +1 Buy, +1 Action and draws 3 Coppers, a Silver and an Estate (Tactician).
+m plays a Chapel.
+m trashes 2 Coppers and 2 Estates.
+m plays 4 Coppers and a Silver.
+m buys and gains a Gold.
+m shuffles their deck.
+m draws 4 Coppers and a Chapel.
+
+Turn 5 - Lord Rattington
+L plays 3 Coppers and a Silver.
+L buys and gains a Laboratory.
+L shuffles their deck.
+L draws 3 Coppers, an Estate and a Smithy.
+
+Turn 6 - magicjj
+m plays a Chapel.
+m trashes 4 Coppers.
+m shuffles their deck.
+m draws a Copper, a Silver, a Gold, a Chapel and a Tactician.
+
+Turn 6 - Lord Rattington
+L plays a Smithy.
+L draws a Copper, a Silver and a Laboratory.
+L plays 4 Coppers and a Silver.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws a Copper, 2 Estates, a Chapel and a Laboratory.
+
+Turn 7 - magicjj
+m plays a Chapel.
+m trashes a Copper.
+m plays a Silver and a Gold.
+m buys and gains a Laboratory.
+m shuffles their deck.
+m draws a Silver, a Gold, a Chapel, a Laboratory and a Tactician.
+
+Turn 7 - Lord Rattington
+L plays a Laboratory.
+L draws a Copper and a Smithy.
+L plays a Smithy.
+L draws a Copper, a Silver and a Gold.
+L plays 3 Coppers, a Silver and a Gold.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws 2 Coppers, a Gold, an Estate and a Laboratory.
+
+Turn 8 - magicjj
+m plays a Laboratory.
+m plays a Silver and a Gold.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws 2 Silvers, a Gold, a Chapel and a Laboratory.
+
+Turn 8 - Lord Rattington
+L plays a Laboratory.
+L draws a Gold and an Estate.
+L plays 2 Coppers and 2 Golds.
+L buys and gains a Province.
+L draws 2 Coppers, a Silver, a Chapel and a Smithy.
+
+Turn 9 - magicjj
+m plays a Laboratory.
+m draws a Tactician.
+m plays 2 Silvers and a Gold.
+m buys and gains a Gold.
+m shuffles their deck.
+m draws a Silver, 2 Golds, a Chapel and a Tactician.
+
+Turn 9 - Lord Rattington
+L plays a Smithy.
+L shuffles their deck.
+L draws a Copper, a Province and a Laboratory.
+L plays 3 Coppers and a Silver.
+L buys and gains a Laboratory.
+L draws a Copper, 2 Golds and 2 Estates.
+
+Turn 10 - magicjj
+m plays a Silver and 2 Golds.
+m buys and gains a Province.
+m shuffles their deck.
+m draws 2 Silvers, 2 Golds and a Laboratory.
+
+Turn 10 - Lord Rattington
+L plays a Copper and 2 Golds.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws 2 Coppers, a Gold, a Province and a Chapel.
+
+Turn 11 - magicjj
+m plays a Laboratory.
+m draws a Province and a Chapel.
+m plays 2 Silvers and 2 Golds.
+m buys and gains a Province.
+m shuffles their deck.
+m draws 2 Silvers, a Gold, a Province and a Tactician.
+
+Turn 11 - Lord Rattington
+L plays a Chapel.
+L trashes 2 Coppers.
+L plays a Gold.
+L buys and gains a Silver.
+L draws a Copper, a Silver, a Gold, an Estate and a Smithy.
+
+Turn 12 - magicjj
+m plays 2 Silvers and a Gold.
+m buys and gains a Gold.
+m shuffles their deck.
+m draws 2 Golds, a Province, a Chapel and a Laboratory.
+
+Turn 12 - Lord Rattington
+L plays a Smithy.
+L draws an Estate and 2 Laboratories.
+L plays a Copper, a Silver and a Gold.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws a Copper, a Gold, an Estate, a Laboratory and a Smithy.
+
+Turn 13 - magicjj
+m plays a Laboratory.
+m draws a Silver and a Tactician.
+m plays a Silver and 2 Golds.
+m buys and gains a Province.
+m shuffles their deck.
+m draws 2 Silvers, a Gold, a Province and a Tactician.
+
+Turn 13 - Lord Rattington
+L plays a Laboratory.
+L draws a Copper and a Gold.
+L plays a Smithy.
+L draws 2 Silvers and a Laboratory.
+L plays 2 Coppers, 2 Silvers and 2 Golds.
+L buys and gains a Province.
+L draws 2 Golds, an Estate, a Province and a Chapel.
+
+Turn 14 - magicjj
+m plays 2 Silvers and a Gold.
+m buys and gains a Gold.
+m draws 2 Golds, a Province, a Chapel and a Laboratory.
+
+Turn 14 - Lord Rattington
+L plays a Chapel.
+L trashes an Estate.
+L plays 2 Golds.
+L buys and gains a Duchy.
+L shuffles their deck.
+L draws a Copper, a Silver, a Gold, an Estate and a Laboratory.
+
+Turn 15 - magicjj
+m plays a Laboratory.
+m shuffles their deck.
+m draws a Silver and a Province.
+m plays a Silver and 2 Golds.
+m buys and gains a Province.
+m draws a Silver, 2 Golds, a Province and a Tactician.
+
+Turn 15 - Lord Rattington
+L plays a Laboratory.
+L draws a Gold and a Smithy.
+L plays a Smithy.
+L draws a Silver, a Province and a Laboratory.
+L plays a Copper, 2 Silvers and 2 Golds.
+L buys and gains a Province.
+L draws a Copper, 2 Golds, a Duchy and a Province.
+
+Turn 16 - magicjj
+m plays a Silver and 2 Golds.
+m buys and gains a Province.
+m shuffles their deck.
+m draws a Silver, 2 Golds and 2 Provinces.
