@@ -1,0 +1,229 @@
+Game #3300452, unrated.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 3 Coppers and 2 Estates.
+L starts with 7 Coppers and 3 Estates.
+L shuffles their deck.
+L draws 4 Coppers and an Estate.
+
+Turn 1 - magicjj
+m plays 3 Coppers.
+m buys and gains a Chapel.
+m draws 4 Coppers and an Estate.
+
+Turn 1 - Lord Rattington
+L plays 4 Coppers.
+L buys and gains a Chapel.
+L draws 3 Coppers and 2 Estates.
+
+Turn 2 - magicjj
+m plays 4 Coppers.
+m buys and gains a Bridge.
+m shuffles their deck.
+m draws 2 Coppers, 2 Estates and a Chapel.
+
+Turn 2 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 2 Coppers, a Silver and 2 Estates.
+
+Turn 3 - magicjj
+m plays a Chapel.
+m trashes 2 Estates.
+m plays 2 Coppers.
+m draws 4 Coppers and an Estate.
+
+Turn 3 - Lord Rattington
+L plays a Silver and 2 Coppers.
+L buys and gains a Silver.
+L draws 5 Coppers.
+
+Turn 4 - magicjj
+m plays 4 Coppers.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws 3 Coppers, an Estate and a Bridge.
+
+Turn 4 - Lord Rattington
+L plays 5 Coppers.
+L buys and gains a Witch.
+L shuffles their deck.
+L draws a Copper, 2 Estates, a Chapel and a Witch.
+
+Turn 5 - magicjj
+m plays a Bridge.
+m plays 3 Coppers.
+m buys and gains 2 Silvers.
+m draws 3 Coppers, a Silver and a Chapel.
+
+Turn 5 - Lord Rattington
+L plays a Witch.
+L draws 2 Coppers.
+m gains a Curse.
+L plays 3 Coppers.
+L buys and gains a Silver.
+L draws 2 Coppers, 2 Silvers and an Estate.
+
+Turn 6 - magicjj
+m plays a Chapel.
+m trashes 3 Coppers.
+m plays a Silver.
+m shuffles their deck.
+m draws a Copper, 2 Silvers, an Estate and a Bridge.
+
+Turn 6 - Lord Rattington
+L plays 2 Silvers and 2 Coppers.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws 4 Coppers and a Silver.
+
+Turn 7 - magicjj
+m plays a Bridge.
+m plays 2 Silvers and a Copper.
+m buys and gains a Silver and a Laboratory.
+m draws a Curse, 3 Coppers and a Chapel.
+
+Turn 7 - Lord Rattington
+L plays a Silver and 4 Coppers.
+L buys and gains a Gold.
+L draws a Copper, a Silver, a Gold, an Estate and a Witch.
+
+Turn 8 - magicjj
+m plays a Chapel.
+m trashes a Curse and 3 Coppers.
+m shuffles their deck.
+m draws 2 Silvers, an Estate, a Chapel and a Laboratory.
+
+Turn 8 - Lord Rattington
+L plays a Witch.
+L draws a Copper and an Estate.
+m gains a Curse.
+L plays a Gold, a Silver and 2 Coppers.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws a Copper, 2 Silvers, an Estate and a Chapel.
+
+Turn 9 - magicjj
+m plays a Laboratory.
+m draws a Copper and a Silver.
+m plays a Chapel.
+m trashes a Copper and an Estate.
+m plays 3 Silvers.
+m buys and gains a Gold.
+m shuffles their deck.
+m draws 3 Silvers, a Laboratory and a Bridge.
+
+Turn 9 - Lord Rattington
+L plays a Chapel.
+L trashes a Copper and an Estate.
+L plays 2 Silvers.
+L buys and gains a Silver.
+L draws 3 Coppers, a Gold and an Estate.
+
+Turn 10 - magicjj
+m plays a Laboratory.
+m draws a Gold and a Chapel.
+m plays a Bridge.
+m plays a Gold and 3 Silvers.
+m buys and gains 2 Golds.
+m shuffles their deck.
+m draws a Curse, a Silver, a Gold, a Chapel and a Laboratory.
+
+Turn 10 - Lord Rattington
+L plays a Gold and 3 Coppers.
+L buys and gains a Laboratory.
+L draws 2 Coppers, a Silver and 2 Golds.
+
+Turn 11 - magicjj
+m plays a Laboratory.
+m draws a Silver and a Gold.
+m plays a Chapel.
+m trashes a Curse.
+m plays 2 Golds and 2 Silvers.
+m buys and gains a Province.
+m shuffles their deck.
+m draws 2 Silvers, 2 Golds and a Bridge.
+
+Turn 11 - Lord Rattington
+L plays 2 Golds, a Silver and 2 Coppers.
+L buys and gains a Province.
+L shuffles their deck.
+L draws 2 Coppers, 2 Estates and a Witch.
+
+Turn 12 - magicjj
+m plays a Bridge.
+m plays 2 Golds and 2 Silvers.
+m buys and gains a Duchy and a Province.
+m draws 2 Silvers, a Gold, a Province and a Chapel.
+
+Turn 12 - Lord Rattington
+L plays a Witch.
+L draws a Silver and a Chapel.
+m gains a Curse.
+L plays a Silver and 2 Coppers.
+L buys and gains a Silver.
+L draws 3 Coppers and 2 Silvers.
+
+Turn 13 - magicjj
+m plays a Gold and 2 Silvers.
+m buys and gains a Gold.
+m shuffles their deck.
+m draws 2 Silvers, a Duchy, a Province and a Laboratory.
+
+Turn 13 - Lord Rattington
+L plays 2 Silvers and 3 Coppers.
+L buys and gains a Gold.
+L draws a Copper, a Silver, 2 Golds and a Province.
+
+Turn 14 - magicjj
+m plays a Laboratory.
+m draws a Province and a Chapel.
+m plays 2 Silvers.
+m buys and gains a Gardens.
+m draws a Silver, 3 Golds and a Bridge.
+
+Turn 14 - Lord Rattington
+L plays 2 Golds, a Silver and a Copper.
+L buys and gains a Province.
+L shuffles their deck.
+L draws a Copper, a Silver, a Gold, a Chapel and a Laboratory.
+
+Turn 15 - magicjj
+m plays a Bridge.
+m plays 3 Golds and a Silver.
+m buys and gains a Duchy and a Province.
+m shuffles their deck.
+m draws a Curse, a Silver, 2 Golds and a Duchy.
+
+Turn 15 - Lord Rattington
+L plays a Laboratory.
+L draws a Copper and a Witch.
+L plays a Witch.
+L draws a Silver and a Province.
+m gains a Curse.
+L plays a Gold, 2 Silvers and 2 Coppers.
+L buys and gains a Province.
+L draws 2 Coppers, a Silver and 2 Estates.
+
+Turn 16 - magicjj
+m plays 2 Golds and a Silver.
+m buys and gains a Province.
+m draws a Silver, a Gold, a Province, a Gardens and a Bridge.
+
+Turn 16 - Lord Rattington
+L plays a Silver and 2 Coppers.
+L buys and gains a Gardens.
+L draws 2 Silvers, 2 Golds and a Province.
+
+Turn 17 - magicjj
+m plays a Bridge.
+m plays a Gold and a Silver.
+m buys and gains a Gold.
+m draws a Silver, a Duchy, 2 Provinces and a Laboratory.
+
+Turn 17 - Lord Rattington
+L plays 2 Golds and 2 Silvers.
+L buys and gains a Province.
+L shuffles their deck.
+L draws 3 Coppers, a Silver and a Gold.

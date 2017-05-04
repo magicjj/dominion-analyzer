@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './Deck.css';
+
 // TODO tree shaking
 import Grid from 'react-uikit-grid';
 import Block from 'react-uikit-block';
@@ -7,6 +9,8 @@ import Button from 'react-uikit-button';
 import Panel from 'react-uikit-panel';
 import List from 'react-uikit-list';
 import ListItem from 'react-uikit-list/lib/list-item';
+
+import CardImages from '../../../../assets/CardImages';
 
 class Deck extends Component {
 
@@ -23,12 +27,14 @@ class Deck extends Component {
       let cards = this.props.deck.cards[typeKey];
       for (let cardKey in cards) {
         let count = cards[cardKey];
+        let stacked = 'cardPanel';
         while (count > 0) {
           cardList.push(
-            <Panel context="primary">
-              {cardKey}
+            <Panel context="primary" key={cardKey + count} className={stacked}>
+              <img src={CardImages[cardKey]} />
             </Panel>
           );
+          stacked = 'cardPanel stacked';
           count--;
         }
       }

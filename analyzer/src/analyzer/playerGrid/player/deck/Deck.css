@@ -1,0 +1,10 @@
+.stacked {
+	margin-left: -14%;
+}
+img {
+	width: 150px;
+}
+.cardPanel {
+	height: 150px;
+	overflow: hidden;
+}

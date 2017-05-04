@@ -39,7 +39,7 @@ class PlayerGrid extends Component {
     }
 
     return (
-      <Grid className="PlayerGrid">
+      <Grid className="PlayerGrid" style="height:100%">
         <Block col="1-1" className="PlayerGrid-header">
           <TurnSlider turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
         </Block>
