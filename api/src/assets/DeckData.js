@@ -1,9 +1,11 @@
+// todo fix types
+
 let DeckData = {
 	"Estate": {
 		name: "Estate",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 1};"
+		pointsChangeFn: function(deck) { return {vp: 1}; }
 	},
 	"Copper": {
 		name: "Copper",
@@ -27,7 +29,7 @@ let DeckData = {
 		name: "Duchy",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 3};"
+		pointsChangeFn: function(deck) { return {vp: 3}; }
 	},
 	"Gold": {
 		name: "Gold",
@@ -39,7 +41,7 @@ let DeckData = {
 		name: "Province",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 6};"
+		pointsChangeFn: function(deck) { return {vp: 6}; }
 	},
 	"Cellar": {
 		name: "Cellar",
@@ -99,7 +101,7 @@ let DeckData = {
 		name: "Gardens",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: `
+		pointsChangeFn: function(deck) {
 			var totalCardsCount = 0;
 			for (var typeKey in deck) {
 				for (var cardKey in deck[typeKey]) {
@@ -109,7 +111,7 @@ let DeckData = {
 			}
 
 			return { vp: Math.floor(totalCardsCount / 10) }
-		`
+		}
 	},
 	"Militia": {
 		name: "Militia",
@@ -289,7 +291,7 @@ let DeckData = {
 		name: "Mill",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 1};"
+		pointsChangeFn: function(deck) { return {vp: 1}; }
 	},
 	"Mining Village": {
 		name: "Mining Village",
@@ -313,7 +315,7 @@ let DeckData = {
 		name: "Duke",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: `return { vp: deck['v']['Duchy']};`
+		pointsChangeFn: function(deck) {return { vp: deck['v']['Duchy']};}
 	},
 	"Minion": {
 		name: "Minion",
@@ -355,14 +357,14 @@ let DeckData = {
 		name: "Harem",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 2};"
+		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Nobles": {
 		name: "Nobles",
 		type: 'a',
 		subtype: null,
 		pointsChangeFn: null,
-		pointsChangeFn: "return {vp: 2};"
+		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Embargo": {
 		name: "Embargo",
@@ -440,7 +442,7 @@ let DeckData = {
 		name: "Island",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 2};"
+		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Navigator": {
 		name: "Navigator",
@@ -536,7 +538,7 @@ let DeckData = {
 		name: "Vineyard",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: `
+		pointsChangeFn: function(deck) {
 			var actionCardsCount = 0;
 			for (var cardKey in deck['a']) {
 				var card = deck['a'][cardKey];
@@ -544,7 +546,7 @@ let DeckData = {
 			}
 
 			return { vp: Math.floor(actionCardsCount / 3) }
-		`
+		}
 	},
 	"Herbalist": {
 		name: "Herbalist",
@@ -610,7 +612,7 @@ let DeckData = {
 		name: "Colony",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 10};"
+		pointsChangeFn: function(deck) { return {vp: 10}; }
 	},
 	"Loan": {
 		name: "Loan",
@@ -826,14 +828,14 @@ let DeckData = {
 		name: "Fairgrounds",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: `
+		pointsChangeFn: function(deck) {
 			var uniqueNamesCount = 0;
 			for (var typeKey in deck) {
 				uniqueNamesCount += deck[typeKey].keys().length;
 			}
 
 			return { vp: Math.floor(uniqueNamesCount / 5) }
-		`
+		}
 	},
 	"Bag of Gold": {
 		name: "Bag of Gold",
@@ -905,7 +907,7 @@ let DeckData = {
 		name: "Tunnel",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 2};"
+		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Jack of all Trades": {
 		name: "Jack of all Trades",
@@ -929,7 +931,7 @@ let DeckData = {
 		name: "Silk Road",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: `
+		pointsChangeFn: function(deck) {
 			var victoryCardsCount = 0;
 			for (var cardKey in deck['v']) {
 				var card = deck['v'][cardKey];
@@ -939,7 +941,7 @@ let DeckData = {
 			}
 
 			return { vp: Math.floor(victoryCardsCount / 4) }
-		`
+		}
 	},
 	"Spice Merchant": {
 		name: "Spice Merchant",
@@ -1023,7 +1025,7 @@ let DeckData = {
 		name: "Farmland",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 2};"
+		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Abandoned Mine": {
 		name: "Abandoned Mine",
@@ -1131,7 +1133,7 @@ let DeckData = {
 		name: "Feodum",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: `return { vp: Math.floor(deck['c']['Silver'] / 3) }`
+		pointsChangeFn: function(deck) {return { vp: Math.floor(deck['c']['Silver'] / 3) }}
 	},
 	"Fortress": {
 		name: "Fortress",
@@ -1275,7 +1277,7 @@ let DeckData = {
 		name: "Dame Josephine",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 2};"
+		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Dame Molly": {
 		name: "Dame Molly",
@@ -1959,7 +1961,7 @@ let DeckData = {
 		name: "Humble Castle",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: `
+		pointsChangeFn: function(deck) {
 			var castleCount = 0;
 			for (var cardKey in deck['v']) {
 				var card = deck['v'][cardKey];
@@ -1969,7 +1971,7 @@ let DeckData = {
 			}
 
 			return { vp: castleCount}
-		`
+		}
 	},
 	"Crumbling Castle": {
 		name: "Crumbling Castle",
@@ -1981,31 +1983,31 @@ let DeckData = {
 		name: "Small Castle",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 2};"
+		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Haunted Castle": {
 		name: "Haunted Castle",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 2};"
+		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Opulent Castle": {
 		name: "Opulent Castle",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 3};"
+		pointsChangeFn: function(deck) { return {vp: 3}; }
 	},
 	"Sprawling Castle": {
 		name: "Sprawling Castle",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 4};"
+		pointsChangeFn: function(deck) { return {vp: 4}; }
 	},
 	"Grand Castle": {
 		name: "Grand Castle",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: "return {vp: 5};"
+		pointsChangeFn: function(deck) { return {vp: 5}; }
 	},
 	"Triumph": {
 		name: "Triumph",
@@ -2299,7 +2301,7 @@ let DeckData = {
 		name: "King's Castle",
 		type: 'a',
 		subtype: null,
-		pointsChangeFn: `
+		pointsChangeFn: function(deck) {
 			var castleCount = 0;
 			for (var cardKey in deck['v']) {
 				var card = deck['v'][cardKey];
@@ -2309,7 +2311,7 @@ let DeckData = {
 			}
 
 			return { vp: 2 * castleCount}
-		`
+		}
 	},
 }
 

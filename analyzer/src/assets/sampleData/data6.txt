@@ -506,4 +506,4 @@ ma plays a Copper, 3 Silvers and a Gold.
 ma buys a Delve.
 ma gains a Silver.
 ma buys and gains a Province.
-ma draws a Copper, a Silver, a Militia, a Fortune Teller and a Groundskeeper.ddd
+ma draws a Copper, a Silver, a Militia, a Fortune Teller and a Groundskeeper.

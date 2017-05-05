@@ -99,7 +99,7 @@ class DominionAnalyzer {
 				if (possessionIndexOf >= 0) {
 					playerName = playerName.substring(0, possessionIndexOf-1).trim();
 				}
-				activePlayer = this.findPlayerByName(gdo, playerName);	//gdo.players[gdo.playerNameToIndex.get(match[2])];
+				activePlayer = this.findPlayerByName(gdo, playerName);
 				if (! activePlayer.turns[turn]) {
 					activePlayer.turns[turn] = this.copyDeck(activePlayer.turns[turn-1], turn);
 				}
@@ -120,7 +120,47 @@ class DominionAnalyzer {
 			}
 		}
 
+		// calculate victoryPoints and numCards for each turn for each player
+		for (let i = 0; i <= turn; i++) {
+			for (let playerName in gdo.playerNameToIndex) {
+				let player = gdo.players[gdo.playerNameToIndex[playerName]];
+				let playerTurn = player.turns[i];
+				playerTurn.numCards = this.countCards(playerTurn.cards);
+				playerTurn.points = this.countPoints(playerTurn.cards);
+				
+			}
+		}
+
 		return gdo;
+	}
+
+	countCards(deck) {
+		let totalCardsCount = 0;
+		for (let typeKey in deck) {
+			for (let cardKey in deck[typeKey]) {
+				let card = deck[typeKey][cardKey];
+				totalCardsCount += card.count;
+			}
+		}
+		return totalCardsCount;
+	}
+
+	countPoints(deck) {
+		let points = {};
+		for (let typeKey in deck) {
+			for (let cardKey in deck[typeKey]) {
+				let card = deck[typeKey][cardKey];
+				let pointsChangeFn = DeckData[card.name].pointsChangeFn;
+				let pointsChange = typeof pointsChangeFn === 'function' ? pointsChangeFn(deck) : {};
+				for (let pointType in pointsChange) {
+					if (! points[pointType]) {
+						points[pointType] = 0;
+					}
+					points[pointType] += pointsChange[pointType] * card.count;
+				}
+			}
+		}
+		return points;
 	}
 
 	addToDeck(player, deckIndex, cardStr) {
@@ -206,7 +246,7 @@ class DominionAnalyzer {
 
 	copyDeck(deck, index) {
 		let ret = new DeckObject(index);
-		ret.totalPoints = deck.totalPoints;
+		ret.points = {};	// this will be recalculated from scratch each time - no need to copy
 		ret.numCards = deck.numCards;
 		for (let key in deck.cards) {
 			ret.cards[key] = this.deepCopy(deck.cards[key]);
@@ -222,7 +262,9 @@ class DominionAnalyzer {
 function DeckObject(index) {
 	return {
 		index: index,
-		totalPoints: 0,	// todo track VP - including "gains VP"
+		points: {
+			vp: 0
+		},	// todo track VP - including "gains VP"
 		numCards: 0,
 		cards: {
 			v: {},
