@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import TurnSlider from './turnSlider/TurnSlider';
+import TurnSummary from './turnSummary/TurnSummary';
+import PlayerGridSettings from './playerGridSettings/PlayerGridSettings';
 import Player from './player/Player';
 
 import Grid from 'react-uikit-grid';
@@ -8,6 +10,7 @@ import Block from 'react-uikit-block';
 import Button from 'react-uikit-button';
 import Form from 'react-uikit-form';
 import List from 'react-uikit-list';
+import Panel from 'react-uikit-panel';
 import ListItem from 'react-uikit-list/lib/list-item';
 
 class PlayerGrid extends Component {
@@ -18,11 +21,22 @@ class PlayerGrid extends Component {
       turn: 0
     };
     this.handleChangeTurn = this.handleChangeTurn.bind(this);
+    this.handleChangeSetting = this.handleChangeSetting.bind(this);
   }
 
   handleChangeTurn(e, val) {
     try {
       this.setState({ turn: parseInt(val) });
+    } catch(e) {
+      // don't change turn
+    }
+  }
+
+  handleChangeSetting(e, val) {
+    try {
+      console.log(e);
+      console.log(val);
+      //this.setState({ turn: parseInt(val) });
     } catch(e) {
       // don't change turn
     }
@@ -40,9 +54,17 @@ class PlayerGrid extends Component {
 
     return (
       <Grid className="PlayerGrid" style="height:100%">
-        <Block col="1-1" className="PlayerGrid-header">
-          <TurnSlider turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
-        </Block>
+        <Grid col="1-1" className="PlayerGrid-header">
+          <Panel col="3-5">
+            <TurnSlider turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
+          </Panel>
+          <Panel col="1-5">
+            <TurnSummary turn={this.state.turn} gdo={this.props.gdo} />
+          </Panel>
+          <Panel col="1-5">
+              <PlayerGridSettings gdo={this.props.gdo} handleChangeSetting={this.handleChangeSetting} />
+          </Panel>
+        </Grid>
         <List col="1-1">
           {playerList}
         </List>

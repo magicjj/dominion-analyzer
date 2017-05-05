@@ -1,10 +1,25 @@
 .stacked {
-	margin-left: -14%;
+	margin-left: -150px;
 }
 img {
 	width: 150px;
 }
 .cardPanel {
 	height: 150px;
-	overflow: hidden;
+	margin-left: 120px;
+	margin-bottom: 20px;
+	white-space: nowrap;
+}
+.card {
+	height: 150px;
+    width: 150px;
+    overflow: hidden;
+    background-size: 150px 238px !important;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: -120px;
+    display: inline-block;
 }

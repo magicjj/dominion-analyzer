@@ -1,0 +1,437 @@
+Game #3341022, rated.
+mcdevittl218: 20
+magicjj: 33.25
+
+mc starts with 7 Coppers, a Hovel, a Necropolis and an Overgrown Estate.
+mc shuffles their deck.
+mc draws 3 Coppers, a Hovel and an Overgrown Estate.
+ma starts with 7 Coppers, a Hovel, a Necropolis and an Overgrown Estate.
+ma shuffles their deck.
+ma draws 4 Coppers and a Necropolis.
+
+Turn 1 - mcdevittl218
+mc plays 3 Coppers.
+mc buys and gains a Silver.
+mc draws 4 Coppers and a Necropolis.
+
+Turn 1 - magicjj
+ma plays a Necropolis.
+ma plays 4 Coppers.
+ma buys and gains a Remodel.
+ma draws 3 Coppers, a Hovel and an Overgrown Estate.
+
+Turn 2 - mcdevittl218
+mc plays a Necropolis.
+mc plays 4 Coppers.
+mc buys a Port.
+mc gains a Port.
+mc gains a Port.
+mc shuffles their deck.
+mc draws 3 Coppers and 2 Ports.
+
+Turn 2 - magicjj
+ma plays 3 Coppers.
+ma buys and gains a Silver.
+ma shuffles their deck.
+ma draws 3 Coppers, a Remodel and a Necropolis.
+
+Turn 3 - mcdevittl218
+mc plays a Port.
+mc draws an Overgrown Estate.
+mc plays a Port.
+mc draws a Silver.
+mc plays 3 Coppers and a Silver.
+mc buys and gains a Library.
+mc draws 4 Coppers and a Hovel.
+
+Turn 3 - magicjj
+ma plays a Remodel.
+ma trashes a Necropolis.
+ma gains a Silver.
+ma plays 3 Coppers.
+ma buys and gains a Silver.
+ma draws 3 Coppers, a Silver and a Hovel.
+
+Turn 4 - mcdevittl218
+mc plays 4 Coppers.
+mc buys and gains a Silver.
+mc shuffles their deck.
+mc draws a Copper, 2 Silvers, a Necropolis and a Port.
+
+Turn 4 - magicjj
+ma plays 3 Coppers and a Silver.
+ma buys and gains a Wine Merchant.
+ma shuffles their deck.
+ma draws 3 Coppers, a Silver and an Overgrown Estate.
+
+Turn 5 - mcdevittl218
+mc plays a Necropolis.
+mc plays a Port.
+mc draws a Copper.
+mc plays 2 Coppers and 2 Silvers.
+mc buys and gains a Gold.
+mc draws 3 Coppers, an Overgrown Estate and a Port.
+
+Turn 5 - magicjj
+ma plays 3 Coppers and a Silver.
+ma buys and gains a Bridge Troll.
+ma draws 2 Coppers, a Silver, a Hovel and a Wine Merchant.
+
+Turn 6 - mcdevittl218
+mc plays a Port.
+mc draws a Copper.
+mc plays 4 Coppers.
+mc buys and gains a Silver.
+mc shuffles their deck.
+mc draws 2 Coppers, a Library, a Hovel and a Necropolis.
+
+Turn 6 - magicjj
+ma plays a Wine Merchant.
+ma puts a Wine Merchant on their Tavern mat.
+ma plays 2 Coppers and a Silver.
+ma buys a Province.
+ma trashes a Hovel.
+ma gains a Province.
+ma shuffles their deck.
+ma draws 2 Coppers, 2 Silvers and a Remodel.
+
+Turn 7 - mcdevittl218
+mc plays a Necropolis.
+mc plays a Library.
+mc draws a Port.
+mc looks at a Port.
+mc sets a Port aside with Library.
+mc draws 2 Coppers and 2 Silvers.
+mc discards a Port.
+mc plays 4 Coppers and 2 Silvers.
+mc buys a Province.
+mc trashes a Hovel.
+mc gains a Province.
+mc draws 3 Coppers, a Silver and a Gold.
+
+Turn 7 - magicjj
+ma plays a Remodel.
+ma trashes a Copper.
+ma gains a Hamlet.
+ma plays a Copper and 2 Silvers.
+ma buys and gains a Wine Merchant.
+ma draws 3 Coppers, a Province and an Overgrown Estate.
+
+Turn 8 - mcdevittl218
+mc plays 3 Coppers, a Silver and a Gold.
+mc buys and gains a Gold.
+mc shuffles their deck.
+mc draws a Copper, a Gold, a Library, an Overgrown Estate and a Port.
+
+Turn 8 - magicjj
+ma plays 3 Coppers.
+ma buys and gains a Silver.
+ma shuffles their deck.
+ma draws 2 Coppers, 2 Silvers and a Bridge Troll.
+
+Turn 9 - mcdevittl218
+mc plays a Port.
+mc draws a Silver.
+mc plays a Library.
+mc draws a Gold and a Necropolis.
+mc looks at a Necropolis.
+mc sets a Necropolis aside with Library.
+mc draws a Silver and a Province.
+mc discards a Necropolis.
+mc plays a Copper, 2 Silvers and 2 Golds.
+mc buys and gains a Colony.
+mc draws 3 Coppers, a Silver and a Port.
+
+Turn 9 - magicjj
+ma plays a Bridge Troll.
+ma plays 2 Coppers and 2 Silvers.
+ma buys a Port.
+ma gains a Port.
+ma gains a Port.
+ma buys and gains a Remake.
+ma draws 2 Coppers, a Silver, a Remodel and a Wine Merchant.
+
+Turn 10 - mcdevittl218
+mc plays a Port.
+mc draws a Copper.
+mc plays a Copper.
+mc returns -Coin token set by Bridge Troll.
+mc plays 3 Coppers and a Silver.
+mc buys a Raid.
+mc gains a Silver.
+ma moves -Card token to Draw Pile.
+mc shuffles their deck.
+mc draws 3 Coppers, a Silver and a Gold.
+
+Turn 10 - magicjj
+ma starts their turn.
+ma gets +1 Buy (Bridge Troll).
+ma plays a Wine Merchant.
+ma puts a Wine Merchant on their Tavern mat.
+ma plays 2 Coppers and a Silver.
+ma buys and gains a Gold.
+ma discards 2 Wine Merchants.
+ma skips a draw (because of Raid)
+ma moves -Card token to Token Limbo.
+ma draws a Copper, a Silver, a Hamlet and an Overgrown Estate.
+
+Turn 11 - mcdevittl218
+mc plays 3 Coppers, a Silver and a Gold.
+mc buys and gains a Province.
+mc draws 2 Coppers, a Province, a Library and a Port.
+
+Turn 11 - magicjj
+ma plays a Hamlet.
+ma draws a Province.
+ma plays a Copper and a Silver.
+ma buys and gains a Silver.
+ma shuffles their deck.
+ma draws 2 Coppers, a Silver, a Province and a Bridge Troll.
+
+Turn 12 - mcdevittl218
+mc plays a Port.
+mc draws a Colony.
+mc plays a Library.
+mc draws a Copper and a Port.
+mc looks at a Port.
+mc sets a Port aside with Library.
+mc draws 2 Silvers.
+mc discards a Port.
+mc plays 3 Coppers and 2 Silvers.
+mc buys and gains a Gold.
+mc draws a Copper, a Silver, a Gold, a Necropolis and an Overgrown Estate.
+
+Turn 12 - magicjj
+ma plays a Bridge Troll.
+ma plays 2 Coppers and a Silver.
+ma buys and gains 2 Silvers.
+ma draws 2 Silvers, a Remodel, an Overgrown Estate and a Wine Merchant.
+
+Turn 13 - mcdevittl218
+mc plays a Necropolis.
+mc plays a Gold.
+mc returns -Coin token set by Bridge Troll.
+mc plays a Copper and a Silver.
+mc buys and gains a Witch.
+mc shuffles their deck.
+mc draws 2 Coppers, a Gold, a Province and a Necropolis.
+
+Turn 13 - magicjj
+ma starts their turn.
+ma gets +1 Buy (Bridge Troll).
+ma plays a Remodel.
+ma trashes an Overgrown Estate.
+ma draws a Port.
+ma gains a Silver.
+ma plays 2 Silvers.
+ma buys and gains 2 Silvers.
+ma draws a Silver, a Gold, a Hamlet, a Port and a Wine Merchant.
+
+Turn 14 - mcdevittl218
+mc plays a Necropolis.
+mc plays 2 Coppers and a Gold.
+mc buys and gains a Distant Lands.
+mc draws 2 Coppers, a Gold, a Province and a Port.
+
+Turn 14 - magicjj
+ma plays a Port.
+ma draws a Copper.
+ma plays a Hamlet.
+ma draws a Copper.
+ma discards a Copper.
+ma plays a Wine Merchant.
+ma puts a Wine Merchant on their Tavern mat.
+ma plays a Copper, a Silver and a Gold.
+ma buys and gains a Platinum.
+ma shuffles their deck.
+ma draws 2 Coppers, 2 Silvers and a Remake.
+
+Turn 15 - mcdevittl218
+mc plays a Port.
+mc draws a Silver.
+mc plays 2 Coppers, a Silver and a Gold.
+mc buys and gains a Gold.
+mc draws 2 Coppers, 2 Silvers and a Colony.
+
+Turn 15 - magicjj
+ma plays 2 Coppers and 2 Silvers.
+ma buys and gains a Gold.
+ma draws a Copper and 4 Silvers.
+
+Turn 16 - mcdevittl218
+mc plays 2 Coppers and 2 Silvers.
+mc buys and gains a Gold.
+mc draws a Copper, a Silver, a Library, an Overgrown Estate and a Port.
+
+Turn 16 - magicjj
+ma plays a Copper and 4 Silvers.
+ma buys a Raid.
+ma gains 4 Silvers.
+mc moves -Card token to Draw Pile.
+ma discards a Wine Merchant.
+ma draws a Copper, a Silver, a Hamlet, a Port and a Wine Merchant.
+
+Turn 17 - mcdevittl218
+mc plays a Port.
+mc skips a draw (because of Raid)
+mc moves -Card token to Token Limbo.
+mc plays a Library.
+mc draws a Gold and a Witch.
+mc looks at a Witch.
+mc shuffles their deck.
+mc draws a Distant Lands.
+mc looks at a Distant Lands.
+mc sets a Distant Lands aside with Library.
+mc draws a Copper and a Gold.
+mc discards a Distant Lands.
+mc plays a Witch.
+mc draws 2 Coppers.
+ma gains a Curse.
+mc plays 4 Coppers, a Silver and 2 Golds.
+mc buys and gains a Platinum.
+mc draws a Copper, 2 Silvers, a Gold and a Province.
+
+Turn 17 - magicjj
+ma plays a Hamlet.
+ma draws a Platinum.
+ma plays a Port.
+ma draws a Province.
+ma plays a Wine Merchant.
+ma puts a Wine Merchant on their Tavern mat.
+ma plays a Platinum, a Copper and a Silver.
+ma buys and gains a Colony.
+ma draws a Copper, 3 Silvers and a Port.
+
+Turn 18 - mcdevittl218
+mc plays a Copper, 2 Silvers and a Gold.
+mc buys and gains a Province.
+mc draws a Copper, a Gold, a Colony, a Necropolis and a Port.
+
+Turn 18 - magicjj
+ma plays a Port.
+ma draws a Bridge Troll.
+ma plays a Bridge Troll.
+ma plays a Copper and 3 Silvers.
+ma buys and gains a Province.
+ma shuffles their deck.
+ma draws a Copper, a Gold, a Remodel, a Platinum and a Remake.
+
+Turn 19 - mcdevittl218
+mc plays a Necropolis.
+mc plays a Port.
+mc draws a Province.
+mc plays a Gold.
+mc returns -Coin token set by Bridge Troll.
+mc plays a Copper.
+mc buys and gains a Hamlet.
+mc shuffles their deck.
+mc draws a Copper, a Silver, 2 Golds and a Library.
+
+Turn 19 - magicjj
+ma starts their turn.
+ma gets +1 Buy (Bridge Troll).
+ma plays a Remake.
+ma trashes a Copper.
+ma gains a Hamlet.
+ma trashes a Remodel.
+ma gains a Duchy.
+ma plays a Platinum and a Gold.
+ma buys and gains a Platinum.
+ma draws 3 Silvers, a Province and a Wine Merchant.
+
+Turn 20 - mcdevittl218
+mc plays a Library.
+mc draws a Hamlet.
+mc looks at a Hamlet.
+mc draws a Silver and a Platinum.
+mc plays a Platinum, a Copper, 2 Silvers and 2 Golds.
+mc buys and gains a Colony.
+mc draws a Silver, 2 Golds, a Province and an Overgrown Estate.
+
+Turn 20 - magicjj
+ma plays a Wine Merchant.
+ma puts a Wine Merchant on their Tavern mat.
+ma plays 3 Silvers.
+ma buys and gains a Province.
+ma discards 2 Wine Merchants.
+ma draws 5 Silvers.
+
+Turn 21 - mcdevittl218
+mc plays a Silver and 2 Golds.
+mc buys and gains a Wine Merchant.
+mc draws 2 Coppers, a Province, a Necropolis and a Distant Lands.
+
+Turn 21 - magicjj
+ma plays 5 Silvers.
+ma buys and gains a Province.
+ma draws 2 Coppers, a Silver, a Province and a Port.
+
+Turn 22 - mcdevittl218
+mc plays a Necropolis.
+mc plays a Distant Lands.
+mc puts a Distant Lands on their Tavern mat.
+mc plays 2 Coppers.
+mc buys and gains a Hamlet.
+mc draws 2 Coppers, a Silver, a Province and a Colony.
+
+Turn 22 - magicjj
+ma plays a Port.
+ma draws a Gold.
+ma plays 2 Coppers, a Silver and a Gold.
+ma buys and gains a Gold.
+ma draws 3 Coppers, a Silver and a Port.
+
+Turn 23 - mcdevittl218
+mc plays 2 Coppers and a Silver.
+mc buys and gains a Remodel.
+mc draws a Copper, a Gold, a Witch and 2 Ports.
+
+Turn 23 - magicjj
+ma plays a Port.
+ma draws a Silver.
+ma plays 3 Coppers and 2 Silvers.
+ma buys and gains a Bridge Troll.
+ma draws 3 Silvers, a Colony and a Hamlet.
+
+Turn 24 - mcdevittl218
+mc plays a Port.
+mc draws a Copper.
+mc plays a Port.
+mc shuffles their deck.
+mc draws a Library.
+mc plays a Library.
+mc draws 2 Golds and a Wine Merchant.
+mc looks at a Wine Merchant.
+mc plays a Wine Merchant.
+mc puts a Wine Merchant on their Tavern mat.
+mc plays a Witch.
+mc draws a Silver and a Colony.
+ma gains a Curse.
+mc plays 2 Coppers, a Silver and 3 Golds.
+mc buys and gains a Gold and a Colony.
+mc draws a Silver, a Gold, 2 Provinces and a Hamlet.
+
+Turn 24 - magicjj
+ma plays a Hamlet.
+ma draws a Curse.
+ma discards a Colony.
+ma plays 3 Silvers.
+ma buys and gains a Gold.
+ma shuffles their deck.
+ma draws a Copper, a Silver, a Gold, a Province and a Hamlet.
+
+Turn 25 - mcdevittl218
+mc plays a Hamlet.
+mc draws a Silver.
+mc discards a Province.
+mc plays 2 Silvers and a Gold.
+mc buys and gains a Hamlet and a Distant Lands.
+mc draws a Copper, a Province, a Platinum, a Hamlet and a Necropolis.
+
+Turn 25 - magicjj
+ma plays a Hamlet.
+ma draws a Silver.
+ma discards a Province.
+ma plays a Copper, 2 Silvers and a Gold.
+ma buys and gains a Province.
+ma draws a Copper, a Silver, a Province, a Colony and a Platinum.

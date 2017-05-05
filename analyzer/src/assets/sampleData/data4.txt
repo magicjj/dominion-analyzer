@@ -1,0 +1,286 @@
+Game #3267464, unrated.
+L starts with 7 Coppers and 3 Estates.
+L shuffles their deck.
+L draws 3 Coppers and 2 Estates.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 3 Coppers and 2 Estates.
+
+Turn 1 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L draws 4 Coppers and an Estate.
+
+Turn 1 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m draws 4 Coppers and an Estate.
+
+Turn 2 - Lord Rattington
+L plays 4 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 3 Coppers and 2 Estates.
+
+Turn 2 - magicjj
+m plays 4 Coppers.
+m buys and gains a Potion.
+m shuffles their deck.
+m draws 3 Coppers, a Silver and an Estate.
+
+Turn 3 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L draws 4 Coppers and an Estate.
+
+Turn 3 - magicjj
+m plays a Silver and 3 Coppers.
+m buys and gains a Jester.
+m draws 3 Coppers and 2 Estates.
+
+Turn 4 - Lord Rattington
+L plays 4 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 2 Coppers, 2 Silvers and an Estate.
+
+Turn 4 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws 3 Coppers, a Silver and a Potion.
+
+Turn 5 - Lord Rattington
+L plays 2 Silvers and 2 Coppers.
+L buys and gains a Gold.
+L draws 2 Coppers, 2 Silvers and an Estate.
+
+Turn 5 - magicjj
+m plays a Silver, a Potion and 3 Coppers.
+m buys and gains a Philosopher's Stone.
+m draws 2 Coppers, a Silver, an Estate and a Jester.
+
+Turn 6 - Lord Rattington
+L plays 2 Silvers and 2 Coppers.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws 3 Coppers and 2 Estates.
+
+Turn 6 - magicjj
+m plays a Jester.
+L discards an Estate.
+L gains a Curse.
+m plays a Silver and 2 Coppers.
+m buys and gains a Gold.
+m shuffles their deck.
+m draws 3 Coppers and 2 Estates.
+
+Turn 7 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L draws 3 Coppers, a Silver and a Gold.
+
+Turn 7 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m draws 3 Coppers, a Silver and a Jester.
+
+Turn 8 - Lord Rattington
+L plays a Gold, a Silver and 3 Coppers.
+L buys and gains a Province.
+L draws a Copper, 3 Silvers and a Gold.
+
+Turn 8 - magicjj
+m plays a Jester.
+L shuffles their deck.
+L discards a Curse.
+L gains a Curse.
+m plays a Silver and 3 Coppers.
+m buys and gains a Jester.
+m draws a Copper, a Silver, a Gold, an Estate and a Potion.
+
+Turn 9 - Lord Rattington
+L plays a Gold, 3 Silvers and a Copper.
+L buys and gains a Province.
+L draws 3 Coppers, a Gold and an Estate.
+
+Turn 9 - magicjj
+m plays a Gold, a Silver, a Potion and a Copper.
+m buys and gains a Possession.
+m shuffles their deck.
+m draws a Philosopher's Stone, a Possession, a Potion and 2 Jesters.
+
+Turn 10 - Lord Rattington
+L plays a Gold and 3 Coppers.
+L buys and gains a Gold.
+L draws 2 Coppers, 2 Silvers and an Estate.
+
+Turn 10 - magicjj
+m plays a Possession.
+m plays a Philosopher's Stone and a Potion.
+m buys and gains a Transmute.
+m draws a Copper, a Silver, a Gold and 2 Estates.
+
+Turn 10 - Lord Rattington [Possession]
+L plays 2 Silvers and 2 Coppers.
+L buys a Gold.
+m gains a Gold.
+L shuffles their deck.
+L draws a Curse, a Copper, a Silver, an Estate and a Province.
+
+Turn 11 - Lord Rattington
+L plays a Silver and a Copper.
+L buys and gains a Silver.
+L draws 2 Coppers, a Silver, a Gold and an Estate.
+
+Turn 11 - magicjj
+m plays a Gold, a Silver and a Copper.
+m buys and gains a Gold.
+m draws 4 Coppers and an Estate.
+
+Turn 12 - Lord Rattington
+L plays a Gold, a Silver and 2 Coppers.
+L buys and gains a Gold.
+L draws a Curse, 2 Coppers, a Silver and an Estate.
+
+Turn 12 - magicjj
+m plays 4 Coppers.
+m buys and gains a Farming Village.
+m shuffles their deck.
+m draws 2 Coppers, 2 Silvers and an Estate.
+
+Turn 13 - Lord Rattington
+L plays a Silver and 2 Coppers.
+L buys and gains a Silver.
+L draws 2 Coppers, a Silver, a Gold and a Province.
+
+Turn 13 - magicjj
+m plays 2 Silvers and 2 Coppers.
+m buys a Farmland.
+m trashes an Estate.
+m gains a Farming Village.
+m gains a Farmland.
+m draws 3 Coppers, an Estate and a Philosopher's Stone.
+
+Turn 14 - Lord Rattington
+L plays a Gold, a Silver and 2 Coppers.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws a Copper, a Silver, a Gold and 2 Estates.
+
+Turn 14 - magicjj
+m plays a Philosopher's Stone and 3 Coppers.
+m buys and gains a Gold.
+m draws a Gold, an Estate, a Potion, a Farming Village and a Jester.
+
+Turn 15 - Lord Rattington
+L plays a Gold, a Silver and a Copper.
+L buys and gains a Gold.
+L draws a Copper, 2 Silvers and 2 Golds.
+
+Turn 15 - magicjj
+m plays a Farming Village.
+m reveals a Silver.
+m puts a Silver into their hand.
+m plays a Jester.
+L discards a Copper.
+L gains a Copper.
+m plays a Gold, a Silver and a Potion.
+m buys and gains a Possession.
+m draws 2 Coppers, 2 Golds and a Possession.
+
+Turn 16 - Lord Rattington
+L plays 2 Golds, 2 Silvers and a Copper.
+L buys and gains a Province.
+L draws a Curse, a Copper, a Silver, an Estate and a Province.
+
+Turn 16 - magicjj
+m plays a Possession.
+m plays 2 Golds and 2 Coppers.
+m buys and gains a Prince.
+m shuffles their deck.
+m draws a Copper, a Silver, a Transmute, a Farming Village and a Jester.
+
+Turn 16 - Lord Rattington [Possession]
+L plays a Silver and a Copper.
+L buys a Copper.
+m gains a Copper.
+L draws a Curse, a Silver, 2 Golds and a Province.
+
+Turn 17 - Lord Rattington
+L plays 2 Golds and a Silver.
+L buys and gains a Province.
+L draws 3 Coppers and 2 Silvers.
+
+Turn 17 - magicjj
+m plays a Farming Village.
+m reveals a Possession.
+m puts a Possession into their hand.
+m plays a Possession.
+m plays a Jester.
+L shuffles their deck.
+L discards a Province.
+L gains a Curse.
+m plays a Silver and a Copper.
+m buys and gains a Potion.
+m draws 2 Coppers, a Gold, an Estate and a Potion.
+
+Turn 17 - Lord Rattington [Possession]
+L plays 2 Silvers and 3 Coppers.
+L buys a Fairgrounds.
+m gains a Fairgrounds.
+L draws a Curse, a Copper, 2 Silvers and a Gold.
+
+Turn 18 - Lord Rattington
+L plays a Gold, 2 Silvers and a Copper.
+L buys and gains a Province.
+L draws 3 Golds, an Estate and a Province.
+
+Turn 18 - magicjj
+m plays a Gold, a Potion and 2 Coppers.
+m buys and gains a Philosopher's Stone.
+m draws a Silver, a Gold, an Estate, a Jester and a Farmland.
+
+Turn 19 - Lord Rattington
+L plays 3 Golds.
+L buys and gains a Province.
+L draws 2 Coppers, a Gold, an Estate and a Province.
+
+Turn 19 - magicjj
+m plays a Jester.
+L discards a Curse.
+L gains a Curse.
+m plays a Gold and a Silver.
+m buys and gains a Gold.
+m draws 2 Coppers, a Silver, a Gold and a Possession.
+
+Turn 20 - Lord Rattington
+L plays a Gold and 2 Coppers.
+L buys and gains a Duchy.
+L draws 2 Coppers, a Silver, a Gold and an Estate.
+
+Turn 20 - magicjj
+m plays a Possession.
+m plays a Gold, a Silver and 2 Coppers.
+m buys and gains a Horn of Plenty.
+m draws 2 Coppers, a Gold, a Philosopher's Stone and a Prince.
+
+Turn 20 - Lord Rattington [Possession]
+L plays a Gold, a Silver and 2 Coppers.
+L buys a Horn of Plenty.
+m gains a Horn of Plenty.
+L shuffles their deck.
+L draws 3 Silvers, a Gold and a Province.
+
+Turn 21 - Lord Rattington
+L plays a Gold and 3 Silvers.
+L buys and gains a Province.
+L draws 2 Coppers, a Silver, a Duchy and a Province.
+
+Turn 21 - magicjj
+m plays a Prince.
+m sets a Prince aside.
+m plays a Gold, a Philosopher's Stone and 2 Coppers.
+m buys and gains a Province.
+m shuffles their deck.
+m draws a Silver, a Gold, an Estate, a Possession and a Farming Village.

@@ -1,0 +1,509 @@
+Game #3342302, rated.
+mcdevittl218: 20
+magicjj: 33.25
+
+mc starts with 7 Coppers, a Hovel, a Necropolis and an Overgrown Estate.
+mc shuffles their deck.
+mc draws 5 cards.
+ma starts with 7 Coppers, a Hovel, a Necropolis and an Overgrown Estate.
+ma shuffles their deck.
+ma draws 4 Coppers and an Overgrown Estate.
+
+Turn 1 - mcdevittl218
+mc plays 3 Coppers.
+mc buys and gains a Silver.
+mc draws 5 cards.
+
+Turn 1 - magicjj
+ma plays 4 Coppers.
+ma buys and gains a Militia.
+ma draws 3 Coppers, a Hovel and a Necropolis.
+
+Turn 2 - mcdevittl218
+mc plays a Necropolis.
+mc plays 4 Coppers.
+mc buys a Delve.
+mc gains a Silver.
+mc buys a Delve.
+mc gains a Silver.
+mc buys and gains a Copper.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 2 - magicjj
+ma plays a Necropolis.
+ma plays 3 Coppers.
+ma buys and gains a Fortune Teller.
+ma shuffles their deck.
+ma draws 2 Coppers, a Militia, a Hovel and an Overgrown Estate.
+
+Turn 3 - mcdevittl218
+mc plays 2 Coppers and 3 Silvers.
+mc buys and gains a Horn of Plenty.
+mc draws 5 cards.
+
+Turn 3 - magicjj
+ma plays a Militia.
+mc discards a card and a Necropolis.
+ma plays 2 Coppers.
+ma buys and gains a Silver.
+ma draws 3 Coppers, a Fortune Teller and a Necropolis.
+
+Turn 4 - mcdevittl218
+mc plays 3 Coppers.
+mc buys and gains a Silver.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 4 - magicjj
+ma plays a Necropolis.
+ma plays a Fortune Teller.
+mc reveals 4 Coppers, 4 Silvers, a Horn of Plenty, a Necropolis and an Overgrown Estate.
+mc topdecks an Overgrown Estate.
+mc discards 4 Coppers, 4 Silvers, a Horn of Plenty and a Necropolis.
+ma plays 3 Coppers.
+ma buys and gains a Silver.
+ma shuffles their deck.
+ma draws 4 Coppers and a Hovel.
+
+Turn 5 - mcdevittl218
+mc plays 4 Coppers.
+mc buys and gains a Settlers.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 5 - magicjj
+ma plays 4 Coppers.
+ma buys and gains a Fortune Teller.
+ma draws a Copper, a Silver, a Militia, a Fortune Teller and a Necropolis.
+
+Turn 6 - mcdevittl218
+mc plays 4 Coppers.
+mc buys and gains a Silver.
+mc draws 5 cards.
+
+Turn 6 - magicjj
+ma plays a Necropolis.
+ma plays a Militia.
+mc discards a card and a Silver.
+ma plays a Fortune Teller.
+mc reveals 3 Coppers, a Silver, a Hovel, a Necropolis and a Settlers.
+mc shuffles their deck.
+mc reveals 3 Coppers, 2 Silvers and an Overgrown Estate.
+mc topdecks an Overgrown Estate.
+mc discards 6 Coppers, 3 Silvers, a Hovel, a Necropolis and a Settlers.
+ma plays a Copper and a Silver.
+ma buys and gains a Gold.
+ma shuffles their deck.
+ma draws 3 Coppers, a Silver and an Overgrown Estate.
+
+Turn 7 - mcdevittl218
+mc plays a Horn of Plenty.
+mc gains a Copper.
+mc plays 2 Silvers.
+mc buys and gains a Fortune Teller.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 7 - magicjj
+ma plays 3 Coppers and a Silver.
+ma buys and gains a Groundskeeper.
+ma draws 2 Coppers, a Silver, a Hovel and a Necropolis.
+
+Turn 8 - mcdevittl218
+mc plays 3 Coppers and a Silver.
+mc buys and gains a Mine.
+mc draws 5 cards.
+
+Turn 8 - magicjj
+ma plays a Necropolis.
+ma plays 2 Coppers and a Silver.
+ma buys and gains a Silver.
+ma draws 2 Coppers, a Gold, a Militia and a Fortune Teller.
+
+Turn 9 - mcdevittl218
+mc plays a Necropolis.
+mc plays 2 Coppers and 2 Silvers.
+mc buys and gains a Gold.
+mc draws 5 cards.
+
+Turn 9 - magicjj
+ma plays a Militia.
+mc discards a card and a Horn of Plenty.
+ma plays 2 Coppers and a Gold.
+ma buys and gains an Artisan.
+ma shuffles their deck.
+ma draws a Copper, a Silver, a Gold, a Fortune Teller and an Overgrown Estate.
+
+Turn 10 - mcdevittl218
+mc plays 2 Coppers and a Silver.
+mc buys and gains a Militia.
+mc draws 5 cards.
+
+Turn 10 - magicjj
+ma plays a Fortune Teller.
+mc shuffles their deck.
+mc reveals 2 Coppers, a Hovel and an Overgrown Estate.
+mc topdecks an Overgrown Estate.
+mc discards 2 Coppers and a Hovel.
+ma plays a Copper, a Silver and a Gold.
+ma buys and gains a Province.
+ma draws 2 Coppers, a Silver, an Artisan and a Necropolis.
+
+Turn 11 - mcdevittl218
+mc plays a Settlers.
+mc draws a card.
+mc looks at 3 cards.
+mc puts a card into their hand.
+mc plays a Fortune Teller.
+ma reveals 4 Coppers, a Silver, a Militia, a Fortune Teller, a Hovel and a Groundskeeper.
+ma shuffles their deck.
+ma reveals a Copper, a Silver, a Gold, a Fortune Teller and an Overgrown Estate.
+ma topdecks an Overgrown Estate.
+ma discards 5 Coppers, 2 Silvers, a Gold, a Militia, 2 Fortune Tellers, a Hovel and a Groundskeeper.
+mc plays 3 Coppers and a Silver.
+mc buys and gains a Gold.
+mc draws 5 cards.
+
+Turn 11 - magicjj
+ma plays a Necropolis.
+ma plays an Artisan.
+ma gains a Duchy.
+ma topdecks a Silver.
+ma plays 2 Coppers.
+ma buys and gains an Encampment.
+ma shuffles their deck.
+ma draws a Silver, a Duchy, a Province, an Artisan and an Overgrown Estate.
+
+Turn 12 - mcdevittl218
+mc plays a Horn of Plenty.
+mc gains a Copper.
+mc plays a Copper, 2 Silvers and a Gold.
+mc buys and gains a Province.
+mc draws 5 cards.
+
+Turn 12 - magicjj
+ma plays an Artisan.
+ma gains a Duchy.
+ma topdecks a Silver.
+ma draws a Copper, a Silver, 2 Fortune Tellers and a Hovel.
+
+Turn 13 - mcdevittl218
+mc plays a Militia.
+ma discards a Fortune Teller and a Hovel.
+mc plays 3 Coppers and a Silver.
+mc buys and gains a Gold.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 13 - magicjj
+ma plays a Fortune Teller.
+mc reveals 4 Coppers, 2 Silvers, a Militia, a Hovel, an Overgrown Estate and a Settlers.
+mc topdecks an Overgrown Estate.
+mc discards 4 Coppers, 2 Silvers, a Militia, a Hovel and a Settlers.
+ma plays a Copper and a Silver.
+ma buys and gains a Duchy.
+ma draws 3 Coppers, a Silver and a Militia.
+
+Turn 14 - mcdevittl218
+mc plays a Necropolis.
+mc plays a Mine.
+mc trashes a Silver.
+mc gains a Gold.
+mc plays 2 Coppers and a Gold.
+mc buys and gains a Groundskeeper.
+mc draws 5 cards.
+
+Turn 14 - magicjj
+ma plays a Militia.
+mc discards a card and a Horn of Plenty.
+ma plays 3 Coppers and a Silver.
+ma buys and gains a Gold.
+ma draws 2 Coppers, a Silver, a Gold and a Necropolis.
+
+Turn 15 - mcdevittl218
+mc plays 2 Coppers and a Silver.
+mc buys and gains a Fortune Teller.
+mc draws 5 cards.
+
+Turn 15 - magicjj
+ma plays a Necropolis.
+ma plays 2 Coppers, a Silver and a Gold.
+ma buys and gains a Gold.
+ma shuffles their deck.
+ma draws 2 Coppers, a Gold, an Encampment and a Groundskeeper.
+
+Turn 16 - mcdevittl218
+mc plays 2 Coppers, a Silver and 2 Golds.
+mc buys and gains a Province.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 16 - magicjj
+ma plays a Groundskeeper.
+ma draws a Hovel.
+ma plays an Encampment.
+ma draws a Copper and a Fortune Teller.
+ma reveals a Gold.
+ma plays a Fortune Teller.
+mc reveals a Copper, a Gold, a Fortune Teller and an Overgrown Estate.
+mc topdecks an Overgrown Estate.
+mc discards a Copper, a Gold and a Fortune Teller.
+ma plays 3 Coppers and a Gold.
+ma buys a Province.
+ma trashes a Hovel.
+ma gains a Province.
+ma gets 1 VP from Groundskeeper.
+ma draws a Copper, a Silver, a Militia, a Necropolis and an Overgrown Estate.
+
+Turn 17 - mcdevittl218
+mc plays a Fortune Teller.
+ma reveals 2 Coppers, 2 Golds, a Duchy and an Artisan.
+ma topdecks a Duchy.
+ma discards 2 Coppers, 2 Golds and an Artisan.
+mc plays a Copper, a Silver and a Gold.
+mc buys and gains a Province.
+mc draws 5 cards.
+
+Turn 17 - magicjj
+ma plays a Necropolis.
+ma plays a Militia.
+mc discards a card and a Necropolis.
+ma plays a Copper and a Silver.
+ma buys and gains a Horn of Plenty.
+ma draws a Copper, 2 Duchies, a Province and a Fortune Teller.
+
+Turn 18 - mcdevittl218
+mc plays 3 Coppers.
+mc buys and gains a Silver.
+mc draws 5 cards.
+
+Turn 18 - magicjj
+ma plays a Fortune Teller.
+mc reveals a Copper and a Province.
+mc topdecks a Province.
+mc discards a Copper.
+ma plays a Copper.
+ma buys and gains a Silver.
+ma shuffles their deck.
+ma draws a Copper, 3 Silvers and a Duchy.
+
+Turn 19 - mcdevittl218
+mc plays a Militia.
+ma discards a Copper and a Duchy.
+mc plays 2 Coppers and a Gold.
+mc buys a Duchy.
+mc trashes a Hovel.
+mc gains a Duchy.
+mc draws 5 cards.
+
+Turn 19 - magicjj
+ma plays 3 Silvers.
+ma buys and gains a Gold.
+ma draws a Silver, a Gold, a Duchy, a Province and a Groundskeeper.
+
+Turn 20 - mcdevittl218
+mc plays a Settlers.
+mc draws a card.
+mc looks at 21 cards.
+mc puts a card into their hand.
+mc plays a Horn of Plenty.
+mc gains an Encampment.
+mc plays a Copper, 2 Silvers and a Gold.
+mc buys and gains a Province.
+mc draws 5 cards.
+
+Turn 20 - magicjj
+ma plays a Groundskeeper.
+ma draws a Duchy.
+ma plays a Silver and a Gold.
+ma buys and gains a Duchy.
+ma gets 1 VP from Groundskeeper.
+ma draws 2 Coppers, a Gold, an Overgrown Estate and an Encampment.
+
+Turn 21 - mcdevittl218
+mc plays a Groundskeeper.
+mc shuffles their deck.
+mc draws a card.
+mc plays a Mine.
+mc trashes a Silver.
+mc gains a Gold.
+mc plays 3 Coppers and a Gold.
+mc buys and gains a Duchy.
+mc gets 1 VP from Groundskeeper.
+mc draws 5 cards.
+
+Turn 21 - magicjj
+ma plays an Encampment.
+ma draws a Copper and an Artisan.
+ma reveals a Gold.
+ma plays an Artisan.
+ma gains a Duchy.
+ma topdecks an Overgrown Estate.
+ma plays 3 Coppers and a Gold.
+ma buys and gains a Duchy.
+ma draws 2 Coppers, a Province, a Horn of Plenty and an Overgrown Estate.
+
+Turn 22 - mcdevittl218
+mc plays a Necropolis.
+mc plays a Militia.
+ma discards a Province and an Overgrown Estate.
+mc plays 2 Coppers.
+mc buys and gains an Estate.
+mc draws 5 cards.
+
+Turn 22 - magicjj
+ma plays 2 Coppers and a Horn of Plenty.
+ma gains an Encampment.
+ma buys a Delve.
+ma gains a Silver.
+ma draws a Copper, a Militia, 2 Fortune Tellers and a Necropolis.
+
+Turn 23 - mcdevittl218
+mc plays a Copper and 2 Golds.
+mc buys and gains an Estate.
+mc draws 5 cards.
+
+Turn 23 - magicjj
+ma plays a Necropolis.
+ma plays a Militia.
+mc discards a card and a Copper.
+ma plays a Fortune Teller.
+mc reveals 2 Coppers, a Silver, a Province, a Fortune Teller and a Horn of Plenty.
+mc topdecks a Province.
+mc discards 2 Coppers, a Silver, a Fortune Teller and a Horn of Plenty.
+ma plays a Copper.
+ma buys and gains a Groundskeeper.
+ma shuffles their deck.
+ma draws 2 Coppers, a Gold, a Duchy and a Horn of Plenty.
+
+Turn 24 - mcdevittl218
+mc plays a Settlers.
+mc draws a card.
+mc looks at 26 cards.
+mc puts a card into their hand.
+mc plays 2 Coppers and a Gold.
+mc buys and gains a Silver.
+mc draws 5 cards.
+
+Turn 24 - magicjj
+ma plays 2 Coppers, a Horn of Plenty and a Gold.
+ma gains an Estate.
+ma trashes a Horn of Plenty.
+ma buys and gains a Groundskeeper.
+ma draws 2 Coppers, a Gold, a Duchy and a Militia.
+
+Turn 25 - mcdevittl218
+mc plays an Encampment.
+mc draws 2 cards.
+mc reveals a Gold.
+mc plays a Fortune Teller.
+ma reveals 2 Silvers and a Duchy.
+ma topdecks a Duchy.
+ma discards 2 Silvers.
+mc plays 3 Silvers and a Gold.
+mc buys and gains a Colony.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 25 - magicjj
+ma plays a Militia.
+mc discards a card and a Settlers.
+ma plays 2 Coppers and a Gold.
+ma buys and gains a Gold.
+ma draws a Silver, a Duchy, a Province, a Fortune Teller and an Overgrown Estate.
+
+Turn 26 - mcdevittl218
+mc plays a Militia.
+ma discards a Duchy and a Province.
+mc plays 2 Coppers.
+mc buys and gains an Estate.
+mc draws 5 cards.
+
+Turn 26 - magicjj
+ma plays a Fortune Teller.
+mc reveals an Estate.
+mc topdecks an Estate.
+ma plays a Silver.
+ma buys a Delve.
+ma gains a Silver.
+ma buys a Delve.
+ma gains a Silver.
+ma draws 2 Coppers, a Duchy, an Encampment and a Groundskeeper.
+
+Turn 27 - mcdevittl218
+mc plays 2 Coppers and a Gold.
+mc buys and gains an Estate.
+mc draws 5 cards.
+
+Turn 27 - magicjj
+ma plays a Groundskeeper.
+ma draws a Gold.
+ma plays an Encampment.
+ma draws a Copper and a Province.
+ma reveals a Gold.
+ma plays 3 Coppers and a Gold.
+ma buys a Delve.
+ma gains a Silver.
+ma buys a Delve.
+ma gains a Silver.
+ma buys and gains an Estate.
+ma gets 1 VP from Groundskeeper.
+ma draws a Gold, a Duchy, a Fortune Teller, a Necropolis and an Encampment.
+
+Turn 28 - mcdevittl218
+mc plays a Fortune Teller.
+ma reveals a Silver, a Duchy, an Artisan and a Groundskeeper.
+ma topdecks a Duchy.
+ma discards a Silver, an Artisan and a Groundskeeper.
+mc plays a Copper and a Gold.
+mc buys and gains a Gold.
+mc draws 5 cards.
+
+Turn 28 - magicjj
+ma plays a Necropolis.
+ma plays an Encampment.
+ma draws a Silver and a Duchy.
+ma reveals a Gold.
+ma plays a Fortune Teller.
+mc reveals a Copper, 2 Silvers, a Colony and a Groundskeeper.
+mc topdecks a Colony.
+mc discards a Copper, 2 Silvers and a Groundskeeper.
+ma plays a Silver and a Gold.
+ma buys and gains a Gold.
+ma shuffles their deck.
+ma draws a Copper, a Silver, a Gold, a Duchy and an Overgrown Estate.
+
+Turn 29 - mcdevittl218
+mc plays a Silver and 2 Golds.
+mc buys and gains a Province.
+mc draws 5 cards.
+
+Turn 29 - magicjj
+ma plays a Copper, a Silver and a Gold.
+ma buys a Delve.
+ma gains a Silver.
+ma buys a Delve.
+ma gains a Silver.
+ma buys a Delve.
+ma gains a Silver.
+ma draws a Copper, 2 Silvers, a Gold and an Encampment.
+
+Turn 30 - mcdevittl218
+mc plays a Necropolis.
+mc plays a Fortune Teller.
+ma reveals a Duchy.
+ma topdecks a Duchy.
+mc plays a Mine.
+mc buys and gains an Estate.
+mc draws 5 cards.
+
+Turn 30 - magicjj
+ma plays an Encampment.
+ma draws a Silver and a Duchy.
+ma reveals a Gold.
+ma plays a Copper, 3 Silvers and a Gold.
+ma buys a Delve.
+ma gains a Silver.
+ma buys and gains a Province.
+ma draws a Copper, a Silver, a Militia, a Fortune Teller and a Groundskeeper.ddd
