@@ -55,10 +55,10 @@ class PlayerGrid extends Component {
     return (
       <Grid className="PlayerGrid" style="height:100%">
         <Grid col="1-1" className="PlayerGrid-header">
-          <Panel col="3-5">
+          <Panel col="2-5">
             <TurnSlider turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
           </Panel>
-          <Panel col="1-5">
+          <Panel col="2-5">
             <TurnSummary turn={this.state.turn} gdo={this.props.gdo} />
           </Panel>
           <Panel col="1-5">

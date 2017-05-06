@@ -2,105 +2,88 @@
 
 let DeckData = {
 	"Estate": {
-		name: "Estate",
-		type: 'a',
-		subtype: null,
+		name: "Estate", 
+		type: ["Victory"],
 		pointsChangeFn: function(deck) { return {vp: 1}; }
 	},
 	"Copper": {
 		name: "Copper",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Curse": {
 		name: "Curse",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: null
 	},
 	"Silver": {
 		name: "Silver",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Duchy": {
 		name: "Duchy",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) { return {vp: 3}; }
 	},
 	"Gold": {
 		name: "Gold",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Province": {
 		name: "Province",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) { return {vp: 6}; }
 	},
 	"Cellar": {
 		name: "Cellar",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Chapel": {
 		name: "Chapel",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Moat": {
 		name: "Moat",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reaction"],
 		pointsChangeFn: null
 	},
 	"Harbinger": {
 		name: "Harbinger",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Merchant": {
 		name: "Merchant",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Vassal": {
 		name: "Vassal",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Village": {
 		name: "Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Workshop": {
 		name: "Workshop",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Bureaucrat": {
 		name: "Bureaucrat",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Gardens": {
 		name: "Gardens",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) {
 			var totalCardsCount = 0;
 			for (var typeKey in deck) {
@@ -115,429 +98,358 @@ let DeckData = {
 	},
 	"Militia": {
 		name: "Militia",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Moneylender": {
 		name: "Moneylender",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Poacher": {
 		name: "Poacher",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Remodel": {
 		name: "Remodel",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Smithy": {
 		name: "Smithy",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Throne Room": {
 		name: "Throne Room",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Bandit": {
 		name: "Bandit",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Council Room": {
 		name: "Council Room",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Festival": {
 		name: "Festival",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Laboratory": {
 		name: "Laboratory",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Library": {
 		name: "Library",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Market": {
 		name: "Market",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Mine": {
 		name: "Mine",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Sentry": {
 		name: "Sentry",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Witch": {
 		name: "Witch",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Artisan": {
 		name: "Artisan",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Courtyard": {
 		name: "Courtyard",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Lurker": {
 		name: "Lurker",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Pawn": {
 		name: "Pawn",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Masquerade": {
 		name: "Masquerade",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Shanty Town": {
 		name: "Shanty Town",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Steward": {
 		name: "Steward",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Swindler": {
 		name: "Swindler",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Wishing Well": {
 		name: "Wishing Well",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Baron": {
 		name: "Baron",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Bridge": {
 		name: "Bridge",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Conspirator": {
 		name: "Conspirator",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Diplomat": {
 		name: "Diplomat",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reaction"],
 		pointsChangeFn: null
 	},
 	"Ironworks": {
 		name: "Ironworks",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Mill": {
 		name: "Mill",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Victory"],
 		pointsChangeFn: function(deck) { return {vp: 1}; }
 	},
 	"Mining Village": {
 		name: "Mining Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Secret Passage": {
 		name: "Secret Passage",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Courtier": {
 		name: "Courtier",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Duke": {
 		name: "Duke",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) {return { vp: deck['v']['Duchy']};}
 	},
 	"Minion": {
 		name: "Minion",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Patrol": {
 		name: "Patrol",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Replace": {
 		name: "Replace",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Torturer": {
 		name: "Torturer",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Trading Post": {
 		name: "Trading Post",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Upgrade": {
 		name: "Upgrade",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Harem": {
 		name: "Harem",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure","Victory"],
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Nobles": {
 		name: "Nobles",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Victory"],
 		pointsChangeFn: null,
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Embargo": {
 		name: "Embargo",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Haven": {
 		name: "Haven",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Lighthouse": {
 		name: "Lighthouse",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Native Village": {
 		name: "Native Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Pearl Diver": {
 		name: "Pearl Diver",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Ambassador": {
 		name: "Ambassador",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Fishing Village": {
 		name: "Fishing Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Lookout": {
 		name: "Lookout",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Smugglers": {
 		name: "Smugglers",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Warehouse": {
 		name: "Warehouse",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Caravan": {
 		name: "Caravan",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Cutpurse": {
 		name: "Cutpurse",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Island": {
 		name: "Island",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Victory"],
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Navigator": {
 		name: "Navigator",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Pirate Ship": {
 		name: "Pirate Ship",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Salvager": {
 		name: "Salvager",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Sea Hag": {
 		name: "Sea Hag",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Treasure Map": {
 		name: "Treasure Map",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Bazaar": {
 		name: "Bazaar",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Explorer": {
 		name: "Explorer",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Ghost Ship": {
 		name: "Ghost Ship",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Merchant Ship": {
 		name: "Merchant Ship",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Outpost": {
 		name: "Outpost",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Tactician": {
 		name: "Tactician",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Treasury": {
 		name: "Treasury",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Wharf": {
 		name: "Wharf",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Potion": {
 		name: "Potion",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Transmute": {
 		name: "Transmute",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Vineyard": {
 		name: "Vineyard",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) {
 			var actionCardsCount = 0;
 			for (var cardKey in deck['a']) {
@@ -550,284 +462,237 @@ let DeckData = {
 	},
 	"Herbalist": {
 		name: "Herbalist",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Apothecary": {
 		name: "Apothecary",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Scrying Pool": {
 		name: "Scrying Pool",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"University": {
 		name: "University",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Alchemist": {
 		name: "Alchemist",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Familiar": {
 		name: "Familiar",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Attack"],
 		pointsChangeFn: null
 	},
 	"Golem": {
 		name: "Golem",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Apprentice": {
 		name: "Apprentice",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Possession": {
 		name: "Possession",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Platinum": {
 		name: "Platinum",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Colony": {
 		name: "Colony",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) { return {vp: 10}; }
 	},
 	"Loan": {
 		name: "Loan",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Trade Route": {
 		name: "Trade Route",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Watchtower": {
 		name: "Watchtower",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reaction"],
 		pointsChangeFn: null
 	},
 	"Bishop": {
 		name: "Bishop",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Monument": {
 		name: "Monument",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Quarry": {
 		name: "Quarry",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Talisman": {
 		name: "Talisman",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"City": {
 		name: "City",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Contraband": {
 		name: "Contraband",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Counting House": {
 		name: "Counting House",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Mint": {
 		name: "Mint",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Mountebank": {
 		name: "Mountebank",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Rabble": {
 		name: "Rabble",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Royal Seal": {
 		name: "Royal Seal",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Vault": {
 		name: "Vault",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Venture": {
 		name: "Venture",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Goons": {
 		name: "Goons",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Grand Market": {
 		name: "Grand Market",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Hoard": {
 		name: "Hoard",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Bank": {
 		name: "Bank",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Expand": {
 		name: "Expand",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Forge": {
 		name: "Forge",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Peddler": {
 		name: "Peddler",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Hamlet": {
 		name: "Hamlet",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Fortune Teller": {
 		name: "Fortune Teller",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Menagerie": {
 		name: "Menagerie",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Farming Village": {
 		name: "Farming Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Horse Traders": {
 		name: "Horse Traders",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reaction"],
 		pointsChangeFn: null
 	},
 	"Remake": {
 		name: "Remake",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Tournament": {
 		name: "Tournament",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Young Witch": {
 		name: "Young Witch",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Harvest": {
 		name: "Harvest",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Horn of Plenty": {
 		name: "Horn of Plenty",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Hunting Party": {
 		name: "Hunting Party",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Jester": {
 		name: "Jester",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Fairgrounds": {
 		name: "Fairgrounds",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) {
 			var uniqueNamesCount = 0;
 			for (var typeKey in deck) {
@@ -839,98 +704,82 @@ let DeckData = {
 	},
 	"Bag of Gold": {
 		name: "Bag of Gold",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Prize"],
 		pointsChangeFn: null
 	},
 	"Diadem": {
 		name: "Diadem",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure","Prize"],
 		pointsChangeFn: null
 	},
 	"Followers": {
 		name: "Followers",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Prize"],
 		pointsChangeFn: null
 	},
 	"Princess": {
 		name: "Princess",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Prize"],
 		pointsChangeFn: null
 	},
 	"Trusty Steed": {
 		name: "Trusty Steed",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Prize"],
 		pointsChangeFn: null
 	},
 	"Crossroads": {
 		name: "Crossroads",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Duchess": {
 		name: "Duchess",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Develop": {
 		name: "Develop",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Oasis": {
 		name: "Oasis",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Oracle": {
 		name: "Oracle",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Scheme": {
 		name: "Scheme",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Tunnel": {
 		name: "Tunnel",
-		type: 'a',
-		subtype: null,
+		type: ["Victory","Reaction"],
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Jack of all Trades": {
 		name: "Jack of all Trades",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Noble Brigand": {
 		name: "Noble Brigand",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Nomad Camp": {
 		name: "Nomad Camp",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Silk Road": {
 		name: "Silk Road",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) {
 			var victoryCardsCount = 0;
 			for (var cardKey in deck['v']) {
@@ -945,1022 +794,852 @@ let DeckData = {
 	},
 	"Spice Merchant": {
 		name: "Spice Merchant",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Trader": {
 		name: "Trader",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reaction"],
 		pointsChangeFn: null
 	},
 	"Cache": {
 		name: "Cache",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Cartographer": {
 		name: "Cartographer",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Embassy": {
 		name: "Embassy",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Haggler": {
 		name: "Haggler",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Highway": {
 		name: "Highway",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Ill-Gotten Gains": {
 		name: "Ill-Gotten Gains",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Inn": {
 		name: "Inn",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Mandarin": {
 		name: "Mandarin",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Margrave": {
 		name: "Margrave",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Stables": {
 		name: "Stables",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Border Village": {
 		name: "Border Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Farmland": {
 		name: "Farmland",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Abandoned Mine": {
 		name: "Abandoned Mine",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Ruins"],
 		pointsChangeFn: null
 	},
 	"Ruined Library": {
 		name: "Ruined Library",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Ruins"],
 		pointsChangeFn: null
 	},
 	"Ruined Market": {
 		name: "Ruined Market",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Ruins"],
 		pointsChangeFn: null
 	},
 	"Ruined Village": {
 		name: "Ruined Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Ruins"],
 		pointsChangeFn: null
 	},
 	"Survivors": {
 		name: "Survivors",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Ruins"],
 		pointsChangeFn: null
 	},
 	"Poor House": {
 		name: "Poor House",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Beggar": {
 		name: "Beggar",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reaction"],
 		pointsChangeFn: null
 	},
 	"Squire": {
 		name: "Squire",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Vagrant": {
 		name: "Vagrant",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Forager": {
 		name: "Forager",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Hermit": {
 		name: "Hermit",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Market Square": {
 		name: "Market Square",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reaction"],
 		pointsChangeFn: null
 	},
 	"Sage": {
 		name: "Sage",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Storeroom": {
 		name: "Storeroom",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Urchin": {
 		name: "Urchin",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Armory": {
 		name: "Armory",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Death Cart": {
 		name: "Death Cart",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Looter"],
 		pointsChangeFn: null
 	},
 	"Feodum": {
 		name: "Feodum",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: function(deck) {return { vp: Math.floor(deck['c']['Silver'] / 3) }}
 	},
 	"Fortress": {
 		name: "Fortress",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Ironmonger": {
 		name: "Ironmonger",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Marauder": {
 		name: "Marauder",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Looter"],
 		pointsChangeFn: null
 	},
 	"Procession": {
 		name: "Procession",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Rats": {
 		name: "Rats",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Scavenger": {
 		name: "Scavenger",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Wandering Minstrel": {
 		name: "Wandering Minstrel",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Band of Misfits": {
 		name: "Band of Misfits",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Bandit Camp": {
 		name: "Bandit Camp",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Catacombs": {
 		name: "Catacombs",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Count": {
 		name: "Count",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Counterfeit": {
 		name: "Counterfeit",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Cultist": {
 		name: "Cultist",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Looter"],
 		pointsChangeFn: null
 	},
 	"Graverobber": {
 		name: "Graverobber",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Junk Dealer": {
 		name: "Junk Dealer",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Knights": {
 		name: "Knights",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Mystic": {
 		name: "Mystic",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Pillage": {
 		name: "Pillage",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Rebuild": {
 		name: "Rebuild",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Rogue": {
 		name: "Rogue",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Altar": {
 		name: "Altar",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Hunting Grounds": {
 		name: "Hunting Grounds",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Dame Anna": {
 		name: "Dame Anna",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Dame Josephine": {
 		name: "Dame Josephine",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight","Victory"],
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Dame Molly": {
 		name: "Dame Molly",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Dame Natalie": {
 		name: "Dame Natalie",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Dame Sylvia": {
 		name: "Dame Sylvia",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Sir Bailey": {
 		name: "Sir Bailey",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Sir Destry": {
 		name: "Sir Destry",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Sir Martin": {
 		name: "Sir Martin",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Sir Michael": {
 		name: "Sir Michael",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Sir Vander": {
 		name: "Sir Vander",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Knight"],
 		pointsChangeFn: null
 	},
 	"Madman": {
 		name: "Madman",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Mercenary": {
 		name: "Mercenary",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Spoils": {
 		name: "Spoils",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Hovel": {
 		name: "Hovel",
-		type: 'a',
-		subtype: null,
+		type: ["Reaction","Shelter"],
 		pointsChangeFn: null
 	},
 	"Necropolis": {
 		name: "Necropolis",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Shelter"],
 		pointsChangeFn: null
 	},
 	"Overgrown Estate": {
 		name: "Overgrown Estate",
-		type: 'a',
-		subtype: null,
+		type: ["Victory","Shelter"],
 		pointsChangeFn: null
 	},
 	"Candlestick Maker": {
 		name: "Candlestick Maker",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Stonemason": {
 		name: "Stonemason",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Doctor": {
 		name: "Doctor",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Masterpiece": {
 		name: "Masterpiece",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Advisor": {
 		name: "Advisor",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Plaza": {
 		name: "Plaza",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Taxman": {
 		name: "Taxman",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Herald": {
 		name: "Herald",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Baker": {
 		name: "Baker",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Butcher": {
 		name: "Butcher",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Journeyman": {
 		name: "Journeyman",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Merchant Guild": {
 		name: "Merchant Guild",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Soothsayer": {
 		name: "Soothsayer",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Coin of the Realm": {
 		name: "Coin of the Realm",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure","Reserve"],
 		pointsChangeFn: null
 	},
 	"Page": {
 		name: "Page",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Traveller"],
 		pointsChangeFn: null
 	},
 	"Peasant": {
 		name: "Peasant",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Traveller"],
 		pointsChangeFn: null
 	},
 	"Ratcatcher": {
 		name: "Ratcatcher",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reserve"],
 		pointsChangeFn: null
 	},
 	"Raze": {
 		name: "Raze",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Amulet": {
 		name: "Amulet",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Caravan Guard": {
 		name: "Caravan Guard",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration","Reaction"],
 		pointsChangeFn: null
 	},
 	"Dungeon": {
 		name: "Dungeon",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Gear": {
 		name: "Gear",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Guide": {
 		name: "Guide",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reserve"],
 		pointsChangeFn: null
 	},
 	"Duplicate": {
 		name: "Duplicate",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reserve"],
 		pointsChangeFn: null
 	},
 	"Magpie": {
 		name: "Magpie",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Messenger": {
 		name: "Messenger",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Miser": {
 		name: "Miser",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Port": {
 		name: "Port",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Ranger": {
 		name: "Ranger",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Transmogrify": {
 		name: "Transmogrify",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reserve"],
 		pointsChangeFn: null
 	},
 	"Artificer": {
 		name: "Artificer",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Bridge Troll": {
 		name: "Bridge Troll",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Duration"],
 		pointsChangeFn: null
 	},
 	"Distant Lands": {
 		name: "Distant Lands",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reserve","Victory"],
 		pointsChangeFn: null
 	},
 	"Giant": {
 		name: "Giant",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Haunted Woods": {
 		name: "Haunted Woods",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Duration"],
 		pointsChangeFn: null
 	},
 	"Lost City": {
 		name: "Lost City",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Relic": {
 		name: "Relic",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure","Attack"],
 		pointsChangeFn: null
 	},
 	"Royal Carriage": {
 		name: "Royal Carriage",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reserve"],
 		pointsChangeFn: null
 	},
 	"Storyteller": {
 		name: "Storyteller",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Swamp Hag": {
 		name: "Swamp Hag",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Duration"],
 		pointsChangeFn: null
 	},
 	"Treasure Trove": {
 		name: "Treasure Trove",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Wine Merchant": {
 		name: "Wine Merchant",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reserve"],
 		pointsChangeFn: null
 	},
 	"Hireling": {
 		name: "Hireling",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Treasure Hunter": {
 		name: "Treasure Hunter",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Traveller"],
 		pointsChangeFn: null
 	},
 	"Warrior": {
 		name: "Warrior",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Traveller"],
 		pointsChangeFn: null
 	},
 	"Hero": {
 		name: "Hero",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Traveller"],
 		pointsChangeFn: null
 	},
 	"Champion": {
 		name: "Champion",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Soldier": {
 		name: "Soldier",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Traveller"],
 		pointsChangeFn: null
 	},
 	"Fugitive": {
 		name: "Fugitive",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Traveller"],
 		pointsChangeFn: null
 	},
 	"Disciple": {
 		name: "Disciple",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Traveller"],
 		pointsChangeFn: null
 	},
 	"Teacher": {
 		name: "Teacher",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Reserve"],
 		pointsChangeFn: null
 	},
 	"Alms": {
 		name: "Alms",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Borrow": {
 		name: "Borrow",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Quest": {
 		name: "Quest",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Save": {
 		name: "Save",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Scouting Party": {
 		name: "Scouting Party",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Travelling Fair": {
 		name: "Travelling Fair",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Bonfire": {
 		name: "Bonfire",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Expedition": {
 		name: "Expedition",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Ferry": {
 		name: "Ferry",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Plan": {
 		name: "Plan",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Mission": {
 		name: "Mission",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Pilgrimage": {
 		name: "Pilgrimage",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Ball": {
 		name: "Ball",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Raid": {
 		name: "Raid",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Seaway": {
 		name: "Seaway",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Trade": {
 		name: "Trade",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Lost Arts": {
 		name: "Lost Arts",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Training": {
 		name: "Training",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Inheritance": {
 		name: "Inheritance",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Pathfinding": {
 		name: "Pathfinding",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Engineer": {
 		name: "Engineer",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"City Quarter": {
 		name: "City Quarter",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Overlord": {
 		name: "Overlord",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Royal Blacksmith": {
 		name: "Royal Blacksmith",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Encampment": {
 		name: "Encampment",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Plunder": {
 		name: "Plunder",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Patrician": {
 		name: "Patrician",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Emporium": {
 		name: "Emporium",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Settlers": {
 		name: "Settlers",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Bustling Village": {
 		name: "Bustling Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Castles": {
 		name: "Castles",
-		type: 'a',
-		subtype: null,
+		type: ["Victory"],
 		pointsChangeFn: null
 	},
 	"Catapult": {
 		name: "Catapult",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Rocks": {
 		name: "Rocks",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Chariot Race": {
 		name: "Chariot Race",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Enchantress": {
 		name: "Enchantress",
-		type: 'a',
-		subtype: null,
+		type: ["Attack","Duration"],
 		pointsChangeFn: null
 	},
 	"Gladiator": {
 		name: "Gladiator",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Fortune": {
 		name: "Fortune",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Sacrifice": {
 		name: "Sacrifice",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Temple": {
 		name: "Temple",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Gathering"],
 		pointsChangeFn: null
 	},
 	"Villa": {
 		name: "Villa",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Archive": {
 		name: "Archive",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Duration"],
 		pointsChangeFn: null
 	},
 	"Capital": {
 		name: "Capital",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Charm": {
 		name: "Charm",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Crown": {
 		name: "Crown",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Treasure"],
 		pointsChangeFn: null
 	},
 	"Forum": {
 		name: "Forum",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Groundskeeper": {
 		name: "Groundskeeper",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Legionary": {
 		name: "Legionary",
-		type: 'a',
-		subtype: null,
+		type: ["Attack"],
 		pointsChangeFn: null
 	},
 	"Wild Hunt": {
 		name: "Wild Hunt",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Gathering"],
 		pointsChangeFn: null
 	},
 	"Humble Castle": {
 		name: "Humble Castle",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure","Victory","Castle"],
 		pointsChangeFn: function(deck) {
 			var castleCount = 0;
 			for (var cardKey in deck['v']) {
@@ -1975,332 +1654,277 @@ let DeckData = {
 	},
 	"Crumbling Castle": {
 		name: "Crumbling Castle",
-		type: 'a',
-		subtype: null,
+		type: ["Victory","Castle"],
 		pointsChangeFn: null
 	},
 	"Small Castle": {
 		name: "Small Castle",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Victory","Castle"],
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Haunted Castle": {
 		name: "Haunted Castle",
-		type: 'a',
-		subtype: null,
+		type: ["Victory","Castle"],
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Opulent Castle": {
 		name: "Opulent Castle",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Victory","Castle"],
 		pointsChangeFn: function(deck) { return {vp: 3}; }
 	},
 	"Sprawling Castle": {
 		name: "Sprawling Castle",
-		type: 'a',
-		subtype: null,
+		type: ["Victory","Castle"],
 		pointsChangeFn: function(deck) { return {vp: 4}; }
 	},
 	"Grand Castle": {
 		name: "Grand Castle",
-		type: 'a',
-		subtype: null,
+		type: ["Victory","Castle"],
 		pointsChangeFn: function(deck) { return {vp: 5}; }
 	},
 	"Triumph": {
 		name: "Triumph",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Annex": {
 		name: "Annex",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Donate": {
 		name: "Donate",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Advance": {
 		name: "Advance",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Delve": {
 		name: "Delve",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Tax": {
 		name: "Tax",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Banquet": {
 		name: "Banquet",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Ritual": {
 		name: "Ritual",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Salt the Earth": {
 		name: "Salt the Earth",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Wedding": {
 		name: "Wedding",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Windfall": {
 		name: "Windfall",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Conquest": {
 		name: "Conquest",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Dominate": {
 		name: "Dominate",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Aqueduct": {
 		name: "Aqueduct",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Arena": {
 		name: "Arena",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Bandit Fort": {
 		name: "Bandit Fort",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Basilica": {
 		name: "Basilica",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Baths": {
 		name: "Baths",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Battlefield": {
 		name: "Battlefield",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Colonnade": {
 		name: "Colonnade",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Defiled Shrine": {
 		name: "Defiled Shrine",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Fountain": {
 		name: "Fountain",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Keep": {
 		name: "Keep",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Labyrinth": {
 		name: "Labyrinth",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Mountain Pass": {
 		name: "Mountain Pass",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Museum": {
 		name: "Museum",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Obelisk": {
 		name: "Obelisk",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Orchard": {
 		name: "Orchard",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Palace": {
 		name: "Palace",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Tomb": {
 		name: "Tomb",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Tower": {
 		name: "Tower",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Triumphal Arch": {
 		name: "Triumphal Arch",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Wall": {
 		name: "Wall",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Wolf Den": {
 		name: "Wolf Den",
-		type: 'a',
-		subtype: null,
+		type: ["Landmark"],
 		pointsChangeFn: null
 	},
 	"Black Market": {
 		name: "Black Market",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Envoy": {
 		name: "Envoy",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Sauna": {
 		name: "Sauna",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Avanto": {
 		name: "Avanto",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Walled Village": {
 		name: "Walled Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Governor": {
 		name: "Governor",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Stash": {
 		name: "Stash",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Prince": {
 		name: "Prince",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Summon": {
 		name: "Summon",
-		type: 'a',
-		subtype: null,
+		type: ["Event"],
 		pointsChangeFn: null
 	},
 	"Philosopher's Stone": {
 		name: "Philosopher's Stone",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure"],
 		pointsChangeFn: null
 	},
 	"Worker's Village": {
 		name: "Worker's Village",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"King's Court": {
 		name: "King's Court",
-		type: 'a',
-		subtype: null,
+		type: ["Action"],
 		pointsChangeFn: null
 	},
 	"Fool's Gold": {
 		name: "Fool's Gold",
-		type: 'a',
-		subtype: null,
+		type: ["Treasure","Reaction"],
 		pointsChangeFn: null
 	},
-	"Farmers' Market": {
+	"Farmers' Market": {	// todo check this
 		name: "Farmers' Market",
-		type: 'a',
-		subtype: null,
+		type: ["Action","Gathering"],
 		pointsChangeFn: null
 	},
 	"King's Castle": {
 		name: "King's Castle",
-		type: 'a',
-		subtype: null,
+		type: ["Victory","Castle"],
 		pointsChangeFn: function(deck) {
 			var castleCount = 0;
 			for (var cardKey in deck['v']) {
@@ -2312,7 +1936,7 @@ let DeckData = {
 
 			return { vp: 2 * castleCount}
 		}
-	},
+	}
 }
 
 module.exports = DeckData;

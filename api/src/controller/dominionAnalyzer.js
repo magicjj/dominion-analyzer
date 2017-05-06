@@ -83,6 +83,7 @@ class DominionAnalyzer {
 		startsWith = "Turn ";
 		let activePlayer;
 		let turn;
+		let turnLogForPlayer = "";
 		for (let i = turn1StartIndex; i < gameDataLines.length; i++) {
 			let line = gameDataLines[i];
 			let regex;
@@ -118,6 +119,8 @@ class DominionAnalyzer {
 				let player = this.findPlayerByFl(gdo, match[1]);
 				this.removeFromDeck(player, turn, match[2])
 			}
+
+			activePlayer.turns[turn].log += line + "\n";
 		}
 
 		// calculate victoryPoints and numCards for each turn for each player
@@ -182,15 +185,15 @@ class DominionAnalyzer {
 		let cards = this.parseCardStr(cardStr);
 		for (let i = 0; i < cards.length; i++) {
 			let card = cards[i];
-			if (! deck[card.type]) {
-				deck [card.type] = {};
+			if (! deck[card.type[0]]) {
+				deck [card.type[0]] = {};
 			}
-			if (deck[card.type][card.name]) {
-				deck[card.type][card.name].count += 1 * mult;
+			if (deck[card.type[0]][card.name]) {
+				deck[card.type[0]][card.name].count += 1 * mult;
 			} else {
-				deck[card.type][card.name] = JSON.parse(JSON.stringify(DeckData[card.name]));		// todo why is deepCopy undefined?
+				deck[card.type[0]][card.name] = JSON.parse(JSON.stringify(DeckData[card.name]));		// todo why is deepCopy undefined?
 				// TODO handle case if card is not found
-				deck[card.type][card.name].count = mult ? 1 : 0;
+				deck[card.type[0]][card.name].count = mult ? 1 : 0;
 			}
 		}
 		return deck;
@@ -225,14 +228,14 @@ class DominionAnalyzer {
 		str = str.trim();
 		if (str.endsWith("s")) {
 			ret = this.getCardData(str.slice(0,-1));
-			if (ret.type !== 'E') {
+			if (ret.type[0] !== 'NOTFOUND') {
 				return ret;
 			}
 		}
 
 		return DeckData[str] ? DeckData[str] : {
 			name: str,
-			type: 'E'
+			type: ['NOTFOUND']
 		};
 	}
 
@@ -271,7 +274,8 @@ function DeckObject(index) {
 			a: {},
 			t: {},
 			c: {}
-		}
+		},
+		log: ''
 	};
 }
 

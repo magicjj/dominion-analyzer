@@ -23,35 +23,65 @@ class TurnSummary extends Component {
   			</Grid>
   		;
   	}
+
+  	let players = this.props.gdo.players.map(player => {
+	  	let thisTurn = player.turns[this.props.turn];
+		let numVictoryCards = thisTurn.cards.Victory ? Object.keys(thisTurn.cards.Victory).reduce((acc, val) => {
+			return acc + thisTurn.cards.Victory[val].count;
+		}, 0) : 0;
+		let numTreasureCards = thisTurn.cards.Treasure ? Object.keys(thisTurn.cards.Treasure).reduce((acc, val) => {
+			return acc + thisTurn.cards.Treasure[val].count;
+		}, 0) : 0;
+		let numActionCards = thisTurn.cards.Action ? Object.keys(thisTurn.cards.Action).reduce((acc, val) => {
+			return acc + thisTurn.cards.Action[val].count;
+		}, 0): 0;
+		let percentTreasureCards = Math.floor(numTreasureCards / thisTurn.numCards * 100);
+		return <Grid className="uk-grid-small">
+      		<Text type="h5" col="1-1">{player.name}</Text>
+		    <Block col="1-3">
+		    	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />
+		    	{thisTurn.points.vp}
+		    </Block>
+		    <Block col="1-3">
+		    	%<img style={{width:'16px', height:'18px'}} src={CardImages.Coin_16px} /> 
+		    	{percentTreasureCards}%
+		    </Block>
+		    <Block col="1-3">
+		      	&#35;<b>C</b> 
+		      	{thisTurn.numCards}
+		    </Block>
+		    <Block col="1-3">
+		    	&#35;<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} /> 
+		    	{numVictoryCards}
+		    </Block>
+		    <Block col="1-3">
+		    	&#35;<img style={{width:'16px', height:'18px'}} src={CardImages.Coin_16px} />
+		    	{numTreasureCards}
+		    </Block>
+		    <Block col="1-3">
+		      	&#35;<b>A</b>
+		      	{numActionCards}
+		    </Block>
+	      	<hr className="uk-width-1-1" style={{margin: '5px 0'}} />
+	    </Grid>;
+  	});
+  	let playerLogs = '';
+  	for (var i = 0; i < this.props.gdo.players.length; i++) {
+  		playerLogs += this.props.gdo.players[i].turns[this.props.turn].log + "\n\n";
+  	}
     return (
-      <Panel className="TurnSummary">
-	      {header}
-	      <Text type="h5" col="1-1">magcij</Text>
-	      <Grid>
-		      <Block col="1-3">
-		      	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />12
-		      </Block>
-		      <Block col="1-3">
-		      	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />12
-		      </Block>
-		      <Block col="1-3">
-		      	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />12
-		      </Block>
-	      </Grid>
-	      <hr className="uk-width-1-1" style={{margin: '5px 0'}} />
-	      <Text type="h5" col="1-1">plary23</Text>
-	      <Grid>
-		      <Block col="1-3">
-		      	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />12
-		      </Block>
-		      <Block col="1-3">	      
-		      	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />12
-		      </Block>
-		      <Block col="1-3">
-		      	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />12
-		      </Block>
-	      </Grid>
-      </Panel>
+      	<Grid className="TurnSummary">
+	     	<Panel col="1-2">
+		      	{header}
+		     	{players}
+		   	</Panel>
+	     	<Panel col="1-2">
+		     	<Text type="h5">Turn Log</Text>
+	     		<pre style={{overflow:'auto', height: '200px'}}>
+		     		{playerLogs}
+		     	</pre>
+		   	</Panel>
+     	</Grid>
     );
   }
   
