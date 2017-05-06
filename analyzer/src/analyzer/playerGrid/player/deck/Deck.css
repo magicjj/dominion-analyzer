@@ -23,3 +23,8 @@ img {
     margin-left: -120px;
     display: inline-block;
 }
+.card:hover {
+    height: 238px;
+    z-index: 1000;
+    margin-top: -88px;
+}

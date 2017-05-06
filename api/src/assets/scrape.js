@@ -744,7 +744,7 @@ var nameToTypeArray = {
 
 for (var i = 0 ; i < nameArray.length; i++) {
 	var strings = '"' + nameArray[i] + '": ' + JSON.stringify(nameToTypeArray[nameArray[i]]) + ",\n";
-	fs.appendFile('output.json', strings, function(err) {
+	fs.appendFileSync('output.json', strings, function(err) {
 
 			    console.log('File successfully written! - Check your project directory for the output.json file');
 

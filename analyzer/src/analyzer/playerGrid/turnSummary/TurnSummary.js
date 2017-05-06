@@ -38,30 +38,30 @@ class TurnSummary extends Component {
 		let percentTreasureCards = Math.floor(numTreasureCards / thisTurn.numCards * 100);
 		return <Grid className="uk-grid-small">
       		<Text type="h5" col="1-1">{player.name}</Text>
-		    <Block col="1-3">
+		    <div className="uk-g-1-3">
 		    	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />
 		    	{thisTurn.points.vp}
-		    </Block>
-		    <Block col="1-3">
+		    </div>
+		    <div className="uk-g-1-3">
 		    	%<img style={{width:'16px', height:'18px'}} src={CardImages.Coin_16px} /> 
 		    	{percentTreasureCards}%
-		    </Block>
-		    <Block col="1-3">
+		    </div>
+		    <div className="uk-g-1-3">
 		      	&#35;<b>C</b> 
 		      	{thisTurn.numCards}
-		    </Block>
-		    <Block col="1-3">
+		    </div>
+		    <div className="uk-g-1-3">
 		    	&#35;<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} /> 
 		    	{numVictoryCards}
-		    </Block>
-		    <Block col="1-3">
+		    </div>
+		    <div className="uk-g-1-3">
 		    	&#35;<img style={{width:'16px', height:'18px'}} src={CardImages.Coin_16px} />
 		    	{numTreasureCards}
-		    </Block>
-		    <Block col="1-3">
+		    </div>
+		    <div className="uk-g-1-3">
 		      	&#35;<b>A</b>
 		      	{numActionCards}
-		    </Block>
+		    </div>
 	      	<hr className="uk-width-1-1" style={{margin: '5px 0'}} />
 	    </Grid>;
   	});

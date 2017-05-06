@@ -264,7 +264,7 @@ let DeckData = {
 	"Duke": {
 		name: "Duke",
 		type: ["Victory"],
-		pointsChangeFn: function(deck) {return { vp: deck['v']['Duchy']};}
+		pointsChangeFn: function(deck) {return { vp: deck['Victory']['Duchy']};}
 	},
 	"Minion": {
 		name: "Minion",
@@ -452,8 +452,8 @@ let DeckData = {
 		type: ["Victory"],
 		pointsChangeFn: function(deck) {
 			var actionCardsCount = 0;
-			for (var cardKey in deck['a']) {
-				var card = deck['a'][cardKey];
+			for (var cardKey in deck['Action']) {
+				var card = deck['Action'][cardKey];
 				actionCardsCount += card.count;
 			}
 
@@ -782,11 +782,9 @@ let DeckData = {
 		type: ["Victory"],
 		pointsChangeFn: function(deck) {
 			var victoryCardsCount = 0;
-			for (var cardKey in deck['v']) {
-				var card = deck['v'][cardKey];
-				if (card.type === 'castle') {
-					victoryCardsCount += card.count;
-				}
+			for (var cardKey in deck['Victory']) {
+				var card = deck['Victory'][cardKey];
+				victoryCardsCount += card.count;
 			}
 
 			return { vp: Math.floor(victoryCardsCount / 4) }
@@ -950,7 +948,7 @@ let DeckData = {
 	"Feodum": {
 		name: "Feodum",
 		type: ["Victory"],
-		pointsChangeFn: function(deck) {return { vp: Math.floor(deck['c']['Silver'] / 3) }}
+		pointsChangeFn: function(deck) {return { vp: Math.floor(deck['Treasure']['Silver'] / 3) }}
 	},
 	"Fortress": {
 		name: "Fortress",
@@ -1642,9 +1640,9 @@ let DeckData = {
 		type: ["Treasure","Victory","Castle"],
 		pointsChangeFn: function(deck) {
 			var castleCount = 0;
-			for (var cardKey in deck['v']) {
-				var card = deck['v'][cardKey];
-				if (card.type === 'castle') {
+			for (var cardKey in deck['Victory']) {
+				var card = deck['Victory'][cardKey];
+				if (card.type.indexOf('castle') > -1) {
 					castleCount += card.count;
 				}
 			}
@@ -1927,9 +1925,9 @@ let DeckData = {
 		type: ["Victory","Castle"],
 		pointsChangeFn: function(deck) {
 			var castleCount = 0;
-			for (var cardKey in deck['v']) {
-				var card = deck['v'][cardKey];
-				if (card.type === 'castle') {
+			for (var cardKey in deck['Victory']) {
+				var card = deck['Victory'][cardKey];
+				if (card.type.indexOf('Castle') > -1) {
 					castleCount += card.count;
 				}
 			}

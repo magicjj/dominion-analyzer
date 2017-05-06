@@ -8,13 +8,13 @@ import Grid from 'react-uikit-grid';
 import Block from 'react-uikit-block';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import { TestData1 } from './assets/testdata';
+import * as TestData1 from './assets/sampleData/data6.txt';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      formInput: TestData1
+      formInput: null
     };
     this.handleChangeFormInput = this.handleChangeFormInput.bind(this);
     this.handleSubmitFormInput = this.handleSubmitFormInput.bind(this);
@@ -24,16 +24,17 @@ class App extends Component {
     this.setState({ formInput: e.target.value });
   }
 
-  handleSubmitFormInput(e) {
+  handleSubmitFormInput(e, formInput) {
     e.preventDefault();
-    console.log(this.state.formInput);
-    fetch('http://localhost:8088/analyze', {
+    formInput = formInput ? formInput : this.state.formInput;
+    console.log(formInput);
+    fetch('http://magicjj.hopto.org:8088/analyze', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        input: this.state.formInput
+        input: formInput
       })
     })
     .then(resp => {
@@ -50,8 +51,8 @@ class App extends Component {
       <MuiThemeProvider>
         <Grid widths='1-1' col='1-1' gutter="collapse">
           <Grid col='1-1' gutter="collapse" match className="uk-background-primary">
-            <Block col='1-2'>
-              <h2 className="textWhite">Dominion Game Analyzer</h2>
+            <Block col='1-2' className="uk-padding-small">
+              <h1 className="header-font uk-display-inline uk-margin-small-left">Dominion </h1><h2 className="uk-display-inline">Game Analyzer</h2>
             </Block>
             <Block col='1-2'>
               <AnalyzerInput col='1-2' 
