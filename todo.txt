@@ -1,0 +1,19 @@
+check form-danger-color
+check modal
+check nav dropdown, switcher, subnav, etc
+
+
+add tooltips to icons
+add some settings
+clean up CSS
+do splash screen
+
+
+look into saving submitted logs
+
+
+blue borders on shit
+enlarge cards onclick
+expand cards down not up
+
+try to eliminate style= inline
