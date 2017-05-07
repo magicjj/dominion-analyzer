@@ -51,7 +51,7 @@ class PlayerGrid extends Component {
         </ListItem>
       );
     }
-    
+
 // todo fix the stupid margin bullshit below
     return (
           <div className="uk-width-1-1 uk-height-1-1 uk-grid-match uk-grid uk-margin" uk-grid>
@@ -64,7 +64,7 @@ class PlayerGrid extends Component {
             <div className="uk-width-1-5">
                 <PlayerGridSettings gdo={this.props.gdo} handleChangeSetting={this.handleChangeSetting} />
             </div>
-            <List col="1-1" className="playerGrid">
+            <List col="1-1" className="playerGrid uk-margin-top">
               {playerList}
             </List>
           </div>

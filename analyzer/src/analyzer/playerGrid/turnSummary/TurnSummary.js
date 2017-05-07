@@ -14,6 +14,42 @@ class TurnSummary extends Component {
   constructor(props) {
     super(props);
   }
+
+  getSummaryDataForTurn(turn) {
+  	let victoryPoints = turn.points.vp;
+  	let numCards = turn.numCards;
+  	let numVictoryCards = turn.cards.Victory ? Object.keys(turn.cards.Victory).reduce((acc, val) => {
+		return acc + turn.cards.Victory[val].count;
+	}, 0) : 0;
+	let numTreasureCards = turn.cards.Treasure ? Object.keys(turn.cards.Treasure).reduce((acc, val) => {
+		return acc + turn.cards.Treasure[val].count;
+	}, 0) : 0;
+	let numActionCards = turn.cards.Action ? Object.keys(turn.cards.Action).reduce((acc, val) => {
+		return acc + turn.cards.Action[val].count;
+	}, 0): 0;
+	let percentTreasureCards = Math.floor(numTreasureCards / turn.numCards * 100);
+	return { victoryPoints, numCards, numVictoryCards, numTreasureCards, numActionCards, percentTreasureCards }
+  }
+
+  getTurnDiff(thisTurn, lastTurn) {
+  	let diff = {};
+  	for (let key in thisTurn) {
+  		diff[key] = thisTurn[key] - lastTurn[key];
+  	}
+  	return diff;
+  }
+
+  getDiffDisplay(diff, trailing) {
+  	let textClass;
+  	if (diff === 0 || ! diff) {
+  		return null;
+  	} else if (diff > 0) {
+  		textClass = "uk-text-success";
+  	} else {
+  		textClass = "uk-text-danger";
+  	}
+  	return <span className={textClass} style={{marginLeft: '10px'}}>{diff > 0 ? '+' : ''}{diff}{trailing}</span>
+  }
   
   render() {
 
@@ -27,43 +63,57 @@ class TurnSummary extends Component {
   	}
 
   	let players = this.props.gdo.players.map((player, i) => {
-  		//let isLast = i === this.props.gdo.players.length - 1;
 	  	let thisTurn = player.turns[this.props.turn];
-		let numVictoryCards = thisTurn.cards.Victory ? Object.keys(thisTurn.cards.Victory).reduce((acc, val) => {
-			return acc + thisTurn.cards.Victory[val].count;
-		}, 0) : 0;
-		let numTreasureCards = thisTurn.cards.Treasure ? Object.keys(thisTurn.cards.Treasure).reduce((acc, val) => {
-			return acc + thisTurn.cards.Treasure[val].count;
-		}, 0) : 0;
-		let numActionCards = thisTurn.cards.Action ? Object.keys(thisTurn.cards.Action).reduce((acc, val) => {
-			return acc + thisTurn.cards.Action[val].count;
-		}, 0): 0;
-		let percentTreasureCards = Math.floor(numTreasureCards / thisTurn.numCards * 100);
+		let thisTurnSummary = this.getSummaryDataForTurn(thisTurn);
+		let diff = {};
+		if (this.props.turn !== 0) {
+			let lastTurn = player.turns[this.props.turn - 1];
+			let lastTurnSummary = this.getSummaryDataForTurn(lastTurn);
+			diff = this.getTurnDiff(thisTurnSummary, lastTurnSummary);
+		}
 		return <div key={player.name} className="uk-grid uk-grid-small">
       		<h5 className="uk-width-1-1">{player.name}</h5>
-		    <div className="uk-width-1-3">
+		    <div className="uk-width-1-6">
 		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} />
-		    	{thisTurn.points.vp}
+		    	{thisTurnSummary.victoryPoints}
 		    </div>
-		    <div className="uk-width-1-3">
+		    <div className="uk-width-1-6">
+		    	{this.getDiffDisplay(diff.victoryPoints)}
+		    </div>
+		    <div className="uk-width-1-6">
 		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.PercentTreasure_16px} /> 
-		    	{percentTreasureCards}%
+		    	{thisTurnSummary.percentTreasureCards}%
 		    </div>
-		    <div className="uk-width-1-3">
+		    <div className="uk-width-1-6">
+		    	{this.getDiffDisplay(diff.percentTreasureCards, '%')}
+		    </div>
+		    <div className="uk-width-1-6">
 		      	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumCards_16px} /> 
-		      	{thisTurn.numCards}
+		      	{thisTurnSummary.numCards}
 		    </div>
-		    <div className="uk-width-1-3">
+		    <div className="uk-width-1-6">
+		    	{this.getDiffDisplay(diff.numCards)}
+		    </div>
+		    <div className="uk-width-1-6">
 		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumVictory_16px} /> 
-		    	{numVictoryCards}
+		    	{thisTurnSummary.numVictoryCards}
 		    </div>
-		    <div className="uk-width-1-3">
+		    <div className="uk-width-1-6">
+		    	{this.getDiffDisplay(diff.numVictoryCards)}
+		    </div>
+		    <div className="uk-width-1-6">
 		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumTreasure_16px} />
-		    	{numTreasureCards}
+		    	{thisTurnSummary.numTreasureCards}
 		    </div>
-		    <div className="uk-width-1-3">
+		    <div className="uk-width-1-6">
+		    	{this.getDiffDisplay(diff.numTreasureCards)}
+		    </div>
+		    <div className="uk-width-1-6">
 		      	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumAction_16px} />
-		      	{numActionCards}
+		      	{thisTurnSummary.numActionCards}
+		    </div>
+		    <div className="uk-width-1-6">
+		    	{this.getDiffDisplay(diff.numActionCards)}
 		    </div>
 	      	<hr className="uk-width-1-1" style={{margin: '5px 0 0 0'}} />
 	    </div>;

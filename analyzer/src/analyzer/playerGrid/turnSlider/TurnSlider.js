@@ -71,7 +71,7 @@ class TurnSlider extends Component {
       )
     }
     return <div className="chart-tooltip uk-grid uk-grid-collapse">
-      <h6>{e.label}</h6>
+      <h4>{e.label}</h4>
       {playerList}
     </div>;
   }

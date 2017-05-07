@@ -18,7 +18,7 @@ class Player extends Component {
   render() {
     return (
       <Grid className="Player">
-        <Text type='h3' col="1-1">{this.props.player.name}</Text>
+        <h3 className="uk-width-1-1 uk-margin-left">{this.props.player.name}</h3>
         <Deck turns={this.props.player.turns} turn={this.props.turn} col="1-1" />
       </Grid>
     );
