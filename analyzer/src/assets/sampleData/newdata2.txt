@@ -1,0 +1,544 @@
+Game #3398015, rated.
+aprilelaine: 36.36
+magicjj: 32.24
+
+a starts with 7 Coppers and 3 Estates.
+a shuffles their deck.
+a draws 5 cards.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 3 Coppers and 2 Estates.
+
+Turn 1 - aprilelaine
+a plays 3 Coppers.
+a buys and gains a Silver.
+a moves 1 VP from the Silver pile to Aqueduct.
+a draws 5 cards.
+
+Turn 1 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m moves 1 VP from the Silver pile to Aqueduct.
+m draws 4 Coppers and an Estate.
+
+Turn 2 - aprilelaine
+a plays 4 Coppers.
+a buys and gains a Potion.
+a shuffles their deck.
+a draws 5 cards.
+
+Turn 2 - magicjj
+m plays 4 Coppers.
+m buys and gains a Silver.
+m moves 1 VP from the Silver pile to Aqueduct.
+m shuffles their deck.
+m draws 3 Coppers, a Silver and an Estate.
+
+Turn 3 - aprilelaine
+a plays 3 Coppers.
+a buys and gains an Estate.
+a takes 3 VP from Aqueduct.
+a draws 5 cards.
+
+Turn 3 - magicjj
+m plays a Silver and 3 Coppers.
+m buys and gains a Merchant Ship.
+m draws 3 Coppers, a Silver and an Estate.
+
+Turn 4 - aprilelaine
+a plays a Silver and 3 Coppers.
+a buys and gains a Haggler.
+a shuffles their deck.
+a draws 5 cards.
+
+Turn 4 - magicjj
+m plays a Silver and 3 Coppers.
+m buys and gains a Merchant Ship.
+m shuffles their deck.
+m draws 2 Coppers, a Silver, an Estate and a Merchant Ship.
+
+Turn 5 - aprilelaine
+a plays a Haggler.
+a plays a Potion and 2 Coppers.
+a buys a Silver.
+a gains a Pearl Diver.
+a gains a Silver.
+a moves 1 VP from the Silver pile to Aqueduct.
+a draws 5 cards.
+
+Turn 5 - magicjj
+m plays a Merchant Ship.
+m plays a Silver and 2 Coppers.
+m buys and gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m draws 2 Coppers, a Silver and 2 Estates.
+
+Turn 6 - aprilelaine
+a plays a Silver and 3 Coppers.
+a buys and gains a Duchy.
+a takes 2 VP from Aqueduct.
+a shuffles their deck.
+a draws 5 cards.
+
+Turn 6 - magicjj
+m starts their turn.
+m gets +2 Coins (Merchant Ship).
+m plays a Silver and 2 Coppers.
+m buys and gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m shuffles their deck.
+m draws 3 Coppers, a Silver and a Merchant Ship.
+
+Turn 7 - aprilelaine
+a plays 3 Coppers.
+a buys and gains a Pearl Diver.
+a draws 5 cards.
+
+Turn 7 - magicjj
+m plays a Merchant Ship.
+m plays a Silver and 3 Coppers.
+m buys and gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m draws 3 Coppers, a Gold and a Merchant Ship.
+
+Turn 8 - aprilelaine
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a plays a Haggler.
+a plays a Silver, a Potion and a Copper.
+a buys a Laboratory.
+a gains a Ranger.
+a gains a Laboratory.
+a draws 5 cards.
+
+Turn 8 - magicjj
+m starts their turn.
+m gets +2 Coins (Merchant Ship).
+m plays a Merchant Ship.
+m plays a Gold and 3 Coppers.
+m buys and gains a Province.
+m takes 2 VP from Aqueduct.
+m draws a Copper, a Silver, a Gold and 2 Estates.
+
+Turn 9 - aprilelaine
+a plays a Silver and 3 Coppers.
+a buys and gains a Patrol.
+a shuffles their deck.
+a draws 5 cards.
+
+Turn 9 - magicjj
+m starts their turn.
+m gets +2 Coins (Merchant Ship).
+m plays a Gold, a Silver and a Copper.
+m buys and gains a Province.
+m shuffles their deck.
+m draws 2 Coppers, 2 Golds and an Estate.
+
+Turn 10 - aprilelaine
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Silver and 2 Coppers.
+a buys and gains a Ranger.
+a draws 5 cards.
+
+Turn 10 - magicjj
+m plays 2 Golds and 2 Coppers.
+m buys and gains a Province.
+m draws a Gold, an Estate, a Province and 2 Merchant Ships.
+
+Turn 11 - aprilelaine
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a plays a Patrol.
+a draws 3 cards.
+a reveals 2 Coppers, an Estate and a Pearl Diver.
+a puts an Estate into their hand.
+a topdecks 2 Coppers and a Pearl Diver.
+a plays a Potion and 3 Coppers.
+a buys and gains a University.
+a shuffles their deck.
+a draws 5 cards.
+
+Turn 11 - magicjj
+m plays a Merchant Ship.
+m plays a Gold.
+m buys and gains a Potion.
+m draws 3 Coppers, a Silver and a Province.
+
+Turn 12 - aprilelaine
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a topdecks a card.
+a plays a Silver and 4 Coppers.
+a buys and gains a Gold.
+a moves 1 VP from the Gold pile to Aqueduct.
+a draws 5 cards.
+
+Turn 12 - magicjj
+m starts their turn.
+m gets +2 Coins (Merchant Ship).
+m plays a Silver and 3 Coppers.
+m buys and gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m shuffles their deck.
+m draws 2 Coppers, a Silver, an Estate and a Province.
+
+Turn 13 - aprilelaine
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a plays a Patrol.
+a draws 3 cards.
+a reveals a Copper, an Estate, a Laboratory and a Ranger.
+a puts an Estate into their hand.
+a topdecks a Copper, a Laboratory and a Ranger.
+a plays a Silver and a Potion.
+a buys and gains a University.
+a draws 5 cards.
+
+Turn 13 - magicjj
+m plays a Silver and 2 Coppers.
+m buys and gains a Treasure Map.
+m draws a Copper, a Gold, an Estate and 2 Merchant Ships.
+
+Turn 14 - aprilelaine
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Ranger.
+a flips Journey token face down.
+a plays 3 Coppers.
+a buys and gains an Estate.
+a takes 2 VP from Aqueduct.
+a shuffles their deck.
+a draws 5 cards.
+
+Turn 14 - magicjj
+m plays a Merchant Ship.
+m plays a Gold and a Copper.
+m buys and gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m draws 3 Coppers and 2 Golds.
+
+Turn 15 - aprilelaine
+a plays a Patrol.
+a draws 3 cards.
+a reveals 2 Coppers, an Estate and a Haggler.
+a puts an Estate into their hand.
+a topdecks 2 Coppers and a Haggler.
+a plays a Gold and a Potion.
+a buys and gains a Silver.
+a moves 1 VP from the Silver pile to Aqueduct.
+a draws 5 cards.
+
+Turn 15 - magicjj
+m starts their turn.
+m gets +2 Coins (Merchant Ship).
+m plays 2 Golds and 3 Coppers.
+m buys and gains a Province.
+m takes 2 VP from Aqueduct.
+m draws a Copper, a Silver, an Estate, a Province and a Potion.
+
+Turn 16 - aprilelaine
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a topdecks a card.
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a plays a University.
+a gains a Laboratory.
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Haggler.
+a plays a Silver and 3 Coppers.
+a buys an Inheritance.
+a inherits a Ranger.
+a draws 5 cards.
+
+Turn 16 - magicjj
+m plays a Silver and a Potion.
+m buys and gains a University.
+m shuffles their deck.
+m draws a Copper, a Gold, a Province and 2 Merchant Ships.
+
+Turn 17 - aprilelaine
+a plays an Estate.
+a flips Journey token face up.
+a shuffles their deck.
+a draws 5 cards.
+a plays a Silver and 4 Coppers.
+a buys and gains a Laboratory.
+a draws 5 cards.
+
+Turn 17 - magicjj
+m plays a Merchant Ship.
+m plays a Gold and a Copper.
+m buys and gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m draws 2 Coppers, a Silver and 2 Provinces.
+
+Turn 18 - aprilelaine
+a plays a Laboratory.
+a draws 2 cards.
+a plays an Estate.
+a flips Journey token face down.
+a plays a Gold, a Silver and 3 Coppers.
+a buys and gains a Province.
+a takes 1 VP from Aqueduct.
+a draws 5 cards.
+
+Turn 18 - magicjj
+m starts their turn.
+m gets +2 Coins (Merchant Ship).
+m plays a Silver and 2 Coppers.
+m buys and gains a Treasure Map.
+m draws a Copper, an Estate, a Province, a Treasure Map and a University.
+
+Turn 19 - aprilelaine
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a topdecks a card.
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a topdecks a card.
+a plays a University.
+a gains a Laboratory.
+a plays an Estate.
+a flips Journey token face up.
+a shuffles their deck.
+a draws 5 cards.
+a plays a Haggler.
+a plays a Silver and a Potion.
+a buys a University.
+a gains a Copper.
+a gains a University.
+a buys a Pearl Diver.
+a gains a Copper.
+a gains a Pearl Diver.
+a draws 5 cards.
+
+Turn 19 - magicjj
+m plays a University.
+m gains a Haggler.
+m plays a Treasure Map.
+m trashes a Treasure Map.
+m plays a Copper.
+m draws a Copper, 2 Golds, an Estate and a Potion.
+
+Turn 20 - aprilelaine
+a plays a University.
+a gains a Laboratory.
+a plays a Laboratory.
+a draws 2 cards.
+a plays an Estate.
+a flips Journey token face down.
+a plays a Silver and 3 Coppers.
+a buys and gains a Laboratory.
+a draws 5 cards.
+
+Turn 20 - magicjj
+m plays 2 Golds, a Potion and a Copper.
+m buys and gains a Duchy.
+m draws 2 Coppers, a Silver, a Gold and an Estate.
+
+Turn 21 - aprilelaine
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Laboratory.
+a draws 2 cards.
+a plays an Estate.
+a flips Journey token face up.
+a shuffles their deck.
+a draws 5 cards.
+a plays a Gold, a Silver and 6 Coppers.
+a buys and gains an Estate and a Province.
+a draws 5 cards.
+
+Turn 21 - magicjj
+m plays a Gold, a Silver and 2 Coppers.
+m buys and gains a Duchy.
+m shuffles their deck.
+m draws a Copper, a Gold, an Estate, a Duchy and a Province.
+
+Turn 22 - aprilelaine
+a plays a University.
+a gains a Laboratory.
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a topdecks a card.
+a plays an Estate.
+a flips Journey token face down.
+a plays a Haggler.
+a plays a Silver and a Copper.
+a buys a Duchy.
+a gains a Silver.
+a moves 1 VP from the Silver pile to Aqueduct.
+a gains a Duchy.
+a takes 1 VP from Aqueduct.
+a draws 5 cards.
+
+Turn 22 - magicjj
+m plays a Gold and a Copper.
+m buys and gains an Estate.
+m draws a Copper, a Gold, an Estate, a Merchant Ship and a Potion.
+
+Turn 23 - aprilelaine
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a topdecks a card.
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a topdecks a card.
+a plays an Estate.
+a flips Journey token face up.
+a shuffles their deck.
+a draws 5 cards.
+a plays a Silver, a Potion and 3 Coppers.
+a buys and gains a Duchy.
+a draws 5 cards.
+
+Turn 23 - magicjj
+m plays a Merchant Ship.
+m plays a Gold, a Potion and a Copper.
+m buys and gains a Duchy.
+m draws a Silver, a Gold, an Estate, a Duchy and a Province.
+
+Turn 24 - aprilelaine
+a plays a University.
+a gains a Laboratory.
+a plays an Estate.
+a flips Journey token face down.
+a plays 2 Coppers.
+a buys and gains a Pearl Diver.
+a draws 5 cards.
+
+Turn 24 - magicjj
+m starts their turn.
+m gets +2 Coins (Merchant Ship).
+m plays a Gold and a Silver.
+m buys and gains a Duchy.
+m draws 2 Coppers, a Gold, a Province and a Haggler.
+
+Turn 25 - aprilelaine
+a plays a Laboratory.
+a draws 2 cards.
+a plays a University.
+a gains a Merchant Ship.
+a plays a University.
+a gains a Royal Carriage.
+a plays an Estate.
+a flips Journey token face up.
+a draws 5 cards.
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Pearl Diver.
+a draws a card.
+a looks at a card.
+a plays a Laboratory.
+a draws 2 cards.
+a plays an Estate.
+a flips Journey token face down.
+a plays a Haggler.
+a plays a Gold, 2 Silvers and 3 Coppers.
+a buys a Duchy.
+a gains a Silver.
+a moves 1 VP from the Silver pile to Aqueduct.
+a gains a Duchy.
+a takes 1 VP from Aqueduct.
+a buys an Estate.
+a gains a Copper.
+a gains an Estate.
+a buys an Estate.
+a gains a Copper.
+a gains an Estate.
+a shuffles their deck.
+a draws 5 cards.
+
+Turn 25 - magicjj
+m plays a Haggler.
+m plays a Gold and 2 Coppers.
+m buys an Inheritance.
+m inherits a Messenger.
+m draws 2 Coppers, a Gold, a Province and a University.
+
+Turn 26 - aprilelaine
+a plays 2 Silvers and a Copper.
+a buys and gains a Laboratory.
+a draws 5 cards.
+
+Turn 26 - magicjj
+m plays a University.
+m gains a Laboratory.
+m plays a Gold and 2 Coppers.
+m buys and gains a Merchant Ship.
+m draws a Copper, a Silver, a Gold, a Merchant Ship and a Treasure Map.
+
+Turn 27 - aprilelaine
+a plays a University.
+a gains a Royal Carriage.
+a plays a University.
+a gains a Royal Carriage.
+a plays a Laboratory.
+a draws 2 cards.
+a plays a Royal Carriage.
+a puts a Royal Carriage on their Tavern mat.
+a plays a University.
+a gains a Royal Carriage.
+a calls a Royal Carriage.
+a plays a University again.
+a gains a Royal Carriage.
+a plays a Merchant Ship.
+a plays a Copper.
+a buys and gains a Silver.
+a moves 1 VP from the Silver pile to Aqueduct.
+a draws 5 cards.
+
+Turn 27 - magicjj
+m plays a Merchant Ship.
+m plays a Gold, a Silver and a Copper.
+m buys and gains a Province.
+m takes 1 VP from Aqueduct.
+m shuffles their deck.
+m draws 3 Golds, a Province and a Laboratory.
+
+Turn 28 - aprilelaine
+a starts their turn.
+a gets +2 Coins (Merchant Ship).
+a plays an Estate.
+a flips Journey token face up.
+a draws 5 cards.
+a plays a Gold, a Silver and a Copper.
+a buys and gains a Gold.
+a moves 1 VP from the Gold pile to Aqueduct.
+a buys and gains an Estate.
+a takes 1 VP from Aqueduct.
+a draws 5 cards.
+
+Turn 28 - magicjj
+m starts their turn.
+m gets +2 Coins (Merchant Ship).
+m plays a Laboratory.
+m draws a Copper and an Estate.
+m plays an Estate.
+m moves their deck to the discard.
+m plays 3 Golds and a Copper.
+m buys and gains an Estate and a Province.
+m shuffles their deck.
+m draws 2 Golds, an Estate, a Duchy and a Province.

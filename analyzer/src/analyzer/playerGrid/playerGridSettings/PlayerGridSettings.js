@@ -10,7 +10,7 @@ class PlayerGridSettings extends Component {
   
   render() {
     return (
-      <div className="uk-width-1-1 uk-card uk-card-body uk-background-muted">
+      <div className="uk-width-1-1 uk-card uk-card-small uk-card-body uk-background-muted">
         <h3 className="uk-card-title">Settings:</h3>
       </div>
     );

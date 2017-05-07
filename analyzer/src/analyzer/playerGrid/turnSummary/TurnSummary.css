@@ -1,4 +1,5 @@
 pre {
+	/* http://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag */
     white-space: pre-wrap;       /* Since CSS 2.1 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */

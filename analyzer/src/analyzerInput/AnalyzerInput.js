@@ -64,7 +64,7 @@ class AnalyzerInput extends Component {
 
   render() {
     return (
-      <Grid className="uk-float-right">
+      <Grid className="uk-float-right uk-margin-right">
         <Block className="uk-padding-small">
           <textarea className="uk-textarea logInput" onChange={this.props.handleChangeFormInput} value={this.props.formInput}
             placeholder="Paste full game log here"></textarea>

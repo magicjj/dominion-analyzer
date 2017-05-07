@@ -51,6 +51,7 @@ class PlayerGrid extends Component {
         </ListItem>
       );
     }
+    
 // todo fix the stupid margin bullshit below
     return (
           <div className="uk-width-1-1 uk-height-1-1 uk-grid-match uk-grid uk-margin" uk-grid>

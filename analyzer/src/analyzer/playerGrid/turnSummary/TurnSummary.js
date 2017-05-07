@@ -26,7 +26,8 @@ class TurnSummary extends Component {
   		;
   	}
 
-  	let players = this.props.gdo.players.map(player => {
+  	let players = this.props.gdo.players.map((player, i) => {
+  		//let isLast = i === this.props.gdo.players.length - 1;
 	  	let thisTurn = player.turns[this.props.turn];
 		let numVictoryCards = thisTurn.cards.Victory ? Object.keys(thisTurn.cards.Victory).reduce((acc, val) => {
 			return acc + thisTurn.cards.Victory[val].count;
@@ -64,7 +65,7 @@ class TurnSummary extends Component {
 		      	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumAction_16px} />
 		      	{numActionCards}
 		    </div>
-	      	<hr className="uk-width-1-1" style={{margin: '5px 0'}} />
+	      	<hr className="uk-width-1-1" style={{margin: '5px 0 0 0'}} />
 	    </div>;
   	});
   	// default this to what we want to show for turn=0 aka starting deck, bc it has no logs
@@ -77,14 +78,14 @@ class TurnSummary extends Component {
   	}
     return (
       	<div className="uk-grid uk-grid-small">
-			<div className="uk-width-1-2 uk-card uk-card-body uk-background-muted">
+			<div className="uk-width-1-2 uk-card uk-card-small uk-card-body uk-background-muted">
       			<h3 className="uk-card-title">{header}</h3>
       			<hr className="uk-width-1-1" style={{margin: '5px 0'}} />
 		     	{players}
 		    </div>
-			<div className="uk-width-1-2 uk-card uk-card-body uk-background-muted">
+			<div className="uk-width-1-2 uk-card uk-card-small uk-card-body uk-background-muted">
       			<h3 className="uk-card-title">Turn Log</h3>
-	     		<pre style={{overflow:'auto', height: '200px'}}>
+	     		<pre style={{overflow:'auto', height: '160px'}}>
 		     		{playerLogs}
 		     	</pre>
 		    </div>
