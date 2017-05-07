@@ -14,14 +14,29 @@ class TurnSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      animateLineChart: true
+      animateLineChart: true,
+      dragging: false
     };
-    this.handleClickLineChart = this.handleClickLineChart.bind(this);
+    this.handleMouseDownChart = this.handleMouseDownChart.bind(this);
+    this.handleMouseMoveChart = this.handleMouseMoveChart.bind(this);
+    this.handleMouseUpChart = this.handleMouseUpChart.bind(this);
   }
 
-  handleClickLineChart(e) {
-    this.setState({ animateLineChart: false });
-    this.props.handleChangeTurn(null, e.activeTooltipIndex);
+  handleMouseDownChart(e) {
+    if (e !== null && e.activeTooltipIndex) {
+      this.setState({ animateLineChart: false, dragging: true });
+      this.props.handleChangeTurn(null, e.activeTooltipIndex);
+    }
+  }
+
+  handleMouseMoveChart(e) {
+    if (this.state.dragging) {
+      this.handleMouseDownChart(e);
+    }
+  }
+
+  handleMouseUpChart(e) {
+    this.setState({ dragging: false });
   }
 
   getChartData(gdo) {
@@ -84,6 +99,8 @@ class TurnSlider extends Component {
     return this.colorList[this.colorIndex++ % this.colorList.length];
   }
 
+
+
   render() {
     this.colorIndex = 0;
     return (
@@ -91,13 +108,17 @@ class TurnSlider extends Component {
         <h3 className="uk-card-title" style={{marginBottom:'0px'}}>Select a turn:</h3>
         <Slider defaultValue={0} min={0} max={this.props.numberOfTurns-1} step={1} value={this.props.turn} onChange={this.props.handleChangeTurn} className="slider" />
         <ResponsiveContainer height={160} width='100%'>
-          <LineChart data={this.getChartData(this.props.gdo)} onClick={this.handleClickLineChart}
-            margin={{ top: 5, right: 5, left: -35, bottom: 5 }}>
+          <LineChart data={this.getChartData(this.props.gdo)}
+            margin={{ top: 5, right: 5, left: -35, bottom: 5 }}
+            onMouseMove={this.handleMouseMoveChart}
+            onMouseDown={this.handleMouseDownChart}
+            onMouseUp={this.handleMouseUpChart}
+            className="noselect"
+          >
             <XAxis dataKey="name" />
             <YAxis />
             <CartesianGrid strokeDasharray="3 3" />
             <Tooltip content={this.getTooltipContent} />
-            <Legend />
             { this.props.gdo.players.map(player => <Line type="monotone" dataKey={player.name} stroke={this.getColor()} isAnimationActive={this.state.animateLineChart} />) }
           </LineChart>
         </ResponsiveContainer>

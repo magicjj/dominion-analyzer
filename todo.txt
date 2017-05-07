@@ -2,13 +2,14 @@ check form-danger-color
 check modal
 check nav dropdown, switcher, subnav, etc
 
+fix all js errors
 
 add tooltips to icons
 add some settings
 clean up CSS
 do splash screen
 
-
+test with > 2 players
 look into saving submitted logs
 
 
@@ -17,3 +18,13 @@ enlarge cards onclick
 expand cards down not up
 
 try to eliminate style= inline
+
+
+had appendFile not appendFileSync - see if there could possibly be types mismatched
+
+
+
+
+SETTINGS
+Card View: Cropped, Full Size
+Card Size: Small, Medium, Large
