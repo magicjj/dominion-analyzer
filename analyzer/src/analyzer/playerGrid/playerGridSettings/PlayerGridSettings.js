@@ -10,11 +10,9 @@ class PlayerGridSettings extends Component {
   
   render() {
     return (
-      <Panel className="PlayerGridSettings">
-        <div className="PlayerGridSettings-header">
-          <h3>Settings:</h3>
-        </div>
-      </Panel>
+      <div className="uk-width-1-1 uk-card uk-card-body uk-background-muted">
+        <h3 className="uk-card-title">Settings:</h3>
+      </div>
     );
   }
   

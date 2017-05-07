@@ -1,0 +1,317 @@
+Game #3391253, rated.
+kladams707: 19.57
+magicjj: 31.62
+
+k starts with 7 Coppers and 3 Estates.
+k shuffles their deck.
+k draws 4 Coppers and an Estate.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 3 Coppers and 2 Estates.
+
+Turn 1 - kladams707
+k plays 4 Coppers.
+k buys and gains a Militia.
+k draws 3 Coppers and 2 Estates.
+
+Turn 1 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m draws 4 Coppers and an Estate.
+
+Turn 2 - kladams707
+k plays 3 Coppers.
+k buys and gains a Silver.
+k shuffles their deck.
+k draws 2 Coppers, 2 Estates and a Militia.
+
+Turn 2 - magicjj
+m plays 4 Coppers.
+m buys and gains a Militia.
+m shuffles their deck.
+m draws a Copper, 3 Estates and a Militia.
+
+Turn 3 - kladams707
+k plays a Militia.
+m discards 2 Estates.
+k plays 2 Coppers.
+k buys and gains a Silver.
+k draws 4 Coppers and a Silver.
+
+Turn 3 - magicjj
+m plays a Militia.
+k discards 2 Coppers.
+m plays a Copper.
+m buys and gains a Market Square.
+m draws 4 Coppers and a Silver.
+
+Turn 4 - kladams707
+k plays a Silver and 2 Coppers.
+k buys and gains a Market Square.
+k shuffles their deck.
+k draws 3 Coppers, a Silver and an Estate.
+
+Turn 4 - magicjj
+m plays a Silver and 4 Coppers.
+m buys and gains a Gold.
+m shuffles their deck.
+m draws 5 Coppers.
+
+Turn 5 - kladams707
+k plays a Silver and 3 Coppers.
+k buys and gains a Governor.
+k draws 2 Coppers, a Silver, an Estate and a Market Square.
+
+Turn 5 - magicjj
+m plays 5 Coppers.
+m buys and gains a Giant.
+m draws a Copper, a Gold, 2 Estates and a Militia.
+
+Turn 6 - kladams707
+k plays a Market Square.
+k draws a Militia.
+k plays a Militia.
+m discards 2 Estates.
+k plays a Silver and 2 Coppers.
+k buys and gains a Gold.
+k shuffles their deck.
+k draws 3 Coppers, a Silver and an Estate.
+
+Turn 6 - magicjj
+m plays a Militia.
+k discards a Copper and an Estate.
+m plays a Gold and a Copper.
+m buys and gains a Militia.
+m shuffles their deck.
+m draws a Copper, a Silver, an Estate, a Militia and a Market Square.
+
+Turn 7 - kladams707
+k plays a Silver and 2 Coppers.
+k buys and gains a Market Square.
+k draws 2 Coppers, a Silver, an Estate and a Governor.
+
+Turn 7 - magicjj
+m plays a Market Square.
+m draws an Estate.
+m plays a Militia.
+k discards a Copper and an Estate.
+m plays a Silver and a Copper.
+m buys a Pilgrimage.
+m flips Journey token face down.
+m draws 3 Coppers, an Estate and a Giant.
+
+Turn 8 - kladams707
+k plays a Governor.
+k draws 2 Coppers and a Gold.
+m draws a Copper.
+k plays a Gold, a Silver and 3 Coppers.
+k buys and gains a Governor.
+k shuffles their deck.
+k draws a Copper, a Gold, an Estate, a Militia and a Market Square.
+
+Turn 8 - magicjj
+m plays a Giant.
+m flips Journey token face up.
+k reveals a Governor.
+k trashes a Governor.
+k reacts with a Market Square.
+k discards a Market Square.
+k gains a Gold.
+m plays 4 Coppers.
+m buys and gains a Province.
+m takes 2 VP from Battlefield.
+m shuffles their deck.
+m draws 3 Coppers, a Gold and a Militia.
+
+Turn 9 - kladams707
+k plays a Militia.
+m discards 2 Coppers.
+k plays a Gold and a Copper.
+k buys and gains a Gold.
+k draws 2 Coppers, 2 Estates and a Market Square.
+
+Turn 9 - magicjj
+m plays a Militia.
+k discards 2 Estates.
+m plays a Gold and a Copper.
+m buys and gains a Gold.
+m draws 2 Coppers, 2 Estates and a Militia.
+
+Turn 10 - kladams707
+k plays a Market Square.
+k draws a Silver.
+k plays a Silver and 2 Coppers.
+k buys and gains a Market Square.
+k draws 4 Coppers and a Governor.
+
+Turn 10 - magicjj
+m plays a Militia.
+k discards 2 Coppers.
+m plays 2 Coppers.
+m buys and gains a Silver.
+m draws 2 Coppers, an Estate, a Market Square and a Giant.
+
+Turn 11 - kladams707
+k plays a Governor.
+k shuffles their deck.
+k draws 2 Silvers and an Estate.
+m draws a Province.
+k plays 2 Silvers and 2 Coppers.
+k buys and gains a Governor.
+k draws 3 Coppers and 2 Market Squares.
+
+Turn 11 - magicjj
+m plays a Market Square.
+m draws a Silver.
+m plays a Giant.
+m flips Journey token face down.
+m plays a Silver and 2 Coppers.
+m buys and gains a Governor.
+m shuffles their deck.
+m draws 3 Coppers, a Gold and an Estate.
+
+Turn 12 - kladams707
+k plays a Market Square.
+k draws a Market Square.
+k plays a Market Square.
+k draws a Copper.
+k plays a Market Square.
+k draws a Gold.
+k plays a Gold and 4 Coppers.
+k buys a Pilgrimage.
+k flips Journey token face down.
+k buys and gains a Market Square.
+k draws a Copper, 2 Golds, an Estate and a Militia.
+
+Turn 12 - magicjj
+m plays a Gold and 3 Coppers.
+m buys and gains a Gold.
+m draws 2 Coppers, an Estate, a Province and a Market Square.
+
+Turn 13 - kladams707
+k plays a Militia.
+m discards an Estate and a Province.
+k plays 2 Golds and a Copper.
+k buys and gains a Province.
+k takes 2 VP from Battlefield.
+k shuffles their deck.
+k draws 2 Coppers, a Gold, an Estate and a Market Square.
+
+Turn 13 - magicjj
+m plays a Market Square.
+m draws a Militia.
+m plays a Militia.
+k discards a Copper and an Estate.
+m plays 2 Coppers.
+m buys and gains a Silver.
+m draws 2 Coppers, a Gold, an Estate and a Governor.
+
+Turn 14 - kladams707
+k plays a Market Square.
+k draws a Silver.
+k plays a Gold, a Silver and a Copper.
+k buys a Pilgrimage.
+k flips Journey token face up.
+k gains a Silver, a Gold and a Market Square.
+k draws a Silver, a Militia, a Market Square and 2 Governors.
+
+Turn 14 - magicjj
+m plays a Governor.
+m gains a Gold.
+k gains a Silver.
+m plays a Gold and 2 Coppers.
+m buys and gains a Governor.
+m shuffles their deck.
+m draws 2 Silvers, an Estate, a Militia and a Giant.
+
+Turn 15 - kladams707
+k plays a Governor.
+k draws a Gold and 2 Estates.
+m draws a Copper.
+k plays a Governor.
+k draws a Copper and 2 Market Squares.
+m draws a Copper.
+k plays a Market Square.
+k draws a Copper.
+k plays a Market Square.
+k draws a Copper.
+k plays a Market Square.
+k draws a Gold.
+k plays a Militia.
+m discards 2 Coppers, an Estate and a Militia.
+k plays 2 Golds, a Silver and 3 Coppers.
+k buys and gains a Province.
+k takes 2 VP from Battlefield.
+k buys and gains a Governor.
+k shuffles their deck.
+k draws 3 Coppers, a Silver and a Province.
+
+Turn 15 - magicjj
+m plays a Giant.
+m flips Journey token face up.
+k reveals an Estate.
+k discards an Estate.
+k gains a Curse.
+m plays 2 Silvers.
+m buys and gains a Province.
+m takes 2 VP from Battlefield.
+m draws a Copper, a Gold, 2 Estates and a Province.
+
+Turn 16 - kladams707
+k plays a Silver and 3 Coppers.
+k buys and gains a Governor.
+k draws a Silver, an Estate, a Province and 2 Market Squares.
+
+Turn 16 - magicjj
+m plays a Gold and a Copper.
+m buys a Pilgrimage.
+m flips Journey token face down.
+m draws a Copper, a Silver, a Militia, a Market Square and a Governor.
+
+Turn 17 - kladams707
+k plays a Market Square.
+k draws a Copper.
+k plays a Market Square.
+k draws a Governor.
+k plays a Governor.
+k draws 3 Golds.
+m draws a Governor.
+k plays 3 Golds, a Silver and a Copper.
+k buys and gains a Province.
+k takes 2 VP from Battlefield.
+k buys and gains an Estate.
+k takes 2 VP from Battlefield.
+k buys and gains an Estate.
+k draws a Gold, a Militia, 2 Market Squares and a Governor.
+
+Turn 17 - magicjj
+m plays a Market Square.
+m draws a Copper.
+m plays a Governor.
+m draws 2 Coppers and a Gold.
+k draws a Silver.
+m plays a Governor.
+m shuffles their deck.
+m draws a Silver and 2 Golds.
+k draws an Estate.
+m plays a Militia.
+k discards a Silver, an Estate and 2 Market Squares.
+m plays 3 Golds, 2 Silvers and 4 Coppers.
+m buys and gains 2 Provinces.
+m draws 2 Coppers, a Silver, a Gold and an Estate.
+
+Turn 18 - kladams707
+k plays a Governor.
+k draws a Copper, a Silver and a Governor.
+m draws a Giant.
+k plays a Governor.
+k draws 2 Coppers and a Market Square.
+m draws a Militia.
+k plays a Market Square.
+k shuffles their deck.
+k draws an Estate.
+k plays a Militia.
+m discards 2 Coppers, an Estate and a Militia.
+k plays a Gold, a Silver and 3 Coppers.
+k buys and gains an Estate and a Province.
+k draws a Curse, a Silver, an Estate, a Province and a Governor.

@@ -10,10 +10,8 @@ class TurnSlider extends Component {
   
   render() {
     return (
-      <div className="TurnSlider">
-        <div className="TurnSlider-header">
-          <h2>Select a turn:</h2>
-        </div>
+      <div className="uk-width-1-1 uk-card uk-card-body uk-background-muted" style={{marginLeft:'20px'}}>
+        <h3 className="uk-card-title">Select a turn:</h3>
         <Slider defaultValue={0} min={0} max={this.props.numberOfTurns-1} step={1} value={this.props.turn} onChange={this.props.handleChangeTurn} />
       </div>
     );

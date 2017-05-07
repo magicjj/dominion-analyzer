@@ -14,7 +14,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      formInput: null
+      formInput: ''
     };
     this.handleChangeFormInput = this.handleChangeFormInput.bind(this);
     this.handleSubmitFormInput = this.handleSubmitFormInput.bind(this);
@@ -62,7 +62,7 @@ class App extends Component {
               />
             </Block>
           </Grid>
-          <Grid col='1-1' gutter="collapse">
+          <Grid col='1-1' gutter='collapse'>
             <Analyzer col='1-1' gdo={this.state.gdo} />
           </Grid>
         </Grid>

@@ -51,24 +51,22 @@ class PlayerGrid extends Component {
         </ListItem>
       );
     }
-
+// todo fix the stupid margin bullshit below
     return (
-      <Grid className="PlayerGrid" style="height:100%">
-        <Grid col="1-1" className="PlayerGrid-header">
-          <Panel col="2-5">
-            <TurnSlider turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
-          </Panel>
-          <Panel col="2-5">
-            <TurnSummary turn={this.state.turn} gdo={this.props.gdo} />
-          </Panel>
-          <Panel col="1-5">
-              <PlayerGridSettings gdo={this.props.gdo} handleChangeSetting={this.handleChangeSetting} />
-          </Panel>
-        </Grid>
-        <List col="1-1">
-          {playerList}
-        </List>
-      </Grid>
+          <div className="uk-width-1-1 uk-height-1-1 uk-grid-match uk-grid uk-margin" uk-grid>
+            <div className="uk-width-2-5">
+              <TurnSlider turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
+            </div>
+            <div className="uk-width-2-5">
+              <TurnSummary turn={this.state.turn} gdo={this.props.gdo} />
+            </div>
+            <div className="uk-width-1-5">
+                <PlayerGridSettings gdo={this.props.gdo} handleChangeSetting={this.handleChangeSetting} />
+            </div>
+            <List col="1-1" className="playerGrid">
+              {playerList}
+            </List>
+          </div>
     );
   }
   

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import './TurnSummary.css';
+
 import CardImages from '../../../assets/CardImages';
 
 import Grid from 'react-uikit-grid';
@@ -14,12 +16,12 @@ class TurnSummary extends Component {
   }
   
   render() {
+
   	let header = <Text type="h3" col="1-1">Current Turn: {this.props.turn}</Text>;
   	if (this.props.turn === 0) {
   		header = 
   			<Grid col="1-1" gutter="collapse">
   				<Text type="h3" col="1-1">Starting Deck</Text>
-  				<Text type="h6" col="1-1">Drag the slider to the left.</Text>
   			</Grid>
   		;
   	}
@@ -36,52 +38,56 @@ class TurnSummary extends Component {
 			return acc + thisTurn.cards.Action[val].count;
 		}, 0): 0;
 		let percentTreasureCards = Math.floor(numTreasureCards / thisTurn.numCards * 100);
-		return <Grid className="uk-grid-small">
-      		<Text type="h5" col="1-1">{player.name}</Text>
-		    <div className="uk-g-1-3">
-		    	<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} />
+		return <div className="uk-grid uk-grid-small">
+      		<h5 className="uk-width-1-1">{player.name}</h5>
+		    <div className="uk-width-1-3">
+		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} />
 		    	{thisTurn.points.vp}
 		    </div>
-		    <div className="uk-g-1-3">
-		    	%<img style={{width:'16px', height:'18px'}} src={CardImages.Coin_16px} /> 
+		    <div className="uk-width-1-3">
+		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.PercentTreasure_16px} /> 
 		    	{percentTreasureCards}%
 		    </div>
-		    <div className="uk-g-1-3">
-		      	&#35;<b>C</b> 
+		    <div className="uk-width-1-3">
+		      	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumCards_16px} /> 
 		      	{thisTurn.numCards}
 		    </div>
-		    <div className="uk-g-1-3">
-		    	&#35;<img style={{width:'16px', height:'18px'}} src={CardImages.VP_16px} /> 
+		    <div className="uk-width-1-3">
+		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumVictory_16px} /> 
 		    	{numVictoryCards}
 		    </div>
-		    <div className="uk-g-1-3">
-		    	&#35;<img style={{width:'16px', height:'18px'}} src={CardImages.Coin_16px} />
+		    <div className="uk-width-1-3">
+		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumTreasure_16px} />
 		    	{numTreasureCards}
 		    </div>
-		    <div className="uk-g-1-3">
-		      	&#35;<b>A</b>
+		    <div className="uk-width-1-3">
+		      	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumAction_16px} />
 		      	{numActionCards}
 		    </div>
 	      	<hr className="uk-width-1-1" style={{margin: '5px 0'}} />
-	    </Grid>;
+	    </div>;
   	});
-  	let playerLogs = '';
-  	for (var i = 0; i < this.props.gdo.players.length; i++) {
-  		playerLogs += this.props.gdo.players[i].turns[this.props.turn].log + "\n\n";
+  	// default this to what we want to show for turn=0 aka starting deck, bc it has no logs
+  	let playerLogs = 'Currently showing the starting deck for each player. Move the TURN SLIDER to see how the deck grows throughout the game.';
+  	if (this.props.turn > 0) {
+  		playerLogs = '';
+	  	for (var i = 0; i < this.props.gdo.players.length; i++) {
+	  		playerLogs += this.props.gdo.players[i].turns[this.props.turn].log;
+	  	}
   	}
     return (
-      	<Grid className="TurnSummary">
-	     	<Panel col="1-2">
-		      	{header}
+      	<div className="uk-grid uk-grid-small">
+			<div className="uk-width-1-2 uk-card uk-card-body uk-background-muted">
+      			<h3 className="uk-card-title">{header}</h3>
 		     	{players}
-		   	</Panel>
-	     	<Panel col="1-2">
-		     	<Text type="h5">Turn Log</Text>
+		    </div>
+			<div className="uk-width-1-2 uk-card uk-card-body uk-background-muted">
+      			<h3 className="uk-card-title">Turn Log</h3>
 	     		<pre style={{overflow:'auto', height: '200px'}}>
 		     		{playerLogs}
 		     	</pre>
-		   	</Panel>
-     	</Grid>
+		    </div>
+     	</div>
     );
   }
   

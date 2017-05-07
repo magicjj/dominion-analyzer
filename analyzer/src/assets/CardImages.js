@@ -379,7 +379,11 @@ import Kings_Castle from "./images/200px-King's_Castle.jpg";
 
 import VP_16px from "./images/16px-VP.png";
 import Coin_16px from "./images/16px-Coin.png";
-
+import NumCards_16px from "./images/_16px-NumCards.png";
+import NumAction_16px from "./images/_16px-NumAction.png";
+import NumVictory_16px from "./images/_16px-NumVictory.png";
+import NumTreasure_16px from "./images/_16px-NumTreasure.png";
+import PercentTreasure_16px from "./images/_16px-PercentTreasure.png";
 
 
 export default {
@@ -760,11 +764,16 @@ export default {
 	"Fool's Gold": Fools_Gold,
 	"Farmers' Market": Farmers_Market,
 	"King's Castle": Kings_Castle,
-	VP_16px: VP_16px,
-	Coin_16px: Coin_16px,
-	Card_16px: Coin_16px,
-	Action_16px: Coin_16px
+	// END CARD IMAGES - START OTHER IMAGES
+	"VP_16px": VP_16px,
+	"Coin_16px": Coin_16px,
+	"NumCards_16px": NumCards_16px,
+	"NumAction_16px": NumAction_16px,
+	"NumVictory_16px": NumVictory_16px,
+	"NumTreasure_16px": NumTreasure_16px,
+	"PercentTreasure_16px": PercentTreasure_16px,
 };
+
 
 /*
 // Dominion Intrigue Cards

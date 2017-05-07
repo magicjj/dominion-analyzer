@@ -17,16 +17,16 @@ class Analyzer extends Component {
   }
 
   render() {
+    if (! this.props.gdo) {
+      return null;
+    }
+
     return (
       <Grid col="1-1" gutter="collapse">
-        { (this.props.gdo) ? 
-          <Panel col="1-1" className="Analyzer">
-            <div className="uk-background-secondary">
-              <h3 className="textWhite">Analyzing Game: {this.props.gdo.game}</h3>
-            </div>
-            <PlayerGrid gdo={this.props.gdo} />
-          </Panel> : ''
-        }
+        <section className="uk-background-secondary uk-width-1-1">
+          <h3 className="uk-margin-left">Analyzing Game: {this.props.gdo.game}</h3>
+        </section>
+        <PlayerGrid gdo={this.props.gdo} />
       </Grid>
     );
   }
