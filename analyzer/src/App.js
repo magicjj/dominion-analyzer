@@ -26,7 +26,7 @@ class App extends Component {
 
   handleSubmitFormInput(e, formInput) {
     e.preventDefault();
-    formInput = formInput ? formInput : this.state.formInput;
+    formInput = typeof formInput === 'string' ? formInput : this.state.formInput;
     console.log(formInput);
     fetch('http://magicjj.hopto.org:8088/analyze', {
       method: 'POST',

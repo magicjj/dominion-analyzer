@@ -28,3 +28,7 @@ had appendFile not appendFileSync - see if there could possibly be types mismatc
 SETTINGS
 Card View: Cropped, Full Size
 Card Size: Small, Medium, Large
+
+
+reset to turn 0 after new analyze
+

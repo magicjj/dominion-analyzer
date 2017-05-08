@@ -696,7 +696,7 @@ let DeckData = {
 		pointsChangeFn: function(deck) {
 			var uniqueNamesCount = 0;
 			for (var typeKey in deck) {
-				uniqueNamesCount += deck[typeKey].keys().length;
+				uniqueNamesCount += Object.keys(deck[typeKey]).length;
 			}
 
 			return { vp: Math.floor(uniqueNamesCount / 5) }

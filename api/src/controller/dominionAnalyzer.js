@@ -4,137 +4,158 @@ const _ = require('underscore');
 
 class DominionAnalyzer {
 	parse(gameData) {
-		// gameDataObject
-		let gdo = {}; //todo private let
+		try {
 
-		let gameDataLines = gameData.split("\n");
+			// gameDataObject
+			let gdo = {}; //todo private let
 
-		// populate first line in game field
-		gdo.game = gameDataLines[0];	// todo find index
+			let gameDataLines = gameData.split("\n");
 
-		// search for lines with "Turn 1" and populate players field
-		gdo.players = [];
-		gdo.playerNameToIndex = {};
-		gdo.playerFlToIndex = {};	// TODO why doesn't Map get passed to JSON? is this okay?
-		let playerIndex = 0;
-		let startsWith = "Turn 1 - ";
-		let turn1StartIndex;
-		let startsWithBreak = "Turn 2 - ";
-		for (let i = 1; i < gameDataLines.length; i++) {
-			if (gameDataLines[i].startsWith(startsWith)) {
-				if (_.isUndefined(turn1StartIndex)) {
-					turn1StartIndex = i;
-				}
-				let name = gameDataLines[i].substr(startsWith.length).trim();
-				gdo.players.push({
-					name: name,
-					turns: []
-				});
-				gdo.playerNameToIndex[name] = playerIndex;
-				playerIndex++;
-			} else if (gameDataLines[i].startsWith(startsWithBreak)) {
-				break;
-			}
-		}
+			// populate first line in game field
+			gdo.game = gameDataLines[0];	// todo find index
 
-		let fl = [];
-		let flPlayerIndex = [];
-		let flIndex = 0;
-		let hasDuplicates = function(arr) {
-			let counts = {};
-			arr.forEach(function(x) { counts[x] = (counts[x] || 0)+1; });
-			return Object.keys(counts).some(key => counts[key] > 1);
-		};
-		while (fl.length === 0 || hasDuplicates(fl)) {
-			let i = 0;
-			for (let playerName in gdo.playerNameToIndex) {
-				if (flIndex === 0) {
-					fl[i] = playerName[flIndex];
-					flPlayerIndex[i] = gdo.playerNameToIndex[playerName];
-				} else {
-					fl[i] = fl[i] + playerName[flIndex];
-				}
-				i++;
-			}
-			flIndex++;
-		}
-		for (var i = 0; i < fl.length; i++) {
-			gdo.playerFlToIndex[fl[i]] = flPlayerIndex[i];
-			gdo.players[flPlayerIndex[i]].fl = fl[i];
-		}
-
-
-		// search for 'FirstLetterPlayerName starts with ' for each and add to deck for turn 0
-		let getStartingCards = (player) => {
-			let _startsWith = player.fl + " starts with ";	// todo what if same fl????
+			// search for lines with "Turn 1" and populate players field
+			gdo.players = [];
+			gdo.playerNameToIndex = {};
+			gdo.playerFlToIndex = {};	// TODO why doesn't Map get passed to JSON? is this okay?
+			let playerIndex = 0;
+			let startsWith = "Turn 1 - ";
+			let turn1StartIndex;
+			let startsWithBreak = "Turn 2 - ";
 			for (let i = 1; i < gameDataLines.length; i++) {
-				if (gameDataLines[i].startsWith(_startsWith)) {
-							let startingCards = gameDataLines[i].substr(_startsWith.length);
-					player.turns[0] = new DeckObject(0);
-					let startingDeck = this.addToDeck(player, 0, startingCards);
-				}
-			}
-		};
-		for (let i = 0; i < gdo.players.length; i++) {
-			getStartingCards(gdo.players[i]);
-		}
-
-		// starting with "Turn 1" line number, copy previous line number deckObject, look for "(x) gains|trashes" in this turn's actions and , adjust deck accordingly, TODO also check VP
-		startsWith = "Turn ";
-		let activePlayer;
-		let turn;
-		let turnLogForPlayer = "";
-		for (let i = turn1StartIndex; i < gameDataLines.length; i++) {
-			let line = gameDataLines[i];
-			let regex;
-			let match; 
-
-			// if line starts with "Turn " set active player and turn
-			regex = /Turn ([0-9]+) - (.+)/g;
-			if (line.match(regex)) {	// todo just match regex?
-				match = regex.exec(line);
-				turn = parseInt(match[1]);
-				// todo possession
-				let playerName = match[2].trim();
-				let possessionIndexOf = playerName.indexOf(" [Possession]");
-				if (possessionIndexOf >= 0) {
-					playerName = playerName.substring(0, possessionIndexOf-1).trim();
-				}
-				activePlayer = this.findPlayerByName(gdo, playerName);
-				if (! activePlayer.turns[turn]) {
-					activePlayer.turns[turn] = this.copyDeck(activePlayer.turns[turn-1], turn);
+				if (gameDataLines[i].startsWith(startsWith)) {
+					if (_.isUndefined(turn1StartIndex)) {
+						turn1StartIndex = i;
+					}
+					let name = gameDataLines[i].substr(startsWith.length).trim();
+					gdo.players.push({
+						name: name,
+						turns: []
+					});
+					gdo.playerNameToIndex[name] = playerIndex;
+					playerIndex++;
+				} else if (gameDataLines[i].startsWith(startsWithBreak)) {
+					break;
 				}
 			}
 
-			regex = /(^\w+) .* gains (.+)/g;
-			if (line.match(regex)) {
-				match = regex.exec(line);
-				let player = this.findPlayerByFl(gdo, match[1]);
-				this.addToDeck(player, turn, match[2]);
+			let fl = [];
+			let flPlayerIndex = [];
+			let flIndex = 0;
+			let hasDuplicates = function(arr) {
+				let counts = {};
+				arr.forEach(function(x) { counts[x] = (counts[x] || 0)+1; });
+				return Object.keys(counts).some(key => counts[key] > 1);
+			};
+			let isFlUnique = function(fl) {
+				let count = 0;
+				for (var playerName in gdo.playerNameToIndex) {
+					if (playerName.startsWith(fl)) {
+						count++;
+					}
+				}
+				return count === 1;
+			};
+			while (fl.length === 0 || hasDuplicates(fl)) {
+				let i = 0;
+				for (let playerName in gdo.playerNameToIndex) {
+					if (flIndex === 0) {
+						fl[i] = playerName[flIndex];
+						flPlayerIndex[i] = gdo.playerNameToIndex[playerName];
+					} else if (! isFlUnique(fl[i])) {
+						fl[i] = fl[i] + playerName[flIndex];
+					}
+					i++;
+				}
+				flIndex++;
+			}
+			for (var i = 0; i < fl.length; i++) {
+				gdo.playerFlToIndex[fl[i]] = flPlayerIndex[i];
+				gdo.players[flPlayerIndex[i]].fl = fl[i];
 			}
 
-			regex = /(^\w+) .* trashes (.+)/g;
-			if (line.match(regex)) {
-				match = regex.exec(line);
-				let player = this.findPlayerByFl(gdo, match[1]);
-				this.removeFromDeck(player, turn, match[2])
+
+			// search for 'FirstLetterPlayerName starts with ' for each and add to deck for turn 0
+			let getStartingCards = (player) => {
+				let _startsWith = player.fl + " starts with ";	// todo what if same fl????
+				for (let i = 1; i < gameDataLines.length; i++) {
+					if (gameDataLines[i].startsWith(_startsWith)) {
+								let startingCards = gameDataLines[i].substr(_startsWith.length);
+						player.turns[0] = new DeckObject(0);
+						let startingDeck = this.addToDeck(player, 0, startingCards);
+					}
+				}
+			};
+			for (let i = 0; i < gdo.players.length; i++) {
+				getStartingCards(gdo.players[i]);
 			}
 
-			activePlayer.turns[turn].log += line + "\n";
+			// starting with "Turn 1" line number, copy previous line number deckObject, look for "(x) gains|trashes" in this turn's actions and , adjust deck accordingly, TODO also check VP
+			startsWith = "Turn ";
+			let activePlayer;
+			let turn;
+			let turnLogForPlayer = "";
+			for (let i = turn1StartIndex; i < gameDataLines.length; i++) {
+				let line = gameDataLines[i];
+				let regex;
+				let match; 
+
+				// if line starts with "Turn " set active player and turn
+				regex = /Turn ([0-9]+) - (.+)/g;
+				if (line.match(regex)) {	// todo just match regex?
+					match = regex.exec(line);
+					turn = parseInt(match[1]);
+					// todo possession
+					let playerName = match[2].trim();
+					let possessionIndexOf = playerName.indexOf(" [Possession]");
+					if (possessionIndexOf >= 0) {
+						playerName = playerName.substring(0, possessionIndexOf-1).trim();
+					}
+					activePlayer = this.findPlayerByName(gdo, playerName);
+					if (! activePlayer.turns[turn]) {
+						activePlayer.turns[turn] = this.copyDeck(activePlayer.turns[turn-1], turn);
+					}
+				}
+
+				regex = /(^\w+) .* gains (.+)/g;
+				if (line.match(regex)) {
+					match = regex.exec(line);
+					let player = this.findPlayerByFl(gdo, match[1]);
+					this.addToDeck(player, turn, match[2]);
+				}
+
+				regex = /(^\w+) .* trashes (.+)/g;
+				if (line.match(regex)) {
+					match = regex.exec(line);
+					let player = this.findPlayerByFl(gdo, match[1]);
+					this.removeFromDeck(player, turn, match[2])
+				}
+
+				activePlayer.turns[turn].log += line + "\n";
+			}
+
+			// calculate victoryPoints and numCards for each turn for each player
+			for (let i = 0; i <= turn; i++) {
+				for (let playerName in gdo.playerNameToIndex) {
+					let player = gdo.players[gdo.playerNameToIndex[playerName]];
+					let playerTurn = player.turns[i];
+					if (! playerTurn) {
+						// this can happen if they didn't take an even number of turns
+						playerTurn = this.deepCopy(player.turns[i-1]);
+						player.turns[i] = playerTurn;
+					} else {
+						playerTurn.numCards = this.countCards(playerTurn.cards);
+						playerTurn.points = this.countPoints(playerTurn.cards);	
+					}
+				}
+			}
+
+			return gdo;
+		} catch (e) {
+			// TODO error handling
+			console.log(e);
+			return { ERROR: e };
 		}
-
-		// calculate victoryPoints and numCards for each turn for each player
-		for (let i = 0; i <= turn; i++) {
-			for (let playerName in gdo.playerNameToIndex) {
-				let player = gdo.players[gdo.playerNameToIndex[playerName]];
-				let playerTurn = player.turns[i];
-				playerTurn.numCards = this.countCards(playerTurn.cards);
-				playerTurn.points = this.countPoints(playerTurn.cards);
-				
-			}
-		}
-
-		return gdo;
 	}
 
 	countCards(deck) {
@@ -191,9 +212,13 @@ class DominionAnalyzer {
 			if (deck[card.type[0]][card.name]) {
 				deck[card.type[0]][card.name].count += 1 * mult;
 			} else {
-				deck[card.type[0]][card.name] = JSON.parse(JSON.stringify(DeckData[card.name]));		// todo why is deepCopy undefined?
-				// TODO handle case if card is not found
-				deck[card.type[0]][card.name].count = mult ? 1 : 0;
+				let cardData = DeckData[card.name] ? this.deepCopy(DeckData[card.name]) : false;
+				if (! cardData) {
+					console.log("MISSING CARD: " + card.name);
+					cardData = { name: card.name, type: ["ERROR"] };
+				}
+				cardData.count = mult ? 1 : 0;
+				deck[card.type[0]][card.name] = cardData;
 			}
 		}
 		return deck;
@@ -201,9 +226,9 @@ class DominionAnalyzer {
 
 	parseCardStr(cardStr) {
 		// strip out word "and " and any punctuation
-		cardStr = cardStr.replace(/a |an |\./g, '');
+		cardStr = cardStr.replace(/\ba |\ban |\./g, '');
 
-		let cardStrArr = cardStr.split(/,|and /g).map(x => x.trim());
+		let cardStrArr = cardStr.split(/,|\band /g).map(x => x.trim());
 		let ret = [];
 		for (let i = 0; i < cardStrArr.length; i++) {
 			let count = 1;

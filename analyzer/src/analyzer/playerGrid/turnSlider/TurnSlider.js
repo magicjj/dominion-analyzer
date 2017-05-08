@@ -25,7 +25,12 @@ class TurnSlider extends Component {
   handleMouseDownChart(e) {
     if (e !== null && e.activeTooltipIndex) {
       this.setState({ animateLineChart: false, dragging: true });
-      this.props.handleChangeTurn(null, e.activeTooltipIndex);
+      let turn = e.activeTooltipIndex;
+      if (e.chartX <= 40) {
+        // without this the handler isn't good about letting people select the  zero position
+        turn = 0;
+      }
+      this.props.handleChangeTurn(null, turn);
     }
   }
 
@@ -113,6 +118,7 @@ class TurnSlider extends Component {
             onMouseMove={this.handleMouseMoveChart}
             onMouseDown={this.handleMouseDownChart}
             onMouseUp={this.handleMouseUpChart}
+            onMouseLeave={this.handleMouseUpChart}  // TODO fix mouseout
             className="noselect"
           >
             <XAxis dataKey="name" />
