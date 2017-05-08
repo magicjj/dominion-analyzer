@@ -1,4 +1,4 @@
-// TODO test nami ng conflict with fl
+		// TODO test nami ng conflict with fl
 const DeckData = require('../assets/DeckData');
 const _ = require('underscore');
 
@@ -28,28 +28,53 @@ class DominionAnalyzer {
 				let name = gameDataLines[i].substr(startsWith.length).trim();
 				gdo.players.push({
 					name: name,
-					fl: name[0],
 					turns: []
 				});
 				gdo.playerNameToIndex[name] = playerIndex;
-				gdo.playerFlToIndex[name[0]] = playerIndex;
 				playerIndex++;
 			} else if (gameDataLines[i].startsWith(startsWithBreak)) {
 				break;
 			}
 		}
 
+		let fl = [];
+		let flPlayerIndex = [];
+		let flIndex = 0;
+		let hasDuplicates = function(arr) {
+			let counts = {};
+			arr.forEach(function(x) { counts[x] = (counts[x] || 0)+1; });
+			return Object.keys(counts).some(key => counts[key] > 1);
+		};
+		while (fl.length === 0 || hasDuplicates(fl)) {
+			let i = 0;
+			for (let playerName in gdo.playerNameToIndex) {
+				if (flIndex === 0) {
+					fl[i] = playerName[flIndex];
+					flPlayerIndex[i] = gdo.playerNameToIndex[playerName];
+				} else {
+					fl[i] = fl[i] + playerName[flIndex];
+				}
+				i++;
+			}
+			flIndex++;
+		}
+		for (var i = 0; i < fl.length; i++) {
+			gdo.playerFlToIndex[fl[i]] = flPlayerIndex[i];
+			gdo.players[flPlayerIndex[i]].fl = fl[i];
+		}
+
+
 		// search for 'FirstLetterPlayerName starts with ' for each and add to deck for turn 0
 		let getStartingCards = (player) => {
 			let _startsWith = player.fl + " starts with ";	// todo what if same fl????
 			for (let i = 1; i < gameDataLines.length; i++) {
 				if (gameDataLines[i].startsWith(_startsWith)) {
-					let startingCards = gameDataLines[i].substr(_startsWith.length);
-					player.turns[0] = new DeckObject();
+							let startingCards = gameDataLines[i].substr(_startsWith.length);
+					player.turns[0] = new DeckObject(0);
 					let startingDeck = this.addToDeck(player, 0, startingCards);
 				}
 			}
-		}
+		};
 		for (let i = 0; i < gdo.players.length; i++) {
 			getStartingCards(gdo.players[i]);
 		}
@@ -58,6 +83,7 @@ class DominionAnalyzer {
 		startsWith = "Turn ";
 		let activePlayer;
 		let turn;
+		let turnLogForPlayer = "";
 		for (let i = turn1StartIndex; i < gameDataLines.length; i++) {
 			let line = gameDataLines[i];
 			let regex;
@@ -74,28 +100,70 @@ class DominionAnalyzer {
 				if (possessionIndexOf >= 0) {
 					playerName = playerName.substring(0, possessionIndexOf-1).trim();
 				}
-				activePlayer = this.findPlayerByName(gdo, playerName);	//gdo.players[gdo.playerNameToIndex.get(match[2])];
+				activePlayer = this.findPlayerByName(gdo, playerName);
 				if (! activePlayer.turns[turn]) {
-					activePlayer.turns[turn] = this.copyDeck(activePlayer.turns[turn-1]);
+					activePlayer.turns[turn] = this.copyDeck(activePlayer.turns[turn-1], turn);
 				}
 			}
 
-			regex = /(.) .* gains (.+)/g;
+			regex = /(^\w+) .* gains (.+)/g;
 			if (line.match(regex)) {
 				match = regex.exec(line);
 				let player = this.findPlayerByFl(gdo, match[1]);
 				this.addToDeck(player, turn, match[2]);
 			}
 
-			regex = /(.) .* trashes (.+)/g;
+			regex = /(^\w+) .* trashes (.+)/g;
 			if (line.match(regex)) {
 				match = regex.exec(line);
 				let player = this.findPlayerByFl(gdo, match[1]);
 				this.removeFromDeck(player, turn, match[2])
 			}
+
+			activePlayer.turns[turn].log += line + "\n";
+		}
+
+		// calculate victoryPoints and numCards for each turn for each player
+		for (let i = 0; i <= turn; i++) {
+			for (let playerName in gdo.playerNameToIndex) {
+				let player = gdo.players[gdo.playerNameToIndex[playerName]];
+				let playerTurn = player.turns[i];
+				playerTurn.numCards = this.countCards(playerTurn.cards);
+				playerTurn.points = this.countPoints(playerTurn.cards);
+				
+			}
 		}
 
 		return gdo;
+	}
+
+	countCards(deck) {
+		let totalCardsCount = 0;
+		for (let typeKey in deck) {
+			for (let cardKey in deck[typeKey]) {
+				let card = deck[typeKey][cardKey];
+				totalCardsCount += card.count;
+			}
+		}
+		return totalCardsCount;
+	}
+
+	countPoints(deck) {
+		let points = {};
+		for (let typeKey in deck) {
+			for (let cardKey in deck[typeKey]) {
+				let card = deck[typeKey][cardKey];
+				let pointsChangeFn = DeckData[card.name].pointsChangeFn;
+				let pointsChange = typeof pointsChangeFn === 'function' ? pointsChangeFn(deck) : {};
+				for (let pointType in pointsChange) {
+					if (! points[pointType]) {
+						points[pointType] = 0;
+					}
+					points[pointType] += pointsChange[pointType] * card.count;
+				}
+			}
+		}
+		return points;
 	}
 
 	addToDeck(player, deckIndex, cardStr) {
@@ -117,13 +185,15 @@ class DominionAnalyzer {
 		let cards = this.parseCardStr(cardStr);
 		for (let i = 0; i < cards.length; i++) {
 			let card = cards[i];
-			if (! deck[card.type]) {
-				deck [card.type] = {};
+			if (! deck[card.type[0]]) {
+				deck [card.type[0]] = {};
 			}
-			if (deck[card.type][card.name]) {
-				deck[card.type][card.name] += 1 * mult;
+			if (deck[card.type[0]][card.name]) {
+				deck[card.type[0]][card.name].count += 1 * mult;
 			} else {
-				deck[card.type][card.name] = mult ? 1 : 0;
+				deck[card.type[0]][card.name] = JSON.parse(JSON.stringify(DeckData[card.name]));		// todo why is deepCopy undefined?
+				// TODO handle case if card is not found
+				deck[card.type[0]][card.name].count = mult ? 1 : 0;
 			}
 		}
 		return deck;
@@ -131,19 +201,21 @@ class DominionAnalyzer {
 
 	parseCardStr(cardStr) {
 		// strip out word "and " and any punctuation
-		cardStr = cardStr.replace(/and |a |,|\./g, '');
+		cardStr = cardStr.replace(/a |an |\./g, '');
 
-		let cardStrArr = cardStr.split(" ");
+		let cardStrArr = cardStr.split(/,|and /g).map(x => x.trim());
 		let ret = [];
 		for (let i = 0; i < cardStrArr.length; i++) {
 			let count = 1;
+			let cardName = cardStrArr[i];
 
-			let regex = /^[0-9]+$/g
+			let regex = /^([0-9]+) (.+)$/g
 			if (cardStrArr[i].match(regex)) {
-				count = parseInt(cardStrArr[i]);
-				i++;
+				let match = regex.exec(cardStrArr[i]);
+				count = parseInt(match[1]);
+				cardName = match[2];
 			}
-			let card = this.getCardData(cardStrArr[i]);
+			let card = this.getCardData(cardName);
 			while (count--) {
 				ret.push(card);
 			}
@@ -156,12 +228,15 @@ class DominionAnalyzer {
 		str = str.trim();
 		if (str.endsWith("s")) {
 			ret = this.getCardData(str.slice(0,-1));
-			if (ret) {
+			if (ret.type[0] !== 'NOTFOUND') {
 				return ret;
 			}
 		}
 
-		return DeckData[str] ? DeckData[str] : DeckData.ERROR;
+		return DeckData[str] ? DeckData[str] : {
+			name: str,
+			type: ['NOTFOUND']
+		};
 	}
 
 	findPlayerByName(gdo, name) {
@@ -172,9 +247,9 @@ class DominionAnalyzer {
 		return gdo.players[gdo.playerFlToIndex[fl]];
 	}
 
-	copyDeck(deck) {
-		let ret = new DeckObject();
-		ret.totalPoints = deck.totalPoints;
+	copyDeck(deck, index) {
+		let ret = new DeckObject(index);
+		ret.points = {};	// this will be recalculated from scratch each time - no need to copy
 		ret.numCards = deck.numCards;
 		for (let key in deck.cards) {
 			ret.cards[key] = this.deepCopy(deck.cards[key]);
@@ -187,16 +262,20 @@ class DominionAnalyzer {
 	}
 }
 
-function DeckObject() {
+function DeckObject(index) {
 	return {
-		totalPoints: 0,	// todo track VP - including "gains VP"
+		index: index,
+		points: {
+			vp: 0
+		},	// todo track VP - including "gains VP"
 		numCards: 0,
 		cards: {
 			v: {},
 			a: {},
 			t: {},
 			c: {}
-		}
+		},
+		log: ''
 	};
 }
 

@@ -1,0 +1,521 @@
+Game #3401332, unrated.
+Ra starts with 7 Coppers, a Hovel, a Necropolis and an Overgrown Estate.
+Ra shuffles their deck.
+Ra draws 5 cards.
+Re starts with 7 Coppers, a Hovel, a Necropolis and an Overgrown Estate.
+Re shuffles their deck.
+Re draws 5 cards.
+m starts with 7 Coppers, a Hovel, a Necropolis and an Overgrown Estate.
+m shuffles their deck.
+m draws 4 Coppers and a Hovel.
+L starts with 7 Coppers, a Hovel, a Necropolis and an Overgrown Estate.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 1 - Rage
+Ra plays a Necropolis.
+Ra plays 2 Coppers.
+Ra buys and gains a Copper.
+Ra draws 5 cards.
+
+Turn 1 - Revenge Witch
+Re plays 4 Coppers.
+Re buys and gains a Silver.
+Re draws 5 cards.
+
+Turn 1 - magicjj
+m plays 4 Coppers.
+m buys and gains a Duplicate.
+m draws 3 Coppers, a Necropolis and an Overgrown Estate.
+
+Turn 1 - Lord Rattington
+L plays a Necropolis.
+L plays 4 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 2 - Rage
+Ra plays 5 Coppers.
+Ra buys and gains a Silver.
+Ra shuffles their deck.
+Ra draws 5 cards.
+
+Turn 2 - Revenge Witch
+Re plays a Necropolis.
+Re plays 3 Coppers.
+Re buys and gains a Silver.
+Re shuffles their deck.
+Re draws 5 cards.
+
+Turn 2 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws 4 Coppers and an Overgrown Estate.
+
+Turn 2 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 3 - Rage
+Ra plays a Necropolis.
+Ra plays 4 Coppers.
+Ra buys and gains a Silver.
+Ra draws 5 cards.
+
+Turn 3 - Revenge Witch
+Re plays 4 Coppers.
+Re buys and gains a Silver.
+Re draws 5 cards.
+
+Turn 3 - magicjj
+m plays 4 Coppers.
+m buys and gains a Silver.
+m draws a Copper, a Silver, a Hovel, a Necropolis and a Duplicate.
+
+Turn 3 - Lord Rattington
+L plays 3 Coppers and a Silver.
+L buys and gains a Counterfeit.
+L draws 5 cards.
+
+Turn 4 - Rage
+Ra plays 3 Coppers and a Silver.
+Ra buys and gains a Silver.
+Ra shuffles their deck.
+Ra draws 5 cards.
+
+Turn 4 - Revenge Witch
+Re plays a Necropolis.
+Re plays 2 Coppers and a Silver.
+Re buys and gains a Silver.
+Re shuffles their deck.
+Re draws 5 cards.
+
+Turn 4 - magicjj
+m plays a Necropolis.
+m plays a Duplicate.
+m puts a Duplicate on their Tavern mat.
+m plays a Copper and a Silver.
+m buys and gains a Squire.
+m calls a Duplicate.
+m gains a Squire.
+m shuffles their deck.
+m draws 3 Coppers, a Silver and a Squire.
+
+Turn 4 - Lord Rattington
+L plays a Necropolis.
+L plays 2 Coppers and a Silver.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 5 - Rage
+Ra plays 3 Coppers.
+Ra buys and gains a Silver.
+Ra draws 5 cards.
+
+Turn 5 - Revenge Witch
+Re plays 3 Coppers and 2 Silvers.
+Re buys and gains a Counterfeit.
+Re draws 5 cards.
+
+Turn 5 - magicjj
+m plays a Squire.
+m gains a Silver.
+m plays 3 Coppers and a Silver.
+m buys and gains a Gold.
+m draws a Copper, a Silver, a Hovel, an Overgrown Estate and a Squire.
+
+Turn 5 - Lord Rattington
+L plays 3 Coppers and a Silver.
+L buys and gains a Counterfeit.
+L draws 5 cards.
+
+Turn 6 - Rage
+Ra plays 3 Coppers and 2 Silvers.
+Ra buys and gains a Gold.
+Ra shuffles their deck.
+Ra draws 5 cards.
+
+Turn 6 - Revenge Witch
+Re plays a Necropolis.
+Re plays a Copper and 2 Silvers.
+Re buys and gains a Counterfeit.
+Re shuffles their deck.
+Re draws 5 cards.
+
+Turn 6 - magicjj
+m plays a Squire.
+m gains a Silver.
+m plays a Copper and a Silver.
+m buys and gains a Duplicate.
+m draws 3 Coppers, a Necropolis and a Duplicate.
+
+Turn 6 - Lord Rattington
+L plays 2 Coppers and 2 Silvers.
+L buys and gains a Counterfeit.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 7 - Rage
+Ra plays a Necropolis.
+Ra plays 3 Coppers and a Silver.
+Ra buys and gains a Squire.
+Ra draws 5 cards.
+
+Turn 7 - Revenge Witch
+Re plays 3 Coppers and a Silver.
+Re buys and gains a Counterfeit.
+Re draws 5 cards.
+
+Turn 7 - magicjj
+m plays a Necropolis.
+m plays a Duplicate.
+m puts a Duplicate on their Tavern mat.
+m plays 3 Coppers.
+m buys and gains a Market Square.
+m shuffles their deck.
+m draws 2 Coppers, 2 Silvers and a Duplicate.
+
+Turn 7 - Lord Rattington
+L plays a Necropolis.
+L plays a Counterfeit and 2 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 8 - Rage
+Ra plays 2 Coppers, a Silver and a Gold.
+Ra buys and gains a Gold.
+Ra draws 5 cards.
+
+Turn 8 - Revenge Witch
+Re plays a Necropolis.
+Re plays 2 Counterfeits and 2 Coppers.
+Re buys and gains a Silver.
+Re draws 5 cards.
+
+Turn 8 - magicjj
+m plays a Duplicate.
+m puts a Duplicate on their Tavern mat.
+m plays 2 Coppers and 2 Silvers.
+m buys and gains a Gold.
+m calls a Duplicate.
+m gains a Gold.
+m calls a Duplicate.
+m gains a Gold.
+m draws a Silver, a Gold, a Hovel, a Necropolis and an Overgrown Estate.
+
+Turn 8 - Lord Rattington
+L plays 3 Coppers and 2 Silvers.
+L buys and gains a Counterfeit.
+L draws 5 cards.
+
+Turn 9 - Rage
+Ra plays 2 Coppers and 2 Silvers.
+Ra buys and gains a Gold.
+Ra shuffles their deck.
+Ra draws 5 cards.
+
+Turn 9 - Revenge Witch
+Re plays 2 Coppers and 3 Silvers.
+Re buys and gains a Province.
+Re shuffles their deck.
+Re draws 5 cards.
+
+Turn 9 - magicjj
+m plays a Silver and a Gold.
+m buys and gains a Charm.
+m draws 2 Coppers, a Silver, a Market Square and a Squire.
+
+Turn 9 - Lord Rattington
+L plays 2 Counterfeits, 2 Coppers and a Silver.
+L buys and gains a Counterfeit.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 10 - Rage
+Ra plays 4 Coppers and a Silver.
+Ra buys and gains a Duplicate.
+Ra draws 5 cards.
+
+Turn 10 - Revenge Witch
+Re plays a Copper and 2 Silvers.
+Re buys and gains a Counterfeit.
+Re draws 5 cards.
+
+Turn 10 - magicjj
+m plays a Market Square.
+m draws a Copper.
+m plays a Squire.
+m gains a Silver.
+m plays 3 Coppers and a Silver.
+m buys and gains a Duchy.
+m shuffles their deck.
+m draws 2 Coppers, 2 Silvers and a Squire.
+
+Turn 10 - Lord Rattington
+L plays 2 Counterfeits and 2 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 11 - Rage
+Ra plays 2 Coppers, a Silver and a Gold.
+Ra buys and gains a Gold.
+Ra draws 5 cards.
+
+Turn 11 - Revenge Witch
+Re plays a Necropolis.
+Re plays a Counterfeit, a Copper and a Silver.
+Re buys and gains a Silver.
+Re draws 5 cards.
+
+Turn 11 - magicjj
+m plays a Squire.
+m gains a Silver.
+m plays 2 Coppers and 2 Silvers.
+m buys and gains a Duchy.
+m draws a Copper, a Silver, a Gold, a Necropolis and a Duplicate.
+
+Turn 11 - Lord Rattington
+L plays a Counterfeit, 3 Coppers and a Silver.
+L buys and gains a Counterfeit.
+L draws 5 cards.
+
+Turn 12 - Rage
+Ra plays 2 Silvers and 2 Golds.
+Ra buys and gains a Province.
+Ra shuffles their deck.
+Ra draws 5 cards.
+
+Turn 12 - Revenge Witch
+Re plays a Counterfeit, 2 Coppers and 2 Silvers.
+Re buys and gains a Gold.
+Re shuffles their deck.
+Re draws 5 cards.
+
+Turn 12 - magicjj
+m plays a Duplicate.
+m puts a Duplicate on their Tavern mat.
+m plays a Copper, a Silver and a Gold.
+m buys and gains a Charm.
+m draws a Silver, a Gold, a Duchy, an Overgrown Estate and a Squire.
+
+Turn 12 - Lord Rattington
+L plays a Necropolis.
+L plays 2 Counterfeits and 2 Silvers.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 13 - Rage
+Ra plays a Squire.
+Ra gains a Silver.
+Ra plays 3 Coppers.
+Ra buys and gains a Duplicate.
+Ra draws 5 cards.
+
+Turn 13 - Revenge Witch
+Re plays a Counterfeit and 4 Coppers.
+Re buys and gains a Charm.
+Re draws 5 cards.
+
+Turn 13 - magicjj
+m plays a Squire.
+m gains a Silver.
+m plays a Silver and a Gold.
+m buys and gains a Gold.
+m calls a Duplicate.
+m gains a Gold.
+m draws a Copper, a Gold, a Hovel, a Market Square and a Charm.
+
+Turn 13 - Lord Rattington
+L plays a Counterfeit, 2 Coppers and a Silver.
+L buys and gains an Enchantress.
+L draws 5 cards.
+
+Turn 14 - Rage
+Ra plays a Copper and 2 Golds.
+Ra buys and gains a Gold.
+Ra draws 5 cards.
+
+Turn 14 - Revenge Witch
+Re plays a Necropolis.
+Re plays a Copper and a Silver.
+Re buys and gains a Silver.
+Re draws 5 cards.
+
+Turn 14 - magicjj
+m plays a Market Square.
+m draws a Duplicate.
+m plays a Duplicate.
+m puts a Duplicate on their Tavern mat.
+m plays a Charm, a Copper and a Gold.
+m buys and gains a Gold.
+m calls a Duplicate.
+m gains a Gold.
+m draws 3 Coppers, a Silver and a Gold.
+
+Turn 14 - Lord Rattington
+L plays a Necropolis.
+L plays a Counterfeit, a Copper and a Silver.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 15 - Rage
+Ra plays a Copper, 2 Silvers and a Gold.
+Ra buys and gains a Province.
+Ra draws 5 cards.
+
+Turn 15 - Revenge Witch
+Re plays 2 Counterfeits, a Copper and 2 Silvers.
+Re buys and gains a Gold.
+Re draws 5 cards.
+
+Turn 15 - magicjj
+m plays 3 Coppers, a Silver and a Gold.
+m buys and gains a Province.
+m shuffles their deck.
+m draws 2 Coppers, 2 Golds and a Hovel.
+
+Turn 15 - Lord Rattington
+L plays a Counterfeit, 2 Coppers and 2 Silvers.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 16 - Rage
+Ra plays a Duplicate.
+Ra puts a Duplicate on their Tavern mat.
+Ra plays a Copper, 2 Silvers and a Gold.
+Ra buys and gains a Province.
+Ra shuffles their deck.
+Ra draws 5 cards.
+
+Turn 16 - Revenge Witch
+Re plays a Counterfeit, 2 Silvers and a Gold.
+Re buys and gains a Province.
+Re shuffles their deck.
+Re draws 5 cards.
+
+Turn 16 - magicjj
+m plays 2 Coppers and 2 Golds.
+m buys a Province.
+m trashes a Hovel.
+m gains a Province.
+m draws a Silver, a Gold, a Duchy, an Overgrown Estate and a Duplicate.
+
+Turn 16 - Lord Rattington
+L plays a Counterfeit, 2 Coppers, a Silver and a Gold.
+L buys and gains a Province.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 17 - Rage
+Ra plays a Squire.
+Ra gains a Silver.
+Ra plays 2 Coppers and a Silver.
+Ra buys and gains a Duplicate.
+Ra calls a Duplicate.
+Ra gains a Duplicate.
+Ra draws 5 cards.
+
+Turn 17 - Revenge Witch
+Re plays 3 Coppers and a Silver.
+Re buys and gains a Duchy.
+Re draws 5 cards.
+
+Turn 17 - magicjj
+m plays a Duplicate.
+m puts a Duplicate on their Tavern mat.
+m plays a Silver and a Gold.
+m buys and gains a Duchy.
+m calls a Duplicate.
+m gains a Duchy.
+m draws a Copper, a Silver, a Necropolis, a Squire and a Duplicate.
+
+Turn 17 - Lord Rattington
+L plays 2 Counterfeits, a Silver and a Gold.
+L buys and gains a Duchy.
+L draws 5 cards.
+
+Turn 18 - Rage
+Ra plays 2 Coppers.
+Ra buys and gains a Copper.
+Ra draws 5 cards.
+
+Turn 18 - Revenge Witch
+Re plays 2 Counterfeits, a Copper and a Silver.
+Re buys and gains a Duchy.
+Re draws 5 cards.
+
+Turn 18 - magicjj
+m plays a Necropolis.
+m plays a Duplicate.
+m puts a Duplicate on their Tavern mat.
+m plays a Squire.
+m gains a Silver.
+m plays a Copper and a Silver.
+m buys and gains a Duplicate.
+m draws a Copper, 2 Silvers, a Gold and a Squire.
+
+Turn 18 - Lord Rattington
+L plays a Counterfeit, 2 Coppers and a Silver.
+L buys and gains a Duchy.
+L draws 5 cards.
+
+Turn 19 - Rage
+Ra plays a Copper, a Silver and 2 Golds.
+Ra buys and gains a Province.
+Ra draws 5 cards.
+
+Turn 19 - Revenge Witch
+Re plays a Charm, a Copper, 2 Silvers and a Gold.
+Re buys and gains a Province.
+Re draws 5 cards.
+
+Turn 19 - magicjj
+m plays a Squire.
+m gains a Silver.
+m plays a Copper, 2 Silvers and a Gold.
+m buys and gains a Province.
+m draws 2 Coppers, a Gold, a Province and a Charm.
+
+Turn 19 - Lord Rattington
+L plays a Counterfeit, a Copper and 2 Silvers.
+L buys and gains a Duchy.
+L draws 5 cards.
+
+Turn 20 - Rage
+Ra plays a Necropolis.
+Ra plays 2 Coppers and 2 Silvers.
+Ra buys and gains a Gold.
+Ra draws 5 cards.
+
+Turn 20 - Revenge Witch
+Re plays 2 Counterfeits, a Copper and a Silver.
+Re buys and gains a Duchy.
+Re draws 5 cards.
+
+Turn 20 - magicjj
+m plays a Charm, 2 Coppers and a Gold.
+m buys and gains a Duchy.
+m calls a Duplicate.
+m gains a Duchy.
+m buys and gains an Estate.
+m draws a Copper, 2 Silvers, a Duchy and a Market Square.
+
+Turn 20 - Lord Rattington
+L plays a Necropolis.
+L plays an Enchantress.
+L plays 2 Coppers and a Silver.
+L buys and gains an Estate.
+L draws 5 cards.
+
+Turn 21 - Rage
+Ra plays a Duplicate.
+Ra draws a card.
+Ra plays a Copper, a Silver and 3 Golds.
+Ra buys and gains a Province.
+Ra shuffles their deck.
+Ra draws a Copper, a Silver, a Gold, an Overgrown Estate and a Duplicate.
