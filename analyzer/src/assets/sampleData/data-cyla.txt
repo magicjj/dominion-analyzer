@@ -1,0 +1,416 @@
+Game #3413606, rated.
+Cycy5: 20
+magicjj: 32.24
+
+C starts with 7 Coppers and 3 Estates.
+C shuffles their deck.
+C draws 3 Coppers and 2 Estates.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 1 - Cycy5
+C plays 3 Coppers.
+C buys and gains a Chapel.
+C draws 4 Coppers and an Estate.
+
+Turn 1 - magicjj
+m plays 3 Coppers.
+m buys and gains a Chapel.
+m draws 5 cards.
+
+Turn 2 - Cycy5
+C plays 4 Coppers.
+C buys and gains a Silver.
+C moves 1 VP from the Silver pile to Aqueduct.
+C shuffles their deck.
+C draws 2 Coppers, a Silver and 2 Estates.
+
+Turn 2 - magicjj
+m plays 4 Coppers.
+m buys a Wedding.
+m takes 3 debt.
+m gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m gets 1 VP.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 3 - Cycy5
+C plays a Silver and 2 Coppers.
+C buys and gains a Silver.
+C moves 1 VP from the Silver pile to Aqueduct.
+C draws 3 Coppers, an Estate and a Chapel.
+
+Turn 3 - magicjj
+m plays a Chapel.
+m trashes a Copper and 2 Estates.
+m plays a Gold.
+m repays 3 debt.
+m draws 5 cards.
+
+Turn 4 - Cycy5
+C plays a Chapel.
+C trashes an Estate.
+C plays 3 Coppers.
+C buys and gains a Silver.
+C moves 1 VP from the Silver pile to Aqueduct.
+C shuffles their deck.
+C draws 5 Coppers.
+
+Turn 4 - magicjj
+m plays 5 Coppers.
+m buys and gains a Count.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 5 - Cycy5
+C plays 5 Coppers.
+C buys and gains an Explorer.
+C draws 2 Coppers, a Silver, an Estate and a Chapel.
+
+Turn 5 - magicjj
+m plays a Count.
+m discards a card and a Chapel.
+m plays 2 Coppers.
+m buys and gains an Explorer.
+m draws 5 cards.
+
+Turn 6 - Cycy5
+C plays a Chapel.
+C trashes an Estate.
+C plays a Silver and 2 Coppers.
+C buys and gains a Transmogrify.
+C shuffles their deck.
+C draws 2 Coppers, 2 Silvers and an Estate.
+
+Turn 6 - magicjj
+m plays a Gold and 4 Coppers.
+m buys and gains a Goons.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 7 - Cycy5
+C plays 2 Silvers and 2 Coppers.
+C buys and gains a Goons.
+C draws 3 Coppers, a Chapel and a Transmogrify.
+
+Turn 7 - magicjj
+m plays a Count.
+m topdecks a card.
+m plays 3 Coppers.
+m buys and gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m draws 5 cards.
+
+Turn 8 - Cycy5
+C plays a Transmogrify.
+C puts a Transmogrify on their Tavern mat.
+C plays 3 Coppers.
+C buys and gains a Vagrant.
+C shuffles their deck.
+C draws 2 Coppers, a Silver, an Explorer and a Vagrant.
+
+Turn 8 - magicjj
+m plays a Goons.
+C discards 2 Coppers.
+m plays a Copper.
+m buys a Silver.
+m gets 1 VP from Goons.
+m gains a Silver.
+m moves 1 VP from the Silver pile to Aqueduct.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 9 - Cycy5
+C starts their turn.
+C plays a Vagrant.
+C draws a Silver.
+C reveals a Chapel.
+C topdecks a Chapel.
+C plays an Explorer.
+C gains a Silver.
+C moves 1 VP from the Silver pile to Aqueduct.
+C plays 3 Silvers.
+C buys and gains a Gold.
+C moves 1 VP from the Gold pile to Aqueduct.
+C draws 3 Coppers, a Silver and a Chapel.
+
+Turn 9 - magicjj
+m plays a Gold and 4 Coppers.
+m buys and gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m draws 5 cards.
+
+Turn 10 - Cycy5
+C starts their turn.
+C plays a Silver and 3 Coppers.
+C buys and gains a Count.
+C shuffles their deck.
+C draws 2 Coppers, a Silver, an Estate and a Goons.
+
+Turn 10 - magicjj
+m plays a Count.
+m topdecks a card.
+m plays a Gold, a Silver and a Copper.
+m buys and gains a Province.
+m takes 9 VP from Aqueduct.
+m draws 5 cards.
+
+Turn 11 - Cycy5
+C starts their turn.
+C calls a Transmogrify.
+C trashes an Estate.
+C gains a Silver.
+C moves 1 VP from the Silver pile to Aqueduct.
+C plays a Goons.
+m discards a card and a Chapel.
+C plays 2 Silvers and 2 Coppers.
+C buys a Province.
+C gets 1 VP from Goons.
+C gains a Province.
+C takes 1 VP from Aqueduct.
+C draws 3 Coppers, a Silver and a Count.
+
+Turn 11 - magicjj
+m plays a Goons.
+C discards a Copper and a Count.
+m plays a Copper.
+m buys a Silver.
+m gets 1 VP from Goons.
+m gains a Silver.
+m moves 1 VP from the Silver pile to Aqueduct.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 12 - Cycy5
+C plays a Silver and 2 Coppers.
+C buys a Wedding.
+C takes 3 debt.
+C gains a Gold.
+C moves 1 VP from the Gold pile to Aqueduct.
+C gets 1 VP.
+C draws a Copper, 2 Silvers, an Explorer and a Vagrant.
+
+Turn 12 - magicjj
+m plays a Count.
+m discards a card and an Estate.
+m plays 2 Golds.
+m buys and gains a Province.
+m takes 2 VP from Aqueduct.
+m draws 5 cards.
+
+Turn 13 - Cycy5
+C plays a Vagrant.
+C draws a Chapel.
+C reveals a Copper.
+C topdecks a Copper.
+C plays an Explorer.
+C gains a Silver.
+C moves 1 VP from the Silver pile to Aqueduct.
+C plays 3 Silvers and a Copper.
+C repays 3 debt.
+C buys and gains a Silver.
+C shuffles their deck.
+C draws a Copper, 3 Silvers and a Gold.
+
+Turn 13 - magicjj
+m plays a Goons.
+C discards a Copper and a Silver.
+m plays a Copper.
+m buys a Silver.
+m gets 1 VP from Goons.
+m gains a Silver.
+m draws 5 cards.
+
+Turn 14 - Cycy5
+C plays a Gold and 2 Silvers.
+C buys and gains a Fairgrounds.
+C takes 1 VP from Aqueduct.
+C draws 2 Coppers, a Gold, a Province and a Count.
+
+Turn 14 - magicjj
+m plays a Gold, a Silver and 3 Coppers.
+m buys and gains a Province.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 15 - Cycy5
+C plays a Gold and 2 Coppers.
+C buys and gains an Explorer.
+C draws 2 Coppers, 2 Silvers and an Explorer.
+
+Turn 15 - magicjj
+m plays a Goons.
+C discards a Copper and an Explorer.
+m plays 2 Golds, a Silver and a Copper.
+m buys a Duchy.
+m gets 1 VP from Goons.
+m gains a Duchy.
+m buys a Fairgrounds.
+m gets 1 VP from Goons.
+m gains a Fairgrounds.
+m draws 5 cards.
+
+Turn 16 - Cycy5
+C plays 2 Silvers and a Copper.
+C buys and gains an Explorer.
+C draws a Silver, a Chapel, a Goons, a Vagrant and a Transmogrify.
+
+Turn 16 - magicjj
+m plays an Explorer.
+m reveals a Province.
+m gains a Gold.
+m moves 1 VP from the Gold pile to Aqueduct.
+m plays a Gold, a Silver and 2 Coppers.
+m buys and gains a Fairgrounds.
+m takes 1 VP from Aqueduct.
+m draws 5 cards.
+
+Turn 17 - Cycy5
+C plays a Vagrant.
+C draws a Silver.
+C reveals a Copper.
+C topdecks a Copper.
+C plays a Transmogrify.
+C puts a Transmogrify on their Tavern mat.
+C plays a Goons.
+m discards a card and a Province.
+C plays 2 Silvers.
+C buys a Sea Hag.
+C gets 1 VP from Goons.
+C gains a Sea Hag.
+C shuffles their deck.
+C draws 3 Coppers and 2 Silvers.
+
+Turn 17 - magicjj
+m plays a Count.
+m gains a Copper.
+m plays 2 Coppers.
+m buys and gains a Groundskeeper.
+m draws 5 cards.
+
+Turn 18 - Cycy5
+C starts their turn.
+C plays 2 Silvers and 3 Coppers.
+C buys and gains a Gold.
+C moves 1 VP from the Gold pile to Aqueduct.
+C draws a Silver, a Province, 2 Explorers and a Count.
+
+Turn 18 - magicjj
+m plays a Chapel.
+m trashes a Copper and an Estate.
+m plays a Gold and a Silver.
+m buys and gains a Transmogrify.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 19 - Cycy5
+C starts their turn.
+C plays an Explorer.
+C reveals a Province.
+C gains a Gold.
+C moves 1 VP from the Gold pile to Aqueduct.
+C plays a Gold and a Silver.
+C buys and gains a Transmogrify.
+C draws a Copper, a Silver, a Chapel, a Sea Hag and a Fairgrounds.
+
+Turn 19 - magicjj
+m plays a Silver and 2 Coppers.
+m buys and gains a Sea Hag.
+m draws 5 cards.
+
+Turn 20 - Cycy5
+C starts their turn.
+C plays a Sea Hag.
+m discards a Gold.
+m gains a Curse.
+C plays a Silver and a Copper.
+C buys and gains a Vagrant.
+C draws a Copper, a Silver, 2 Golds and a Goons.
+
+Turn 20 - magicjj
+m plays a Gold, a Silver and a Copper.
+m buys and gains a Fairgrounds.
+m takes 2 VP from Aqueduct.
+m draws 5 cards.
+
+Turn 21 - Cycy5
+C starts their turn.
+C calls a Transmogrify.
+C trashes a Silver.
+C gains a Transmogrify.
+C plays a Transmogrify.
+C puts a Transmogrify on their Tavern mat.
+C plays a Goons.
+m discards a card and a Goons.
+C plays 2 Golds and a Copper.
+C buys a Province.
+C gets 1 VP from Goons.
+C gains a Province.
+C buys a Copper.
+C gets 1 VP from Goons.
+C gains a Copper.
+C draws 2 Coppers, 2 Silvers and a Vagrant.
+
+Turn 21 - magicjj
+m plays an Explorer.
+m reveals a Province.
+m gains a Gold.
+m plays a Gold and a Copper.
+m buys and gains a Silver.
+m draws 5 cards.
+
+Turn 22 - Cycy5
+C starts their turn.
+C plays a Vagrant.
+C draws an Explorer.
+C shuffles their deck.
+C reveals an Explorer.
+C topdecks an Explorer.
+C plays an Explorer.
+C gains a Silver.
+C plays 3 Silvers and 2 Coppers.
+C buys and gains a Province.
+C draws a Copper, a Silver, a Gold, an Explorer and a Transmogrify.
+
+Turn 22 - magicjj
+m plays a Groundskeeper.
+m draws a card.
+m plays a Chapel.
+m trashes a Copper.
+m plays a Silver and a Copper.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws 5 cards.
+
+Turn 23 - Cycy5
+C starts their turn.
+C plays a Transmogrify.
+C puts a Transmogrify on their Tavern mat.
+C plays an Explorer.
+C gains a Silver.
+C plays a Gold, 2 Silvers and a Copper.
+C buys and gains a Province.
+C draws 2 Coppers, a Silver, a Count and a Vagrant.
+
+Turn 23 - magicjj
+m plays a Transmogrify.
+m puts a Transmogrify on their Tavern mat.
+m plays a Count.
+m topdecks a card.
+m plays a Gold.
+m buys and gains a Fairgrounds.
+m draws 5 cards.
+
+Turn 24 - Cycy5
+C starts their turn.
+C plays a Vagrant.
+C draws a Copper.
+C reveals a Fairgrounds.
+C puts a Fairgrounds into their hand.
+C plays a Count.
+C gains a Copper.
+C plays a Silver and 3 Coppers.
+C buys and gains a Province.
+C draws a Silver, 2 Provinces, a Goons and a Transmogrify.
