@@ -12,10 +12,12 @@ import Dropdown from 'react-uikit-dropdown';
 import { SampleData } from '../assets/SampleDataObj';
 
 let sampleDataKeys = [
- // "Game #3300452",
- // "Game #3318160",
+  "4 Player Game",
+  "3 Player Game",
+  "Game #3300452",
+  "Game #3318160",
+  "Game #3267464",//  TODO Fix errors in commented ones
   "Game #3270413",
- // "Game #3267464",  TODO Fix errors in commented ones
   "Game #3341022",
   "Game #3342302"
 ];

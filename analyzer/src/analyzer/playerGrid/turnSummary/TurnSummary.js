@@ -130,12 +130,15 @@ class TurnSummary extends Component {
       	<div className="uk-grid uk-grid-small">
 			<div className="uk-width-1-2 uk-card uk-card-small uk-card-body uk-background-muted">
       			<h3 className="uk-card-title">{header}</h3>
-      			<hr className="uk-width-1-1" style={{margin: '5px 0'}} />
-		     	{players}
+      			<hr className="uk-width-1-1" style={{margin: '5px 0 0 0'}} />
+				<div style={{height: '155px', overflow: 'auto'}}>
+		     		{players}
+				</div>
 		    </div>
 			<div className="uk-width-1-2 uk-card uk-card-small uk-card-body uk-background-muted">
       			<h3 className="uk-card-title">Turn Log</h3>
-	     		<pre style={{overflow:'auto', height: '160px'}}>
+      			<hr className="uk-width-1-1" style={{margin: '5px 0 0 0'}} />
+	     		<pre style={{overflow:'auto', height: '145px', marginTop:'10px'}}>
 		     		{playerLogs}
 		     	</pre>
 		    </div>
