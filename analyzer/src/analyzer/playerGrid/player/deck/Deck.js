@@ -35,15 +35,9 @@ class Deck extends Component {
       return thisCount - lastCount;
   }
 
-  getCard(cardKey) {
-    cardKey = cardKey.replace(/'/g,"");
-    CardImages[cardKey]
-  }
-
   render() {
     let thisTurn = this.props.turns[this.props.turn];
     let cardStacks = [];
-          console.log(CardImages);
     for (let typeKey in thisTurn.cards) {
       let cards = thisTurn.cards[typeKey];
       for (let cardKey in cards) {
@@ -62,7 +56,6 @@ class Deck extends Component {
               // todo I'd like to get additional animation on this badge after the card comes in
             }
           }
-          console.log('"' + cardKey + '"');
           cardList.push(
               <div key={cardKey + count} className="card uk-text-right uk-animation-scale-up uk-transform-origin-bottom-center"
                 style={{background: "url(" + CardImages[cardKey] + ")"}}>

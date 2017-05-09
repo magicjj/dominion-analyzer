@@ -369,12 +369,12 @@ import Governor from './images/200px-Governor.jpg';
 import Stash from './images/200px-Stash.jpg';
 import Prince from './images/200px-Prince.jpg';
 import Summon from './images/320px-Summon.jpg';
-import Philosophers_Stone from "./images/200px-Philosopher's_Stone.jpg";
-import Workers_Village from "./images/200px-Worker's_Village.jpg";
-import Kings_Court from "./images/200px-King's_Court.jpg";
-import Fools_Gold from "./images/200px-Fool's_Gold.jpg";
+import Philosophers_Stone from "./images/200px-Philosophers_Stone.jpg";
+import Workers_Village from "./images/200px-Workers_Village.jpg";
+import Kings_Court from "./images/200px-Kings_Court.jpg";
+import Fools_Gold from "./images/200px-Fools_Gold.jpg";
 import Farmers_Market from "./images/200px-Farmers_Market.jpg";
-import Kings_Castle from "./images/200px-King's_Castle.jpg";
+import Kings_Castle from "./images/200px-Kings_Castle.jpg";
 
 
 import VP_16px from "./images/16px-VP.png";

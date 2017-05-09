@@ -9,6 +9,8 @@ import Block from 'react-uikit-block';
 import Text from 'react-uikit-text';
 import Panel from 'react-uikit-panel';
 
+import Tooltip from 'rc-tooltip';
+
 class TurnSummary extends Component {
 
   constructor(props) {
@@ -74,42 +76,54 @@ class TurnSummary extends Component {
 		return <div key={player.name} className="uk-grid uk-grid-small">
       		<h5 className="uk-width-1-1">{player.name}</h5>
 		    <div className="uk-width-1-6">
-		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} />
+				<Tooltip placement="right" overlay={<span>Victory Points</span>}>
+		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} />
+				</Tooltip>
 		    	{thisTurnSummary.victoryPoints}
 		    </div>
 		    <div className="uk-width-1-6">
 		    	{this.getDiffDisplay(diff.victoryPoints)}
 		    </div>
 		    <div className="uk-width-1-6">
-		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.PercentTreasure_16px} /> 
+				<Tooltip placement="right" overlay={<span>Percentage of Treasure Cards</span>}>
+		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.PercentTreasure_16px} /> 
+				</Tooltip>
 		    	{thisTurnSummary.percentTreasureCards}%
 		    </div>
 		    <div className="uk-width-1-6">
 		    	{this.getDiffDisplay(diff.percentTreasureCards, '%')}
 		    </div>
 		    <div className="uk-width-1-6">
-		      	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumCards_16px} /> 
+				<Tooltip placement="right" overlay={<span>Total Number of Cards</span>}>
+		      		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumCards_16px} /> 
+				</Tooltip>
 		      	{thisTurnSummary.numCards}
 		    </div>
 		    <div className="uk-width-1-6">
 		    	{this.getDiffDisplay(diff.numCards)}
 		    </div>
 		    <div className="uk-width-1-6">
-		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumVictory_16px} /> 
+				<Tooltip placement="right" overlay={<span>Number of Victory Cards</span>}>
+		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumVictory_16px} /> 
+				</Tooltip>
 		    	{thisTurnSummary.numVictoryCards}
 		    </div>
 		    <div className="uk-width-1-6">
 		    	{this.getDiffDisplay(diff.numVictoryCards)}
 		    </div>
 		    <div className="uk-width-1-6">
-		    	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumTreasure_16px} />
+				<Tooltip placement="right" overlay={<span>Number of Treasure Cards</span>}>
+		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumTreasure_16px} />
+				</Tooltip>
 		    	{thisTurnSummary.numTreasureCards}
 		    </div>
 		    <div className="uk-width-1-6">
 		    	{this.getDiffDisplay(diff.numTreasureCards)}
 		    </div>
 		    <div className="uk-width-1-6">
-		      	<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumAction_16px} />
+				<Tooltip placement="right" overlay={<span>Number of Action Cards</span>}>
+		      		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumAction_16px} />
+				</Tooltip>
 		      	{thisTurnSummary.numActionCards}
 		    </div>
 		    <div className="uk-width-1-6">

@@ -54,7 +54,7 @@ class PlayerGrid extends Component {
 
 // todo fix the stupid margin bullshit below
     return (
-          <div className="uk-width-1-1 uk-height-1-1 uk-grid-match uk-grid uk-margin" uk-grid>
+          <div className="uk-width-1-1 uk-height-1-1 uk-g uk-grid-match uk-grid uk-margin">
             <div className="uk-width-2-5">
               <TurnSlider gdo={this.props.gdo} turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
             </div>

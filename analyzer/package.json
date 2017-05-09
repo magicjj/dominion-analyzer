@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "material-ui": "^0.18.0",
+    "rc-tooltip": "^3.4.3",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-uikit-components": "^2.0.2",
