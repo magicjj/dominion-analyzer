@@ -1,0 +1,556 @@
+Game #3448349, unrated.
+mc starts with 7 Coppers and 3 Estates.
+mc shuffles their deck.
+mc draws 5 cards.
+ma starts with 7 Coppers and 3 Estates.
+ma shuffles their deck.
+ma draws 4 Coppers and an Estate.
+L starts with 7 Coppers and 3 Estates.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 1 - mcdevittl218
+mc plays 3 Coppers.
+mc buys and gains a Silver.
+mc draws 5 cards.
+
+Turn 1 - magicjj
+ma plays 4 Coppers.
+ma buys and gains a Page.
+ma draws 3 Coppers and 2 Estates.
+
+Turn 1 - Lord Rattington
+L plays 5 Coppers.
+L buys and gains a Bandit.
+L draws 5 cards.
+
+Turn 2 - mcdevittl218
+mc plays 4 Coppers.
+mc buys and gains a Temple.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 2 - magicjj
+ma plays 3 Coppers.
+ma buys and gains a Silver.
+ma shuffles their deck.
+ma draws 3 Coppers and 2 Estates.
+
+Turn 2 - Lord Rattington
+L plays 2 Coppers.
+L buys and gains a Fool's Gold.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 3 - mcdevittl218
+mc plays a Silver and 4 Coppers.
+mc buys and gains a Gold.
+mc draws 5 cards.
+
+Turn 3 - magicjj
+ma plays 3 Coppers.
+ma buys and gains a Silver.
+ma draws 3 Coppers, a Silver and a Page.
+
+Turn 3 - Lord Rattington
+L plays 4 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 4 - mcdevittl218
+mc plays a Temple.
+mc gets 1 VP.
+mc trashes an Estate.
+mc gets 1 VP from Tomb.
+mc plays 2 Coppers.
+mc buys and gains a Page.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 4 - magicjj
+ma plays a Page.
+ma draws a Copper.
+ma plays a Silver and 4 Coppers.
+ma buys and gains a Gold.
+ma returns a Page.
+ma receives a Treasure Hunter.
+ma shuffles their deck.
+ma draws 2 Coppers, 2 Estates and a Treasure Hunter.
+
+Turn 4 - Lord Rattington
+L plays a Bandit.
+L gains a Gold.
+mc reveals a Copper and a Silver.
+mc trashes a Silver.
+mc gets 1 VP from Tomb.
+mc discards a Copper.
+ma reveals a Copper and an Estate.
+ma discards a Copper and an Estate.
+L plays a Fool's Gold and 2 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 5 - mcdevittl218
+mc plays 3 Coppers.
+mc buys and gains a Silver.
+mc draws 5 cards.
+
+Turn 5 - magicjj
+ma plays a Treasure Hunter.
+ma gains a Silver.
+ma plays 2 Coppers.
+ma buys and gains a Chariot Race.
+ma returns a Treasure Hunter.
+ma receives a Warrior.
+ma draws 3 Coppers, a Silver and a Gold.
+
+Turn 5 - Lord Rattington
+L plays a Fool's Gold and 2 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 6 - mcdevittl218
+mc plays a Page.
+mc draws a card.
+mc plays a Temple.
+mc gets 1 VP.
+mc trashes a Copper.
+mc gets 1 VP from Tomb.
+mc plays a Gold and 2 Coppers.
+mc buys and gains a Bandit.
+mc returns a Page.
+mc receives a Treasure Hunter.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 6 - magicjj
+ma plays a Gold, a Silver and 3 Coppers.
+ma buys and gains a King's Court.
+ma shuffles their deck.
+ma draws a Copper, a Silver, a Gold, an Estate and a Chariot Race.
+
+Turn 6 - Lord Rattington
+L plays a Gold and 3 Coppers.
+L buys and gains a Wild Hunt.
+L draws 5 cards.
+
+Turn 7 - mcdevittl218
+mc plays a Gold, a Silver and 3 Coppers.
+mc buys and gains a Province.
+mc draws 5 cards.
+
+Turn 7 - magicjj
+ma plays a Chariot Race.
+ma reveals a Warrior.
+ma puts a Warrior into their hand.
+L shuffles their deck.
+L reveals a Wild Hunt.
+ma plays a Warrior.
+ma draws 2 Coppers.
+L discards a Wild Hunt.
+mc discards a Copper.
+ma plays a Gold, a Silver and 3 Coppers.
+ma buys and gains a Province.
+ma returns a Warrior.
+ma receives a Hero.
+ma draws a Copper, a Silver, 2 Estates and a King's Court.
+
+Turn 7 - Lord Rattington
+L plays a Bandit.
+L gains a Gold.
+mc reveals 2 Estates.
+mc discards 2 Estates.
+ma reveals a Copper and a Silver.
+ma trashes a Silver.
+ma gets 1 VP from Tomb.
+ma discards a Copper.
+L plays 2 Silvers and 2 Coppers.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 8 - mcdevittl218
+mc plays a Treasure Hunter.
+mc gains 2 Silvers.
+mc plays a Bandit.
+mc gains a Gold.
+ma reveals 2 Coppers.
+ma discards 2 Coppers.
+L reveals 2 Coppers.
+L discards 2 Coppers.
+mc plays 2 Coppers.
+mc buys and gains a Fool's Gold.
+mc returns a Treasure Hunter.
+mc receives a Warrior.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 8 - magicjj
+ma plays a Silver and a Copper.
+ma buys and gains a Silver.
+ma shuffles their deck.
+ma draws 3 Coppers and 2 Silvers.
+
+Turn 8 - Lord Rattington
+L plays 2 Coppers.
+L buys and gains a Fool's Gold.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 9 - mcdevittl218
+mc plays a Warrior.
+mc draws 2 cards.
+ma discards a Copper.
+L discards a Silver.
+L trashes a Silver.
+L gets 1 VP from Tomb.
+mc plays a Gold, a Silver and a Copper.
+mc buys and gains a Temple.
+mc takes 2 VP from the Temple pile.
+mc returns a Warrior.
+mc receives a Hero.
+mc draws 5 cards.
+
+Turn 9 - magicjj
+ma plays 2 Silvers and 3 Coppers.
+ma buys and gains a Bandit.
+ma draws 2 Coppers, a Silver, an Estate and a King's Court.
+
+Turn 9 - Lord Rattington
+L plays a Gold, a Silver, a Fool's Gold and 2 Coppers.
+L buys and gains a Province.
+mc trashes a Fool's Gold.
+mc gets 1 VP from Tomb.
+mc gains a Gold.
+L draws 5 cards.
+
+Turn 10 - mcdevittl218
+mc plays a Bandit.
+mc gains a Gold.
+ma reveals an Estate and a Chariot Race.
+ma discards an Estate and a Chariot Race.
+L reveals a Copper and a Gold.
+L trashes a Gold.
+L gets 1 VP from Tomb.
+L discards a Copper.
+mc plays a Gold and 2 Coppers.
+mc buys and gains a Page.
+mc draws 5 cards.
+
+Turn 10 - magicjj
+ma plays a Silver and 2 Coppers.
+ma buys and gains a Temple.
+ma draws a Copper, a Gold, an Estate, a Province and a Hero.
+
+Turn 10 - Lord Rattington
+L plays a Bandit.
+L gains a Gold.
+mc reveals a Copper and a Silver.
+mc trashes a Silver.
+mc gets 1 VP from Tomb.
+mc discards a Copper.
+ma shuffles their deck.
+ma reveals a Copper and a Bandit.
+ma discards a Copper and a Bandit.
+L plays a Silver, a Fool's Gold and a Copper.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 11 - mcdevittl218
+mc plays a Gold, a Silver and 2 Coppers.
+mc buys and gains a King's Court.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 11 - magicjj
+ma plays a Hero.
+ma gains a Gold.
+ma plays a Gold and a Copper.
+ma buys and gains a Bandit.
+ma returns a Hero.
+ma receives a Champion.
+ma draws 4 Coppers and a King's Court.
+
+Turn 11 - Lord Rattington
+L plays a Wild Hunt.
+L shuffles their deck.
+L draws 3 cards.
+L plays a Gold, a Fool's Gold and 3 Coppers.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 12 - mcdevittl218
+mc plays a Temple.
+mc gets 1 VP.
+mc trashes a Copper.
+mc gets 1 VP from Tomb.
+mc plays a Gold.
+mc buys and gains a Silver.
+mc draws 5 cards.
+
+Turn 12 - magicjj
+ma plays 4 Coppers.
+ma buys and gains a Farmers' Market.
+ma draws a Copper, 2 Estates, a Chariot Race and a Temple.
+
+Turn 12 - Lord Rattington
+L plays 3 Silvers and a Copper.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 13 - mcdevittl218
+mc plays 2 Golds, a Silver and a Copper.
+mc buys and gains a Province.
+mc draws 5 cards.
+
+Turn 13 - magicjj
+ma plays a Chariot Race.
+ma reveals a Silver.
+ma puts a Silver into their hand.
+L reveals a Gold.
+ma plays a Temple.
+ma gets 1 VP.
+ma trashes an Estate.
+ma gets 1 VP from Tomb.
+ma plays a Silver and a Copper.
+ma buys and gains a Farmers' Market.
+ma shuffles their deck.
+ma draws a Copper, 2 Silvers, a Bandit and a Farmers' Market.
+
+Turn 13 - Lord Rattington
+L plays a Bandit.
+L gains a Gold.
+mc reveals a Gold and a Province.
+mc trashes a Gold.
+mc gets 1 VP from Tomb.
+mc discards a Province.
+ma reveals a Copper and a Province.
+ma discards a Copper and a Province.
+L plays a Fool's Gold and 2 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 14 - mcdevittl218
+mc plays 3 Coppers.
+mc buys and gains a Farmers' Market.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 14 - magicjj
+ma plays a Bandit.
+ma gains a Gold.
+L reveals an Estate and a Bandit.
+L discards an Estate and a Bandit.
+mc reveals a Silver and a Gold.
+mc trashes a Silver.
+mc gets 1 VP from Tomb.
+mc discards a Gold.
+ma plays 2 Silvers and a Copper.
+ma buys and gains a Wild Hunt.
+ma draws 2 Coppers, a Gold, a Bandit and a Temple.
+
+Turn 14 - Lord Rattington
+L plays 3 Golds, a Silver and a Copper.
+L buys and gains a Province.
+L draws 5 cards.
+
+Turn 15 - mcdevittl218
+mc plays a Page.
+mc draws a card.
+mc plays a Temple.
+mc gets 1 VP.
+mc trashes a Copper and an Estate.
+mc gets 2 VP from Tomb.
+mc plays a Silver.
+mc buys and gains an Estate.
+mc returns a Page.
+mc receives a Treasure Hunter.
+mc draws 5 cards.
+
+Turn 15 - magicjj
+ma plays a Bandit.
+ma gains a Gold.
+L reveals a Copper and a Wild Hunt.
+L discards a Copper and a Wild Hunt.
+mc reveals a Copper and a Bandit.
+mc discards a Copper and a Bandit.
+ma plays a Gold and 2 Coppers.
+ma buys and gains an Embassy.
+L gains a Silver.
+mc gains a Silver.
+ma draws 2 Coppers, a Gold, an Estate and a Chariot Race.
+
+Turn 15 - Lord Rattington
+L plays 2 Golds, a Fool's Gold and 2 Coppers.
+L buys and gains a Province.
+L draws 5 cards.
+
+Turn 16 - mcdevittl218
+mc plays a Gold and 2 Coppers.
+mc buys and gains a Wild Hunt.
+mc draws 5 cards.
+
+Turn 16 - magicjj
+ma plays a Chariot Race.
+ma reveals an Estate.
+ma puts an Estate into their hand.
+L reveals an Estate.
+ma plays a Gold and 2 Coppers.
+ma buys and gains an Embassy.
+L gains a Silver.
+mc gains a Silver.
+ma draws a Copper, a Silver, a King's Court, a Champion and a Farmers' Market.
+
+Turn 16 - Lord Rattington
+L plays 2 Silvers, a Fool's Gold and 2 Coppers.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 17 - mcdevittl218
+mc plays a Gold, a Silver and a Copper.
+mc buys and gains a Wild Hunt.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 17 - magicjj
+ma plays a King's Court.
+ma plays a Champion.
+ma plays a Champion again.
+ma plays a Champion a third time.
+ma plays a Farmers' Market.
+ma adds 1 VP to the Farmers' Market pile.
+ma plays a Silver and a Copper.
+ma buys and gains a Farmers' Market.
+ma shuffles their deck.
+ma draws 2 Coppers, an Estate, a Farmers' Market and a Temple.
+
+Turn 17 - Lord Rattington
+L plays a Gold, a Silver and a Copper.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 18 - mcdevittl218
+mc plays a Hero.
+mc gains a Gold.
+mc plays 2 Silvers.
+mc buys and gains a Temple.
+mc takes 3 VP from the Temple pile.
+mc returns a Hero.
+mc receives a Champion.
+mc draws 5 cards.
+
+Turn 18 - magicjj
+ma plays a Farmers' Market.
+ma adds 1 VP to the Farmers' Market pile.
+ma plays a Temple.
+ma gets 1 VP.
+ma trashes an Estate.
+ma gets 1 VP from Tomb.
+ma plays 2 Coppers.
+ma buys and gains a Temple.
+ma takes 1 VP from the Temple pile.
+ma draws a Copper, a Silver, an Estate, a Bandit and an Embassy.
+
+Turn 18 - Lord Rattington
+L plays 2 Golds, a Silver and a Copper.
+L buys and gains a Province.
+L draws 5 cards.
+
+Turn 19 - mcdevittl218
+mc plays 2 Golds and a Silver.
+mc buys and gains a Province.
+mc draws 5 cards.
+
+Turn 19 - magicjj
+ma plays a Bandit.
+ma gains a Gold.
+L reveals a Copper and a Gold.
+L trashes a Gold.
+L gets 1 VP from Tomb.
+L discards a Copper.
+mc reveals a Farmers' Market and a Wild Hunt.
+mc discards a Farmers' Market and a Wild Hunt.
+ma plays an Embassy.
+ma draws a Copper, 2 Golds, a Chariot Race and a Wild Hunt.
+ma discards 2 Coppers and an Estate.
+ma plays a Chariot Race.
+ma reveals a Farmers' Market.
+ma puts a Farmers' Market into their hand.
+L reveals an Estate.
+ma gets 1 VP.
+ma plays a Farmers' Market.
+ma adds 1 VP to the Farmers' Market pile.
+ma plays a Wild Hunt.
+ma draws a Silver, a Gold and a Province.
+ma plays 3 Golds and 2 Silvers.
+ma buys and gains 2 Provinces.
+ma draws 2 Coppers, a Silver, a Bandit and a Farmers' Market.
+
+Turn 19 - Lord Rattington
+L plays a Gold, a Silver, a Fool's Gold and a Copper.
+L buys and gains a Duchy.
+L draws 5 cards.
+
+Turn 20 - mcdevittl218
+mc plays a Treasure Hunter.
+mc gains a Silver.
+mc plays a Wild Hunt.
+mc gains an Estate.
+mc takes 2 VP from the Wild Hunt pile.
+mc plays a Gold, a Silver and a Copper.
+mc buys and gains a Duchy.
+mc draws 5 cards.
+
+Turn 20 - magicjj
+ma plays a Farmers' Market.
+ma adds 1 VP to the Farmers' Market pile.
+ma plays a Bandit.
+ma gains a Gold.
+L reveals a Silver and a Fool's Gold.
+L trashes a Fool's Gold.
+L gets 1 VP from Tomb.
+L discards a Silver.
+mc reveals a Copper and an Estate.
+mc discards a Copper and an Estate.
+ma plays a Silver and 2 Coppers.
+ma buys and gains a Silver and a Duchy.
+ma shuffles their deck.
+ma draws a Copper, 2 Golds and 2 Embassies.
+
+Turn 20 - Lord Rattington
+L plays a Gold, a Silver and a Copper.
+L buys and gains a Duchy.
+L draws 5 cards.
+
+Turn 21 - mcdevittl218
+mc plays 2 Coppers.
+mc buys and gains an Estate.
+mc shuffles their deck.
+mc draws 5 cards.
+
+Turn 21 - magicjj
+ma plays an Embassy.
+ma draws 2 Coppers, a Gold, a Province and a Farmers' Market.
+ma discards 2 Coppers and a Province.
+ma plays an Embassy.
+ma draws a Silver, a Gold, a Province, a Chariot Race and a Farmers' Market.
+ma discards a Copper, a Province and a Chariot Race.
+ma plays a Farmers' Market.
+ma takes 4 VP from the Farmers' Market pile.
+ma trashes a Farmers' Market.
+ma gets 1 VP from Tomb.
+ma plays a Farmers' Market.
+ma adds 1 VP to the Farmers' Market pile.
+ma plays 4 Golds and a Silver.
+ma buys and gains a Province and a King's Court.
+ma draws a Copper, a Silver, 2 Golds and a Wild Hunt.
+
+Turn 21 - Lord Rattington
+L plays a Wild Hunt.
+L draws a Copper and 2 Golds.
+L plays 2 Golds, a Silver and 3 Coppers.
+L buys and gains a Province.
+L shuffles their deck.
+L draws a Copper, a Silver, a Gold, an Estate and a Province.
