@@ -18,7 +18,7 @@ class TurnSummary extends Component {
   }
 
   getSummaryDataForTurn(turn) {
-  	let victoryPoints = turn.points.vp;
+  	let victoryPoints = turn.points.vp ? turn.points.vp : 0;
   	let numCards = turn.numCards;
   	let numVictoryCards = turn.cards.Victory ? Object.keys(turn.cards.Victory).reduce((acc, val) => {
 		return acc + turn.cards.Victory[val].count;
@@ -76,7 +76,7 @@ class TurnSummary extends Component {
 		return <div key={player.name} className="uk-grid uk-grid-small">
       		<h5 className="uk-width-1-1">{player.name}</h5>
 		    <div className="uk-width-1-6">
-				<Tooltip placement="right" overlay={<span>Victory Points</span>}>
+				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Victory Points</span>}>
 		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} />
 				</Tooltip>
 		    	{thisTurnSummary.victoryPoints}
@@ -85,7 +85,7 @@ class TurnSummary extends Component {
 		    	{this.getDiffDisplay(diff.victoryPoints)}
 		    </div>
 		    <div className="uk-width-1-6">
-				<Tooltip placement="right" overlay={<span>Percentage of Treasure Cards</span>}>
+				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Percentage of Treasure Cards</span>}>
 		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.PercentTreasure_16px} /> 
 				</Tooltip>
 		    	{thisTurnSummary.percentTreasureCards}%
@@ -94,7 +94,7 @@ class TurnSummary extends Component {
 		    	{this.getDiffDisplay(diff.percentTreasureCards, '%')}
 		    </div>
 		    <div className="uk-width-1-6">
-				<Tooltip placement="right" overlay={<span>Total Number of Cards</span>}>
+				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Total Number of Cards</span>}>
 		      		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumCards_16px} /> 
 				</Tooltip>
 		      	{thisTurnSummary.numCards}
@@ -103,7 +103,7 @@ class TurnSummary extends Component {
 		    	{this.getDiffDisplay(diff.numCards)}
 		    </div>
 		    <div className="uk-width-1-6">
-				<Tooltip placement="right" overlay={<span>Number of Victory Cards</span>}>
+				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Victory Cards</span>}>
 		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumVictory_16px} /> 
 				</Tooltip>
 		    	{thisTurnSummary.numVictoryCards}
@@ -112,7 +112,7 @@ class TurnSummary extends Component {
 		    	{this.getDiffDisplay(diff.numVictoryCards)}
 		    </div>
 		    <div className="uk-width-1-6">
-				<Tooltip placement="right" overlay={<span>Number of Treasure Cards</span>}>
+				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Treasure Cards</span>}>
 		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumTreasure_16px} />
 				</Tooltip>
 		    	{thisTurnSummary.numTreasureCards}
@@ -121,7 +121,7 @@ class TurnSummary extends Component {
 		    	{this.getDiffDisplay(diff.numTreasureCards)}
 		    </div>
 		    <div className="uk-width-1-6">
-				<Tooltip placement="right" overlay={<span>Number of Action Cards</span>}>
+				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Action Cards</span>}>
 		      		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumAction_16px} />
 				</Tooltip>
 		      	{thisTurnSummary.numActionCards}
