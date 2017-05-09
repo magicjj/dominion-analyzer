@@ -14,17 +14,19 @@ class TurnSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      animateLineChart: true,
-      dragging: false
+      animateLineChart: true
     };
     this.handleMouseDownChart = this.handleMouseDownChart.bind(this);
     this.handleMouseMoveChart = this.handleMouseMoveChart.bind(this);
     this.handleMouseUpChart = this.handleMouseUpChart.bind(this);
   }
 
+  dragging = false;
+
   handleMouseDownChart(e) {
     if (e !== null && e.activeTooltipIndex) {
-      this.setState({ animateLineChart: false, dragging: true });
+      this.setState({ animateLineChart: false });
+      this.dragging = true;
       let turn = e.activeTooltipIndex;
       if (e.chartX <= 40) {
         // without this the handler isn't good about letting people select the  zero position
@@ -35,13 +37,13 @@ class TurnSlider extends Component {
   }
 
   handleMouseMoveChart(e) {
-    if (this.state.dragging) {
+    if (this.dragging) {
       this.handleMouseDownChart(e);
     }
   }
 
   handleMouseUpChart(e) {
-    this.setState({ dragging: false });
+    this.dragging = false;
   }
 
   getChartData(gdo) {
@@ -84,9 +86,14 @@ class TurnSlider extends Component {
       }
       vp = vp ? vp : 0;
       playerList.push(
-        <div className="uk-grid uk-width-1-1" style={{color: this.getColor()}}>
-          <div className="uk-width-1-2">{this.props.gdo.players[playerIndex].name}</div>
-          <div className="uk-width-1-2 uk-text-right"><img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} /> {vp}</div>
+        <div className="uk-grid uk-grid-collapse uk-width-1-1" style={{color: this.getColor()}}>
+          <div className="uk-width-4-5">{this.props.gdo.players[playerIndex].name}</div>
+          <div className="uk-width-1-5 uk-text-right">
+            <div className="uk-grid uk-grid-collapse">
+              <div className="uk-width-1-3"><img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} /></div>
+              <div className="uk-width-2-3 uk-text-right">{vp}</div>
+            </div>
+          </div>
         </div>
       )
     }
