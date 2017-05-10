@@ -1,5 +1,5 @@
 const restify = require('restify');
-const Routes = require('./routing/analyzerapi');
+const Routes = require('./routing/analyzer-routing');
 
 let server = restify.createServer({
   name: 'analyzerapi',

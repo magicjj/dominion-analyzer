@@ -1,16 +1,9 @@
-check form-danger-color
-check modal
-check nav dropdown, switcher, subnav, etc
-
-fix all js errors
-
-add tooltips to icons
 add some settings
-clean up CSS
 do splash screen
+reset to turn 0 after new analyze
 
-test with > 2 players
 look into saving submitted logs
+look into bookmarklet/extension
 
 
 blue borders on shit
@@ -19,6 +12,11 @@ expand cards down not up
 
 try to eliminate style= inline
 
+check form-danger-color
+check modal
+check nav dropdown, switcher, subnav, etc
+
+fix all js errors
 
 had appendFile not appendFileSync - see if there could possibly be types mismatched
 
@@ -30,5 +28,4 @@ Card View: Cropped, Full Size
 Card Size: Small, Medium, Large
 
 
-reset to turn 0 after new analyze
 
