@@ -5,14 +5,6 @@ import TurnSummary from './turnSummary/TurnSummary';
 import PlayerGridSettings from './playerGridSettings/PlayerGridSettings';
 import Player from './player/Player';
 
-import Grid from 'react-uikit-grid';
-import Block from 'react-uikit-block';
-import Button from 'react-uikit-button';
-import Form from 'react-uikit-form';
-import List from 'react-uikit-list';
-import Panel from 'react-uikit-panel';
-import ListItem from 'react-uikit-list/lib/list-item';
-
 class PlayerGrid extends Component {
 
   constructor(props) {
@@ -42,31 +34,41 @@ class PlayerGrid extends Component {
     }
   }
 
+  componentWillMount() {
+    if (this.props.gdo.resetTurn) {
+      this.setState({ turn: 0 });
+      delete this.props.gdo.resetTurn;
+    }
+  }
+
   render() {
     let playerList = [];
     for (var i = 0; i < this.props.gdo.players.length; i++) {
       playerList.push(
-        <ListItem key={i}>
+        <li key={i}>
           <Player player={this.props.gdo.players[i]} turn={this.state.turn} />
-        </ListItem>
+        </li>
       );
     }
 
-// todo fix the stupid margin bullshit below
-    return (
-          <div className="uk-width-1-1 uk-height-1-1 uk-g uk-grid-match uk-grid uk-margin">
-            <div className="uk-width-2-5">
-              <TurnSlider gdo={this.props.gdo} turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
-            </div>
-            <div className="uk-width-2-5">
-              <TurnSummary turn={this.state.turn} gdo={this.props.gdo} />
-            </div>
-            <div className="uk-width-1-5">
+/*
+<div className="uk-width-1-5">
                 <PlayerGridSettings gdo={this.props.gdo} handleChangeSetting={this.handleChangeSetting} />
             </div>
-            <List col="1-1" className="playerGrid uk-margin-top">
+*/
+
+// todo fix the stupid margin bullshit below
+    return (
+          <div data-uk-grid className="uk-width-1-1 uk-height-1-1 uk-g uk-grid-match uk-grid uk-margin">
+            <div className="uk-width-1-2">
+              <TurnSlider gdo={this.props.gdo} turn={this.state.turn} numberOfTurns={this.props.gdo.players[0].turns.length} handleChangeTurn={this.handleChangeTurn} />
+            </div>
+            <div className="uk-width-1-2">
+              <TurnSummary turn={this.state.turn} gdo={this.props.gdo} />
+            </div>
+            <ul className="uk-list uk-width-1-1 playerGrid uk-margin-top">
               {playerList}
-            </List>
+            </ul>
           </div>
     );
   }

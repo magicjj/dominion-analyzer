@@ -4,11 +4,9 @@ import './App.css';
 import Analyzer from './analyzer/Analyzer';
 import AnalyzerInput from './analyzerInput/AnalyzerInput';
 
-import Grid from 'react-uikit-grid';
-import Block from 'react-uikit-block';
+import { Switch, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-import * as TestData1 from './assets/sampleData/data6.txt';
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +16,7 @@ class App extends Component {
     };
     this.handleChangeFormInput = this.handleChangeFormInput.bind(this);
     this.handleSubmitFormInput = this.handleSubmitFormInput.bind(this);
+    this.setStateGdo = this.setStateGdo.bind(this);
   }
 
   handleChangeFormInput(e) {
@@ -39,32 +38,42 @@ class App extends Component {
     .then(resp => {
       resp.json()
       .then(data => {
-        this.setState({ gdo: data });
+        data.resetTurn = true;
+        this.setStateGdo(data);
       });
     });
+  }
+
+  setStateGdo(data) {
+    this.setState({gdo: data});
+    if (data.key) {
+      this.props.history.push("/" + data.key);
+    }
   }
 
   render() {
     // TODO why doesn't context="primary" work instead of this classname?
     return (
       <MuiThemeProvider>
-        <Grid widths='1-1' col='1-1' gutter="collapse">
-          <Grid col='1-1' gutter="collapse" match className="uk-background-primary">
-            <Block col='1-2' className="uk-padding-small">
+        <div data-uk-grid className='uk-width-1-1 uk-child-width-1-1 uk-grid-collapse'>
+          <div data-uk-grid className="uk-background-primary uk-grid-collapse">
+            <div className="uk-width-1-2 uk-padding-small">
               <h1 className="header-font uk-display-inline uk-margin-small-left">Dominion </h1><h2 className="uk-display-inline">Game Analyzer</h2>
-            </Block>
-            <Block col='1-2'>
-              <AnalyzerInput col='1-2' 
+            </div>
+            <div className="uk-width-1-2">
+              <AnalyzerInput
                 formInput={this.state.formInput} 
                 handleSubmitFormInput={this.handleSubmitFormInput} 
                 handleChangeFormInput={this.handleChangeFormInput}
               />
-            </Block>
-          </Grid>
-          <Grid col='1-1' gutter='collapse'>
-            <Analyzer col='1-1' gdo={this.state.gdo} />
-          </Grid>
-        </Grid>
+            </div>
+          </div>
+          <div data-uk-grid className='uk-grid-collapse uk-width-1-1'>
+            <Switch>
+              <Route path='/:key?' render={(props) => <Analyzer gdo={this.state.gdo} setStateGdo={this.setStateGdo} {...props} />} />
+            </Switch>
+          </div>
+        </div>
       </MuiThemeProvider>
     );
   }

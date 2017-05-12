@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="stylesheet" href="uikit.dominion-analyzer.css">
+    <link rel="stylesheet" href="css/uikit.dominion-analyzer.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Fondamento" rel="stylesheet">
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="uikit.js"></script>
-    <script type="text/javascript" src="uikit-icons.js"></script>
+    <script type="text/javascript" src="vendor/jquery.js"></script>
+    <script type="text/javascript" src="vendor/uikit.js"></script>
+    <script type="text/javascript" src="vendor/uikit-icons.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -21,6 +21,24 @@
     <title>Dominion Analyzer</title>
   </head>
   <body>
+      <a class="uk-button uk-button-default" href="#modal-sections" data-uk-toggle>Open</a>
+
+<div id="modal-sections" data-uk-modal="center: true">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" data-uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Modal Title</h2>
+        </div>
+        <div class="uk-modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-primary" type="button">Save</button>
+        </div>
+    </div>
+</div>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -237,8 +255,8 @@
 <!-- This is the modal -->
 <div id="my-id" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title"></h2>
-        <button class="uk-modal-close" type="button"></button>
+        <h2 class="uk-modal-title">Title</h2>
+        <button class="uk-modal-close" type="button">Close</button>
     </div>
 </div>
 

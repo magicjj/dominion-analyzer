@@ -111,7 +111,7 @@ class DominionAnalyzer {
 					let playerName = match[2].trim();
 					let possessionIndexOf = playerName.indexOf(" [Possession]");
 					if (possessionIndexOf >= 0) {
-						playerName = playerName.substring(0, possessionIndexOf-1).trim();
+						playerName = playerName.substring(0, possessionIndexOf).trim();
 					}
 					activePlayer = this.findPlayerByName(gdo, playerName);
 					if (! activePlayer.turns[turn]) {
@@ -155,22 +155,26 @@ class DominionAnalyzer {
 			
 
 			return new Promise(function(resolve, reject) {
-				AnalyzerDbService.addGameLog(gameData, gdo)
-					.then(
-						res => {
-							gdo.res = res;
-							resolve(gdo);
-						},
-						err => {
-							throw err;
-						}
-					)
-				;
+				try {
+					AnalyzerDbService.addGame(gameData, gdo)
+						.then(
+							res => {
+								gdo.key = res.ops[0].key;
+								resolve(gdo);
+							},
+							err => {
+								reject({ ERROR: err });
+							}
+						)
+					;
+				} catch(e) {
+					reject({ ERROR: e });
+				}
 			});
 		} catch (e) {
 			// TODO error handling
 			console.log(e);
-			return { ERROR: e };
+			return new Promise((resolve, reject) => reject({ ERROR: e }));
 		}
 	}
 

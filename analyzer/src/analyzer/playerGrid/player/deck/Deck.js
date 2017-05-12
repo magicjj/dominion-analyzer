@@ -1,16 +1,6 @@
 import React, { Component } from 'react';
 
 import './Deck.css';
-
-// TODO tree shaking
-import Grid from 'react-uikit-grid';
-import Block from 'react-uikit-block';
-import Button from 'react-uikit-button';
-import Panel from 'react-uikit-panel';
-import Badge from 'react-uikit-badge';
-import List from 'react-uikit-list';
-import ListItem from 'react-uikit-list/lib/list-item';
-
 import CardImages from '../../../../assets/CardImages';
 
 class Deck extends Component {
@@ -48,11 +38,10 @@ class Deck extends Component {
           let countBadge, countChangeBadge;
           if (count === 1) {
             // it's the last card, add badges
-            countBadge = <Badge notification>{cards[cardKey].count}</Badge>;
+            countBadge = <span className="uk-badge">{cards[cardKey].count}</span>;
             let countChange = this.getCountChange(typeKey, cardKey);
             if (countChange !== 0) {
-              // todo change uk-label-danger
-              countChangeBadge = <Badge notification className="uk-label-danger">{(countChange > 0 ? '+' : '') + countChange}</Badge>;
+              countChangeBadge = <span className="uk-badge uk-label-danger">{(countChange > 0 ? '+' : '') + countChange}</span>;
               // todo I'd like to get additional animation on this badge after the card comes in
             }
           }
@@ -67,17 +56,17 @@ class Deck extends Component {
           count--;
         }
         cardStacks.push(
-          <Panel context="primary" key={cardKey} className="cardPanel">
+          <div key={cardKey} className="cardPanel">
             {cardList}
-          </Panel>
+          </div>
         )
       }
     }
 
     return (
-      <Grid type="list" className="Deck">
+      <div data-uk-grid className="Deck">
         {cardStacks}
-      </Grid>
+      </div>
     );
   }
   

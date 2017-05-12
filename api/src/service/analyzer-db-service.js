@@ -14,27 +14,65 @@ const makeKey = function() {
     return text;
 };
 
-module.exports = {
+class AnalyzerDbService {
 
-    addGameLog(gameLog, gameData) {
-        return new Promise(function(resolve, reject) {
+    addGame(gameLog, gameData) {
+        return new Promise((resolve, reject) => {
             this._connect((db, callback) => {
-                db.collection('gameData').insertOne(
+                let add = (thisKey) => {
+                    gameData.key = thisKey;
+                    db.collection('gameData').insertOne(
+                        {
+                            createTime: Date.now(),
+                            gameLog,
+                            gameData,
+                            key: thisKey
+                        },
+                        (err, result) => {
+                            if (err) throw err;
+                            console.log("inserted record");
+                            resolve(result);
+                        }
+                    );
+                }
+                let findUniqueKeyThenAdd = () => {
+                    let thisKey = makeKey();
+                    this.getGame(thisKey)
+                        .then(
+                            dupCheckRes => {
+                                if (dupCheckRes === null) {
+                                    add(thisKey);
+                                } else {
+                                    findUniqueKeyThenAdd();
+                                }
+                            },
+                            err => {
+                                throw err;
+                            }
+                        )
+                    ;
+                };  // end findUniqueKeyThenAdd fn dec
+                findUniqueKeyThenAdd();
+            }); // end _connect callback
+        }); // end return new promise
+    }
+
+    getGame(key) {
+        return new Promise((resolve, reject) => {
+            this._connect((db, callback) => {
+                db.collection('gameData').findOne(
                     {
-                        createTime: Date.now(),
-                        gameLog,
-                        gameData,
-                        key: makeKey()
+                        key
                     },
                     (err, result) => {
                         if (err) throw err;
-                        console.log("inserted record");
+                        console.log("record found");
                         resolve(result);
                     }
                 );
             })
         });
-    },
+    }
 
     _connect(callback) {
         return MongoClient.connect(url, function(err, db) {
@@ -48,3 +86,5 @@ module.exports = {
     }
 
 }
+
+module.exports = new AnalyzerDbService();

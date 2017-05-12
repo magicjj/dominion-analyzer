@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
-import CardImages from '../../../assets/CardImages';
-
 import "./TurnSlider.css";
+import CardImages from '../../../assets/CardImages';
 
 import Slider from 'material-ui/Slider';
 
@@ -86,7 +85,7 @@ class TurnSlider extends Component {
       }
       vp = vp ? vp : 0;
       playerList.push(
-        <div className="uk-grid uk-grid-collapse uk-width-1-1" style={{color: this.getColor()}}>
+        <div key={this.props.gdo.players[playerIndex].name} className="uk-grid uk-grid-collapse uk-width-1-1" style={{color: this.getColor()}}>
           <div className="uk-width-4-5">{this.props.gdo.players[playerIndex].name}</div>
           <div className="uk-width-1-5 uk-text-right">
             <div className="uk-grid uk-grid-collapse">
@@ -132,7 +131,7 @@ class TurnSlider extends Component {
             <YAxis />
             <CartesianGrid strokeDasharray="3 3" />
             <Tooltip content={this.getTooltipContent} />
-            { this.props.gdo.players.map(player => <Line type="monotone" dataKey={player.name} stroke={this.getColor()} isAnimationActive={this.state.animateLineChart} />) }
+            { this.props.gdo.players.map(player => <Line type="monotone" key={player.name} dataKey={player.name} stroke={this.getColor()} isAnimationActive={this.state.animateLineChart} />) }
           </LineChart>
         </ResponsiveContainer>
       </div>

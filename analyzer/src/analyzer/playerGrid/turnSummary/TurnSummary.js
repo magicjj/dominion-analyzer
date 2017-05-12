@@ -4,11 +4,6 @@ import './TurnSummary.css';
 
 import CardImages from '../../../assets/CardImages';
 
-import Grid from 'react-uikit-grid';
-import Block from 'react-uikit-block';
-import Text from 'react-uikit-text';
-import Panel from 'react-uikit-panel';
-
 import Tooltip from 'rc-tooltip';
 
 class TurnSummary extends Component {
@@ -55,13 +50,9 @@ class TurnSummary extends Component {
   
   render() {
 
-  	let header = <Text type="h3" col="1-1">Current Turn: {this.props.turn}</Text>;
+  	let header = <h3>Current Turn: {this.props.turn}</h3>;
   	if (this.props.turn === 0) {
-  		header = 
-  			<Grid col="1-1" gutter="collapse">
-  				<Text type="h3" col="1-1">Starting Deck</Text>
-  			</Grid>
-  		;
+  		header = <h3>Starting Deck</h3>;
   	}
 
   	let players = this.props.gdo.players.map((player, i) => {
@@ -73,11 +64,11 @@ class TurnSummary extends Component {
 			let lastTurnSummary = this.getSummaryDataForTurn(lastTurn);
 			diff = this.getTurnDiff(thisTurnSummary, lastTurnSummary);
 		}
-		return <div key={player.name} className="uk-grid uk-grid-small">
+		return <div data-uk-grid key={player.name} className="uk-grid-small">
       		<h5 className="uk-width-1-1">{player.name}</h5>
 		    <div className="uk-width-1-6">
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Victory Points</span>}>
-		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} />
+		    		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.VP_16px} />
 				</Tooltip>
 		    	{thisTurnSummary.victoryPoints}
 		    </div>
@@ -86,7 +77,7 @@ class TurnSummary extends Component {
 		    </div>
 		    <div className="uk-width-1-6">
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Percentage of Treasure Cards</span>}>
-		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.PercentTreasure_16px} /> 
+		    		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.PercentTreasure_16px} /> 
 				</Tooltip>
 		    	{thisTurnSummary.percentTreasureCards}%
 		    </div>
@@ -95,7 +86,7 @@ class TurnSummary extends Component {
 		    </div>
 		    <div className="uk-width-1-6">
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Total Number of Cards</span>}>
-		      		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumCards_16px} /> 
+		      		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.NumCards_16px} /> 
 				</Tooltip>
 		      	{thisTurnSummary.numCards}
 		    </div>
@@ -104,7 +95,7 @@ class TurnSummary extends Component {
 		    </div>
 		    <div className="uk-width-1-6">
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Victory Cards</span>}>
-		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumVictory_16px} /> 
+		    		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.NumVictory_16px} /> 
 				</Tooltip>
 		    	{thisTurnSummary.numVictoryCards}
 		    </div>
@@ -113,7 +104,7 @@ class TurnSummary extends Component {
 		    </div>
 		    <div className="uk-width-1-6">
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Treasure Cards</span>}>
-		    		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumTreasure_16px} />
+		    		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.NumTreasure_16px} />
 				</Tooltip>
 		    	{thisTurnSummary.numTreasureCards}
 		    </div>
@@ -122,7 +113,7 @@ class TurnSummary extends Component {
 		    </div>
 		    <div className="uk-width-1-6">
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Action Cards</span>}>
-		      		<img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.NumAction_16px} />
+		      		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.NumAction_16px} />
 				</Tooltip>
 		      	{thisTurnSummary.numActionCards}
 		    </div>
@@ -143,7 +134,7 @@ class TurnSummary extends Component {
     return (
       	<div className="uk-grid uk-grid-small">
 			<div className="uk-width-1-2 uk-card uk-card-small uk-card-body uk-background-muted">
-      			<h3 className="uk-card-title">{header}</h3>
+      			{header}
       			<hr className="uk-width-1-1" style={{margin: '5px 0 0 0'}} />
 				<div style={{height: '155px', overflow: 'auto'}}>
 		     		{players}

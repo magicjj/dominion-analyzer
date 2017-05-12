@@ -1,4 +1,5 @@
 const DominionAnalyzer = require('../controller/dominion-analyzer');
+const AnalyzerDbService = require('../service/analyzer-db-service');
 
 class Routes {
 	init(server) {
@@ -8,9 +9,23 @@ class Routes {
 					.then(
 						(gdo) => {
 							res.send(gdo);
-							next();
 						},
 						(err) => {
+							throw err;
+						}
+					)
+				;
+			}
+		);
+
+		server.get('/getSavedAnalysis/:key',
+			function(req, res, next) {
+				AnalyzerDbService.getGame(req.params.key)
+					.then(
+						dbRes => {
+							res.send(dbRes.gameData);
+						},
+						err => {
 							throw err;
 						}
 					)
