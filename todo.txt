@@ -1,9 +1,9 @@
-error handling modal
-do splash screen
-better icon for ext
+check form colors esp input and text BGs
 
 
-why is padding between slider and summary going away when shrinking window?
+better icon for chrome extension
+
+is content div shrinking when offcanvas opens?
 look into preventing text selection when dragging chart
 make mongo code handle duplicates - maybe, what about updates?
 check analytics
@@ -15,7 +15,6 @@ expand cards down not up
 
 CODE CLEANUP
 try to eliminate style= inline
-check form colors esp input and text BGs
 padding on modals
 move http calls to a service on front end, double check backend code org
 
