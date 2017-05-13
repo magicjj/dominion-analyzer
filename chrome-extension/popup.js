@@ -4,6 +4,7 @@ function getGameLog() {
         chrome.tabs.executeScript(tab.id, { code: codeToInject }, (result) => {
             console.log(result)
             if (typeof result[0] !== "string") {
+                renderStatus("Game data not found... has the game finished?")
             } else {
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", "http://www.windominion.com:8088/analyze", true);
@@ -31,9 +32,10 @@ function getActiveTab(callback) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(getGameLog, 2000)
-  
-});
+function renderStatus(str) {
+    document.getElementById("status").innerText = str;
+}
 
-setTimeout(getGameLog, 2000)
+document.addEventListener('DOMContentLoaded', function() {
+   getGameLog();
+});

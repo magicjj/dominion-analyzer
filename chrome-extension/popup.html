@@ -15,7 +15,6 @@
       #status {
         /* avoid an excessively wide status text */
         white-space: pre;
-        text-overflow: ellipsis;
         overflow: hidden;
         max-width: 400px;
       }
@@ -24,8 +23,7 @@
     <script src="popup.js"></script>
   </head>
   <body>
-      Looking for game data...
-      <a onclick="getGameLog();">click this shit</a>
+      <div id="status">Looking for game data...</div>
   </body>
 </html>
 
