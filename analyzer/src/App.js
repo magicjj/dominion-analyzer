@@ -70,10 +70,10 @@ class App extends Component {
 
             <div data-uk-grid className='uk-width-1-1 uk-child-width-1-1 uk-grid-collapse'>
               <div data-uk-grid className="uk-background-primary uk-grid-collapse">
-                <div className="uk-width-1-2 uk-padding-small">
-                  <h1 className="header-font uk-display-inline uk-margin-small-left">Dominion </h1><h2 className="uk-display-inline">Game Analyzer</h2>
+                <div className="uk-width-5-6 uk-padding-small">
+                  <h1 className="header-font uk-display-inline uk-margin-small-left">Win Dominion </h1><h2 className="uk-display-inline">Game Analyzer</h2>
                 </div>
-                <div className="uk-width-1-2">
+                <div className="uk-width-1-6">
                   <AnalyzerInput
                     formInput={this.state.formInput} 
                     handleSubmitFormInput={this.handleSubmitFormInput} 

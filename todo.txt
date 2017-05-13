@@ -1,12 +1,9 @@
-add some settings
-remove the form from the header and put it in a modal instead
 error handling modal
 do splash screen
-add a place to copy the save/share URL
-
-
-
 look into bookmarklet/extension
+
+
+
 look into preventing text selection when dragging chart
 make mongo code handle duplicates - maybe, what about updates?
 check analytics
@@ -18,11 +15,10 @@ expand cards down not up
 
 CODE CLEANUP
 try to eliminate style= inline
-check form-danger-color
-check js uikit components like nav dropdown, switcher, subnav, etc
+check form colors esp input and text BGs
+padding on modals
 move http calls to a service on front end, double check backend code org
 
-fix all js errors
 
 had appendFile not appendFileSync - see if there could possibly be types mismatched
 
