@@ -1,9 +1,9 @@
 error handling modal
 do splash screen
-look into bookmarklet/extension
+better icon for ext
 
 
-
+why is padding between slider and summary going away when shrinking window?
 look into preventing text selection when dragging chart
 make mongo code handle duplicates - maybe, what about updates?
 check analytics
