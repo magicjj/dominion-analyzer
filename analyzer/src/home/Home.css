@@ -1,0 +1,27 @@
+.numbers {
+    font-family: 'Alegreya SC', serif;
+    box-sizing: border-box;
+    min-width: 35px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5px 7px 5px;
+    border-radius: 500px;
+    vertical-align: middle;
+    background: #333333;
+    color: #fff;
+    font-size: 35px;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: -6px;
+    margin-right: 10px;
+}
+.no-pointer {
+    cursor: default !important;
+}

@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import 'whatwg-fetch';
 import './App.css';
 import Analyzer from './analyzer/Analyzer';
+import Home from './home/Home';
 import AnalyzerInput from './analyzerInput/AnalyzerInput';
 import PlayerGridSettings from './playerGridSettings/PlayerGridSettings';
 
 import { Switch, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import UIkit from 'uikit';
 
 
 class App extends Component {
@@ -38,10 +40,12 @@ class App extends Component {
       body: JSON.stringify({
         input: formInput
       })
-    })
-    .then(resp => {
-      resp.json()
-      .then(data => {
+    }).then(resp => {
+      if (resp.status === 500) {
+        UIkit.modal.alert('An error occured while parsing your game data. Try again in a few minutes. If the problem persists, please contact the developer.');
+        return;
+      }
+      resp.json().then(data => {
         data.resetTurn = true;
         this.setStateGdo(data);
       });
@@ -83,7 +87,8 @@ class App extends Component {
               </div>
               <div data-uk-grid className={'uk-grid-collapse uk-width-1-1 cardSize-' + this.state.cardSize + ' cardView-' + this.state.cardView}>
                 <Switch>
-                  <Route path='/:key?' render={(props) => <Analyzer gdo={this.state.gdo} setStateGdo={this.setStateGdo} {...props} />} />
+                  <Route path='/:key' render={(props) => <Analyzer gdo={this.state.gdo} setStateGdo={this.setStateGdo} {...props} />} />
+                  <Route path='/' component={Home} />
                 </Switch>
               </div>
             </div>
@@ -98,8 +103,8 @@ class App extends Component {
 
                 </div>
             </div>
-        </div>
 
+        </div>
         
       </MuiThemeProvider>
     );

@@ -194,8 +194,15 @@ class DominionAnalyzer {
 		for (let typeKey in deck) {
 			for (let cardKey in deck[typeKey]) {
 				let card = deck[typeKey][cardKey];
-				let pointsChangeFn = DeckData[card.name].pointsChangeFn;
-				let pointsChange = typeof pointsChangeFn === 'function' ? pointsChangeFn(deck) : {};
+				let cardData = DeckData[card.name];
+				let pointsChange;
+				if (! cardData) {
+					console.log("Missing card! " + card.name);
+					pointsChange = {};
+				} else {
+					let pointsChangeFn = cardData.pointsChangeFn;
+					pointsChange = typeof pointsChangeFn === 'function' ? pointsChangeFn(deck) : {};
+				}
 				for (let pointType in pointsChange) {
 					if (! points[pointType]) {
 						points[pointType] = 0;
@@ -271,6 +278,22 @@ class DominionAnalyzer {
 	getCardData(str) {
 		let ret;
 		str = str.trim();
+		// check Farmers' Market and King's  Castle
+		// multiple oasis? Sir Bailey?
+		if (str.endsWith("ies")) {
+			//duchies
+			ret = this.getCardData(str.slice(0,-3) + "y");
+			if (ret.type[0] !== 'NOTFOUND') {
+				return ret;
+			}
+		}
+		if (str.endsWith("es")) {
+			//witches make sure bridges still works, check horn of plenty
+			ret = this.getCardData(str.slice(0,-2));
+			if (ret.type[0] !== 'NOTFOUND') {
+				return ret;
+			}
+		}
 		if (str.endsWith("s")) {
 			ret = this.getCardData(str.slice(0,-1));
 			if (ret.type[0] !== 'NOTFOUND') {

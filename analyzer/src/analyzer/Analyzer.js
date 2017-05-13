@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import UIkit from 'uikit';
 
 import PlayerGrid from './playerGrid/PlayerGrid';
 
@@ -32,10 +33,16 @@ class Analyzer extends Component {
         headers: {
           'Content-Type': 'application/json'
         }
-      })
-      .then(resp => {
-        resp.json()
-        .then(data => {
+      }).then(resp => {
+        if (resp.status === 404) {
+          UIkit.modal.alert('The game key you requested could not be retrieved. If this is an old key, the data may have been purged. Otherwise, try again in a few minutes. If the problem persists, please contact the developer.');
+          return;
+        }
+        if (resp.status === 500) {
+          UIkit.modal.alert('An error occured while retrieving your game data. Try again in a few minutes. If the problem persists, please contact the developer.');
+          return;
+        }
+        resp.json().then(data => {
           this.props.setStateGdo(data);
         });
       });

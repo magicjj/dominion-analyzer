@@ -37,5 +37,5 @@ function renderStatus(str) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-   getGameLog();
+   setTimeout(getGameLog, 2000);
 });

@@ -11,7 +11,7 @@ class Routes {
 							res.send(gdo);
 						},
 						(err) => {
-							throw err;
+							res.send(500, err.ERROR);
 						}
 					)
 				;
@@ -23,10 +23,14 @@ class Routes {
 				AnalyzerDbService.getGame(req.params.key)
 					.then(
 						dbRes => {
+							if (dbRes === null) {
+								res.send(404, null);
+								return;
+							}
 							res.send(dbRes.gameData);
 						},
 						err => {
-							throw err;
+							res.send(500, err.ERROR);
 						}
 					)
 				;

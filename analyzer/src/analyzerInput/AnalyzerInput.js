@@ -45,7 +45,7 @@ class AnalyzerInput extends Component {
   render() {
     return (
       <div className="uk-float-right uk-margin-right" style={{paddingTop: '8px'}}>
-        <button type="button" data-uk-toggle="target: #analyzeModal" className="uk-button uk-button-primary uk-height-1-1" onClick={this.handleSubmitSampleData}>Analyze</button>
+        <button type="button" data-uk-toggle="target: #analyzeModal" className="uk-button uk-button-primary uk-height-1-1">Analyze</button>
 
 <div id="analyzeModal" data-uk-modal="center: true">
     <div className="uk-modal-dialog">
