@@ -59,15 +59,6 @@ class AnalyzerInput extends Component {
             
         </div>
         <div className="uk-modal-footer uk-text-right">
-            <button type="button" className="uk-button uk-button-secondary">Try it out with sample data</button>
-            <div data-uk-dropdown="mode: click">
-              <div onClick={this.handleClickDropdown}>
-                <select className="uk-select" onChange={this.handleChangeSampleData}>
-                    { sampleDataKeys.map(key => <option key={key} value={key}>{key}</option>) }
-                </select>
-                <button type="submit" className="uk-button uk-button-primary uk-margin-small-left uk-height-1-1 uk-modal-close" onClick={this.handleSubmitSampleData}>Analyze Sample Data</button>
-              </div>
-            </div>
             <button className="uk-button uk-button-primary uk-margin-small-left uk-modal-close" type="button" onClick={this.props.handleSubmitFormInput}>Analyze</button>
         </div>
     </div>

@@ -21,14 +21,22 @@ class Home extends Component {
                 </p>
                 <p>
                     Until now. Win Dominion parses your game log and provides a beautiful interface for post-game analysis. Drag the turn slider and visually watch the decks grow and shrink
-                    as you "rewind" and "fast forward" through your game. View statistics about each deck's contents for each turn. Do it all with Win Dominion.
+                    as you "rewind" and "fast forward" through your game. View statistics about each deck's contents for each turn. Use the full potential of your game's data to fine tune your strategy.
                 </p>
+                <p className="uk-text-lead">
+                    See sample games...
+                </p>
+                <ul>
+                    <li><a href="http://www.windominion.com/NCeJsu2">magicjj vs. mcdevittl218</a></li>
+                    <li><a href="http://www.windominion.com/kqQJ2XZ">magicjj vs. derpbutter vs. Lord Rattington</a></li>
+                    <li><a href="http://www.windominion.com/Dno8UDP">magicjj vs. Rage vs. Lord Rattington vs. Revenge Witch</a></li>
+                </ul>
                 <p className="uk-text-lead">
                     There are two ways to use Win Dominion:
                 </p>
                 <p>
                     <span className="uk-float-left numbers" style={{marginTop: '0'}}>1</span>
-                    Click the <button className="uk-button uk-button-primary no-pointer" type="button">Analyze</button> button in the top-right and corner of the page. Paste your entire game log into the box, and click <button className="uk-button uk-button-primary no-pointer" type="button">Analyze</button> again. If you don't have game data but would like to see the interface with sample data, click <button type="button" className="uk-button uk-button-secondary no-pointer">Try it out with sample data</button>.
+                    Click the <button className="uk-button uk-button-primary no-pointer" type="button">Analyze</button> button in the top-right and corner of the page. Paste your entire game log into the box, and click <button className="uk-button uk-button-primary no-pointer" type="button">Analyze</button> again.
                 </p>
                 <p>
                     <span className="uk-float-left numbers">2</span>
@@ -50,6 +58,15 @@ class Home extends Component {
                     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" data-border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
                     </form>
                 </div>
+                <h1 className="uk-article-title">
+                    Note
+                </h1>
+                <p>
+                    This project is currently hosted from my personal internet connection. Expect downtime and delays. I will move it to dedicated hosting as soon as demand and/or donations allow it.
+                </p>
+                <p>
+                    Bugs? Feature request? Log an issue on <a href="https://github.com/magicjj/dominion-analyzer/issues" target="_blank">GitHub</a>.
+                </p>
             </article>
         </div>
         );

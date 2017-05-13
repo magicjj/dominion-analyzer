@@ -16,3 +16,8 @@
 .uk-offcanvas-container {
   overflow-y: hidden;
 }
+
+.headerLink, .headerLink:hover, .headerLink:visited {
+  color: #fff;
+  text-decoration: none;
+}

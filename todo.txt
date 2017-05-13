@@ -1,7 +1,9 @@
 check form colors esp input and text BGs
+count VP from tokens
 
 
 better icon for chrome extension
+why are sample games making 2 browser history? gotta hit back twice after to go home
 
 is content div shrinking when offcanvas opens?
 look into preventing text selection when dragging chart
