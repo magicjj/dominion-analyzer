@@ -4,3 +4,14 @@
 .playerGrid {
 	margin:1px;
 }
+
+
+.icon-link-pad-top {
+	padding-top: 5px;
+}
+.icon-link {
+	cursor: pointer;
+}
+.icon-link:hover {
+	color: #a2a2a2;
+}

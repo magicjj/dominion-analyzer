@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import TurnSlider from './turnSlider/TurnSlider';
 import TurnSummary from './turnSummary/TurnSummary';
-import PlayerGridSettings from './playerGridSettings/PlayerGridSettings';
 import Player from './player/Player';
 
 class PlayerGrid extends Component {
@@ -13,22 +12,11 @@ class PlayerGrid extends Component {
       turn: 0
     };
     this.handleChangeTurn = this.handleChangeTurn.bind(this);
-    this.handleChangeSetting = this.handleChangeSetting.bind(this);
   }
 
   handleChangeTurn(e, val) {
     try {
       this.setState({ turn: parseInt(val) });
-    } catch(e) {
-      // don't change turn
-    }
-  }
-
-  handleChangeSetting(e, val) {
-    try {
-      console.log(e);
-      console.log(val);
-      //this.setState({ turn: parseInt(val) });
     } catch(e) {
       // don't change turn
     }
@@ -50,12 +38,6 @@ class PlayerGrid extends Component {
         </li>
       );
     }
-
-/*
-<div className="uk-width-1-5">
-                <PlayerGridSettings gdo={this.props.gdo} handleChangeSetting={this.handleChangeSetting} />
-            </div>
-*/
 
 // todo fix the stupid margin bullshit below
     return (

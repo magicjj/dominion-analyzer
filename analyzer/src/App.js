@@ -3,6 +3,7 @@ import 'whatwg-fetch';
 import './App.css';
 import Analyzer from './analyzer/Analyzer';
 import AnalyzerInput from './analyzerInput/AnalyzerInput';
+import PlayerGridSettings from './playerGridSettings/PlayerGridSettings';
 
 import { Switch, Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -12,10 +13,13 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      formInput: ''
+      formInput: '',
+      cardSize: 'large',
+      cardView: 'square'
     };
     this.handleChangeFormInput = this.handleChangeFormInput.bind(this);
     this.handleSubmitFormInput = this.handleSubmitFormInput.bind(this);
+    this.handleChangeSetting = this.handleChangeSetting.bind(this);
     this.setStateGdo = this.setStateGdo.bind(this);
   }
 
@@ -43,6 +47,13 @@ class App extends Component {
       });
     });
   }
+  
+  handleChangeSetting(e) {
+    console.log(e.target.name + " = " + e.target.value);
+    let state = {};
+    state[e.target.name] = e.target.value;
+    this.setState(state);
+  }
 
   setStateGdo(data) {
     this.setState({gdo: data});
@@ -55,25 +66,41 @@ class App extends Component {
     // TODO why doesn't context="primary" work instead of this classname?
     return (
       <MuiThemeProvider>
-        <div data-uk-grid className='uk-width-1-1 uk-child-width-1-1 uk-grid-collapse'>
-          <div data-uk-grid className="uk-background-primary uk-grid-collapse">
-            <div className="uk-width-1-2 uk-padding-small">
-              <h1 className="header-font uk-display-inline uk-margin-small-left">Dominion </h1><h2 className="uk-display-inline">Game Analyzer</h2>
+        <div className="uk-offcanvas-content">
+
+            <div data-uk-grid className='uk-width-1-1 uk-child-width-1-1 uk-grid-collapse'>
+              <div data-uk-grid className="uk-background-primary uk-grid-collapse">
+                <div className="uk-width-1-2 uk-padding-small">
+                  <h1 className="header-font uk-display-inline uk-margin-small-left">Dominion </h1><h2 className="uk-display-inline">Game Analyzer</h2>
+                </div>
+                <div className="uk-width-1-2">
+                  <AnalyzerInput
+                    formInput={this.state.formInput} 
+                    handleSubmitFormInput={this.handleSubmitFormInput} 
+                    handleChangeFormInput={this.handleChangeFormInput}
+                  />
+                </div>
+              </div>
+              <div data-uk-grid className={'uk-grid-collapse uk-width-1-1 cardSize-' + this.state.cardSize + ' cardView-' + this.state.cardView}>
+                <Switch>
+                  <Route path='/:key?' render={(props) => <Analyzer gdo={this.state.gdo} setStateGdo={this.setStateGdo} {...props} />} />
+                </Switch>
+              </div>
             </div>
-            <div className="uk-width-1-2">
-              <AnalyzerInput
-                formInput={this.state.formInput} 
-                handleSubmitFormInput={this.handleSubmitFormInput} 
-                handleChangeFormInput={this.handleChangeFormInput}
-              />
+
+            <div id="settingsOffcanvas" data-uk-offcanvas="flip: true">
+                <div className="uk-offcanvas-bar">
+
+                    <button className="uk-offcanvas-close" type="button" data-uk-close></button>
+
+                    <h3>Settings</h3>
+                    <PlayerGridSettings handleChangeSetting={this.handleChangeSetting} cardSize={this.state.cardSize} cardView={this.state.cardView} />
+
+                </div>
             </div>
-          </div>
-          <div data-uk-grid className='uk-grid-collapse uk-width-1-1'>
-            <Switch>
-              <Route path='/:key?' render={(props) => <Analyzer gdo={this.state.gdo} setStateGdo={this.setStateGdo} {...props} />} />
-            </Switch>
-          </div>
         </div>
+
+        
       </MuiThemeProvider>
     );
   }

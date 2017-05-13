@@ -4,27 +4,90 @@
 img {
 	width: 150px;
 }
+
 .cardPanel {
-	height: 150px;
-	margin-left: 120px;
-	margin-bottom: 20px;
 	white-space: nowrap;
 }
 .card {
-	height: 150px;
-    width: 150px;
     overflow: hidden;
-    background-size: 150px 238px !important;
     border: 1px solid black;
     border-radius: 5px;
     padding: 6px;
     box-sizing: border-box;
     position: relative;
-    margin-left: -120px;
     display: inline-block;
 }
 .card:hover {
-    height: 238px;
     z-index: 1000;
-    margin-top: -88px;
+}
+
+
+/* BEGIN sizing based on classes applied by PlayerGridSettings */
+.cardSize-small .cardPanel {
+	margin-left: 55px;
+	margin-bottom: 20px;
+	white-space: nowrap;
+}
+.cardSize-small .card {
+  width: 70px;
+	height: 111px;
+  background-size: 70px 111px !important;
+  margin-left: -55px;
+}
+.cardSize-small.cardView-square .card {
+  height: 70px;
+}
+.cardSize-small.cardView-square .card:hover {
+  height: 111px;
+  margin-top: -41px;
+}
+.cardSize-small.cardView-full .card:hover {
+  height: 111px;
+  margin-top: 0;
+}
+
+.cardSize-medium .cardPanel {
+	margin-left: 80px;
+	margin-bottom: 20px;
+	white-space: nowrap;
+}
+.cardSize-medium .card {
+  width: 100px;
+	height: 159px;
+  background-size: 100px 159px !important;
+  margin-left: -80px;
+}
+.cardSize-medium.cardView-square .card {
+  height: 100px;
+}
+.cardSize-medium.cardView-square .card:hover {
+  height: 159px;
+  margin-top: -59px;
+}
+.cardSize-medium.cardView-full .card:hover {
+  height: 159px;
+  margin-top: 0;
+}
+
+.cardSize-large .cardPanel {
+	margin-left: 120px;
+	margin-bottom: 20px;
+	white-space: nowrap;
+}
+.cardSize-large .card {
+  width: 150px;
+	height: 238px;
+  background-size: 150px 238px !important;
+  margin-left: -120px;
+}
+.cardSize-large.cardView-square .card {
+  height: 150px;
+}
+.cardSize-large.cardView-square .card:hover {
+  height: 238px;
+  margin-top: -88px;
+}
+.cardSize-large.cardView-full .card:hover {
+  height: 238px;
+  margin-top: 0;
 }
