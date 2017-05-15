@@ -1,6 +1,15 @@
 check form colors esp input and text BGs
 count VP from tokens
+switch to small view temporary placement issue
+LANDMARK CARDS THAT REFERENCE A CARD YOU DON'T HAVE?
 
+slider is again not resetting to turn 0 after new analyze
+
+set moreData.obeliskPile and moreData.otherDecks
+Tower:
+// TODO how does this work for curses? Treasures have more than 10 in their pile......
+// TODO add checkLine for Obelisk
+// TODO should this be <
 
 better icon for chrome extension
 why are sample games making 2 browser history? gotta hit back twice after to go home

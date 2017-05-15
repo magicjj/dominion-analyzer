@@ -93,7 +93,7 @@ let DeckData = {
 				}
 			}
 
-			return { vp: Math.floor(totalCardsCount / 10) }
+			return { vp: Math.floor(totalCardsCount / 10) };
 		}
 	},
 	"Militia": {
@@ -264,7 +264,7 @@ let DeckData = {
 	"Duke": {
 		name: "Duke",
 		type: ["Victory"],
-		pointsChangeFn: function(deck) {return { vp: deck['Victory']['Duchy']};}
+		pointsChangeFn: function(deck) {return { vp: (deck['Victory'] && deck['Victory']['Duchy'] ? deck['Victory']['Duchy'].count : 0) };}
 	},
 	"Minion": {
 		name: "Minion",
@@ -457,7 +457,7 @@ let DeckData = {
 				actionCardsCount += card.count;
 			}
 
-			return { vp: Math.floor(actionCardsCount / 3) }
+			return { vp: Math.floor(actionCardsCount / 3) };
 		}
 	},
 	"Herbalist": {
@@ -699,7 +699,7 @@ let DeckData = {
 				uniqueNamesCount += Object.keys(deck[typeKey]).length;
 			}
 
-			return { vp: Math.floor(uniqueNamesCount / 5) }
+			return { vp: Math.floor(uniqueNamesCount / 5) };
 		}
 	},
 	"Bag of Gold": {
@@ -787,7 +787,7 @@ let DeckData = {
 				victoryCardsCount += card.count;
 			}
 
-			return { vp: Math.floor(victoryCardsCount / 4) }
+			return { vp: Math.floor(victoryCardsCount / 4) };
 		}
 	},
 	"Spice Merchant": {
@@ -948,7 +948,7 @@ let DeckData = {
 	"Feodum": {
 		name: "Feodum",
 		type: ["Victory"],
-		pointsChangeFn: function(deck) {return { vp: Math.floor(deck['Treasure']['Silver'] / 3) }}
+		pointsChangeFn: function(deck) {return { vp: Math.floor(deck['Treasure']['Silver'] / 3) };}
 	},
 	"Fortress": {
 		name: "Fortress",
@@ -1518,31 +1518,37 @@ let DeckData = {
 	"Encampment": {
 		name: "Encampment",
 		type: ["Action"],
+		splitWith: "Plunder",
 		pointsChangeFn: null
 	},
 	"Plunder": {
 		name: "Plunder",
 		type: ["Treasure"],
+		splitWith: "^",
 		pointsChangeFn: null
 	},
 	"Patrician": {
 		name: "Patrician",
 		type: ["Action"],
+		splitWith: "Emporium",
 		pointsChangeFn: null
 	},
 	"Emporium": {
 		name: "Emporium",
 		type: ["Action"],
+		splitWith: "^",
 		pointsChangeFn: null
 	},
 	"Settlers": {
 		name: "Settlers",
 		type: ["Action"],
+		splitWith: "Bustling Village",
 		pointsChangeFn: null
 	},
 	"Bustling Village": {
 		name: "Bustling Village",
 		type: ["Action"],
+		splitWith: "^",
 		pointsChangeFn: null
 	},
 	"Castles": {
@@ -1553,11 +1559,13 @@ let DeckData = {
 	"Catapult": {
 		name: "Catapult",
 		type: ["Action"],
+		splitWith: "Rocks",
 		pointsChangeFn: null
 	},
 	"Rocks": {
 		name: "Rocks",
 		type: ["Treasure"],
+		splitWith: "^",
 		pointsChangeFn: null
 	},
 	"Chariot Race": {
@@ -1573,11 +1581,13 @@ let DeckData = {
 	"Gladiator": {
 		name: "Gladiator",
 		type: ["Action"],
+		splitWith: "Fortune",
 		pointsChangeFn: null
 	},
 	"Fortune": {
 		name: "Fortune",
 		type: ["Treasure"],
+		splitWith: "^",
 		pointsChangeFn: null
 	},
 	"Sacrifice": {
@@ -1638,47 +1648,72 @@ let DeckData = {
 	"Humble Castle": {
 		name: "Humble Castle",
 		type: ["Treasure","Victory","Castle"],
+		splitWith: "Crumbling Castle",
 		pointsChangeFn: function(deck) {
 			var castleCount = 0;
-			for (var cardKey in deck['Victory']) {
-				var card = deck['Victory'][cardKey];
-				if (card.type.indexOf('castle') > -1) {
-					castleCount += card.count;
+			for (var typeKey in deck) {
+				for (var cardKey in deck[typeKey]) {
+					var card = deck[typeKey][cardKey];
+					if (card.type.indexOf('Castle') > -1) {
+						castleCount += card.count;
+					}
 				}
 			}
 
-			return { vp: castleCount}
+			return { vp: castleCount };
 		}
 	},
 	"Crumbling Castle": {
 		name: "Crumbling Castle",
 		type: ["Victory","Castle"],
-		pointsChangeFn: null
+		splitWith: "Small Castle",
+		pointsChangeFn: function(deck) { return {vp: 1}; }
 	},
 	"Small Castle": {
 		name: "Small Castle",
 		type: ["Action","Victory","Castle"],
+		splitWith: "Haunted Castle",
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Haunted Castle": {
 		name: "Haunted Castle",
 		type: ["Victory","Castle"],
+		splitWith: "Opulent Castle",
 		pointsChangeFn: function(deck) { return {vp: 2}; }
 	},
 	"Opulent Castle": {
 		name: "Opulent Castle",
 		type: ["Action","Victory","Castle"],
+		splitWith: "Sprawling Castle",
 		pointsChangeFn: function(deck) { return {vp: 3}; }
 	},
 	"Sprawling Castle": {
 		name: "Sprawling Castle",
 		type: ["Victory","Castle"],
+		splitWith: "Grand Castle",
 		pointsChangeFn: function(deck) { return {vp: 4}; }
 	},
 	"Grand Castle": {
 		name: "Grand Castle",
 		type: ["Victory","Castle"],
+		splitWith: "King's Castle",
 		pointsChangeFn: function(deck) { return {vp: 5}; }
+	},
+	"King's Castle": {
+		name: "King's Castle",
+		type: ["Victory","Castle"],
+		splitWith: "^",
+		pointsChangeFn: function(deck) {
+			var castleCount = 0;
+			for (var cardKey in deck['Victory']) {
+				var card = deck['Victory'][cardKey];
+				if (card.type.indexOf('Castle') > -1) {
+					castleCount += card.count;
+				}
+			}
+
+			return { vp: 2 * castleCount};
+		}
 	},
 	"Triumph": {
 		name: "Triumph",
@@ -1758,7 +1793,11 @@ let DeckData = {
 	"Bandit Fort": {
 		name: "Bandit Fort",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) {
+			var silverGoldCount = (deck['Treasure']['Silver'] ? deck['Treasure']['Silver'].count : 0) + 
+				(deck['Treasure']['Gold'] ? deck['Treasure']['Gold'].count : 0);
+			return { vp: silverGoldCount * -2 };
+		}
 	},
 	"Basilica": {
 		name: "Basilica",
@@ -1788,12 +1827,34 @@ let DeckData = {
 	"Fountain": {
 		name: "Fountain",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) {
+			var copperCount = deck['Treasure']['Copper'] ? deck['Treasure']['Copper'].count : 0;
+			return { vp: copperCount >= 10 ? 15 : 0 };
+		}
 	},
 	"Keep": {
 		name: "Keep",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck, moreData) {
+			var otherDecks = moreData.otherDecks;
+			var bonus = 0;
+			// 5 per differently named treasure you have that you have the most copies of (or tied)
+			for (var cardKey in deck['Treasure']) {
+				var myCount = deck['Treasure'][cardKey].count;
+				var mostCopiesOrTied = true;
+				for (var i = 0; i < otherDecks.length; i++) {
+					var theirCount = otherDecks[i].cards['Treasure'] && otherDecks[i].cards['Treasure'][cardKey] ? otherDecks[i].cards['Treasure'][cardKey].count : 0;
+					if (theirCount > myCount) {
+						mostCopiesOrTied = false;
+					}
+				}
+				if (mostCopiesOrTied) {
+					bonus += 5;
+				}
+			}
+
+			return { vp: bonus };
+		}
 	},
 	"Labyrinth": {
 		name: "Labyrinth",
@@ -1808,22 +1869,50 @@ let DeckData = {
 	"Museum": {
 		name: "Museum",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) {
+			var differentlyNamedCardsCount = 0;
+			for (var typeKey in deck) {
+				for (var cardKey in deck[typeKey]) {
+					if (deck[typeKey][cardKey].count > 0) {
+						differentlyNamedCardsCount++;
+					}
+				}
+			}
+			return { vp: differentlyNamedCardsCount * 2 };
+		}
 	},
 	"Obelisk": {
 		name: "Obelisk",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck, moreData) {
+			// TODO obelisk is broken with split piles
+			var obeliskPile = moreData.obeliskPile;
+			return { vp: 2 * (deck['Action'] && deck['Action'][obeliskPile.name] ? deck['Action'][obeliskPile.name].count : 0) }
+		}
 	},
 	"Orchard": {
 		name: "Orchard",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) {
+			var differentlyNamedActionCardThreePlusCopiesCount = 0;
+			for (var cardKey in deck['Action']) {
+				if (deck['Action'][cardKey].count >= 3) {
+					differentlyNamedActionCardThreePlusCopiesCount++;
+				}
+			}
+			return { vp: differentlyNamedActionCardThreePlusCopiesCount * 4 };
+		}
 	},
 	"Palace": {
 		name: "Palace",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) {
+			var countGold = deck['Treasure']['Gold'] ? deck['Treasure']['Gold'].count : 0;
+			var countSilver = deck['Treasure']['Silver'] ? deck['Treasure']['Silver'].count : 0;
+			var countCopper = deck['Treasure']['Copper'] ? deck['Treasure']['Copper'].count : 0;
+			// looking for number of sets of Copper-Silver-Gold, which will be equal to the min count
+			return { vp: Math.min(countGold, countSilver, countCopper) * 3 }
+		}
 	},
 	"Tomb": {
 		name: "Tomb",
@@ -1833,22 +1922,75 @@ let DeckData = {
 	"Tower": {
 		name: "Tower",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck, moreData) {
+			// for this card, rather than calculating points ourselves we just read
+			// the data passed in from the Chrome Ext. this will obvs be unavailable if not using extension.
+			// to calculate it ourselves would require us to know the state of the supply piles at the start of and throughout the game
+
+			// todo problem with this is we don't change it for each turn, only get the end
+			if (! moreData.scoreTable) {
+				return {};
+			}
+
+			for (var rowIndex = 0; rowIndex < moreData.scoreTable.length; rowIndex++) {
+				var row = moreData.scoreTable[rowIndex];
+				if (row[0] === "Tower") {
+					try {
+						return { vp: parseInt(row[2]) };
+					} catch(e) {
+						return {};
+					}
+				}
+			}
+			return {};
+		}
 	},
 	"Triumphal Arch": {
 		name: "Triumphal Arch",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) {
+			var actionCardCounts = [];
+			for (var cardKey in deck['Action']) {
+				actionCardCounts.push(deck['Action'][cardKey].count);
+			}
+			actionCardCounts.sort();
+			var secondMostCommonActionCardCount = actionCardCounts[actionCardCounts.length-2] ? actionCardCounts[actionCardCounts.length-2] : 0;
+			return { vp: secondMostCommonActionCardCount * 3 };
+		}
 	},
 	"Wall": {
 		name: "Wall",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) {
+			var totalCardsCount = 0;
+			for (var typeKey in deck) {
+				for (var cardKey in deck[typeKey]) {
+					var card = deck[typeKey][cardKey];
+					totalCardsCount += card.count;
+				}
+			}
+			// penalty is -1 per card over 15
+			var penalty = Math.min(0, 15 - totalCardsCount);
+			// TODO should this and Gardens use deck.numCards? is it available at runtime?
+			return { vp: penalty };
+		}
 	},
 	"Wolf Den": {
 		name: "Wolf Den",
 		type: ["Landmark"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) {
+			var oneCopyCardCount = 0;
+			for (var typeKey in deck) {
+				for (var cardKey in deck[typeKey]) {
+					var card = deck[typeKey][cardKey];
+					if (card.count === 1) {
+						oneCopyCardCount++;
+					}
+				}
+			}
+
+			return { vp: oneCopyCardCount * -3 };
+		}
 	},
 	"Black Market": {
 		name: "Black Market",
@@ -1863,11 +2005,13 @@ let DeckData = {
 	"Sauna": {
 		name: "Sauna",
 		type: ["Action"],
+		splitWith: "Avanto",
 		pointsChangeFn: null
 	},
 	"Avanto": {
 		name: "Avanto",
 		type: ["Action"],
+		splitWith: "^",
 		pointsChangeFn: null
 	},
 	"Walled Village": {
@@ -1915,25 +2059,10 @@ let DeckData = {
 		type: ["Treasure","Reaction"],
 		pointsChangeFn: null
 	},
-	"Farmers' Market": {	// todo check this
+	"Farmers' Market": {
 		name: "Farmers' Market",
 		type: ["Action","Gathering"],
 		pointsChangeFn: null
-	},
-	"King's Castle": {
-		name: "King's Castle",
-		type: ["Victory","Castle"],
-		pointsChangeFn: function(deck) {
-			var castleCount = 0;
-			for (var cardKey in deck['Victory']) {
-				var card = deck['Victory'][cardKey];
-				if (card.type.indexOf('Castle') > -1) {
-					castleCount += card.count;
-				}
-			}
-
-			return { vp: 2 * castleCount}
-		}
 	}
 }
 

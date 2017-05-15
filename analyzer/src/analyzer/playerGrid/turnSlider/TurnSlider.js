@@ -53,7 +53,7 @@ class TurnSlider extends Component {
         let vp = 0;
         try {
           // todo clean up longass thing that sums the victory points
-          vp = gdo.players[playerIndex].turns[turnIndex].points.vp;
+          vp = gdo.players[playerIndex].turns[turnIndex].totalPoints.vp;
         } catch (e) {
           // assume it's 0
         }
@@ -79,7 +79,7 @@ class TurnSlider extends Component {
       let vp = 0;
       try {
         // todo clean up longass thing that sums the victory points
-        vp = this.props.gdo.players[playerIndex].turns[turnIndex].points.vp;
+        vp = this.props.gdo.players[playerIndex].turns[turnIndex].totalPoints.vp;
       } catch (e) {
         // assume it's 0
       }

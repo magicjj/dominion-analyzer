@@ -13,7 +13,7 @@ class TurnSummary extends Component {
   }
 
   getSummaryDataForTurn(turn) {
-  	let victoryPoints = turn.points.vp ? turn.points.vp : 0;
+  	let victoryPoints = turn.totalPoints.vp ? turn.totalPoints.vp : 0;
   	let numCards = turn.numCards;
   	let numVictoryCards = turn.cards.Victory ? Object.keys(turn.cards.Victory).reduce((acc, val) => {
 		return acc + turn.cards.Victory[val].count;

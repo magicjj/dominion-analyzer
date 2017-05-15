@@ -32,6 +32,10 @@ class Deck extends Component {
       let cards = thisTurn.cards[typeKey];
       for (let cardKey in cards) {
         let count = cards[cardKey].count;
+        if (count <= 0) {
+          continue;
+        }
+
         let stacked = 'cardPanel';
         let cardList = [];
         while (count > 0) {
@@ -56,7 +60,7 @@ class Deck extends Component {
           count--;
         }
         cardStacks.push(
-          <div key={cardKey} className="cardPanel">
+          <div key={cardKey} className={"cardPanel " + cardKey}>
             {cardList}
           </div>
         )

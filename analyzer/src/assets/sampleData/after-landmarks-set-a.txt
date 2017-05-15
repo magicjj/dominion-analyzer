@@ -1,0 +1,271 @@
+Game #3598783, unrated.
+L starts with 7 Coppers and 3 Estates.
+L shuffles their deck.
+L draws 5 cards.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 4 Coppers and an Estate.
+
+Turn 1 - Lord Rattington
+L plays 4 Coppers.
+L buys and gains a Gladiator.
+L draws 5 cards.
+
+Turn 1 - magicjj
+m plays 4 Coppers.
+m buys and gains a Gladiator.
+m draws 3 Coppers and 2 Estates.
+
+Turn 2 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 2 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws 2 Coppers, a Silver, an Estate and a Gladiator.
+
+Turn 3 - Lord Rattington
+L plays a Silver and 3 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 3 - magicjj
+m plays a Gladiator.
+m reveals a Silver.
+m trashes a Gladiator.
+m plays a Silver and 2 Coppers.
+m buys and gains a Gold.
+m draws 5 Coppers.
+
+Turn 4 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 4 - magicjj
+m plays 5 Coppers.
+m buys and gains a Wild Hunt.
+m shuffles their deck.
+m draws 2 Coppers, 2 Estates and a Gladiator.
+
+Turn 5 - Lord Rattington
+L plays a Gladiator.
+L reveals a Silver.
+L trashes a Gladiator.
+L plays a Silver and 3 Coppers.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 5 - magicjj
+m plays a Gladiator.
+m reveals an Estate.
+m trashes a Gladiator.
+m plays 2 Coppers.
+m buys and gains a Copper and a Forum.
+m draws 4 Coppers and a Wild Hunt.
+
+Turn 6 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 6 - magicjj
+m plays a Wild Hunt.
+m draws a Silver, a Gold and an Estate.
+m plays a Silver, a Gold and 4 Coppers.
+m buys a Fortune.
+m takes 8 debt.
+m gains a Fortune.
+m repays 1 debt (7 remaining).
+m shuffles their deck.
+m draws 4 Coppers and a Wild Hunt.
+
+Turn 7 - Lord Rattington
+L plays 2 Silvers and a Copper.
+L buys and gains a Wild Hunt.
+L draws 5 cards.
+
+Turn 7 - magicjj
+m plays a Wild Hunt.
+m draws a Copper, an Estate and a Fortune.
+m plays a Fortune and 5 Coppers.
+m repays 7 debt.
+m buys and gains a Silver.
+m draws a Copper, a Silver, an Estate, a Gladiator and a Forum.
+
+Turn 8 - Lord Rattington
+L plays a Gladiator.
+L reveals an Estate.
+m blocks with an Estate.
+L plays a Silver and 2 Coppers.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 8 - magicjj
+m plays a Forum.
+m draws a Copper, a Gold and an Estate.
+m discards 2 Estates.
+m plays a Gladiator.
+m reveals a Gold.
+m plays a Silver, a Gold and 2 Coppers.
+m buys a Fortune.
+m takes 8 debt.
+m gains a Fortune.
+m gains a Gold.
+m repays 2 debt (6 remaining).
+m shuffles their deck.
+m draws 2 Coppers, a Gold, an Estate and a Fortune.
+
+Turn 9 - Lord Rattington
+L plays a Silver, a Gold and 3 Coppers.
+L buys a Fortune.
+L takes 8 debt.
+L gains a Fortune.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 9 - magicjj
+m plays a Fortune, a Gold and 2 Coppers.
+m repays 6 debt.
+m buys and gains a Copper and a Silver.
+m draws 2 Coppers, a Silver, a Forum and a Wild Hunt.
+
+Turn 10 - Lord Rattington
+L plays a Silver and 3 Coppers.
+L repays 5 debt (3 remaining).
+L draws 5 cards.
+
+Turn 10 - magicjj
+m plays a Forum.
+m draws a Copper, a Gold and a Gladiator.
+m discards a Copper and a Gladiator.
+m plays a Wild Hunt.
+m draws a Silver, an Estate and a Fortune.
+m plays a Fortune, 2 Silvers, a Gold and 2 Coppers.
+m buys and gains 2 Provinces.
+m shuffles their deck.
+m draws 4 Coppers and an Estate.
+
+Turn 11 - Lord Rattington
+L plays a Wild Hunt.
+L draws 3 cards.
+L plays a Fortune, 3 Silvers and a Copper.
+L repays 3 debt.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 11 - magicjj
+m plays 4 Coppers.
+m buys and gains a Humble Castle.
+m draws a Copper, a Silver, an Estate, a Province and a Fortune.
+
+Turn 12 - Lord Rattington
+L plays a Gladiator.
+L reveals a Copper.
+m blocks with a Copper.
+L plays a Gold and 3 Coppers.
+L buys and gains a Province.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 12 - magicjj
+m plays a Fortune, a Silver and a Copper.
+m buys and gains a Crumbling Castle.
+m gains a Silver.
+m buys and gains a Copper.
+m draws 2 Coppers, a Silver, a Gold and a Gladiator.
+
+Turn 13 - Lord Rattington
+L plays a Gladiator.
+L reveals a Copper.
+m blocks with a Copper.
+L plays a Silver, a Gold and 2 Coppers.
+L buys and gains a Province.
+L draws 5 cards.
+
+Turn 13 - magicjj
+m plays a Gladiator.
+m reveals a Gold.
+m plays a Silver, a Gold and 2 Coppers.
+m buys and gains a Province.
+m draws a Copper, a Silver, an Estate, a Province and a Forum.
+
+Turn 14 - Lord Rattington
+L plays 2 Silvers and 2 Coppers.
+L buys and gains a Small Castle.
+L draws 5 cards.
+
+Turn 14 - magicjj
+m plays a Forum.
+m draws a Gold, a Fortune and a Wild Hunt.
+m discards an Estate and a Province.
+m plays a Wild Hunt.
+m gains an Estate.
+m takes 4 VP from the Wild Hunt pile.
+m plays a Fortune, a Silver, a Gold and a Copper.
+m buys and gains a Province and a Villa.
+m puts a Villa into their hand.
+m plays a Villa.
+m shuffles their deck.
+m draws 2 Coppers, an Estate, a Fortune and a Crumbling Castle.
+
+Turn 15 - Lord Rattington
+L plays a Wild Hunt.
+L draws 3 cards.
+L plays a Fortune, 2 Silvers and 2 Coppers.
+L buys and gains a Haunted Castle.
+L gains a Gold.
+m topdecks a Copper and a Fortune.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 15 - magicjj
+m plays a Copper.
+m draws 2 Coppers, an Estate and 2 Fortunes.
+
+Turn 16 - Lord Rattington
+L plays 2 Golds and 2 Coppers.
+L buys and gains a Province.
+L draws 5 cards.
+
+Turn 16 - magicjj
+m plays 2 Fortunes and 2 Coppers.
+m buys and gains a Catapult.
+m draws a Copper, a Silver, a Gold, an Estate and a Humble Castle.
+
+Turn 17 - Lord Rattington
+L plays a Small Castle.
+L trashes a Small Castle.
+L gains an Opulent Castle.
+L plays 2 Silvers and 2 Coppers.
+L buys and gains a Duchy.
+L draws 5 cards.
+
+Turn 17 - magicjj
+m plays a Humble Castle, a Silver, a Gold and a Copper.
+m buys and gains a Duchy.
+m draws 2 Coppers, 2 Silvers and a Forum.
+
+Turn 18 - Lord Rattington
+L plays a Gladiator.
+L reveals a Copper.
+m blocks with a Copper.
+L plays a Gold and 2 Coppers.
+L buys and gains a Duchy.
+L draws 5 cards.
+
+Turn 18 - magicjj
+m plays a Forum.
+m draws a Gold, an Estate and a Province.
+m discards an Estate and a Province.
+m plays 2 Silvers, a Gold and 2 Coppers.
+m buys and gains a Province.
+m draws 2 Coppers, a Silver, a Province and a Wild Hunt.
+~metadata~
+scoreTables: [{"name":"magicjj","scoreTable":[["Bandit Fort","","-12","4 Silvers and 2 Golds."],["Crumbling Castle","1","1",""],["","5","5","VP tokens."],["Humble Castle","1","2","2 Castles."],["Duchy","1","3",""],["Estate","4","4",""],["Fountain","","15","10 Coppers."],["Keep","","15","10 Coppers, 2 Fortunes and a Humble Castle."],["Museum","","28","14 differently named cards."],["Province","5","30",""]]},{"name":"Lord Rattington","scoreTable":[["Bandit Fort","","-16","5 Silvers and 3 Golds."],["Haunted Castle","1","2",""],["Estate","3","3",""],["Opulent Castle","1","3",""],["Duchy","2","6",""],["Keep","","10","5 Silvers and 3 Golds."],["Province","3","18",""],["Museum","","22","11 differently named cards."]]}]

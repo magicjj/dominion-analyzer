@@ -3,7 +3,7 @@
 
   "name": "Win Dominion Game Scraper",
   "description": "After your Dominion Online game, click this to automatically scrape your game log and view a detailed analysis of the game results.",
-  "version": "1.1",
+  "version": "1.2",
 
   "browser_action": {
     "default_icon": "icon.png",

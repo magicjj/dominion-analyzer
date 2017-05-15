@@ -1,0 +1,358 @@
+Game #3607107, unrated.
+Obelisk chooses the Villa pile.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 4 Coppers and an Estate.
+L starts with 7 Coppers and 3 Estates.
+L shuffles their deck.
+L draws 4 Coppers and an Estate.
+
+Turn 1 - magicjj
+m plays 4 Coppers.
+m buys and gains a Sacrifice.
+m draws 3 Coppers and 2 Estates.
+
+Turn 1 - Lord Rattington
+L plays 4 Coppers.
+L buys and gains a Silver.
+L draws 3 Coppers and 2 Estates.
+
+Turn 2 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws 3 Coppers and 2 Estates.
+
+Turn 2 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 2 Coppers, 2 Silvers and an Estate.
+
+Turn 3 - magicjj
+m plays 3 Coppers.
+m buys an Engineer.
+m takes 4 debt.
+m gains an Engineer.
+m repays 3 debt (1 remaining).
+m draws 4 Coppers and an Estate.
+
+Turn 3 - Lord Rattington
+L plays 2 Coppers and 2 Silvers.
+L buys and gains a Legionary.
+L draws 3 Coppers and 2 Estates.
+
+Turn 4 - magicjj
+m plays 4 Coppers.
+m repays 1 debt.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws a Copper, 2 Silvers, an Engineer and a Sacrifice.
+
+Turn 4 - Lord Rattington
+L plays 3 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 4 Coppers and a Silver.
+
+Turn 5 - magicjj
+m plays a Sacrifice.
+m trashes a Copper.
+m plays 2 Silvers.
+m buys and gains a Gold.
+m draws 3 Coppers and 2 Estates.
+
+Turn 5 - Lord Rattington
+L plays 4 Coppers and a Silver.
+L buys and gains a Gold.
+L draws 2 Coppers, a Silver, an Estate and a Legionary.
+
+Turn 6 - magicjj
+m plays 3 Coppers.
+m buys and gains a Humble Castle.
+m shuffles their deck.
+m draws 4 Coppers and an Estate.
+
+Turn 6 - Lord Rattington
+L plays a Legionary.
+L plays 2 Coppers and a Silver.
+L buys and gains a Gold.
+L shuffles their deck.
+L draws a Copper, a Silver, a Gold and 2 Estates.
+
+Turn 7 - magicjj
+m plays 4 Coppers.
+m buys and gains a Crumbling Castle.
+m gains a Silver.
+m draws a Copper, 2 Silvers, a Gold and an Estate.
+
+Turn 7 - Lord Rattington
+L plays a Gold, a Copper and a Silver.
+L buys and gains a Gold.
+L draws a Copper, 2 Silvers, a Gold and a Legionary.
+
+Turn 8 - magicjj
+m plays a Gold, a Copper and 2 Silvers.
+m buys and gains a Province.
+m draws a Copper, an Estate, a Humble Castle, an Engineer and a Sacrifice.
+
+Turn 8 - Lord Rattington
+L plays a Legionary.
+L plays a Gold, a Copper and 2 Silvers.
+L buys and gains a Province.
+L draws 4 Coppers and an Estate.
+
+Turn 9 - magicjj
+m plays an Engineer.
+m gains a Villa.
+m puts a Villa into their hand.
+m plays a Villa.
+m plays a Sacrifice.
+m trashes a Copper.
+m plays a Humble Castle.
+m buys and gains 2 Settlers.
+m shuffles their deck.
+m draws 2 Coppers, a Gold, a Settlers and a Sacrifice.
+
+Turn 9 - Lord Rattington
+L plays 4 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 2 Coppers, a Silver, a Gold and an Estate.
+
+Turn 10 - magicjj
+m plays a Settlers.
+m draws an Estate.
+m plays a Sacrifice.
+m trashes an Estate.
+m gets 2 VP.
+m plays a Gold and 2 Coppers.
+m buys and gains a Small Castle.
+m draws a Copper, a Silver, a Settlers, a Humble Castle and a Crumbling Castle.
+
+Turn 10 - Lord Rattington
+L plays a Gold, 2 Coppers and a Silver.
+L buys and gains a Gold.
+L draws 2 Coppers, a Silver, a Gold and a Province.
+
+Turn 11 - magicjj
+m plays a Settlers.
+m draws an Estate.
+m looks at a Sprawling Castle, a Sacrifice, an Opulent Castle, an Estate, a Settlers, a Haunted Castle, a Grand Castle, 3 Golds, 4 Villas, 3 Duchies, a Copper and 2 Silvers.
+m puts a Copper into their hand.
+m plays a Humble Castle, 2 Coppers and a Silver.
+m buys and gains a Duchy.
+m draws a Copper, a Silver, an Estate, a Province and an Engineer.
+
+Turn 11 - Lord Rattington
+L plays a Gold, 2 Coppers and a Silver.
+L buys and gains a Gold.
+L draws a Copper, 2 Silvers, an Estate and a Legionary.
+
+Turn 12 - magicjj
+m plays an Engineer.
+m gains a Villa.
+m puts a Villa into their hand.
+m plays a Villa.
+m plays a Copper and a Silver.
+m buys and gains a Villa.
+m puts a Villa into their hand.
+m plays a Villa.
+m shuffles their deck.
+m draws 2 Coppers, a Silver, a Sacrifice and a Villa.
+
+Turn 12 - Lord Rattington
+L plays a Legionary.
+L plays a Copper and 2 Silvers.
+L buys and gains a Province.
+L shuffles their deck.
+L draws 3 Coppers, a Gold and an Estate.
+
+Turn 13 - magicjj
+m plays a Villa.
+m plays a Sacrifice.
+m trashes a Copper.
+m plays a Copper and a Silver.
+m buys and gains a Haunted Castle.
+m gains a Gold.
+L topdecks a Copper and a Gold.
+m draws a Copper, a Gold, a Duchy, a Small Castle and a Villa.
+
+Turn 13 - Lord Rattington
+L plays 2 Coppers.
+L buys and gains a Settlers.
+L draws 3 Coppers, a Silver and a Gold.
+
+Turn 14 - magicjj
+m plays a Villa.
+m plays a Small Castle.
+m trashes a Small Castle.
+m gains an Opulent Castle.
+m plays a Gold and a Copper.
+m buys and gains a Duchy.
+m draws 2 Silvers, an Estate, a Settlers and a Humble Castle.
+
+Turn 14 - Lord Rattington
+L plays a Gold, 3 Coppers and a Silver.
+L buys and gains a Province.
+L draws 2 Golds, an Estate, a Province and a Legionary.
+
+Turn 15 - magicjj
+m plays a Settlers.
+m draws an Engineer.
+m looks at a Sprawling Castle, a Sacrifice, an Opulent Castle, an Estate, a Settlers, a Haunted Castle, a Grand Castle, 3 Golds, 4 Villas, 3 Duchies, a Copper and 2 Silvers.
+m puts a Copper into their hand.
+m plays an Engineer.
+m gains a Silver.
+m trashes an Engineer.
+m gains a Silver.
+m plays a Humble Castle, a Copper and 2 Silvers.
+m buys and gains a Gold.
+m draws a Copper, an Estate, a Province, a Settlers and a Crumbling Castle.
+
+Turn 15 - Lord Rattington
+L plays a Legionary.
+L plays 2 Golds.
+L buys and gains a Province.
+L draws 2 Coppers, a Silver and 2 Golds.
+
+Turn 16 - magicjj
+m plays a Settlers.
+m draws a Villa.
+m looks at a Sprawling Castle, a Sacrifice, an Opulent Castle, an Estate, a Settlers, a Haunted Castle, a Grand Castle, 3 Golds, 4 Villas, 3 Duchies, a Copper and 2 Silvers.
+m plays a Villa.
+m plays a Copper.
+m buys and gains a Settlers.
+m shuffles their deck.
+m draws a Copper, a Gold, 2 Duchies and a Haunted Castle.
+
+Turn 16 - Lord Rattington
+L plays 2 Golds, 2 Coppers and a Silver.
+L buys and gains a Province.
+L shuffles their deck.
+L draws 2 Silvers, a Gold, an Estate and a Province.
+
+Turn 17 - magicjj
+m plays a Gold and a Copper.
+m buys and gains a Silver.
+m draws a Silver, a Gold, an Estate, a Settlers and a Sacrifice.
+
+Turn 17 - Lord Rattington
+L plays a Gold and 2 Silvers.
+L buys and gains a Duchy.
+L draws 2 Coppers, a Silver, a Gold and a Province.
+
+Turn 18 - magicjj
+m plays a Settlers.
+m draws a Crumbling Castle.
+m looks at a Sprawling Castle, a Sacrifice, an Opulent Castle, an Estate, a Settlers, a Haunted Castle, a Grand Castle, 3 Golds, 4 Villas, 3 Duchies, a Copper and 2 Silvers.
+m plays a Sacrifice.
+m trashes a Crumbling Castle.
+m gains a Silver.
+m gets 2 VP.
+m plays a Gold and a Silver.
+m buys and gains a Duchy.
+m draws a Copper, 2 Silvers, a Gold and a Villa.
+
+Turn 18 - Lord Rattington
+L plays a Gold, 2 Coppers and a Silver.
+L buys and gains a Duchy.
+L draws 2 Coppers, a Gold, an Estate and a Province.
+
+Turn 19 - magicjj
+m plays a Villa.
+m plays a Gold, a Copper and 2 Silvers.
+m buys and gains a Sprawling Castle.
+m gains a Duchy.
+m draws a Silver, an Estate, a Province, a Settlers and a Humble Castle.
+
+Turn 19 - Lord Rattington
+L plays a Gold and 2 Coppers.
+L buys and gains a Duchy.
+L draws a Copper, 2 Golds, an Estate and a Legionary.
+
+Turn 20 - magicjj
+m plays a Settlers.
+m draws a Settlers.
+m looks at a Sprawling Castle, a Sacrifice, an Opulent Castle, an Estate, a Settlers, a Haunted Castle, a Grand Castle, 3 Golds, 4 Villas, 3 Duchies, a Copper and 2 Silvers.
+m puts a Copper into their hand.
+m plays a Settlers.
+m draws a Copper.
+m looks at a Sprawling Castle, a Sacrifice, an Opulent Castle, an Estate, a Settlers, a Haunted Castle, a Grand Castle, 3 Golds, 4 Villas, 3 Duchies, a Copper and 2 Silvers.
+m puts a Copper into their hand.
+m plays a Humble Castle, 3 Coppers and a Silver.
+m buys and gains a Gold.
+m draws a Copper, a Silver, an Opulent Castle and 2 Villas.
+
+Turn 20 - Lord Rattington
+L plays a Legionary.
+L plays 2 Golds and a Copper.
+L buys and gains a Province.
+L draws a Copper, a Silver, 2 Provinces and a Settlers.
+
+Turn 21 - magicjj
+m plays a Villa.
+m plays a Villa.
+m plays an Opulent Castle.
+m plays a Copper and a Silver.
+m buys and gains a Duchy.
+m shuffles their deck.
+m draws a Copper, a Duchy, a Settlers, a Sprawling Castle and a Villa.
+
+Turn 21 - Lord Rattington
+L plays a Settlers.
+L draws a Copper.
+L looks at 3 Provinces, 6 Estates, a Settlers, a Legionary, 2 Golds, 5 Coppers and a Silver.
+L plays 2 Coppers and a Silver.
+L buys and gains an Estate.
+L shuffles their deck.
+L draws 3 Coppers, a Gold and an Estate.
+
+Turn 22 - magicjj
+m plays a Settlers.
+m draws a Duchy.
+m plays a Villa.
+m plays a Copper.
+m buys and gains an Estate.
+m draws 2 Silvers, a Gold, a Haunted Castle and a Sacrifice.
+
+Turn 22 - Lord Rattington
+L plays a Gold and 3 Coppers.
+L buys and gains an Estate.
+L draws 2 Coppers, an Estate and 2 Provinces.
+
+Turn 23 - magicjj
+m plays a Gold and 2 Silvers.
+m buys and gains a Villa.
+m puts a Villa into their hand.
+m plays a Villa.
+m buys and gains a Villa.
+m puts a Villa into their hand.
+m plays a Villa.
+m draws 2 Golds, a Duchy, an Opulent Castle and a Villa.
+
+Turn 23 - Lord Rattington
+L plays 2 Coppers.
+L buys and gains an Estate.
+L draws a Gold, 2 Estates, a Settlers and a Legionary.
+
+Turn 24 - magicjj
+m plays a Villa.
+m plays an Opulent Castle.
+m discards a Duchy.
+m plays 2 Golds.
+m buys and gains a Grand Castle.
+m reveals a Humble Castle, a Settlers, a Duchy, a Copper and a Silver.
+m gets 1 VP from Grand Castle.
+m draws a Copper, a Silver, a Duchy, a Settlers and a Humble Castle.
+
+Turn 24 - Lord Rattington
+L plays a Settlers.
+L draws a Silver.
+L looks at 3 Provinces, 6 Estates, a Settlers, a Legionary, 2 Golds, 5 Coppers and a Silver.
+L plays a Legionary.
+L plays a Gold and a Silver.
+L buys and gains a Province.
+L draws a Silver, 2 Golds, a Duchy and a Province.
+~metadata~
+scoreTables: [{"name":"magicjj","scoreTable":[["","7","7","VP tokens."],["Haunted Castle","1","2",""],["Estate","3","3",""],["Opulent Castle","1","3",""],["Sprawling Castle","1","4",""],["Humble Castle","1","5","5 Castles."],["Grand Castle","1","5",""],["Province","1","6",""],["Orchard","","8","3 Settlers and 5 Villas."],["Obelisk","","10","5 cards from the Villa-pile."],["Palace","","12","4 Coppers, 7 Silvers and 4 Golds."],["Duchy","5","15",""]]},{"name":"Lord Rattington","scoreTable":[["Estate","6","6",""],["Duchy","3","9",""],["Palace","","12","7 Coppers, 4 Silvers and 5 Golds."],["Province","7","42",""]]}]

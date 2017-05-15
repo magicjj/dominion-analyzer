@@ -1,0 +1,380 @@
+Game #3608718, unrated.
+L starts with 7 Coppers and 3 Estates.
+L shuffles their deck.
+L draws 5 cards.
+R starts with 7 Coppers and 3 Estates.
+R shuffles their deck.
+R draws 5 cards.
+m starts with 7 Coppers and 3 Estates.
+m shuffles their deck.
+m draws 3 Coppers and 2 Estates.
+
+Turn 1 - Lord Voldebot
+L plays 4 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 1 - Rage
+R plays 3 Coppers.
+R buys and gains a Silver.
+R draws 5 cards.
+
+Turn 1 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m draws 4 Coppers and an Estate.
+
+Turn 2 - Lord Voldebot
+L plays 3 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 2 - Rage
+R plays 4 Coppers.
+R buys and gains a Silver.
+R shuffles their deck.
+R draws 5 cards.
+
+Turn 2 - magicjj
+m plays 4 Coppers.
+m buys a Wedding.
+m takes 3 debt.
+m gains a Gold.
+m gets 1 VP.
+m shuffles their deck.
+m draws 4 Coppers and a Gold.
+
+Turn 3 - Lord Voldebot
+L plays a Silver and 4 Coppers.
+L buys and gains a Relic.
+L draws 5 cards.
+
+Turn 3 - Rage
+R plays 4 Coppers.
+R buys and gains a Silver.
+R draws 5 cards.
+
+Turn 3 - magicjj
+m plays 3 Coppers.
+m repays 3 debt.
+m plays a Gold and a Copper.
+m buys and gains a Plaza.
+m draws 2 Coppers, a Silver and 2 Estates.
+
+Turn 4 - Lord Voldebot
+L plays a Silver and a Copper.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 4 - Rage
+R plays 3 Coppers.
+R buys and gains a Silver.
+R shuffles their deck.
+R draws 5 cards.
+
+Turn 4 - magicjj
+m plays a Silver and 2 Coppers.
+m buys and gains a Plaza.
+m shuffles their deck.
+m draws 2 Coppers, a Silver, an Estate and a Plaza.
+
+Turn 5 - Lord Voldebot
+L plays a Silver and 2 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 5 - Rage
+R plays 3 Silvers and a Copper.
+R buys and gains a Gold.
+R draws 5 cards.
+
+Turn 5 - magicjj
+m plays a Plaza.
+m draws a Plaza.
+m plays a Plaza.
+m draws a Copper.
+m discards a Copper.
+m plays a Silver and 2 Coppers.
+m buys and gains a Wine Merchant.
+m draws 2 Coppers, a Gold and 2 Estates.
+
+Turn 6 - Lord Voldebot
+L plays 4 Coppers.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 6 - Rage
+R plays a Silver and 3 Coppers.
+R buys and gains a Silver.
+R shuffles their deck.
+R draws 5 cards.
+
+Turn 6 - magicjj
+m plays a Gold and 2 Coppers.
+m buys and gains a Wine Merchant.
+m shuffles their deck.
+m draws 3 Coppers and 2 Estates.
+
+Turn 7 - Lord Voldebot
+L plays a Relic, a Silver and a Copper.
+R moves -Card token to Draw Pile.
+m moves -Card token to Draw Pile.
+L plays 2 Silvers.
+L buys and gains a Province.
+L draws 5 cards.
+
+Turn 7 - Rage
+R plays 4 Coppers.
+R buys and gains a Silver.
+R skips a draw (because of Relic)
+R moves -Card token to Token Limbo.
+R draws 4 cards.
+
+Turn 7 - magicjj
+m plays 3 Coppers.
+m buys and gains a Silver.
+m skips a draw (because of Relic)
+m moves -Card token to Token Limbo.
+m draws a Copper, a Plaza and 2 Wine Merchants.
+
+Turn 8 - Lord Voldebot
+L plays a Silver and 2 Coppers.
+L buys and gains a Silver.
+L draws 5 cards.
+
+Turn 8 - Rage
+R plays 2 Silvers and a Copper.
+R buys and gains a Groundskeeper.
+R draws 5 cards.
+
+Turn 8 - magicjj
+m plays a Plaza.
+m draws an Estate.
+m plays a Wine Merchant.
+m puts a Wine Merchant on their Tavern mat.
+m plays a Wine Merchant.
+m puts a Wine Merchant on their Tavern mat.
+m plays a Copper.
+m buys and gains a Province.
+m draws 2 Coppers, a Silver, a Gold and a Plaza.
+
+Turn 9 - Lord Voldebot
+L plays a Silver and 3 Coppers.
+L buys and gains a Butcher.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 9 - Rage
+R plays 3 Silvers and a Gold.
+R buys and gains a Province.
+R shuffles their deck.
+R draws 5 cards.
+
+Turn 9 - magicjj
+m plays a Plaza.
+m draws a Copper.
+m discards a Copper.
+m plays a Silver, a Gold and 2 Coppers.
+m buys and gains a Province.
+m shuffles their deck.
+m draws 4 Coppers and a Plaza.
+
+Turn 10 - Lord Voldebot
+L plays 3 Silvers and a Copper.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 10 - Rage
+R plays a Silver, a Gold and 3 Coppers.
+R buys and gains a Province.
+R draws 5 cards.
+
+Turn 10 - magicjj
+m plays a Plaza.
+m draws a Silver.
+m discards a Copper.
+m plays a Silver and 3 Coppers.
+m buys and gains a Wine Merchant.
+m draws 2 Coppers, a Silver and 2 Provinces.
+
+Turn 11 - Lord Voldebot
+L plays a Relic, a Silver and a Copper.
+R moves -Card token to Draw Pile.
+m moves -Card token to Draw Pile.
+L plays 2 Coppers.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 11 - Rage
+R plays a Groundskeeper.
+R skips a draw (because of Relic)
+R moves -Card token to Token Limbo.
+R plays a Silver and 2 Coppers.
+R buys and gains a Plaza.
+R draws 5 cards.
+
+Turn 11 - magicjj
+m plays a Silver and 2 Coppers.
+m buys and gains an Enchantress.
+m discards 2 Wine Merchants.
+m skips a draw (because of Relic)
+m moves -Card token to Token Limbo.
+m draws a Gold, 2 Estates and a Plaza.
+
+Turn 12 - Lord Voldebot
+L plays a Silver and a Copper.
+L buys and gains a Silver.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 12 - Rage
+R plays 2 Silvers and a Copper.
+R buys and gains a Groundskeeper.
+R shuffles their deck.
+R draws 5 cards.
+
+Turn 12 - magicjj
+m plays a Plaza.
+m draws a Copper.
+m discards a Copper.
+m plays a Gold.
+m buys and gains a Silver.
+m shuffles their deck.
+m draws a Copper, a Silver, 2 Estates and an Enchantress.
+
+Turn 13 - Lord Voldebot
+L plays a Butcher.
+L trashes an Estate.
+L gains a Silver.
+L plays a Silver and 2 Coppers.
+L buys and gains a Wine Merchant.
+L draws 5 cards.
+
+Turn 13 - Rage
+R plays 2 Silvers and a Copper.
+R buys and gains a Plaza.
+R draws 5 cards.
+
+Turn 13 - magicjj
+m plays an Enchantress.
+m plays a Silver and a Copper.
+m buys and gains a Silver.
+m draws 3 Coppers, a Silver and a Plaza.
+
+Turn 14 - Lord Voldebot
+L plays a Relic.
+R moves -Card token to Draw Pile.
+m moves -Card token to Draw Pile.
+L plays 2 Silvers.
+L buys and gains a Gold.
+L draws 5 cards.
+
+Turn 14 - Rage
+R plays a Plaza.
+R skips a draw (because of Relic)
+R moves -Card token to Token Limbo.
+R plays a Silver and a Copper.
+R buys and gains a Silver.
+R draws 5 cards.
+
+Turn 14 - magicjj
+m starts their turn.
+m skips a draw (because of Relic)
+m moves -Card token to Token Limbo.
+m draws a Silver.
+m plays a Plaza.
+m draws a Wine Merchant.
+m plays a Wine Merchant.
+m puts a Wine Merchant on their Tavern mat.
+m plays 2 Silvers and 3 Coppers.
+m buys and gains a Silver and a Province.
+m draws a Copper, a Gold, 2 Provinces and a Plaza.
+
+Turn 15 - Lord Voldebot
+L plays 2 Silvers, a Gold and 2 Coppers.
+L buys and gains a Province.
+L draws 5 cards.
+
+Turn 15 - Rage
+R plays a Groundskeeper.
+R draws a card.
+R plays 3 Silvers and 2 Coppers.
+R buys and gains a Province.
+R gets 1 VP from Groundskeeper.
+R draws 5 cards.
+
+Turn 15 - magicjj
+m plays a Plaza.
+m draws a Copper.
+m discards a Copper.
+m plays a Gold and a Copper.
+m buys and gains a Silver.
+m discards a Wine Merchant.
+m shuffles their deck.
+m draws a Copper, an Estate, a Plaza and 2 Wine Merchants.
+
+Turn 16 - Lord Voldebot
+L plays 2 Silvers, a Gold and a Copper.
+L buys and gains a Province.
+L shuffles their deck.
+L draws 5 cards.
+
+Turn 16 - Rage
+R plays a Groundskeeper.
+R draws a card.
+R plays a Gold and 3 Coppers.
+R buys and gains a Gold.
+R shuffles their deck.
+R draws 5 cards.
+
+Turn 16 - magicjj
+m plays a Plaza.
+m draws a Province.
+m plays a Wine Merchant.
+m puts a Wine Merchant on their Tavern mat.
+m plays a Wine Merchant.
+m puts a Wine Merchant on their Tavern mat.
+m plays a Copper.
+m buys and gains a Province.
+m discards 2 Wine Merchants.
+m draws a Copper, 2 Silvers, a Wine Merchant and an Enchantress.
+
+Turn 17 - Lord Voldebot
+L plays a Silver and 3 Coppers.
+L buys and gains a Duchy.
+L draws 5 cards.
+
+Turn 17 - Rage
+R plays a Silver and a Copper.
+R buys and gains a Patrician.
+R draws 5 cards.
+
+Turn 17 - magicjj
+m plays a Wine Merchant.
+m puts a Wine Merchant on their Tavern mat.
+m plays 2 Silvers and a Copper.
+m buys and gains a Province.
+m draws 2 Coppers and 3 Silvers.
+
+Turn 18 - Lord Voldebot
+L plays a Gold and a Copper.
+L buys and gains an Estate.
+L draws 5 cards.
+
+Turn 18 - Rage
+R plays a Plaza.
+R draws a card.
+R discards a Copper.
+R plays a Silver and a Copper.
+R buys and gains a Patrician.
+R draws 5 cards.
+
+Turn 18 - magicjj
+m plays 3 Silvers and 2 Coppers.
+m buys and gains a Province.
+m draws a Copper, a Silver, an Estate and 2 Provinces.
+~metadata~
+scoreTables: [{"name":"magicjj","scoreTable":[["Wall","","-14","29 cards."],["Wolf Den","","-6","exactly one of a Gold and an Enchantress."],["","1","1","VP tokens."],["Estate","3","3",""],["Triumphal Arch","","6","2 Plazas."],["Province","6","36",""]]},{"name":"Rage","scoreTable":[["Wall","","-13","28 cards."],["Wolf Den","","0","exactly one of nothing."],["","1","1","VP tokens."],["Estate","3","3",""],["Triumphal Arch","","6","2 Plazas."],["Province","3","18",""]]},{"name":"Lord Voldebot","scoreTable":[["Wall","","-13","28 cards."],["Wolf Den","","-12","exactly one of a Duchy, a Butcher, a Relic and a Wine Merchant."],["Estate","3","3",""],["Duchy","1","3",""],["Triumphal Arch","","3","a Butcher."],["Province","3","18",""]]}]
