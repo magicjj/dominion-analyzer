@@ -1,8 +1,7 @@
-check form colors esp input and text BGs
 look into setting up server, move mongodb data
-add logic to compare scoreboard with calculated scores and log if they are different
 
-fix icon still
+
+
 
 Tower:
 - ultimately calculate internally - how do we figure out the starting piles?
@@ -14,7 +13,7 @@ look into preventing text selection when dragging chart
 make mongo code handle duplicates - maybe, what about updates?
 check analytics
 
-
+fix analyze modalbody bg color in CSS
 blue borders on shit
 enlarge cards onclick
 expand cards down not up
