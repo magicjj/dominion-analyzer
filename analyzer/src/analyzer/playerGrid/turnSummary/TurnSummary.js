@@ -63,63 +63,57 @@ class TurnSummary extends Component {
 			let lastTurn = player.turns[this.props.turn - 1];
 			let lastTurnSummary = this.getSummaryDataForTurn(lastTurn);
 			diff = this.getTurnDiff(thisTurnSummary, lastTurnSummary);
+			diff.victoryPoints = this.getDiffDisplay(diff.victoryPoints);
+			diff.percentTreasureCards = this.getDiffDisplay(diff.percentTreasureCards, '%');
+			diff.numCards = this.getDiffDisplay(diff.numCards);
+			diff.numVictoryCards = this.getDiffDisplay(diff.numVictoryCards);
+			diff.numTreasureCards = this.getDiffDisplay(diff.numTreasureCards);
+			diff.numActionCards = this.getDiffDisplay(diff.numActionCards);
 		}
 		return <div data-uk-grid key={player.name} className="uk-grid-small">
       		<h5 className="uk-width-1-1">{player.name}</h5>
-		    <div className="uk-width-1-6">
+		    <div className={ diff.victoryPoints !== null ? "uk-width-1-6 uk-text-nowrap" : "uk-width-1-3 uk-text-nowrap"}>
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Victory Points</span>}>
 		    		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.VP_16px} />
 				</Tooltip>
 		    	{thisTurnSummary.victoryPoints}
 		    </div>
-		    <div className="uk-width-1-6">
-		    	{this.getDiffDisplay(diff.victoryPoints)}
-		    </div>
-		    <div className="uk-width-1-6">
+			{ diff.victoryPoints !== null ? <div className="uk-width-1-6">{diff.victoryPoints}</div> : '' }
+		    <div className={ diff.percentTreasureCards !== null ? "uk-width-1-6 uk-text-nowrap" : "uk-width-1-3 uk-text-nowrap"}>
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Percentage of Treasure Cards</span>}>
 		    		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.PercentTreasure_16px} /> 
 				</Tooltip>
 		    	{thisTurnSummary.percentTreasureCards}%
 		    </div>
-		    <div className="uk-width-1-6">
-		    	{this.getDiffDisplay(diff.percentTreasureCards, '%')}
-		    </div>
-		    <div className="uk-width-1-6">
+			{ diff.percentTreasureCards !== null ? <div className="uk-width-1-6">{diff.percentTreasureCards}</div> : '' }
+		    <div className={ diff.numCards !== null ? "uk-width-1-6 uk-text-nowrap" : "uk-width-1-3 uk-text-nowrap"}>
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Total Number of Cards</span>}>
 		      		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.NumCards_16px} /> 
 				</Tooltip>
 		      	{thisTurnSummary.numCards}
 		    </div>
-		    <div className="uk-width-1-6">
-		    	{this.getDiffDisplay(diff.numCards)}
-		    </div>
-		    <div className="uk-width-1-6">
+			{ diff.numCards !== null ? <div className="uk-width-1-6">{diff.numCards}</div> : '' }
+		    <div className={ diff.numVictoryCards !== null ? "uk-width-1-6 uk-text-nowrap" : "uk-width-1-3 uk-text-nowrap"}>
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Victory Cards</span>}>
 		    		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.NumVictory_16px} /> 
 				</Tooltip>
 		    	{thisTurnSummary.numVictoryCards}
 		    </div>
-		    <div className="uk-width-1-6">
-		    	{this.getDiffDisplay(diff.numVictoryCards)}
-		    </div>
-		    <div className="uk-width-1-6">
+			{ diff.numVictoryCards !== null ? <div className="uk-width-1-6">{diff.numVictoryCards}</div> : '' }
+		    <div className={ diff.numTreasureCards !== null ? "uk-width-1-6 uk-text-nowrap" : "uk-width-1-3 uk-text-nowrap"}>
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Treasure Cards</span>}>
 		    		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.NumTreasure_16px} />
 				</Tooltip>
 		    	{thisTurnSummary.numTreasureCards}
 		    </div>
-		    <div className="uk-width-1-6">
-		    	{this.getDiffDisplay(diff.numTreasureCards)}
-		    </div>
-		    <div className="uk-width-1-6">
+			{ diff.numTreasureCards !== null ? <div className="uk-width-1-6">{diff.numTreasureCards}</div> : '' }
+		    <div className={ diff.numActionCards !== null ? "uk-width-1-6 uk-text-nowrap" : "uk-width-1-3 uk-text-nowrap"}>
 				<Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span>Number of Action Cards</span>}>
 		      		<img style={{width:'16px', height:'18px', marginRight:'15px'}} src={CardImages.NumAction_16px} />
 				</Tooltip>
 		      	{thisTurnSummary.numActionCards}
 		    </div>
-		    <div className="uk-width-1-6">
-		    	{this.getDiffDisplay(diff.numActionCards)}
-		    </div>
+			{ diff.numActionCards !== null ? <div className="uk-width-1-6">{diff.numActionCards}</div> : '' }
 	      	<hr className="uk-width-1-1" style={{margin: '5px 0 0 0'}} />
 	    </div>;
   	});
@@ -133,14 +127,14 @@ class TurnSummary extends Component {
   	}
     return (
       	<div className="uk-grid uk-grid-small">
-			<div className="uk-width-1-2 uk-card uk-card-small uk-card-body uk-background-muted">
+			<div className="uk-width-2-3 uk-card uk-card-small uk-card-body uk-background-muted">
       			{header}
       			<hr className="uk-width-1-1" style={{margin: '5px 0 0 0'}} />
-				<div style={{height: '155px', overflow: 'auto'}}>
+				<div style={{height: '167px', overflow: 'auto'}}>
 		     		{players}
 				</div>
 		    </div>
-			<div className="uk-width-1-2 uk-card uk-card-small uk-card-body uk-background-muted">
+			<div className="uk-width-1-3 uk-card uk-card-small uk-card-body uk-background-muted">
       			<h3 className="uk-card-title">Turn Log</h3>
       			<hr className="uk-width-1-1" style={{margin: '5px 0 0 0'}} />
 	     		<pre style={{overflow:'auto', height: '145px', marginTop:'10px'}}>

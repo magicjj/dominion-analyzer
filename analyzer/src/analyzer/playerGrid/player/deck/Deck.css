@@ -91,3 +91,7 @@ img {
   height: 238px;
   margin-top: 0;
 }
+
+.cardPanel.uk-grid-margin {
+  margin-top: 0;
+}

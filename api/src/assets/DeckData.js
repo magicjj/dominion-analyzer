@@ -14,7 +14,7 @@ let DeckData = {
 	"Curse": {
 		name: "Curse",
 		type: ["Victory"],
-		pointsChangeFn: null
+		pointsChangeFn: function(deck) { return {vp: -1}; }
 	},
 	"Silver": {
 		name: "Silver",
@@ -825,8 +825,8 @@ let DeckData = {
 		type: ["Action"],
 		pointsChangeFn: null
 	},
-	"Ill-Gotten Gains": {
-		name: "Ill-Gotten Gains",
+	"Ill Gotten Gains": {
+		name: "Ill Gotten Gains",
 		type: ["Treasure"],
 		pointsChangeFn: null
 	},
@@ -1927,8 +1927,8 @@ let DeckData = {
 			// the data passed in from the Chrome Ext. this will obvs be unavailable if not using extension.
 			// to calculate it ourselves would require us to know the state of the supply piles at the start of and throughout the game
 
-			// todo problem with this is we don't change it for each turn, only get the end
-			if (! moreData.scoreTable) {
+			// problem with this is we don't change it for each turn, only the end
+			if (! moreData.scoreTable || ! moreData.isFinalTurn) {
 				return {};
 			}
 

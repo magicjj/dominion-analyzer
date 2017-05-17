@@ -3,43 +3,14 @@ import $ from 'jquery'; // TODO can remove?
 
 import './AnalyzerInput.css';
 
-import { SampleData } from '../assets/SampleDataObj';
-
-let sampleDataKeys = [
-  "4 Player Game",
-  "3 Player Game",
-  "Game #3300452",
-  "Game #3318160",
-  "Game #3267464",//  TODO Fix errors in commented ones
-  "Game #3270413",
-  "Game #3341022",
-  "Game #3342302"
-];
-
 class AnalyzerInput extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      sampleDataOpened: false,
-      sampleData: SampleData[sampleDataKeys[0]]
-    };
-    this.handleChangeSampleData = this.handleChangeSampleData.bind(this);
-    this.handleSubmitSampleData = this.handleSubmitSampleData.bind(this);
   }
 
-  handleChangeSampleData(e) {
-    this.state.sampleData = SampleData[e.target.value];
-  }
-
-  handleSubmitSampleData(e) {
-    e.target.value = this.state.sampleData;
-    this.props.handleChangeFormInput(e);
-    this.props.handleSubmitFormInput(e, this.state.sampleData);
-  }
-
-  handleClickDropdown(e) {
-    e.stopPropagation();
+  handleFocus(e) {
+    e.target.select();
   }
 
   render() {
@@ -53,8 +24,8 @@ class AnalyzerInput extends Component {
         <div className="uk-modal-header">
             <h2 className="uk-modal-title">Analyze Game</h2>
         </div>
-        <div className="uk-modal-body">
-            <textarea className="uk-textarea logInput" onChange={this.props.handleChangeFormInput} value={this.props.formInput}
+        <div className="uk-modal-body uk-background-muted">
+            <textarea className="uk-textarea logInput" onChange={this.props.handleChangeFormInput} value={this.props.formInput} onFocus={this.handleFocus}
               placeholder="Paste full game log here"></textarea>
             
         </div>

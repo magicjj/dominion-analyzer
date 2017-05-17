@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './Home.css';
-import ChromeExtIcon from '../assets/images/chrome-ext-icon.jpg';
+import ChromeExtIcon from '../assets/images/icon-16.jpg';
 
 class Home extends Component {
     render() {
@@ -27,9 +28,9 @@ class Home extends Component {
                     See sample games...
                 </p>
                 <ul>
-                    <li><a href="http://www.windominion.com/NCeJsu2">magicjj vs. mcdevittl218</a></li>
-                    <li><a href="http://www.windominion.com/kqQJ2XZ">magicjj vs. derpbutter vs. Lord Rattington</a></li>
-                    <li><a href="http://www.windominion.com/Dno8UDP">magicjj vs. Rage vs. Lord Rattington vs. Revenge Witch</a></li>
+                    <li><Link to="/v4Yf8BS">magicjj vs. jack3</Link></li>
+                    <li><Link to="/NPSmVzw">magicjj vs. Lord Rattington</Link></li>
+                    <li><Link to="/PICfosl">magicjj vs. Lord Rattington vs. Revenge Witch</Link></li>
                 </ul>
                 <p className="uk-text-lead">
                     There are two ways to use Win Dominion:
@@ -41,7 +42,7 @@ class Home extends Component {
                 <p>
                     <span className="uk-float-left numbers">2</span>
                     To speed things up and avoid manually copying and pasting the game log, install the <a href="https://chrome.google.com/webstore/detail/win-dominion-game-scraper/denlafhecndjbofgefekklidcpannapm" target="_blank">Chrome extension</a> here. 
-                    After playing a game, just click the <img src={ChromeExtIcon} style={{width: '32px', height: '32px'}} /> icon and your analysis will automatically open in a new tab!
+                    After playing a game, just click the <img src={ChromeExtIcon} style={{width: '16px', height: '16px', marginTop: '-3px'}} /> icon and your analysis will automatically open in a new tab!
                 </p>
                 <h1 className="uk-article-title">
                     Support Win Dominion

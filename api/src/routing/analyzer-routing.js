@@ -27,7 +27,7 @@ class Routes {
 								res.send(404, null);
 								return;
 							}
-							res.send(dbRes.gameData);
+							res.send(dbRes);
 						},
 						err => {
 							res.send(500, err.ERROR);

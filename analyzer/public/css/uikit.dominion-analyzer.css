@@ -1177,7 +1177,7 @@ a.uk-link-reset:focus,
   border: 0 none;
   /* 4 */
   padding: 0 6px;
-  background: #333;
+  background: #3e3e3e;
   color: #ffffff;
 }
 /*
@@ -1210,14 +1210,14 @@ a.uk-link-reset:focus,
 .uk-select:focus,
 .uk-textarea:focus {
   outline: 0;
-  background-color: #191919;
+  background-color: #272727;
   color: #ffffff;
 }
 /* Disabled */
 .uk-input:disabled,
 .uk-select:disabled,
 .uk-textarea:disabled {
-  background-color: #333333;
+  background-color: #333;
   color: #999;
 }
 /*
@@ -1270,14 +1270,14 @@ a.uk-link-reset:focus,
  */
 .uk-form-danger,
 .uk-form-danger:focus {
-  color: #ffffff;
+  color: #e01c33;
 }
 /*
  * Success
  */
 .uk-form-success,
 .uk-form-success:focus {
-  color: #ffffff;
+  color: #68873c;
 }
 /*
  * Blank
@@ -4406,7 +4406,7 @@ ul.uk-nav-sub {
   width: 600px;
   max-width: 100%;
   /* 3 */
-  background: #333;
+  background: #273942;
   /* 4 */
   opacity: 0;
   -webkit-transform: translateY(-100px);
@@ -11133,6 +11133,15 @@ td.uk-text-break {
 // HAVE NOT VALIDATED PROPS BELOW. THEY CAME FROM FROM UIKIT V2
 // THEME, SOME MAY BE DEPRECATED IN THIS VERSION
 ************************************************************************/
+/*
+@form-danger-background: #8a5652;
+@form-danger-color: #ffffff;
+@form-success-background: #5f6e48;
+@form-success-color: #ffffff;
+@form-disabled-background: #333333;
+@form-focus-border: #ffffff;
+@form-focus-background: #191919;
+*/
 /*
 // Base
 @import "variables.less";

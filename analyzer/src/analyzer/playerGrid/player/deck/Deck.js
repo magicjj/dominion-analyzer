@@ -36,7 +36,6 @@ class Deck extends Component {
           continue;
         }
 
-        let stacked = 'cardPanel';
         let cardList = [];
         while (count > 0) {
           let countBadge, countChangeBadge;
@@ -56,7 +55,6 @@ class Deck extends Component {
                 {countChangeBadge}
               </div>
           );
-          stacked = 'cardPanel stacked';
           count--;
         }
         cardStacks.push(

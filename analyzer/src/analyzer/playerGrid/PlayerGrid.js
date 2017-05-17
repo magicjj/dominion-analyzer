@@ -22,10 +22,9 @@ class PlayerGrid extends Component {
     }
   }
 
-  componentWillMount() {
-    if (this.props.gdo.resetTurn) {
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.gdo.resetTurn) {
       this.setState({ turn: 0 });
-      delete this.props.gdo.resetTurn;
     }
   }
 

@@ -30,6 +30,9 @@ class DominionAnalyzer {
 			// populate turn 1 into turns[1], turn 2 into turns[2] etc. for each player
 			_exports = _.extend(_exports, this.populateAllTurnsPoints(gdo, _exports));
 
+			// compare our score calculations with those passed in through metadata if available
+			_exports = _.extend(_exports, this.checkMetadata(gdo, _exports));
+
 			// attempt to upload to mongoDB, receive key and add it to the response before resolving
 			return new Promise(function(resolve, reject) {
 				try {
@@ -320,7 +323,7 @@ class DominionAnalyzer {
 				}
 
 				// get moreData ready for countPoints()
-				let moreData = { otherDecks, obeliskPile: _exports.obeliskPile, landmarks: _exports.landmarks, scoreTable };
+				let moreData = { otherDecks, obeliskPile: _exports.obeliskPile, landmarks: _exports.landmarks, scoreTable, isFinalTurn: i === _exports.numTurns };
 
 				if (! playerTurn) {
 					// this can't happen anymore - means an error
@@ -339,6 +342,61 @@ class DominionAnalyzer {
 					console.log("Landmark VP:  totalPoints[vp] = " + playerTurn.totalPoints.vp + " + " + landmarkPointsToAdd + " = " + (playerTurn.totalPoints.vp + landmarkPointsToAdd));
 					playerTurn.totalPoints.vp += landmarkPointsToAdd;
 				}
+			}
+		}
+	}
+
+	checkMetadata(gdo, _exports) {
+		let finalScoresFromMetadata = {};
+		let allCardsFound = true;
+		for (let i = 0; i < gdo.scoreTables.length; i++) {
+			finalScoresFromMetadata[gdo.scoreTables[i].name] = {
+				landmarkPoints: {
+					vp: 0
+				},
+				tokens: {
+					vp: 0
+				},
+				points: {
+					vp: 0
+				}
+			};
+			for (let j = 0; j < gdo.scoreTables[i].scoreTable.length; j++) {
+				let line = gdo.scoreTables[i].scoreTable[j];
+				let card;
+				if (DeckData[line[0]] && DeckData[line[0]].type) {
+					card = DeckData[line[0]];
+				}
+				if (line[0] === "" && line[3].indexOf("tokens") > -1) {
+					finalScoresFromMetadata[gdo.scoreTables[i].name].tokens.vp += parseInt(line[2]);
+				} else if (card.type.indexOf("Victory") > -1) {
+					finalScoresFromMetadata[gdo.scoreTables[i].name].points.vp += parseInt(line[2]);
+				} else if (card.type.indexOf("Landmark") > -1) {
+					finalScoresFromMetadata[gdo.scoreTables[i].name].landmarkPoints.vp += parseInt(line[2]);
+				} else {
+					allCardsFound = false;
+					break;
+				}
+			}
+		}
+
+		if (! allCardsFound) {
+			// do some other logging here. but we don't want to return the finalScores object bc it'll trigger
+			// a popup on the front end saying the results are inaccurate, and we only know that for sure if we found every card
+			return;
+		}
+		
+		// go through the scores gathered from the metadata, and if they differ from what we calculated on the final turn
+		// add them to the return object so we can warn the user the results may be a little off
+		for (let i = 0; i < gdo.players.length; i++) {
+			let finalTurn = gdo.players[i].turns[gdo.players[i].turns.length-1];
+			let finalScoreFromMetadata = finalScoresFromMetadata[gdo.players[i].name];
+			if ((finalTurn.points.vp ? finalTurn.points.vp : 0) !== finalScoreFromMetadata.points.vp || 
+				(finalTurn.landmarkPoints.vp ? finalTurn.landmarkPoints.vp : 0) !== finalScoreFromMetadata.landmarkPoints.vp || 
+				(finalTurn.tokens.vp ? finalTurn.tokens.vp : 0) !== finalScoreFromMetadata.tokens.vp
+			) {
+				gdo.finalScoresFromMetadata = finalScoresFromMetadata;
+				break;
 			}
 		}
 	}

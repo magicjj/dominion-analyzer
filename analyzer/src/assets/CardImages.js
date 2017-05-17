@@ -546,7 +546,7 @@ export default {
 	"Embassy": Embassy,
 	"Haggler": Haggler,
 	"Highway": Highway,
-	"Ill-Gotten Gains": Ill_Gotten_Gains,
+	"Ill Gotten Gains": Ill_Gotten_Gains,
 	"Inn": Inn,
 	"Mandarin": Mandarin,
 	"Margrave": Margrave,

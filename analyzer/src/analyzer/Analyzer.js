@@ -43,7 +43,8 @@ class Analyzer extends Component {
           return;
         }
         resp.json().then(data => {
-          this.props.setStateGdo(data);
+          this.props.setStateGdo(data.gameData);
+          this.props.handleChangeFormInput({ target: { value: data.gameLog }});
         });
       });
     }

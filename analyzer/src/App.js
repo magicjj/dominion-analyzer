@@ -46,6 +46,9 @@ class App extends Component {
         return;
       }
       resp.json().then(data => {
+        if (data.finalScoresFromMetadata) {
+          UIkit.modal.alert('Hmm... It looks like we calculated a different score than the Chrome Extension reported seeing. You can still check out the data, but it might be a little off. We\'ll notify the developer.');
+        }
         data.resetTurn = true;
         this.setStateGdo(data);
       });
@@ -61,8 +64,10 @@ class App extends Component {
 
   setStateGdo(data) {
     this.setState({gdo: data});
-    if (data.key) {
-      this.props.history.push("/" + data.key);
+    let keyPath = "/" + data.key;
+    if (data.key && this.props.history.location.pathname !== keyPath) {
+      // only add an entry to browser history if we aren't already on that page
+      this.props.history.push(keyPath);
     }
   }
 
@@ -87,7 +92,7 @@ class App extends Component {
               </div>
               <div data-uk-grid className={'uk-grid-collapse uk-width-1-1 cardSize-' + this.state.cardSize + ' cardView-' + this.state.cardView}>
                 <Switch>
-                  <Route path='/:key' render={(props) => <Analyzer gdo={this.state.gdo} setStateGdo={this.setStateGdo} {...props} />} />
+                  <Route path='/:key' render={(props) => <Analyzer gdo={this.state.gdo} handleChangeFormInput={this.handleChangeFormInput} setStateGdo={this.setStateGdo} {...props} />} />
                   <Route path='/' component={Home} />
                 </Switch>
               </div>

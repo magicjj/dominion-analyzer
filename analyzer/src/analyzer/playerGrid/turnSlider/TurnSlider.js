@@ -118,7 +118,7 @@ class TurnSlider extends Component {
       <div className="uk-width-1-1 uk-card uk-card-small uk-card-body uk-background-muted" style={{marginLeft:'20px'}}>
         <h3 className="uk-card-title" style={{marginBottom:'0px'}}>Select a turn:</h3>
         <Slider defaultValue={0} min={0} max={this.props.numberOfTurns-1} step={1} value={this.props.turn} onChange={this.props.handleChangeTurn} className="slider" />
-        <ResponsiveContainer height={160} width='100%'>
+        <ResponsiveContainer height={180} width='100%'>
           <LineChart data={this.getChartData(this.props.gdo)}
             margin={{ top: 5, right: 5, left: -35, bottom: 5 }}
             onMouseMove={this.handleMouseMoveChart}
