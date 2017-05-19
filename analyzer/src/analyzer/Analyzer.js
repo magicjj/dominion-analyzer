@@ -28,7 +28,7 @@ class Analyzer extends Component {
 
   componentWillMount() {
     let gdoKey;
-    if (typeof this.props.gdo) {
+    if (this.props.gdo) {
       gdoKey = this.props.gdo.key;
     } else {
       gdoKey = "";

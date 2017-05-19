@@ -15,6 +15,7 @@ class TurnSlider extends Component {
     this.state = {
       animateLineChart: true
     };
+    this.handleChangeTurn = this.handleChangeTurn.bind(this);
     this.handleMouseDownChart = this.handleMouseDownChart.bind(this);
     this.handleMouseMoveChart = this.handleMouseMoveChart.bind(this);
     this.handleMouseUpChart = this.handleMouseUpChart.bind(this);
@@ -22,17 +23,21 @@ class TurnSlider extends Component {
 
   dragging = false;
 
-  handleMouseDownChart(e) {
+  handleChangeTurn(e, val) {
+    this.handleMouseDownChart(null, val);;
+  }
+
+  handleMouseDownChart(e, turn) {
     if (e !== null && e.activeTooltipIndex) {
-      this.setState({ animateLineChart: false });
       this.dragging = true;
-      let turn = e.activeTooltipIndex;
+      turn = e.activeTooltipIndex;
       if (e.chartX <= 40) {
         // without this the handler isn't good about letting people select the  zero position
         turn = 0;
       }
-      this.props.handleChangeTurn(null, turn);
     }
+    this.setState({ animateLineChart: false });
+    this.props.handleChangeTurn(null, turn);
   }
 
   handleMouseMoveChart(e) {
@@ -117,7 +122,7 @@ class TurnSlider extends Component {
     return (
       <div className="uk-width-1-1 uk-card uk-card-small uk-card-body uk-background-muted" style={{marginLeft:'20px'}}>
         <h3 className="uk-card-title" style={{marginBottom:'0px'}}>Select a turn:</h3>
-        <Slider defaultValue={0} min={0} max={this.props.numberOfTurns-1} step={1} value={this.props.turn} onChange={this.props.handleChangeTurn} className="slider" />
+        <Slider defaultValue={0} min={0} max={this.props.numberOfTurns-1} step={1} value={this.props.turn} onChange={this.handleChangeTurn} className="slider" />
         <ResponsiveContainer height={180} width='100%'>
           <LineChart data={this.getChartData(this.props.gdo)}
             margin={{ top: 5, right: 5, left: -35, bottom: 5 }}
