@@ -33,6 +33,8 @@ class DominionAnalyzer {
 			// compare our score calculations with those passed in through metadata if available
 			_exports = _.extend(_exports, this.checkMetadata(gdo, _exports));
 
+			this.cleanForMongo(gdo);
+
 			// attempt to upload to mongoDB, receive key and add it to the response before resolving
 			return new Promise(function(resolve, reject) {
 				try {
@@ -43,18 +45,41 @@ class DominionAnalyzer {
 								resolve(gdo);
 							},
 							err => {
-								reject({ ERROR: err });
+								gdo.key = "Couldn't save game :(",
+								resolve(gdo);
 							}
 						)
 					;
 				} catch(e) {
-					reject({ ERROR: e });
+					gdo.key = "Couldn't save game :(",
+					resolve(gdo);
 				}
 			});
 		} catch (e) {
 			// TODO error handling
 			console.log(e);
 			return new Promise((resolve, reject) => reject({ ERROR: e }));
+		}
+	}
+
+	cleanForMongo(gdo) {
+		// since we are using the player name as a key, mongo doesn't like periods or dollar signs in keys, 
+		// so replace all instances for each player with a clean version
+
+		let cleanStrForMongo = str => str.replace(/\./g, '').replace(/\$/g, '');
+		let gdoJson = JSON.stringify(gdo);
+		let gdoJsonChanged = false;
+		for (let i = 0; i < gdo.players.length; i++) {
+			let from = gdo.players[i].name;
+			let to = cleanStrForMongo(from);
+			if (from !== to) {
+				gdoJson = gdoJson.split(from).join(to);
+				gdoJsonChanged = true;
+			}
+		}
+
+		if (gdoJsonChanged) {
+			gdo = JSON.parse(gdoJson);
 		}
 	}
 
@@ -347,6 +372,10 @@ class DominionAnalyzer {
 	}
 
 	checkMetadata(gdo, _exports) {
+		if (! gdo.scoreTables) {
+			return;
+		}
+
 		let finalScoresFromMetadata = {};
 		let allCardsFound = true;
 		for (let i = 0; i < gdo.scoreTables.length; i++) {

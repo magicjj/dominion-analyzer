@@ -27,7 +27,13 @@ class Analyzer extends Component {
   }
 
   componentWillMount() {
-    if (this.props.match.params.key) {
+    let gdoKey;
+    if (typeof this.props.gdo) {
+      gdoKey = this.props.gdo.key;
+    } else {
+      gdoKey = "";
+    }
+    if (this.props.match.params.key && gdoKey !== this.props.match.params.key) {
       fetch('http://magicjj.hopto.org:8088/getSavedAnalysis/' + encodeURIComponent(this.props.match.params.key), {
         method: 'GET',
         headers: {

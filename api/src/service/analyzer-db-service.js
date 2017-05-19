@@ -29,7 +29,7 @@ class AnalyzerDbService {
                             key: thisKey
                         },
                         (err, result) => {
-                            if (err) throw err;
+                            if (err) reject(err);
                             console.log("inserted record");
                             resolve(result);
                         }
@@ -47,7 +47,7 @@ class AnalyzerDbService {
                                 }
                             },
                             err => {
-                                throw err;
+                                if (err) reject(err);
                             }
                         )
                     ;
@@ -65,7 +65,7 @@ class AnalyzerDbService {
                         key
                     },
                     (err, result) => {
-                        if (err) throw err;
+                        if (err) reject(err);
                         console.log("record found");
                         resolve(result);
                     }
@@ -77,7 +77,7 @@ class AnalyzerDbService {
     _connect(callback) {
         return MongoClient.connect(url, function(err, db) {
             if (err !== null) {
-                throw err;
+                reject(err);
             }
             callback(db, function() {
                 db.close();
