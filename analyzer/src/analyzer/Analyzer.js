@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AnalyzerService from '../shared/AnalyzerService';
 import 'whatwg-fetch';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import UIkit from 'uikit';
@@ -34,25 +35,22 @@ class Analyzer extends Component {
       gdoKey = "";
     }
     if (this.props.match.params.key && gdoKey !== this.props.match.params.key) {
-      fetch('http://magicjj.hopto.org:8088/getSavedAnalysis/' + encodeURIComponent(this.props.match.params.key), {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }).then(resp => {
-        if (resp.status === 404) {
-          UIkit.modal.alert('The game key you requested could not be retrieved. If this is an old key, the data may have been purged. Otherwise, try again in a few minutes. If the problem persists, please contact the developer.');
-          return;
-        }
-        if (resp.status === 500) {
-          UIkit.modal.alert('An error occured while retrieving your game data. Try again in a few minutes. If the problem persists, please contact the developer.');
-          return;
-        }
-        resp.json().then(data => {
-          this.props.setStateGdo(data.gameData);
-          this.props.handleChangeFormInput({ target: { value: data.gameLog }});
-        });
-      });
+      AnalyzerService.getSavedAnalysis(this.props.match.params.key)
+        .then(resp => {
+            if (resp.status === 404) {
+              UIkit.modal.alert('The game key you requested could not be retrieved. If this is an old key, the data may have been purged. Otherwise, try again in a few minutes. If the problem persists, please contact the developer.');
+              return;
+            }
+            if (resp.status === 500) {
+              UIkit.modal.alert('An error occured while retrieving your game data. Try again in a few minutes. If the problem persists, please contact the developer.');
+              return;
+            }
+            resp.json().then(data => {
+            this.props.setStateGdo(data.gameData);
+            this.props.handleChangeFormInput({ target: { value: data.gameLog }});
+          });
+        })
+      ;
     }
   }
 

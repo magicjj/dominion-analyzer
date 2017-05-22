@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import 'whatwg-fetch';
 import './App.css';
+import AnalyzerService from './shared/AnalyzerService';
 import Analyzer from './analyzer/Analyzer';
 import Home from './home/Home';
 import AnalyzerInput from './analyzerInput/AnalyzerInput';
@@ -32,27 +32,21 @@ class App extends Component {
   handleSubmitFormInput(e, formInput) {
     e.preventDefault();
     formInput = typeof formInput === 'string' ? formInput : this.state.formInput;
-    fetch('http://magicjj.hopto.org:8088/analyze', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        input: formInput
+    AnalyzerService.analyze(formInput)
+      .then(resp => {
+          if (resp.status === 500) {
+            UIkit.modal.alert('An error occured while parsing your game data. Try again in a few minutes. If the problem persists, please contact the developer.');
+            return;
+          }
+          resp.json().then(data => {
+            if (data.finalScoresFromMetadata) {
+              UIkit.modal.alert('Hmm... It looks like we calculated a different score than the Chrome Extension reported seeing. You can still check out the data, but it might be a little off. We\'ll notify the developer.');
+            }
+            data.resetTurn = true;
+            this.setStateGdo(data);
+          });
       })
-    }).then(resp => {
-      if (resp.status === 500) {
-        UIkit.modal.alert('An error occured while parsing your game data. Try again in a few minutes. If the problem persists, please contact the developer.');
-        return;
-      }
-      resp.json().then(data => {
-        if (data.finalScoresFromMetadata) {
-          UIkit.modal.alert('Hmm... It looks like we calculated a different score than the Chrome Extension reported seeing. You can still check out the data, but it might be a little off. We\'ll notify the developer.');
-        }
-        data.resetTurn = true;
-        this.setStateGdo(data);
-      });
-    });
+    ;
   }
   
   handleChangeSetting(e) {
