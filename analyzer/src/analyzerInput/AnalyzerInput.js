@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery'; // TODO can remove?
 
 import './AnalyzerInput.css';
 
