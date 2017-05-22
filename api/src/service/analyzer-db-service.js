@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
 const Promise = require('promise');
 
-const url = 'mongodb://admin:55488214@138.197.99.196:27017/windominion';
+const url = 'mongodb://admin:tickletickle@138.197.99.196:27017/windominion';
 
 const makeKey = function() {
     let text = "";
@@ -18,6 +18,7 @@ class AnalyzerDbService {
 
     addGame(gameLog, gameData) {
         return new Promise((resolve, reject) => {
+            let _resolve = resolve, _reject = reject;
             this._connect((db, callback) => {
                 let add = (thisKey) => {
                     gameData.key = thisKey;
@@ -29,9 +30,9 @@ class AnalyzerDbService {
                             key: thisKey
                         },
                         (err, result) => {
-                            if (err) reject(err);
+                            if (err) _reject(err);
                             console.log("inserted record");
-                            resolve(result);
+                            _resolve(result);
                         }
                     );
                 }
