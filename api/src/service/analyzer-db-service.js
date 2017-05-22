@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
 const Promise = require('promise');
 
-const url = 'mongodb://138.197.99.196:27017/windominion';
+const url = 'mongodb://localhost:27017/windominion';
 
 const makeKey = function() {
     let text = "";
