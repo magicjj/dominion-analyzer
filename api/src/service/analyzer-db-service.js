@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
 const Promise = require('promise');
 
-const url = 'mongodb://localhost:27017/windominion';
+const url = 'mongodb://admin:55488214@138.197.99.196:27017/windominion';
 
 const makeKey = function() {
     let text = "";
@@ -66,7 +66,11 @@ class AnalyzerDbService {
                     },
                     (err, result) => {
                         if (err) reject(err);
-                        console.log("record found");
+                        if (result === null) {
+                            console.log("record not found");
+                        } else {
+                            console.log("record found");
+                        }
                         resolve(result);
                     }
                 );

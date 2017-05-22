@@ -1,4 +1,9 @@
 look into setting up server, move mongodb data
+ADD RETURNS AND RECIEVES
+
+T returns a Peasant.
+T receives a Soldier.
+
 
 ABOUT THIS ERROR 
 for now I just added proper error handling to the insert record thing, but I need to have the GDO scraped of bad characters
