@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import './PlayerGridSettings.css';
 
-import Panel from 'react-uikit-panel';
-
 class PlayerGridSettings extends Component {
 
   constructor(props) {
