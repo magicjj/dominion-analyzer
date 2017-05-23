@@ -1,6 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
 const ObjectId = require('mongodb').ObjectID;
 const Promise = require('promise');
+const winston = require('winston');
 
 const url = 'mongodb://win:tickletickle@localhost:27017/windominion';
 
@@ -31,8 +32,11 @@ class AnalyzerDbService {
                                 key: thisKey
                             },
                             (err, result) => {
-                                if (err) _reject(err);
-                                console.log("inserted record");
+                                if (err) {
+                                    _reject(err);
+                                    return;
+                                }
+                                winston.info("Record inserted to MongoDB", {key: gameData.key, game: gameData.game, players: Object.keys(gameData.playerNameToIndex)});
                                 _resolve(result);
                             }
                         );
@@ -55,8 +59,16 @@ class AnalyzerDbService {
                         ;
                     };  // end findUniqueKeyThenAdd fn dec
                     findUniqueKeyThenAdd();
-                }); // end _connect callback
-                } catch (e) {
+                })  // end _connect callback
+                .then(
+                res => {
+                    // this is never resolved, only rejected
+                },
+                err => {
+                    // if rejected pass error up
+                    reject(err)
+                });
+            } catch (e) {
                 reject(e);
             }
         }); // end return new promise
@@ -71,16 +83,26 @@ class AnalyzerDbService {
                             key
                         },
                         (err, result) => {
-                            if (err) reject(err);
+                            if (err) {
+                                reject(err);
+                                return;
+                            }
                             if (result === null) {
-                                console.log("record not found");
+                                winston.info("Record not found in MongoDB", {key: key});
                             } else {
-                                console.log("record found");
+                                winston.info("Record retrieved from MongoDB", {key: result.key, game: result.game, players: Object.keys(result.playerNameToIndex)});
                             }
                             resolve(result);
                         }
                     );
-                })
+                }).then(
+                res => {
+                    // this is never resolved, only rejected
+                },
+                err => {
+                    // if rejected pass error up
+                    reject(err)
+                });
             } catch (e) {
                 reject(e);
             }
@@ -88,13 +110,16 @@ class AnalyzerDbService {
     }
 
     _connect(callback) {
-        return MongoClient.connect(url, function(err, db) {
-            if (err !== null) {
-                throw err;
-            }
-            callback(db, function() {
-                db.close();
-            });
+        return new Promise((resolve, reject) => {
+            MongoClient.connect(url, function(err, db) {
+                if (err !== null) {
+                    reject(err);
+                    return;
+                }
+                callback(db, function() {
+                    db.close();
+                });
+            })
         });
     }
 

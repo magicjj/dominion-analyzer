@@ -1,8 +1,10 @@
 		// TODO test nami ng conflict with fl
 const DeckData = require('../assets/DeckData');
 const AnalyzerDbService = require('../service/analyzer-db-service');
+const IssuesService = require('../service/issues-service');
 const _ = require('underscore');
 const Promise = require('promise');
+const winston = require('winston');
 
 class DominionAnalyzer {
 	
@@ -37,6 +39,15 @@ class DominionAnalyzer {
 
 			// attempt to upload to mongoDB, receive key and add it to the response before resolving
 			return new Promise(function(resolve, reject) {
+				let errorCallback = (err) => {
+					winston.error("Error saving game", {err, gameData});
+					IssuesService.log({
+						title: "Error saving game",
+						body: JSON.stringify(err)
+					});
+					gdo.key = "Couldn't save game :(",
+					resolve(gdo);
+				};
 				try {
 					AnalyzerDbService.addGame(gameData, gdo)
 						.then(
@@ -45,19 +56,16 @@ class DominionAnalyzer {
 								resolve(gdo);
 							},
 							err => {
-								gdo.key = "Couldn't save game :(",
-								resolve(gdo);
+								errorCallback(err);
 							}
 						)
 					;
-				} catch(e) {
-					gdo.key = "Couldn't save game :(",
-					resolve(gdo);
+				} catch(err) {
+					errorCallback(err);
 				}
 			});
-		} catch (e) {
-			// TODO error handling
-			console.log(e);
+		} catch (err) {
+			winston.error("Error parsing input", {err, gameData});
 			return new Promise((resolve, reject) => reject({ ERROR: e }));
 		}
 	}
@@ -200,7 +208,7 @@ class DominionAnalyzer {
 		for (let i = _exports.turn1StartIndex; i < gameDataLines.length; i++) {
 			let line = gameDataLines[i];
 
-			console.log(i + ": " + line);
+			winston.debug(i + ": " + line);
 
 			if (line.indexOf(" looks at ") > -1) {
 				continue;
@@ -320,7 +328,7 @@ class DominionAnalyzer {
 		// TODO should this be <
 		for (let i = 0; i <= _exports.numTurns; i++) {
 			for (let playerName in gdo.playerNameToIndex) {
-				console.log("TURN " + i + " FOR " + playerName + " **************");
+				winston.debug("TURN " + i + " FOR " + playerName + " **************");
 				let player = gdo.players[gdo.playerNameToIndex[playerName]];
 				let playerTurn = player.turns[i];
 
@@ -362,9 +370,9 @@ class DominionAnalyzer {
 					
 					let tokenPointsToAdd = playerTurn.tokens && playerTurn.tokens.vp ? playerTurn.tokens.vp : 0;
 					let landmarkPointsToAdd = playerTurn.landmarkPoints && playerTurn.landmarkPoints.vp ? playerTurn.landmarkPoints.vp : 0;
-					console.log("VP Tokens:  totalPoints[vp] = " + playerTurn.totalPoints.vp + " + " + tokenPointsToAdd + " = " + (playerTurn.totalPoints.vp + tokenPointsToAdd));
+					winston.debug("VP Tokens:  totalPoints[vp] = " + playerTurn.totalPoints.vp + " + " + tokenPointsToAdd + " = " + (playerTurn.totalPoints.vp + tokenPointsToAdd));
 					playerTurn.totalPoints.vp += tokenPointsToAdd;
-					console.log("Landmark VP:  totalPoints[vp] = " + playerTurn.totalPoints.vp + " + " + landmarkPointsToAdd + " = " + (playerTurn.totalPoints.vp + landmarkPointsToAdd));
+					winston.debug("Landmark VP:  totalPoints[vp] = " + playerTurn.totalPoints.vp + " + " + landmarkPointsToAdd + " = " + (playerTurn.totalPoints.vp + landmarkPointsToAdd));
 					playerTurn.totalPoints.vp += landmarkPointsToAdd;
 				}
 			}
@@ -449,7 +457,11 @@ class DominionAnalyzer {
 				let cardData = DeckData[card.name];
 				let pointsChange;
 				if (! cardData) {
-					console.log("Missing card! " + card.name);
+					winston.crit("MISSING CARD! " + card.name);
+					IssuesService.log({
+						title: "Missing card: " + card.name,
+						data: "Check if this card's info exists in DeckData.js"
+					})
 					pointsChange = {};
 				} else {
 					let pointsChangeFn = cardData.pointsChangeFn;
@@ -459,7 +471,7 @@ class DominionAnalyzer {
 					if (! points[pointType]) {
 						points[pointType] = 0;
 					}
-					console.log(card.name + ":  points["+pointType+"] += " + pointsChange[pointType] + " * " + card.count);
+					winston.debug(card.name + ":  points["+pointType+"] += " + pointsChange[pointType] + " * " + card.count);
 					points[pointType] += pointsChange[pointType] * card.count;
 				}
 			}
@@ -481,8 +493,7 @@ class DominionAnalyzer {
 				}
 				points[pointType] += pointsChange[pointType];
 			}
-			console.log("landmark " + landmark.name)
-			console.log(pointsChange);
+			winston.debug("Landmark " + landmark.name + " pointsChange", pointsChange)
 		}
 		return points;
 	}
@@ -514,7 +525,11 @@ class DominionAnalyzer {
 			} else {
 				let cardData = DeckData[card.name] ? this.deepCopy(DeckData[card.name]) : false;
 				if (! cardData) {
-					console.log("MISSING CARD: " + card.name);
+					winston.crit("MISSING CARD! " + card.name);
+					IssuesService.log({
+						title: "Missing card: " + card.name,
+						data: "Check if this card's info exists in DeckData.js"
+					})
 					cardData = { name: card.name, type: ["ERROR"] };
 				}
 				cardData.count = mult ? 1 : 0;

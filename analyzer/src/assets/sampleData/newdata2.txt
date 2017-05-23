@@ -1,5 +1,5 @@
 Game #3398015, rated.
-aprilelaine: 36.36
+april.elaine: 36.36
 magicjj: 32.24
 
 a starts with 7 Coppers and 3 Estates.
@@ -9,7 +9,7 @@ m starts with 7 Coppers and 3 Estates.
 m shuffles their deck.
 m draws 3 Coppers and 2 Estates.
 
-Turn 1 - aprilelaine
+Turn 1 - april.elaine
 a plays 3 Coppers.
 a buys and gains a Silver.
 a moves 1 VP from the Silver pile to Aqueduct.
@@ -21,7 +21,7 @@ m buys and gains a Silver.
 m moves 1 VP from the Silver pile to Aqueduct.
 m draws 4 Coppers and an Estate.
 
-Turn 2 - aprilelaine
+Turn 2 - april.elaine
 a plays 4 Coppers.
 a buys and gains a Potion.
 a shuffles their deck.
@@ -34,7 +34,7 @@ m moves 1 VP from the Silver pile to Aqueduct.
 m shuffles their deck.
 m draws 3 Coppers, a Silver and an Estate.
 
-Turn 3 - aprilelaine
+Turn 3 - april.elaine
 a plays 3 Coppers.
 a buys and gains an Estate.
 a takes 3 VP from Aqueduct.
@@ -45,7 +45,7 @@ m plays a Silver and 3 Coppers.
 m buys and gains a Merchant Ship.
 m draws 3 Coppers, a Silver and an Estate.
 
-Turn 4 - aprilelaine
+Turn 4 - april.elaine
 a plays a Silver and 3 Coppers.
 a buys and gains a Haggler.
 a shuffles their deck.
@@ -57,7 +57,7 @@ m buys and gains a Merchant Ship.
 m shuffles their deck.
 m draws 2 Coppers, a Silver, an Estate and a Merchant Ship.
 
-Turn 5 - aprilelaine
+Turn 5 - april.elaine
 a plays a Haggler.
 a plays a Potion and 2 Coppers.
 a buys a Silver.
@@ -73,7 +73,7 @@ m buys and gains a Gold.
 m moves 1 VP from the Gold pile to Aqueduct.
 m draws 2 Coppers, a Silver and 2 Estates.
 
-Turn 6 - aprilelaine
+Turn 6 - april.elaine
 a plays a Silver and 3 Coppers.
 a buys and gains a Duchy.
 a takes 2 VP from Aqueduct.
@@ -89,7 +89,7 @@ m moves 1 VP from the Gold pile to Aqueduct.
 m shuffles their deck.
 m draws 3 Coppers, a Silver and a Merchant Ship.
 
-Turn 7 - aprilelaine
+Turn 7 - april.elaine
 a plays 3 Coppers.
 a buys and gains a Pearl Diver.
 a draws 5 cards.
@@ -101,7 +101,7 @@ m buys and gains a Gold.
 m moves 1 VP from the Gold pile to Aqueduct.
 m draws 3 Coppers, a Gold and a Merchant Ship.
 
-Turn 8 - aprilelaine
+Turn 8 - april.elaine
 a plays a Pearl Diver.
 a draws a card.
 a looks at a card.
@@ -121,7 +121,7 @@ m buys and gains a Province.
 m takes 2 VP from Aqueduct.
 m draws a Copper, a Silver, a Gold and 2 Estates.
 
-Turn 9 - aprilelaine
+Turn 9 - april.elaine
 a plays a Silver and 3 Coppers.
 a buys and gains a Patrol.
 a shuffles their deck.
@@ -135,7 +135,7 @@ m buys and gains a Province.
 m shuffles their deck.
 m draws 2 Coppers, 2 Golds and an Estate.
 
-Turn 10 - aprilelaine
+Turn 10 - april.elaine
 a plays a Laboratory.
 a draws 2 cards.
 a plays a Silver and 2 Coppers.
@@ -147,7 +147,7 @@ m plays 2 Golds and 2 Coppers.
 m buys and gains a Province.
 m draws a Gold, an Estate, a Province and 2 Merchant Ships.
 
-Turn 11 - aprilelaine
+Turn 11 - april.elaine
 a plays a Pearl Diver.
 a draws a card.
 a looks at a card.
@@ -167,7 +167,7 @@ m plays a Gold.
 m buys and gains a Potion.
 m draws 3 Coppers, a Silver and a Province.
 
-Turn 12 - aprilelaine
+Turn 12 - april.elaine
 a plays a Pearl Diver.
 a draws a card.
 a looks at a card.
@@ -186,7 +186,7 @@ m moves 1 VP from the Gold pile to Aqueduct.
 m shuffles their deck.
 m draws 2 Coppers, a Silver, an Estate and a Province.
 
-Turn 13 - aprilelaine
+Turn 13 - april.elaine
 a plays a Pearl Diver.
 a draws a card.
 a looks at a card.
@@ -204,7 +204,7 @@ m plays a Silver and 2 Coppers.
 m buys and gains a Treasure Map.
 m draws a Copper, a Gold, an Estate and 2 Merchant Ships.
 
-Turn 14 - aprilelaine
+Turn 14 - april.elaine
 a plays a Laboratory.
 a draws 2 cards.
 a plays a Ranger.
@@ -222,7 +222,7 @@ m buys and gains a Gold.
 m moves 1 VP from the Gold pile to Aqueduct.
 m draws 3 Coppers and 2 Golds.
 
-Turn 15 - aprilelaine
+Turn 15 - april.elaine
 a plays a Patrol.
 a draws 3 cards.
 a reveals 2 Coppers, an Estate and a Haggler.
@@ -241,7 +241,7 @@ m buys and gains a Province.
 m takes 2 VP from Aqueduct.
 m draws a Copper, a Silver, an Estate, a Province and a Potion.
 
-Turn 16 - aprilelaine
+Turn 16 - april.elaine
 a plays a Pearl Diver.
 a draws a card.
 a looks at a card.
@@ -265,7 +265,7 @@ m buys and gains a University.
 m shuffles their deck.
 m draws a Copper, a Gold, a Province and 2 Merchant Ships.
 
-Turn 17 - aprilelaine
+Turn 17 - april.elaine
 a plays an Estate.
 a flips Journey token face up.
 a shuffles their deck.
@@ -281,7 +281,7 @@ m buys and gains a Gold.
 m moves 1 VP from the Gold pile to Aqueduct.
 m draws 2 Coppers, a Silver and 2 Provinces.
 
-Turn 18 - aprilelaine
+Turn 18 - april.elaine
 a plays a Laboratory.
 a draws 2 cards.
 a plays an Estate.
@@ -298,7 +298,7 @@ m plays a Silver and 2 Coppers.
 m buys and gains a Treasure Map.
 m draws a Copper, an Estate, a Province, a Treasure Map and a University.
 
-Turn 19 - aprilelaine
+Turn 19 - april.elaine
 a plays a Pearl Diver.
 a draws a card.
 a looks at a card.
@@ -331,7 +331,7 @@ m trashes a Treasure Map.
 m plays a Copper.
 m draws a Copper, 2 Golds, an Estate and a Potion.
 
-Turn 20 - aprilelaine
+Turn 20 - april.elaine
 a plays a University.
 a gains a Laboratory.
 a plays a Laboratory.
@@ -347,7 +347,7 @@ m plays 2 Golds, a Potion and a Copper.
 m buys and gains a Duchy.
 m draws 2 Coppers, a Silver, a Gold and an Estate.
 
-Turn 21 - aprilelaine
+Turn 21 - april.elaine
 a plays a Laboratory.
 a draws 2 cards.
 a plays a Laboratory.
@@ -368,7 +368,7 @@ m buys and gains a Duchy.
 m shuffles their deck.
 m draws a Copper, a Gold, an Estate, a Duchy and a Province.
 
-Turn 22 - aprilelaine
+Turn 22 - april.elaine
 a plays a University.
 a gains a Laboratory.
 a plays a Pearl Diver.
@@ -391,7 +391,7 @@ m plays a Gold and a Copper.
 m buys and gains an Estate.
 m draws a Copper, a Gold, an Estate, a Merchant Ship and a Potion.
 
-Turn 23 - aprilelaine
+Turn 23 - april.elaine
 a plays a Laboratory.
 a draws 2 cards.
 a plays a Pearl Diver.
@@ -418,7 +418,7 @@ m plays a Gold, a Potion and a Copper.
 m buys and gains a Duchy.
 m draws a Silver, a Gold, an Estate, a Duchy and a Province.
 
-Turn 24 - aprilelaine
+Turn 24 - april.elaine
 a plays a University.
 a gains a Laboratory.
 a plays an Estate.
@@ -434,7 +434,7 @@ m plays a Gold and a Silver.
 m buys and gains a Duchy.
 m draws 2 Coppers, a Gold, a Province and a Haggler.
 
-Turn 25 - aprilelaine
+Turn 25 - april.elaine
 a plays a Laboratory.
 a draws 2 cards.
 a plays a University.
@@ -478,7 +478,7 @@ m buys an Inheritance.
 m inherits a Messenger.
 m draws 2 Coppers, a Gold, a Province and a University.
 
-Turn 26 - aprilelaine
+Turn 26 - april.elaine
 a plays 2 Silvers and a Copper.
 a buys and gains a Laboratory.
 a draws 5 cards.
@@ -490,7 +490,7 @@ m plays a Gold and 2 Coppers.
 m buys and gains a Merchant Ship.
 m draws a Copper, a Silver, a Gold, a Merchant Ship and a Treasure Map.
 
-Turn 27 - aprilelaine
+Turn 27 - april.elaine
 a plays a University.
 a gains a Royal Carriage.
 a plays a University.
@@ -518,7 +518,7 @@ m takes 1 VP from Aqueduct.
 m shuffles their deck.
 m draws 3 Golds, a Province and a Laboratory.
 
-Turn 28 - aprilelaine
+Turn 28 - april.elaine
 a starts their turn.
 a gets +2 Coins (Merchant Ship).
 a plays an Estate.
