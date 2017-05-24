@@ -20,7 +20,10 @@
     -webkit-box-align: center;
     align-items: center;
     margin-top: -6px;
-    margin-right: 10px;
+    margin-left: -45px;
+}
+.p-list {
+    margin-left: 45px;
 }
 .no-pointer {
     cursor: default !important;

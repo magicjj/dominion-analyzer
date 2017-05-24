@@ -26,7 +26,7 @@ class Analyzer extends Component {
   resetCopied() {
     this.setState({ copied: false });
   }
-
+  
   componentWillMount() {
     let gdoKey;
     if (this.props.gdo) {
@@ -38,17 +38,17 @@ class Analyzer extends Component {
       AnalyzerService.getSavedAnalysis(this.props.match.params.key)
         .then(resp => {
             if (resp.status === 404) {
-              UIkit.modal.alert('The game key you requested could not be retrieved. If this is an old key, the data may have been purged. Otherwise, try again in a few minutes. If the problem persists, please contact the developer.');
+              UIkit.modal.alert('The game key you requested could not be retrieved. If this is an old key, the data may have been purged. Otherwise, if the problem persists, please contact the developer on our <a href="https://discordapp.com/channels/316560992102383616/316560992102383616" target="_blank">Discord channel</a>.');
               return;
             }
             if (resp.status === 500) {
-              UIkit.modal.alert('An error occured while retrieving your game data. Try again in a few minutes. If the problem persists, please contact the developer.');
+              UIkit.modal.alert('An error occured while retrieving your game data. Try again in a few minutes. If the problem persists, please contact the developer on our <a href="https://discordapp.com/channels/316560992102383616/316560992102383616" target="_blank">Discord channel</a>.');
               return;
             }
             resp.json().then(data => {
-            this.props.setStateGdo(data.gameData);
-            this.props.handleChangeFormInput({ target: { value: data.gameLog }});
-          });
+              this.props.setStateGdo(data.gameData);
+              this.props.handleChangeFormInput({ target: { value: data.gameLog }});
+            });
         })
       ;
     }

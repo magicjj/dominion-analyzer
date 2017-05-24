@@ -35,8 +35,6 @@ class DominionAnalyzer {
 			// compare our score calculations with those passed in through metadata if available
 			_exports = _.extend(_exports, this.checkMetadata(gdo, _exports));
 
-			this.cleanForMongo(gdo);
-
 			// attempt to upload to mongoDB, receive key and add it to the response before resolving
 			return new Promise(function(resolve, reject) {
 				let errorCallback = (err) => {
@@ -67,27 +65,6 @@ class DominionAnalyzer {
 		} catch (err) {
 			winston.error("Error parsing input", {err, gameData});
 			return new Promise((resolve, reject) => reject({ ERROR: e }));
-		}
-	}
-
-	cleanForMongo(gdo) {
-		// since we are using the player name as a key, mongo doesn't like periods or dollar signs in keys, 
-		// so replace all instances for each player with a clean version
-
-		let cleanStrForMongo = str => str.replace(/\./g, '').replace(/\$/g, '');
-		let gdoJson = JSON.stringify(gdo);
-		let gdoJsonChanged = false;
-		for (let i = 0; i < gdo.players.length; i++) {
-			let from = gdo.players[i].name;
-			let to = cleanStrForMongo(from);
-			if (from !== to) {
-				gdoJson = gdoJson.split(from).join(to);
-				gdoJsonChanged = true;
-			}
-		}
-
-		if (gdoJsonChanged) {
-			gdo = JSON.parse(gdoJson);
 		}
 	}
 
@@ -379,6 +356,14 @@ class DominionAnalyzer {
 		}
 	}
 
+	/* 
+		this method interprets the metadata passed in by the Chrome extension to see what
+		the score tables said at the end of their game. If this score is different from the
+		score we calculated, we flag it as an issue to help improve further analysis.
+		we also add a "finalScoreFromMetadata" member to the GDO object, which triggers a warning
+		dialog on the front end telling the user the calculated score may be inaccurate, but
+		the GDO is still returned like normal
+	*/
 	checkMetadata(gdo, _exports) {
 		if (! gdo.scoreTables) {
 			return;
@@ -411,6 +396,12 @@ class DominionAnalyzer {
 				} else if (card.type.indexOf("Landmark") > -1) {
 					finalScoresFromMetadata[gdo.scoreTables[i].name].landmarkPoints.vp += parseInt(line[2]);
 				} else {
+					let logMetadata = {line, game: gdo.game};
+					winston.crit("Couldn't interpret row of metadata", logMetadata)
+					IssuesService.log({
+						title: "Couldn't interpret row of metadata",
+						body: JSON.stringify(logMetadata)
+					});
 					allCardsFound = false;
 					break;
 				}
@@ -418,8 +409,9 @@ class DominionAnalyzer {
 		}
 
 		if (! allCardsFound) {
-			// do some other logging here. but we don't want to return the finalScores object bc it'll trigger
-			// a popup on the front end saying the results are inaccurate, and we only know that for sure if we found every card
+			// we've already logged the missing cards above, but since we couldn't read all of the metadata
+			// we don't want to continue with checking our scores against theirs, because we don't have all
+			// of their scores
 			return;
 		}
 		
@@ -433,6 +425,12 @@ class DominionAnalyzer {
 				(finalTurn.tokens.vp ? finalTurn.tokens.vp : 0) !== finalScoreFromMetadata.tokens.vp
 			) {
 				gdo.finalScoresFromMetadata = finalScoresFromMetadata;
+				let logMetadata = {gdo, finalScoreFromMetadata, finalTurn};
+				winston.error("Metadata check failed, see player " + i + " score", logMetadata)
+				IssuesService.log({
+					title: "Metadata check failed, see player " + i + " score",
+					body: JSON.stringify(logMetadata)
+				});
 				break;
 			}
 		}
@@ -460,7 +458,7 @@ class DominionAnalyzer {
 					winston.crit("MISSING CARD! " + card.name);
 					IssuesService.log({
 						title: "Missing card: " + card.name,
-						data: "Check if this card's info exists in DeckData.js"
+						body: "Check if this card's info exists in DeckData.js"
 					})
 					pointsChange = {};
 				} else {
@@ -528,7 +526,7 @@ class DominionAnalyzer {
 					winston.crit("MISSING CARD! " + card.name);
 					IssuesService.log({
 						title: "Missing card: " + card.name,
-						data: "Check if this card's info exists in DeckData.js"
+						body: "Check if this card's info exists in DeckData.js"
 					})
 					cardData = { name: card.name, type: ["ERROR"] };
 				}

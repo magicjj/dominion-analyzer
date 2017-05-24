@@ -35,20 +35,26 @@ class Home extends Component {
                 <p className="uk-text-lead">
                     There are two ways to use Win Dominion:
                 </p>
-                <p>
+                <p className="p-list">
                     <span className="uk-float-left numbers" style={{marginTop: '0'}}>1</span>
                     Click the <button className="uk-button uk-button-primary no-pointer" type="button">Analyze</button> button in the top-right and corner of the page. Paste your entire game log into the box, and click <button className="uk-button uk-button-primary no-pointer" type="button">Analyze</button> again.
                 </p>
-                <p>
+                <p className="p-list">
                     <span className="uk-float-left numbers">2</span>
-                    To speed things up and avoid manually copying and pasting the game log, install the <a href="https://chrome.google.com/webstore/detail/win-dominion-game-scraper/denlafhecndjbofgefekklidcpannapm" target="_blank">Chrome extension</a> here. 
+                    <b>Recommended:</b> Install the <a href="https://chrome.google.com/webstore/detail/win-dominion-game-scraper/denlafhecndjbofgefekklidcpannapm" target="_blank">Chrome extension</a>. 
                     After playing a game, just click the <img src={ChromeExtIcon} style={{width: '16px', height: '16px', marginTop: '-3px'}} /> icon and your analysis will automatically open in a new tab!
+                </p>
+                <p>
+                    <span className="uk-badge uk-background-danger uk-margin-small-right">Note</span> 
+                    Using the Chrome extension is <i>highly</i> recommended. It sends Win Dominion more data about your game, giving you a more accurate analysis and helping us further refine this software. 
+                    VP Tokens, Landmarks and more are only considered when using the Chrome extension.
                 </p>
                 <h1 className="uk-article-title">
                     Support Win Dominion
                 </h1>
                 <p>
-                    Win Dominion is currently a one-man project. If you'd like to the tool get new features, such as live analysis mid-game and more, please consider donating.
+                    Win Dominion is a one-man project. It is running on a paid dedicated server, and currently has no ads.
+                    Please consider donating to keep this tool online and support further development. 
                     You can also support the project by sharing it with your friends and opponents. Click the <span data-uk-icon="icon: social" /> in the top-right corner after analyzing a game
                     to share the analysis.
                 </p>
@@ -60,13 +66,11 @@ class Home extends Component {
                     </form>
                 </div>
                 <h1 className="uk-article-title">
-                    Note
+                    Issues? Feature request?
                 </h1>
                 <p>
-                    This project is currently hosted from my personal internet connection. Expect downtime and delays. I will move it to dedicated hosting as soon as demand and/or donations allow it.
-                </p>
-                <p>
-                    Bugs? Feature request? Log an issue on <a href="https://github.com/magicjj/dominion-analyzer/issues" target="_blank">GitHub</a>.
+                    Contact the developer on our <a href="https://discordapp.com/channels/316560992102383616/316560992102383616" target="_blank">Discord channel</a>.
+                    Please keep me notified of any outages, or any questions at all!
                 </p>
             </article>
         </div>

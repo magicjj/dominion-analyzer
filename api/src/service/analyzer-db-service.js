@@ -19,25 +19,34 @@ class AnalyzerDbService {
 
     addGame(gameLog, gameData) {
         return new Promise((resolve, reject) => {
-            let _resolve = resolve, _reject = reject;
             try {
                 this._connect((db, callback) => {
                     let add = (thisKey) => {
                         gameData.key = thisKey;
+                        let gameDataToAdd = {};
+                        /* the playerNameToIndex and playerFlToIndex maps contain user input in the keys of the objects
+                         * MongoDB does not allow periods or $ in object keys, but they can exist in the player's names in Dominion Online
+                         * As such, rather than persisting this data (which is redundant anyway), we will  remove these maps before storing them
+                         * and recreate them when we retrieve the data */
+                        for (let key in gameData) {
+                            if (key !== "playerNameToIndex" && key !== "playerFlToIndex") {
+                                gameDataToAdd[key] = gameData[key];
+                            }
+                        }
                         db.collection('gameData').insertOne(
                             {
                                 createTime: Date.now(),
                                 gameLog,
-                                gameData,
+                                gameData: gameDataToAdd,
                                 key: thisKey
                             },
                             (err, result) => {
                                 if (err) {
-                                    _reject(err);
+                                    reject(err);
                                     return;
                                 }
                                 winston.info("Record inserted to MongoDB", {key: gameData.key, game: gameData.game, players: Object.keys(gameData.playerNameToIndex)});
-                                _resolve(result);
+                                resolve(result);
                             }
                         );
                     }
@@ -90,7 +99,17 @@ class AnalyzerDbService {
                             if (result === null) {
                                 winston.info("Record not found in MongoDB", {key: key});
                             } else {
-                                winston.info("Record retrieved from MongoDB", {key: result.key, game: result.game, players: Object.keys(result.playerNameToIndex)});
+                                if (! result.gameData.playerNameToIndex || ! result.gameData.playerFlToIndex) {
+                                    /* if the maps already exist, do nothing as this was stored before we stopped persisting the maps.
+                                     * otherwise, we are create them below by simply looping through the players array */
+                                    result.gameData.playerNameToIndex = {};
+                                    result.gameData.playerFlToIndex = {};
+                                    for (var i = 0; i < result.gameData.players.length; i++) {
+                                        result.gameData.playerNameToIndex[result.gameData.players[i].name] = i;
+                                        result.gameData.playerFlToIndex[result.gameData.players[i].fl] = i;
+                                    }
+                                }
+                                winston.info("Record retrieved from MongoDB", {key: result.key, game: result.game, players: Object.keys(result.gameData.playerNameToIndex)});
                             }
                             resolve(result);
                         }

@@ -1,6 +1,6 @@
 Game #3398015, rated.
 april.elaine: 36.36
-magicjj: 32.24
+m$agic$.j.j: 32.24
 
 a starts with 7 Coppers and 3 Estates.
 a shuffles their deck.
@@ -15,7 +15,7 @@ a buys and gains a Silver.
 a moves 1 VP from the Silver pile to Aqueduct.
 a draws 5 cards.
 
-Turn 1 - magicjj
+Turn 1 - m$agic$.j.j
 m plays 3 Coppers.
 m buys and gains a Silver.
 m moves 1 VP from the Silver pile to Aqueduct.
@@ -27,7 +27,7 @@ a buys and gains a Potion.
 a shuffles their deck.
 a draws 5 cards.
 
-Turn 2 - magicjj
+Turn 2 - m$agic$.j.j
 m plays 4 Coppers.
 m buys and gains a Silver.
 m moves 1 VP from the Silver pile to Aqueduct.
@@ -40,7 +40,7 @@ a buys and gains an Estate.
 a takes 3 VP from Aqueduct.
 a draws 5 cards.
 
-Turn 3 - magicjj
+Turn 3 - m$agic$.j.j
 m plays a Silver and 3 Coppers.
 m buys and gains a Merchant Ship.
 m draws 3 Coppers, a Silver and an Estate.
@@ -51,7 +51,7 @@ a buys and gains a Haggler.
 a shuffles their deck.
 a draws 5 cards.
 
-Turn 4 - magicjj
+Turn 4 - m$agic$.j.j
 m plays a Silver and 3 Coppers.
 m buys and gains a Merchant Ship.
 m shuffles their deck.
@@ -66,7 +66,7 @@ a gains a Silver.
 a moves 1 VP from the Silver pile to Aqueduct.
 a draws 5 cards.
 
-Turn 5 - magicjj
+Turn 5 - m$agic$.j.j
 m plays a Merchant Ship.
 m plays a Silver and 2 Coppers.
 m buys and gains a Gold.
@@ -80,7 +80,7 @@ a takes 2 VP from Aqueduct.
 a shuffles their deck.
 a draws 5 cards.
 
-Turn 6 - magicjj
+Turn 6 - m$agic$.j.j
 m starts their turn.
 m gets +2 Coins (Merchant Ship).
 m plays a Silver and 2 Coppers.
@@ -94,7 +94,7 @@ a plays 3 Coppers.
 a buys and gains a Pearl Diver.
 a draws 5 cards.
 
-Turn 7 - magicjj
+Turn 7 - m$agic$.j.j
 m plays a Merchant Ship.
 m plays a Silver and 3 Coppers.
 m buys and gains a Gold.
@@ -112,7 +112,7 @@ a gains a Ranger.
 a gains a Laboratory.
 a draws 5 cards.
 
-Turn 8 - magicjj
+Turn 8 - m$agic$.j.j
 m starts their turn.
 m gets +2 Coins (Merchant Ship).
 m plays a Merchant Ship.
@@ -127,7 +127,7 @@ a buys and gains a Patrol.
 a shuffles their deck.
 a draws 5 cards.
 
-Turn 9 - magicjj
+Turn 9 - m$agic$.j.j
 m starts their turn.
 m gets +2 Coins (Merchant Ship).
 m plays a Gold, a Silver and a Copper.
@@ -142,7 +142,7 @@ a plays a Silver and 2 Coppers.
 a buys and gains a Ranger.
 a draws 5 cards.
 
-Turn 10 - magicjj
+Turn 10 - m$agic$.j.j
 m plays 2 Golds and 2 Coppers.
 m buys and gains a Province.
 m draws a Gold, an Estate, a Province and 2 Merchant Ships.
@@ -161,7 +161,7 @@ a buys and gains a University.
 a shuffles their deck.
 a draws 5 cards.
 
-Turn 11 - magicjj
+Turn 11 - m$agic$.j.j
 m plays a Merchant Ship.
 m plays a Gold.
 m buys and gains a Potion.
@@ -177,7 +177,7 @@ a buys and gains a Gold.
 a moves 1 VP from the Gold pile to Aqueduct.
 a draws 5 cards.
 
-Turn 12 - magicjj
+Turn 12 - m$agic$.j.j
 m starts their turn.
 m gets +2 Coins (Merchant Ship).
 m plays a Silver and 3 Coppers.
@@ -199,7 +199,7 @@ a plays a Silver and a Potion.
 a buys and gains a University.
 a draws 5 cards.
 
-Turn 13 - magicjj
+Turn 13 - m$agic$.j.j
 m plays a Silver and 2 Coppers.
 m buys and gains a Treasure Map.
 m draws a Copper, a Gold, an Estate and 2 Merchant Ships.
@@ -215,7 +215,7 @@ a takes 2 VP from Aqueduct.
 a shuffles their deck.
 a draws 5 cards.
 
-Turn 14 - magicjj
+Turn 14 - m$agic$.j.j
 m plays a Merchant Ship.
 m plays a Gold and a Copper.
 m buys and gains a Gold.
@@ -233,7 +233,7 @@ a buys and gains a Silver.
 a moves 1 VP from the Silver pile to Aqueduct.
 a draws 5 cards.
 
-Turn 15 - magicjj
+Turn 15 - m$agic$.j.j
 m starts their turn.
 m gets +2 Coins (Merchant Ship).
 m plays 2 Golds and 3 Coppers.
@@ -259,7 +259,7 @@ a buys an Inheritance.
 a inherits a Ranger.
 a draws 5 cards.
 
-Turn 16 - magicjj
+Turn 16 - m$agic$.j.j
 m plays a Silver and a Potion.
 m buys and gains a University.
 m shuffles their deck.
@@ -274,7 +274,7 @@ a plays a Silver and 4 Coppers.
 a buys and gains a Laboratory.
 a draws 5 cards.
 
-Turn 17 - magicjj
+Turn 17 - m$agic$.j.j
 m plays a Merchant Ship.
 m plays a Gold and a Copper.
 m buys and gains a Gold.
@@ -291,7 +291,7 @@ a buys and gains a Province.
 a takes 1 VP from Aqueduct.
 a draws 5 cards.
 
-Turn 18 - magicjj
+Turn 18 - m$agic$.j.j
 m starts their turn.
 m gets +2 Coins (Merchant Ship).
 m plays a Silver and 2 Coppers.
@@ -323,7 +323,7 @@ a gains a Copper.
 a gains a Pearl Diver.
 a draws 5 cards.
 
-Turn 19 - magicjj
+Turn 19 - m$agic$.j.j
 m plays a University.
 m gains a Haggler.
 m plays a Treasure Map.
@@ -342,7 +342,7 @@ a plays a Silver and 3 Coppers.
 a buys and gains a Laboratory.
 a draws 5 cards.
 
-Turn 20 - magicjj
+Turn 20 - m$agic$.j.j
 m plays 2 Golds, a Potion and a Copper.
 m buys and gains a Duchy.
 m draws 2 Coppers, a Silver, a Gold and an Estate.
@@ -362,7 +362,7 @@ a plays a Gold, a Silver and 6 Coppers.
 a buys and gains an Estate and a Province.
 a draws 5 cards.
 
-Turn 21 - magicjj
+Turn 21 - m$agic$.j.j
 m plays a Gold, a Silver and 2 Coppers.
 m buys and gains a Duchy.
 m shuffles their deck.
@@ -386,7 +386,7 @@ a gains a Duchy.
 a takes 1 VP from Aqueduct.
 a draws 5 cards.
 
-Turn 22 - magicjj
+Turn 22 - m$agic$.j.j
 m plays a Gold and a Copper.
 m buys and gains an Estate.
 m draws a Copper, a Gold, an Estate, a Merchant Ship and a Potion.
@@ -412,7 +412,7 @@ a plays a Silver, a Potion and 3 Coppers.
 a buys and gains a Duchy.
 a draws 5 cards.
 
-Turn 23 - magicjj
+Turn 23 - m$agic$.j.j
 m plays a Merchant Ship.
 m plays a Gold, a Potion and a Copper.
 m buys and gains a Duchy.
@@ -427,7 +427,7 @@ a plays 2 Coppers.
 a buys and gains a Pearl Diver.
 a draws 5 cards.
 
-Turn 24 - magicjj
+Turn 24 - m$agic$.j.j
 m starts their turn.
 m gets +2 Coins (Merchant Ship).
 m plays a Gold and a Silver.
@@ -471,7 +471,7 @@ a gains an Estate.
 a shuffles their deck.
 a draws 5 cards.
 
-Turn 25 - magicjj
+Turn 25 - m$agic$.j.j
 m plays a Haggler.
 m plays a Gold and 2 Coppers.
 m buys an Inheritance.
@@ -483,7 +483,7 @@ a plays 2 Silvers and a Copper.
 a buys and gains a Laboratory.
 a draws 5 cards.
 
-Turn 26 - magicjj
+Turn 26 - m$agic$.j.j
 m plays a University.
 m gains a Laboratory.
 m plays a Gold and 2 Coppers.
@@ -510,7 +510,7 @@ a buys and gains a Silver.
 a moves 1 VP from the Silver pile to Aqueduct.
 a draws 5 cards.
 
-Turn 27 - magicjj
+Turn 27 - m$agic$.j.j
 m plays a Merchant Ship.
 m plays a Gold, a Silver and a Copper.
 m buys and gains a Province.
@@ -531,7 +531,7 @@ a buys and gains an Estate.
 a takes 1 VP from Aqueduct.
 a draws 5 cards.
 
-Turn 28 - magicjj
+Turn 28 - m$agic$.j.j
 m starts their turn.
 m gets +2 Coins (Merchant Ship).
 m plays a Laboratory.

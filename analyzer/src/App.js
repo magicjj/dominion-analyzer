@@ -35,12 +35,12 @@ class App extends Component {
     AnalyzerService.analyze(formInput)
       .then(resp => {
           if (resp.status === 500) {
-            UIkit.modal.alert('An error occured while parsing your game data. Try again in a few minutes. If the problem persists, please contact the developer.');
+            UIkit.modal.alert('An error occured while parsing your game data. Try again in a few minutes. If the problem persists, please contact the developer on our <a href="https://discordapp.com/channels/316560992102383616/316560992102383616" target="_blank">Discord channel</a>.');
             return;
           }
           resp.json().then(data => {
             if (data.finalScoresFromMetadata) {
-              UIkit.modal.alert('Hmm... It looks like we calculated a different score than the Chrome Extension reported seeing. You can still check out the data, but it might be a little off. We\'ll notify the developer.');
+              UIkit.modal.alert('Hmm... It looks like we calculated a different score than the Chrome Extension reported seeing. You can still check out the data, but the scores might be a little off. We\'ve notified the developer.');
             }
             data.resetTurn = true;
             this.setStateGdo(data);
