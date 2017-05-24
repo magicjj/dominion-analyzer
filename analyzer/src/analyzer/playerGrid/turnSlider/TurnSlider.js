@@ -145,7 +145,7 @@ class TurnSlider extends Component {
     this.colorIndex = 0;
     return (
       <div className="uk-width-1-1 uk-card uk-card-small uk-card-body uk-background-muted" style={{marginLeft:'20px'}}>
-        <h3 className="uk-card-title uk-animation-slide-top turn-slider-header" style={{marginBottom:'0px'}}>
+        <h3 className="uk-card-title uk-animation-slide-top turn-slider-header">
           Select a turn by clicking below:
           { this.props.turn === 0 ? <span data-uk-icon="icon: arrow-left; ratio: 2" className="turn-slider-header-emphasis" /> : '' }
         </h3>
