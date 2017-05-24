@@ -428,7 +428,7 @@ class DominionAnalyzer {
 				(finalTurn.tokens.vp ? finalTurn.tokens.vp : 0) !== finalScoreFromMetadata.tokens.vp
 			) {
 				gdo.finalScoresFromMetadata = finalScoresFromMetadata;
-				let logMetadata = {game:gdo.game, finalScoreFromMetadata, finalTurn};
+				let logMetadata = {game:gdo.game, scoreTables: gdo.scoreTables, finalTurn};
 				winston.error("Metadata check failed, see player " + i + " score", logMetadata)
 				IssuesService.log({
 					title: "Metadata check failed, see player " + i + " score",
