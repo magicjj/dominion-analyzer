@@ -28,13 +28,18 @@ class TurnSlider extends Component {
   }
 
   handleMouseDownChart(e, turn) {
-    if (e !== null && e.activeTooltipIndex) {
+    if (e !== null && typeof e.isTooltipActive === 'boolean' && ! e.isTooltipActive) {
+      return;
+    }
+    if (e !== null && e.activeTooltipIndex >= 0) {
       this.dragging = true;
       turn = e.activeTooltipIndex;
       if (e.chartX <= 40) {
         // without this the handler isn't good about letting people select the  zero position
         turn = 0;
       }
+    } else if (e === null) {
+      turn = 0;
     }
     this.setState({ animateLineChart: false });
     this.props.handleChangeTurn(null, turn);
@@ -115,13 +120,35 @@ class TurnSlider extends Component {
     return this.colorList[this.colorIndex++ % this.colorList.length];
   }
 
+  emphasisInterval;
+  componentWillMount() {
+    if (! this.emphasisInterval) {
+      this.emphasisInterval = setInterval(() => {
+        let h = document.querySelector(".turn-slider-header-emphasis");
+        if (h) {
+          h.classList.remove("uk-animation-slide-right");
+          setTimeout(() => {
+            h.classList.add("uk-animation-slide-right");
+          }, 50);
+        }
+      }, 1500);
+    }
+  }
 
+  componentWillUnmount() {
+    if (this.emphasisInterval) {
+      clearInterval(this.emphasisInterval);
+    }
+  }
 
   render() {
     this.colorIndex = 0;
     return (
       <div className="uk-width-1-1 uk-card uk-card-small uk-card-body uk-background-muted" style={{marginLeft:'20px'}}>
-        <h3 className="uk-card-title" style={{marginBottom:'0px'}}>Select a turn:</h3>
+        <h3 className="uk-card-title uk-animation-slide-top turn-slider-header" style={{marginBottom:'0px'}}>
+          Select a turn by clicking below:
+          { this.props.turn === 0 ? <span data-uk-icon="icon: arrow-left; ratio: 2" className="turn-slider-header-emphasis" /> : '' }
+        </h3>
         <Slider defaultValue={0} min={0} max={this.props.numberOfTurns-1} step={1} value={this.props.turn} onChange={this.handleChangeTurn} className="slider" />
         <ResponsiveContainer height={180} width='100%'>
           <LineChart data={this.getChartData(this.props.gdo)}

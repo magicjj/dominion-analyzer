@@ -24,3 +24,8 @@
 .uk-card {
 	height: 260px;
 }
+.turn-slider-header-emphasis {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}

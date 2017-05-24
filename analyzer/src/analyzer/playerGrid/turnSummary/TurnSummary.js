@@ -10,6 +10,7 @@ class TurnSummary extends Component {
 
   constructor(props) {
     super(props);
+	this.render = this.render.bind(this);
   }
 
   getSummaryDataForTurn(turn) {

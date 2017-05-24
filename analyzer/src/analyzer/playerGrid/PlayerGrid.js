@@ -15,6 +15,8 @@ class PlayerGrid extends Component {
   }
 
   handleChangeTurn(e, val) {
+    console.log(e)
+    console.log(val)
     try {
       this.setState({ turn: parseInt(val) });
     } catch(e) {
