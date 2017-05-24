@@ -1,54 +1,5 @@
 move mongodb data
-security in issues-service
-ADD RETURNS AND RECIEVES
-
-T returns a Peasant.
-T receives a Soldier.
-
-
-ABOUT THIS ERROR 
-for now I just added proper error handling to the insert record thing, but I need to have the GDO scraped of bad characters
-before we try to insert it.
-see http://stackoverflow.com/questions/28664383/mongodb-not-allowing-using-in-key
-
-C:\Web\www\dominion-analyzer\api\node_modules\mongodb\lib\utils.js:123
-    process.nextTick(function() { throw err; });
-                                  ^
-
-Error: key barak.tzori must not contain '.'
-    at Error (native)
-    at serializeInto (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:753:19)
-    at serializeObject (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:308:18)
-    at serializeInto (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:776:17)
-    at serializeObject (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:308:18)
-    at serializeInto (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:776:17)
-    at serializeObject (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:308:18)
-    at serializeInto (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:618:17)
-    at serializeObject (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:308:18)
-    at serializeInto (C:\Web\www\dominion-analyzer\api\node_modules\bson\lib\bson\parser\serializer.js:776:17)
-
-npm ERR! Windows_NT 10.0.14393
-npm ERR! argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-npm ERR! node v6.10.2
-npm ERR! npm  v3.10.10
-npm ERR! code ELIFECYCLE
-npm ERR! analyzerapi@1.0.0 start: `node src/index.js`
-npm ERR! Exit status 1
-npm ERR!
-npm ERR! Failed at the analyzerapi@1.0.0 start script 'node src/index.js'.
-npm ERR! Make sure you have the latest version of node.js and npm installed.
-npm ERR! If you do, this is most likely a problem with the analyzerapi package,
-npm ERR! not with npm itself.
-npm ERR! Tell the author that this fails on your system:
-npm ERR!     node src/index.js
-npm ERR! You can get information on how to open an issue for this project with:
-npm ERR!     npm bugs analyzerapi
-npm ERR! Or if that isn't available, you can get their info via:
-npm ERR!     npm owner ls analyzerapi
-npm ERR! There is likely additional logging output above.
-npm ERR! Please include the following file with any support request:
-npm ERR!     C:\Web\www\dominion-analyzer\api\npm-debug.log
-
+security in issues&db
 
 Tower:
 - ultimately calculate internally - how do we figure out the starting piles?
@@ -58,7 +9,6 @@ Tower:
 is content div shrinking when offcanvas opens?
 look into preventing text selection when dragging chart
 make mongo code handle duplicates - maybe, what about updates?
-check analytics
 
 fix analyze modalbody bg color in CSS
 blue borders on shit
@@ -68,15 +18,13 @@ expand cards down not up
 CODE CLEANUP
 try to eliminate style= inline
 padding on modals
-move http calls to a service on front end, double check backend code org
+double check backend code org
+
 
 
 had appendFile not appendFileSync - see if there could possibly be types mismatched
 
 
 
-
-SETTINGS
-Card View: Cropped, Full Size
-Card Size: Small, Medium, Large
+POSSIBLE SETTINGS
 Slider View: VP, Coin, Action

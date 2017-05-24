@@ -215,13 +215,13 @@ class DominionAnalyzer {
 			});
 
 			// check for any gained cards
-			checkLine(/^(^\w+)(?: .*)* gains (.+)/g, (match) => {
+			checkLine(/^(^\w+)(?: .*)* (?:gains|receives) (.+)/g, (match) => {
 				let player = this.findPlayerByFl(gdo, match[1]);
 				this.addToDeck(player, turn, match[2]);
 			});
 
 			// check for any trashed cards
-			checkLine(/^(^\w+)(?: .*)* trashes (.+)/g, (match) => {
+			checkLine(/^(^\w+)(?: .*)* (?:trashes|returns) (.+)/g, (match) => {
 				let player = this.findPlayerByFl(gdo, match[1]);
 				let cardToTrash = match[2];
 				let cardTrashedFromDeck = true;

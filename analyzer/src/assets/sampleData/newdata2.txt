@@ -19,6 +19,8 @@ Turn 1 - m$agic$.j.j
 m plays 3 Coppers.
 m buys and gains a Silver.
 m moves 1 VP from the Silver pile to Aqueduct.
+m returns an Estate.
+m receives a Duchy.
 m draws 4 Coppers and an Estate.
 
 Turn 2 - april.elaine
