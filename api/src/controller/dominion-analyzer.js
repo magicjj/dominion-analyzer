@@ -240,6 +240,9 @@ class DominionAnalyzer {
 					if (gladiatorActionLine && gladiatorActionLine.indexOf(player.fl + " plays a Gladiator.") === 0) {
 						cardTrashedFromDeck = false;
 					}
+				} else if (cardToTrash.indexOf(" to the ")) {
+					// for the instance of "m returns an Encampment to the Encampment pile."
+					cardToTrash = cardToTrash.split(" to the ")[0];
 				}
 				if (cardTrashedFromDeck) {
 					this.removeFromDeck(player, turn, cardToTrash)

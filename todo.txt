@@ -1,5 +1,6 @@
 move mongodb data
 security in issues&db
+triumphal arch miscalced for bot http://localhost:3000/Kw08eCs
 
 Tower:
 - ultimately calculate internally - how do we figure out the starting piles?
