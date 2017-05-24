@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cd .",
     "start": "node src/index.js",
-    "debug": "node debug src/index.js"
+    "debug": "node debug src/index.js",
+    "debug-logs": "node debug src/querylogs.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "restify": "^4.3.0",
     "underscore": "^1.8.3",
     "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "winston-logs-display": "^0.1.1"
   }
 }

@@ -1,5 +1,7 @@
 move mongodb data
 security in issues&db
+get stuff not running as root
+animation making scrollbar appear when modal opened
 triumphal arch miscalced for bot http://localhost:3000/Kw08eCs
 
 Tower:
