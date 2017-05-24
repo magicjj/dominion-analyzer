@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import './Deck.css';
 import CardImages from '../../../../assets/CardImages';
 
+import Tooltip from 'rc-tooltip';
+
+
 class Deck extends Component {
 
   constructor(props) {
@@ -41,11 +44,14 @@ class Deck extends Component {
           let countBadge, countChangeBadge;
           if (count === 1) {
             // it's the last card, add badges
-            countBadge = <span className="uk-badge">{cards[cardKey].count}</span>;
+            countBadge = <Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span># of copies in stack</span>}>
+                  <span className="uk-badge">{cards[cardKey].count}</span>
+              </Tooltip>;
             let countChange = this.getCountChange(typeKey, cardKey);
             if (countChange !== 0) {
-              countChangeBadge = <span className="uk-badge uk-label-danger">{(countChange > 0 ? '+' : '') + countChange}</span>;
-              // todo I'd like to get additional animation on this badge after the card comes in
+              countChangeBadge = <Tooltip placement="right" arrowContent={<div className="tooltip-arrow-left" />} overlay={<span># of copies {countChange > 0 ? 'added' : 'removed'} this turn</span>}>
+                  <span className="uk-badge uk-label-danger">{(countChange > 0 ? '+' : '') + countChange}</span>
+              </Tooltip>;
             }
           }
           cardList.push(
@@ -64,7 +70,7 @@ class Deck extends Component {
         )
       }
     }
-
+    
     return (
       <div data-uk-grid className="Deck">
         {cardStacks}

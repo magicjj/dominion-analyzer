@@ -38,7 +38,7 @@ class TurnSlider extends Component {
         // without this the handler isn't good about letting people select the  zero position
         turn = 0;
       }
-    } else if (e === null) {
+    } else if (typeof turn !== 'number') {
       turn = 0;
     }
     this.setState({ animateLineChart: false });
