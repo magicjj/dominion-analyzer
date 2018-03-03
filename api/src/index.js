@@ -47,4 +47,4 @@ server.use(restify.bodyParser({ mapParams: false }));
 
 Routes.init(server);
 
-server.listen(8088, '127.0.0.1', ()=>{});
+server.listen(8088);
