@@ -49,6 +49,8 @@ class AnalyzerDbService {
                                 resolve(result);
                             }
                         );
+                        let purgeTime = Date.now() - (1000*60*60*24*7); // purge everything older than a week
+                        db.collection('gameData').remove({ $and: [{ createTime: { $lt: purgeTime } }, { key: { $ne: "yczCerB" } }, { key: { $ne: "Hfvaqjy" } }, { key: { $ne: "ig4umGh" } }] });
                     }
                     let findUniqueKeyThenAdd = () => {
                         let thisKey = makeKey();

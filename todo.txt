@@ -4,6 +4,9 @@ get stuff not running as root
 animation making scrollbar appear when modal opened
 triumphal arch miscalced for bot http://localhost:3000/Kw08eCs
 
+show special error if game number is excluded
+
+
 Tower:
 - ultimately calculate internally - how do we figure out the starting piles?
 
@@ -31,3 +34,7 @@ had appendFile not appendFileSync - see if there could possibly be types mismatc
 
 POSSIBLE SETTINGS
 Slider View: VP, Coin, Action
+
+
+PURGE SCRIPT - selete all before createTime that are not examples
+db.gameData.RemoveAll({$and: [{createTime: {$lt: 1514911107017},{createTime: {$lt: 1514911107017},{key: {$ne: "yczCerB"}},{key: {$ne: "Hfvaqjy"}},{key: {$ne: "ig4umGh"}}] })
