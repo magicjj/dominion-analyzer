@@ -37,4 +37,4 @@ Slider View: VP, Coin, Action
 
 
 PURGE SCRIPT - selete all before createTime that are not examples
-db.gameData.RemoveAll({$and: [{createTime: {$lt: 1514911107017},{createTime: {$lt: 1514911107017},{key: {$ne: "yczCerB"}},{key: {$ne: "Hfvaqjy"}},{key: {$ne: "ig4umGh"}}] })
+db.gameData.remove({$and: [{createTime: {$lt: 1514911107017}},{key: {$ne: "yczCerB"}},{key: {$ne: "Hfvaqjy"}},{key: {$ne: "ig4umGh"}}] })
