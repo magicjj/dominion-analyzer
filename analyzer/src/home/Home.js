@@ -28,9 +28,9 @@ class Home extends Component {
                     See sample games...
                 </p>
                 <ul>
-                    <li><Link to="/yczCerB">magicjj vs. aprilelaine</Link></li>
-                    <li><Link to="/Hfvaqjy">magicjj vs. Lord Rattington</Link></li>
-                    <li><Link to="/ig4umGh">magicjj vs. DerpButter vs. Lord Rattington</Link></li>
+                    <li><Link to="/sample-0">magicjj vs. Lord Rattington</Link></li>
+                    <li><Link to="/sample-1">magicjj vs. Revenge Witch</Link></li>
+                    <li><Link to="/sample-2">magicjj vs. Lord Voldebot vs. Bad Advisor</Link></li>
                 </ul>
                 <p className="uk-text-lead">
                     There are two ways to use Win Dominion:

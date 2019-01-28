@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import AnalyzerService from './shared/AnalyzerService';
+import * as service from './shared/AnalyzerService';
 import Analyzer from './analyzer/Analyzer';
 import Home from './home/Home';
 import AnalyzerInput from './analyzerInput/AnalyzerInput';
 import PlayerGridSettings from './playerGridSettings/PlayerGridSettings';
 
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import UIkit from 'uikit';
 
@@ -32,6 +32,17 @@ class App extends Component {
   handleSubmitFormInput(e, formInput) {
     e.preventDefault();
     formInput = typeof formInput === 'string' ? formInput : this.state.formInput;
+    let gdo = service.default.analyze(formInput);
+    if (gdo) {
+      gdo.resetTurn = true;
+      this.setStateGdo(gdo);
+    } else {
+      UIkit.modal.alert('An error occured while parsing your game data. Make sure your log is clean and try again. This app is no longer being maintained due to lack of donations (**no donations). But you can try contacting the developer on our <a href="https://discordapp.com/channels/316560992102383616/316560992102383616" target="_blank">Discord channel</a>.');
+    }
+    
+  }
+ /* old analyzer code -
+
     AnalyzerService.analyze(formInput)
       .then(resp => {
           if (resp.status === 500) {
@@ -47,8 +58,7 @@ class App extends Component {
           });
       })
     ;
-  }
-  
+ */
   handleChangeSetting(e) {
     console.log(e.target.name + " = " + e.target.value);
     let state = {};
@@ -59,6 +69,8 @@ class App extends Component {
   setStateGdo(data) {
     this.setState({gdo: data});
     let keyPath = "/" + data.key;
+    // no longer saving games - overwrite this
+    keyPath = "/analyze";
     if (data.key && this.props.history.location.pathname !== keyPath) {
       // only add an entry to browser history if we aren't already on that page
       this.props.history.push(keyPath);
@@ -69,6 +81,7 @@ class App extends Component {
     // TODO why doesn't context="primary" work instead of this classname?
     return (
       <MuiThemeProvider>
+
         <div className="uk-offcanvas-content">
 
             <div data-uk-grid className='uk-width-1-1 uk-child-width-1-1 uk-grid-collapse'>
@@ -89,6 +102,9 @@ class App extends Component {
                   <Route path='/:key' render={(props) => <Analyzer gdo={this.state.gdo} handleChangeFormInput={this.handleChangeFormInput} setStateGdo={this.setStateGdo} {...props} />} />
                   <Route path='/' component={Home} />
                 </Switch>
+                {this.state.gdo !== undefined ?
+                  <Redirect to="/analyze" />
+                : null}
               </div>
             </div>
 

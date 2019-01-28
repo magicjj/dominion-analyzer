@@ -109,6 +109,7 @@ class DominionAnalyzer {
 			}
 		}
 
+		// the logs are all tracked by the unique first letters of the player names, this fn sets that identifier
 		this.getUniqueFlForPlayers(players);
 
 		gdo.players = [];
@@ -164,7 +165,7 @@ class DominionAnalyzer {
 			let _startsWith = player.fl + " starts with ";	// todo what if same fl????
 			for (let i = 1; i < gameDataLines.length; i++) {
 				if (gameDataLines[i].startsWith(_startsWith)) {
-							let startingCards = gameDataLines[i].substr(_startsWith.length);
+					let startingCards = gameDataLines[i].substr(_startsWith.length);
 					player.turns[0] = new DeckObject(0);
 					let startingDeck = this.addToDeck(player, 0, startingCards);
 				}
