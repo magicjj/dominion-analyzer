@@ -10,3 +10,7 @@ From /analyzer folder, run `npm install`
 Then run `npm run start` to run a development folder.
 `npm run build` will produce the production build to /build.
 See package.json scripts for more.
+
+`docker build -t dom-lyze .`
+`docker run -p 3000:3000 --rm -it dom-lyze`
+http://localhost:3000/
