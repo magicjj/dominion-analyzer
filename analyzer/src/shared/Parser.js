@@ -152,6 +152,80 @@ class DominionAnalyzer {
 
         gdo.landmarks = [];
 
+        let checkLine = (line, regex, callback, i) => {
+            if (line.trim().match(regex)) {
+                callback(regex.exec(line), i);
+            }
+        };
+
+        let turn_re = new RegExp("^Turn ([0-9]+) - (.+)", 'g');
+        let gain_re = new RegExp("^(^" +
+            gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
+            "+)(?: .*)* (?:gains|receives) (.+)", 'g');
+        let trash_re = new RegExp("^(^" +
+            gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
+            "+)(?: .*)* (?:trashes|returns) (.+)", 'g');
+        let earned_re = new RegExp("^(^" +
+            gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
+            "+)(?: .*)* (takes|gets) (.+)", 'g');
+
+        let turn_check = (match) => {
+            turn = parseInt(match[1]);
+            let playerName = match[2].trim();
+            let possessionIndexOf = playerName.indexOf(" [Possession]");
+            if (possessionIndexOf >= 0) {
+                playerName = playerName.substring(0, possessionIndexOf).trim();
+            }
+            activePlayer = this.findPlayerByName(gdo, playerName);
+            if (!activePlayer.turns[turn]) {
+                // this is the first player for this turn, copy all player's decks from last turn
+                for (var i = 0; i < gdo.players.length; i++) {
+                    gdo.players[i].turns[turn] = this.copyDeck(gdo.players[i].turns[turn - 1], turn)
+                }
+            }
+        }
+
+        let gain_check = (match) => {
+            let player = this.findPlayerByFl(gdo, match[1]);
+            this.addToDeck(player, turn, match[2]);
+        }
+
+        let trash_check = (match, i) => {
+            let player = this.findPlayerByFl(gdo, match[1]);
+            let cardToTrash = match[2];
+            let cardTrashedFromDeck = true;
+            if (cardToTrash.indexOf("Gladiator") > -1) {
+                // Gladiator has a wierd thing with logging - when you play it you may need to trash a Gladiator
+                // from the supply, however this will just be logged as "m trashes a Gladiator" and it will erroneously be removed from the deck
+                // to avoid this, check if this is being trashed due to a Gladiator and if so do not remove it from our deck
+                let gladiatorActionLine = gameDataLines[i - 2];
+                /* sample log for Gladiator: 
+                Turn 3 - magicjj
+                m plays a Gladiator.
+                m reveals a Silver.
+                m trashes a Gladiator.		// it doesn't say it, but this is trashing from the supply not from deck
+                */
+                // we are at the "trashes" line now, gladiatorActionLine goes up 2 lines, where, if this is being trashed by a Gladiator, it will have been played
+                if (gladiatorActionLine && gladiatorActionLine.indexOf(player.fl + " plays a Gladiator.") === 0) {
+                    cardTrashedFromDeck = false;
+                }
+            } else if (cardToTrash.indexOf(" to the ")) {
+                // for the instance of "m returns an Encampment to the Encampment pile."
+                cardToTrash = cardToTrash.split(" to the ")[0];
+            }
+            if (cardTrashedFromDeck) {
+                this.removeFromDeck(player, turn, cardToTrash)
+            }
+        }
+
+        let earn_check = (match) => {
+            let player = this.findPlayerByFl(gdo, match[1]);
+            let vpMatch = /([0-9]+) VP/g.exec(match[3]);
+            if (vpMatch !== null) {
+                player.turns[turn].tokens.vp += parseInt(vpMatch[1]);
+            }
+        }
+
         for (let i = _exports.turn1StartIndex; i < gameDataLines.length; i++) {
             let line = gameDataLines[i];
 
@@ -159,92 +233,23 @@ class DominionAnalyzer {
                 continue;
             }
 
-            let checkLine = (regex, callback) => {
-                if (line.trim().match(regex)) {
-                    callback(regex.exec(line));
-                }
-            };
-
-            let turn_re = new RegExp("^Turn ([0-9]+) - (.+)", 'g');
-
             // if line starts with "Turn " set active player and turn
-            checkLine(turn_re, (match) => {
-                turn = parseInt(match[1]);
-                let playerName = match[2].trim();
-                let possessionIndexOf = playerName.indexOf(" [Possession]");
-                if (possessionIndexOf >= 0) {
-                    playerName = playerName.substring(0, possessionIndexOf).trim();
-                }
-                activePlayer = this.findPlayerByName(gdo, playerName);
-                if (!activePlayer.turns[turn]) {
-                    // this is the first player for this turn, copy all player's decks from last turn
-                    for (var i = 0; i < gdo.players.length; i++) {
-                        gdo.players[i].turns[turn] = this.copyDeck(gdo.players[i].turns[turn - 1], turn)
-                    }
-                }
-            });
-
-            let gain_re = new RegExp("^(^" +
-                gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
-                "+)(?: .*)* (?:gains|receives) (.+)", 'g');
+            checkLine(line, turn_re, turn_check);
 
             // check for any gained cards
-            checkLine(gain_re, (match) => {
-                let player = this.findPlayerByFl(gdo, match[1]);
-                this.addToDeck(player, turn, match[2]);
-            });
-
-            let trash_re = new RegExp("^(^" +
-                gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
-                "+)(?: .*)* (?:trashes|returns) (.+)", 'g');
+            checkLine(line, gain_re, gain_check);
 
             // check for any trashed cards
-            checkLine(trash_re, (match) => {
-                let player = this.findPlayerByFl(gdo, match[1]);
-                let cardToTrash = match[2];
-                let cardTrashedFromDeck = true;
-                if (cardToTrash.indexOf("Gladiator") > -1) {
-                    // Gladiator has a wierd thing with logging - when you play it you may need to trash a Gladiator
-                    // from the supply, however this will just be logged as "m trashes a Gladiator" and it will erroneously be removed from the deck
-                    // to avoid this, check if this is being trashed due to a Gladiator and if so do not remove it from our deck
-                    let gladiatorActionLine = gameDataLines[i - 2];
-					/* sample log for Gladiator: 
-					Turn 3 - magicjj
-					m plays a Gladiator.
-					m reveals a Silver.
-					m trashes a Gladiator.		// it doesn't say it, but this is trashing from the supply not from deck
-					*/
-                    // we are at the "trashes" line now, gladiatorActionLine goes up 2 lines, where, if this is being trashed by a Gladiator, it will have been played
-                    if (gladiatorActionLine && gladiatorActionLine.indexOf(player.fl + " plays a Gladiator.") === 0) {
-                        cardTrashedFromDeck = false;
-                    }
-                } else if (cardToTrash.indexOf(" to the ")) {
-                    // for the instance of "m returns an Encampment to the Encampment pile."
-                    cardToTrash = cardToTrash.split(" to the ")[0];
-                }
-                if (cardTrashedFromDeck) {
-                    this.removeFromDeck(player, turn, cardToTrash)
-                }
-            });
-
-            let earned_re = new RegExp("^(^" +
-                gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
-                "+)(?: .*)* (takes|gets) (.+)", 'g');
+            checkLine(line, trash_re, trash_check);
 
             // check for any earned VP tokens
-            checkLine(earned_re, (match) => {
-                let player = this.findPlayerByFl(gdo, match[1]);
-                let vpMatch = /([0-9]+) VP/g.exec(match[3]);
-                if (vpMatch !== null) {
-                    player.turns[turn].tokens.vp += parseInt(vpMatch[1]);
-                }
-            });
+            checkLine(line, earned_re, earn_check);
 
             // check for metadata passed in through the chrome extension
             // metadata is added from the results tables in the Dominion Online game. automatically added to gamelog with chrome extension
             // we look at these tables to see all the points cards used in the game. Landmarks affect how the scoring is done but are never
             // mentioned in the game log, so we look at each card in metadata and save its info if it is a landmark
-            checkLine(/^~metadata~/g, (match) => {
+            checkLine(line, /^~metadata~/g, (match) => {
                 let nextLine = gameDataLines[i + 1];
                 let startsWith = "scoreTables: ";
                 if (nextLine.startsWith(startsWith)) {
