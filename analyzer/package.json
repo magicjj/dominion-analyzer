@@ -18,7 +18,9 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "start": "react-scripts start",
