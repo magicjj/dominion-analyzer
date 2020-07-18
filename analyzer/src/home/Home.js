@@ -10,7 +10,7 @@ class Home extends Component {
         <div data-uk-grid className='uk-grid-collapse uk-width-1-1'>
             <div className="uk-background-secondary uk-width-1-1 uk-grid-collapse" data-uk-grid>
                 <div className="uk-width-1-1">
-                    <h3 className="uk-margin-left">Visual and statistical post-game analysis for <a href="http://dominion.games" target="_blank">Dominion Online</a>.</h3>
+                    <h3 className="uk-margin-left">Visual and statistical post-game analysis for <a href="http://dominion.games" target="_blank" rel="noopener noreferrer">Dominion Online</a>.</h3>
                 </div>
             </div>
             <article className="uk-article uk-padding">
@@ -41,8 +41,8 @@ class Home extends Component {
                 </p>
                 <p className="p-list">
                     <span className="uk-float-left numbers">2</span>
-                    <b>Recommended:</b> Install the <a href="https://chrome.google.com/webstore/detail/win-dominion-game-scraper/denlafhecndjbofgefekklidcpannapm" target="_blank">Chrome extension</a>. 
-                    After playing a game, just click the <img src={ChromeExtIcon} style={{width: '16px', height: '16px', marginTop: '-3px'}} /> icon and your analysis will automatically open in a new tab!
+                    <b>Recommended:</b> Install the <a href="https://chrome.google.com/webstore/detail/win-dominion-game-scraper/denlafhecndjbofgefekklidcpannapm" target="_blank" rel="noopener noreferrer">Chrome extension</a>. 
+                    After playing a game, just click the <img alt="Chrome Extension" src={ChromeExtIcon} style={{width: '16px', height: '16px', marginTop: '-3px'}} /> icon and your analysis will automatically open in a new tab!
                 </p>
                 <p>
                     <span className="uk-badge uk-background-danger uk-margin-small-right">Note</span> 
@@ -69,7 +69,7 @@ class Home extends Component {
                     Issues? Feature request?
                 </h1>
                 <p>
-                    Contact the developer on our <a href="https://discordapp.com/channels/316560992102383616/316560992102383616" target="_blank">Discord channel</a>.
+                    Contact the developer on our <a href="https://discordapp.com/channels/316560992102383616/316560992102383616" target="_blank" rel="noopener noreferrer">Discord channel</a>.
                     Please keep me notified of any outages, or any questions at all!
                 </p>
             </article>

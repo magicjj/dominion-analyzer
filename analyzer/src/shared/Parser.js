@@ -56,7 +56,6 @@ class DominionAnalyzer {
     populatePlayers(gdo, gameDataLines) {
         // search for lines with "Turn 1" and populate players field
         let players = []
-        let playerIndex = 0;
         let startsWith = "Turn 1 - ";
         let turn1StartIndex;
         let startsWithBreak = "Turn 2 - ";
@@ -137,7 +136,6 @@ class DominionAnalyzer {
                     if (! player.turns[0]) {
                         player.turns[0] = new DeckObject(0);
                     }
-                    let startingDeck = this.addToDeck(player, 0, startingCards);
                 }
             }
         };
@@ -166,9 +164,10 @@ class DominionAnalyzer {
                 }
             };
 
+            let turn_re = new RegExp("^Turn ([0-9]+) - (.+)", 'g');
 
             // if line starts with "Turn " set active player and turn
-            checkLine(/^Turn ([0-9]+) - (.+)/g, (match) => {
+            checkLine(turn_re, (match) => {
                 turn = parseInt(match[1]);
                 let playerName = match[2].trim();
                 let possessionIndexOf = playerName.indexOf(" [Possession]");

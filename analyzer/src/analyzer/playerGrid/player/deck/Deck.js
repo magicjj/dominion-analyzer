@@ -8,10 +8,6 @@ import Tooltip from 'rc-tooltip';
 
 class Deck extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   getCountChange(typeKey, cardKey) {
       let thisTurnCards = this.props.turns[this.props.turn].cards;
       let lastTurnCards = this.props.turns[this.props.turn-1];
