@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AnalyzerService from '../shared/AnalyzerService';
 import 'whatwg-fetch';
-import CopyToClipboard from 'react-copy-to-clipboard';
 import UIkit from 'uikit';
 import { Redirect } from 'react-router-dom';
 import SampleGames from '../assets/SampleGames' 
@@ -31,17 +30,17 @@ class Analyzer extends Component {
   }
   
   componentWillMount() {
-    let gdoKey;
-    if (this.state.gdo) {
-      gdoKey = this.state.gdo.key;
-    } else {
-      gdoKey = "";
-    }
     let urlKey = this.props.match.params.key;
     let approvedUrlKeys = ["analyze", "sample-0", "sample-1", "sample-2"];
     if (approvedUrlKeys.indexOf(urlKey) === -1) {
       UIkit.modal.alert('Sorry, we no longer save analyzed games. The costs outweighed the donations - of literally $0. :(');
       /*
+      let gdoKey;
+      if (this.state.gdo) {
+        gdoKey = this.state.gdo.key;
+      } else {
+        gdoKey = "";
+      }
       if (this.props.match.params.key && gdoKey !== this.props.match.params.key) {
       AnalyzerService.getSavedAnalysis(this.props.match.params.key)
         .then(resp => {
@@ -73,7 +72,6 @@ class Analyzer extends Component {
     if (! this.state.gdo) {
       return <Redirect to="/" />;
     }
-    let shareUrl = 'http://windominion.com/' + this.state.gdo.key;
 
     return (
       <div data-uk-grid className='uk-grid-collapse uk-width-1-1'>

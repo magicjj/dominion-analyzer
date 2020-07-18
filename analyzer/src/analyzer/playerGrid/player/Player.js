@@ -4,10 +4,6 @@ import Deck from './deck/Deck';
 
 class Player extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div data-uk-grid className="Player">

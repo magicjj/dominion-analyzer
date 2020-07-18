@@ -5,8 +5,8 @@ import CardImages from '../../../assets/CardImages';
 
 import Slider from 'material-ui/Slider';
 
-import { ResponsiveContainer, ComposedChart, LineChart, Line, Bar, Area, XAxis, YAxis,
-  ReferenceLine, ReferenceDot, Tooltip, Legend, CartesianGrid, Brush } from 'recharts';
+import { ResponsiveContainer, LineChart, Line, XAxis, YAxis,
+  Tooltip, CartesianGrid } from 'recharts';
 
 class TurnSlider extends Component {
 
@@ -99,7 +99,7 @@ class TurnSlider extends Component {
           <div className="uk-width-4-5">{this.props.gdo.players[playerIndex].name}</div>
           <div className="uk-width-1-5 uk-text-right">
             <div className="uk-grid uk-grid-collapse">
-              <div className="uk-width-1-3"><img style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} /></div>
+              <div className="uk-width-1-3"><img alt="spacer" style={{width:'16px', height:'18px', marginRight:'20px'}} src={CardImages.VP_16px} /></div>
               <div className="uk-width-2-3 uk-text-right">{vp}</div>
             </div>
           </div>

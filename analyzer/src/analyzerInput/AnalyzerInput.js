@@ -4,10 +4,6 @@ import './AnalyzerInput.css';
 
 class AnalyzerInput extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   handleFocus(e) {
     e.target.select();
   }
