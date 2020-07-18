@@ -166,6 +166,7 @@ class DominionAnalyzer {
                 }
             };
 
+
             // if line starts with "Turn " set active player and turn
             checkLine(/^Turn ([0-9]+) - (.+)/g, (match) => {
                 turn = parseInt(match[1]);
@@ -183,14 +184,22 @@ class DominionAnalyzer {
                 }
             });
 
+            let gain_re = new RegExp("^(^" +
+                gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
+                "+)(?: .*)* (?:gains|receives) (.+)", 'g');
+
             // check for any gained cards
-            checkLine(/^(^\w +)(?: .*)* (?:gains|receives) (.+)/g, (match) => {
+            checkLine(gain_re, (match) => {
                 let player = this.findPlayerByFl(gdo, match[1]);
                 this.addToDeck(player, turn, match[2]);
             });
 
+            let trash_re = new RegExp("^(^" +
+                gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
+                "+)(?: .*)* (?:trashes|returns) (.+)", 'g');
+
             // check for any trashed cards
-            checkLine(/^(^\w +)(?: .*)* (?:trashes|returns) (.+)/g, (match) => {
+            checkLine(trash_re, (match) => {
                 let player = this.findPlayerByFl(gdo, match[1]);
                 let cardToTrash = match[2];
                 let cardTrashedFromDeck = true;
@@ -218,8 +227,12 @@ class DominionAnalyzer {
                 }
             });
 
+            let earned_re = new RegExp("^(^" +
+                gdo.players.reduce((b, c) => b + "|" + c['fl'], gdo.players[0]['fl']) +
+                "+)(?: .*)* (takes|gets) (.+)", 'g');
+
             // check for any earned VP tokens
-            checkLine(/^(^\w +)(?: .*)* (takes|gets) (.+)/g, (match) => {
+            checkLine(earned_re, (match) => {
                 let player = this.findPlayerByFl(gdo, match[1]);
                 let vpMatch = /([0-9]+) VP/g.exec(match[3]);
                 if (vpMatch !== null) {
