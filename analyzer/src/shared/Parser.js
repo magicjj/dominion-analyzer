@@ -184,13 +184,13 @@ class DominionAnalyzer {
             });
 
             // check for any gained cards
-            checkLine(/^(^\w+)(?: .*)* (?:gains|receives) (.+)/g, (match) => {
+            checkLine(/^(^\w +)(?: .*)* (?:gains|receives) (.+)/g, (match) => {
                 let player = this.findPlayerByFl(gdo, match[1]);
                 this.addToDeck(player, turn, match[2]);
             });
 
             // check for any trashed cards
-            checkLine(/^(^\w+)(?: .*)* (?:trashes|returns) (.+)/g, (match) => {
+            checkLine(/^(^\w +)(?: .*)* (?:trashes|returns) (.+)/g, (match) => {
                 let player = this.findPlayerByFl(gdo, match[1]);
                 let cardToTrash = match[2];
                 let cardTrashedFromDeck = true;
@@ -219,7 +219,7 @@ class DominionAnalyzer {
             });
 
             // check for any earned VP tokens
-            checkLine(/^(^\w+)(?: .*)* (takes|gets) (.+)/g, (match) => {
+            checkLine(/^(^\w +)(?: .*)* (takes|gets) (.+)/g, (match) => {
                 let player = this.findPlayerByFl(gdo, match[1]);
                 let vpMatch = /([0-9]+) VP/g.exec(match[3]);
                 if (vpMatch !== null) {
