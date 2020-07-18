@@ -132,9 +132,11 @@ class DominionAnalyzer {
             let _startsWith = player.fl + " starts with ";
             for (let i = 1; i < gameDataLines.length; i++) {
                 if (gameDataLines[i].startsWith(_startsWith)) {
+                    let startingCards = gameDataLines[i].substr(_startsWith.length);
                     if (! player.turns[0]) {
                         player.turns[0] = new DeckObject(0);
                     }
+                    this.addToDeck(player, 0, startingCards);
                 }
             }
         };
