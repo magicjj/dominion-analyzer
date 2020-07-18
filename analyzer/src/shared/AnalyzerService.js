@@ -5,9 +5,6 @@ import * as parser from './Parser';
 class AnalyzerService {
     contextUrl = window.location.protocol + "//" + window.location.hostname + ":8088/";
 
-    constructor() {
-    }
-
     analyze(input) {
         return parser.default.parse(input);
     }

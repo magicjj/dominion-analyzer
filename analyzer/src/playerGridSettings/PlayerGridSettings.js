@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 import './PlayerGridSettings.css';
 
 class PlayerGridSettings extends Component {
-
-  constructor(props) {
-    super(props);
-  }
   
   render() {
     return (
