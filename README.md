@@ -23,3 +23,5 @@ If you wish to do development, then start the docker image with
 `docker run -p 3000:3000 -v "$PWD":/app/src --rm -it dom-lyze`
 
 Then the server will hot reload when you save changes a file.
+
+There is still a package (yargs-parser) that fails the npm audit, but it's been non-straightforward to get that fixed.  From a functionality point of view, that warning can be ignored.
